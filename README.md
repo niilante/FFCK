@@ -37,3 +37,5 @@
 * [Firefox security blog (blog.mozilla.com)](https://blog.mozilla.org/security/)
 * [Browser hardening (Blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
 * [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
+* [Firefox Public Data Report](https://data.firefox.com/dashboard/user-activity)
+* [Privafox Firefox](https://github.com/intika/privafox-firefox)
