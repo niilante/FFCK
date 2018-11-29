@@ -306,3 +306,5 @@ user_pref("security.ssl3.dhe_dss_camellia_128_sha",		false);
 user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 user_pref("security.ssl3.rsa_aes_256_sha",			true);
 user_pref("security.ssl3.rsa_aes_128_sha",			true);
+//user_pref("excludeFlashFonts",			true); // Firefox >= 52
+//user_pref("excludeJsFonts",			true); // Firefox >= 52
