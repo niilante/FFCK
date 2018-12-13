@@ -63,7 +63,6 @@ user_pref("security.fileuri.strict_origin_policy",		true);
 user_pref("browser.urlbar.filter.javascript",			true);
 user_pref("javascript.options.asmjs",				false);
 user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
-//user_pref("svg.disabled", true);
 user_pref("media.video_stats.enabled",				false);
 user_pref("general.buildID.override",				"20100101");
 user_pref("browser.startup.homepage_override.buildID",		"20100101");
