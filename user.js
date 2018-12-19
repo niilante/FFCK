@@ -1,3 +1,4 @@
+//user_pref("security.pki.name_matching_mode",				3);
 user_pref("security.tls.enable_0rtt_data",				true);
 user_pref("dom.serviceWorkers.enabled",				false);
 user_pref("dom.webnotifications.enabled",			false);
