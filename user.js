@@ -1,3 +1,4 @@
+user_pref("security.tls.enable_0rtt_data",				true);
 user_pref("dom.serviceWorkers.enabled",				false);
 user_pref("dom.webnotifications.enabled",			false);
 user_pref("dom.enable_performance",				false);
@@ -249,7 +250,7 @@ pref("security.OCSP.timeoutMilliseconds.hard",				10000);
 user_pref("security.ssl.disable_session_identifiers",		true);
 user_pref("security.tls.version.min",				1);
 user_pref("security.tls.version.max",				4);
-user_pref("security.tls.version.fallback-limit",		3);
+user_pref("security.tls.version.fallback-limit",		4);
 user_pref("security.cert_pinning.enforcement_level",		2);
 user_pref("security.pki.sha1_enforcement_level",		1);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken",	true);
