@@ -1,3 +1,4 @@
+user_pref("browser.newtabpage.activity-stream.filterAdult",				false);
 user_pref("security.tls.enable_0rtt_data",				true);
 user_pref("dom.serviceWorkers.enabled",				false);
 user_pref("dom.webnotifications.enabled",			false);
