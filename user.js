@@ -17,10 +17,11 @@
 //user_pref("signon.storeWhenAutocompleteOff", false);
 //user_pref("xpinstall.signatures.required", true);
 //
+user_pref("browser.launcherProcess.enabled", true);
 user_pref("security.OCSP.timeoutMilliseconds.hard", 10000);
 user_pref("security.OCSP.timeoutMilliseconds.soft", 2200);
 user_pref("app.shield.optoutstudies.enabled", false);
-user_pref("app.update.enabled",   true);
+user_pref("app.update.enabled", true);
 user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
