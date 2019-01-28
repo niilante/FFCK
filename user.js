@@ -17,6 +17,10 @@
 //user_pref("signon.storeWhenAutocompleteOff", false);
 //user_pref("xpinstall.signatures.required", true);
 //
+user_pref("media.autoplay.blocked", 1);
+user_pref("media.autoplay.enabled.user-gestures-needed", true);
+user_pref("media.autoplay.allow-muted", false);
+user_pref("media.autoplay.block-webaudio", true);
 user_pref("browser.launcherProcess.enabled", true);
 user_pref("security.OCSP.timeoutMilliseconds.hard", 10000);
 user_pref("security.OCSP.timeoutMilliseconds.soft", 2200);
