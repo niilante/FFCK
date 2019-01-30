@@ -17,6 +17,7 @@
 //user_pref("signon.storeWhenAutocompleteOff", false);
 //user_pref("xpinstall.signatures.required", true);
 //
+user_pref("extensions.allowPrivateBrowsingByDefault", false);
 user_pref("media.autoplay.blocked", 1);
 user_pref("media.autoplay.enabled.user-gestures-needed", true);
 user_pref("media.autoplay.allow-muted", false);
