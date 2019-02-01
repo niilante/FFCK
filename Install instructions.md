@@ -26,6 +26,22 @@ On Windows, you need to drop the user.js file to <code>%appdata%\Mozilla\Firefox
 
 
 
+MSI
+========
+
+You can install Firefox as .MSI (download).
+
+```bash
+msiexec /passive /norestart /i „https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en“ START_MENU_SHORTCUT=true DESKTOP_SHORTCUT=true INSTALL_MAINTENANCE_SERVICE=false REMOVE_DISTRIBUTION_DIR=false TASKBAR_SHORTCUT=true /quiet /norestart
+```
+
+```
+// Without download
+msiexec.exe /i „c:MSidefault.msi“ INSTALL_DIRECTORY_PATH=“C:Firefox“ TASKBAR_SHORTCUT=false DESKTOP_SHORTCUT=false INSTALL_MAINTENANCE_SERVICE=false /quiet
+
+```
+
+
 My configuration doesn't load or FF not applies the new values - what can I do?
 ========
 
