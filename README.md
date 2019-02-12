@@ -22,7 +22,6 @@
 - [ ] [Several test pages](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List) needs to be added to verify the current 'security' status.- Most people prefer something visual over cmd/shell. 
 - [ ] Find a way to pick changed FF configurations and compare them to easier find new about:config changes
 - [ ] Certificate 'hardening' is not necessary, better disable internal stuff and let the OS handle it but show or give people a way to harden the OS own certificates. This is better because the OS handles more as the browser. especially an Windows/or in general server based OS'es we should filter stuff on the lowest level. I'm working on something for this. (not public)
-- [ ] Remove obsolete stuff much faster to merge it with my addon (will automatically grab the user.js from here).
 - [ ] Considering to remove WebPush? May breaks Telegram/WhatsApp WebServices
 - [ ] Maybe syntax check to avoid failures within the user.js
 - [ ] Pull requests and Ideas are always welcome!
@@ -31,7 +30,7 @@
 
 
 ### Research
-
+* [Firefox Security/Anti tracking policy](https://wiki.mozilla.org/Security/Anti_tracking_policy)
 * [Mozilla Security Center (Mozilla.com)](https://www.mozilla.org/en-US/security/)
 * [Firefox security blog (blog.mozilla.com)](https://blog.mozilla.org/security/)
 * [Browser hardening (Blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
