@@ -19,6 +19,7 @@
 //user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 //user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
 //
+user_pref("extensions.fxmonitor.enabled", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled", true);
 user_pref("browser.contentblocking.cryptomining.preferences.ui.enabled", true);
