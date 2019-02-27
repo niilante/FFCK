@@ -37,3 +37,4 @@
 * [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
 * [Firefox Public Data Report](https://data.firefox.com/dashboard/user-activity)
 * [Mozilla policy-templates](https://github.com/mozilla/policy-templates)
+* [Tor Browser user.js](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
