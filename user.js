@@ -1,5 +1,5 @@
 //
-// user_pref("network.http.referer.XOriginPolicy", 2);
+//user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("browser.cache.memory.enable", false);
 //user_pref("dom.disable_beforeunload",  true);
 //user_pref("dom.event.contextmenu.enabled", false);
@@ -18,6 +18,12 @@
 //user_pref("xpinstall.signatures.required", true);
 //user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 //user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
+//
+// Problematic (defaults)
+//user_pref("privacy.resistFingerprinting", true);
+//user_pref("privacy.resistFingerprinting.auto.DeclineNoUserInputCanvasPrompts", true);
+//user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
+//user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
 user_pref("extensions.allowPrivateBrowsingByDefault", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
