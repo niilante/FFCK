@@ -1,7 +1,7 @@
 //
 //user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("browser.cache.memory.enable", false);
-//user_pref("dom.disable_beforeunload",  true);
+//user_pref("dom.disable_beforeunload", true);
 //user_pref("dom.event.contextmenu.enabled", false);
 //user_pref("dom.indexedDB.enabled", false);
 //user_pref("dom.storage.enabled", false);
@@ -41,7 +41,7 @@ user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.block-webaudio", true);
 user_pref("browser.launcherProcess.enabled", true);
 user_pref("security.OCSP.timeoutMilliseconds.hard", 10000);
-user_pref("security.OCSP.timeoutMilliseconds.soft", 2200);
+user_pref("security.OCSP.timeoutMilliseconds.soft", 2500);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.update.enabled", true);
 user_pref("beacon.enabled", false);
