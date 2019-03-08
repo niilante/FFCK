@@ -20,7 +20,8 @@
 This project provides a hardened user.js (and some other files) which are designed for everyone to drag & drop into his Firefox profile folder, the process can of course be automated via scripts/programs.
 
 * FFCK project is **not a documentation** for each about:config flag.
-* FFCK project does not explains web standards or is designed to talk about web security policy mechanism, [Mozilla itself has an entire portal](https://developer.mozilla.org/en-US/) for this.
+* FFCK project **does not explains web standards** or is designed to talk about web security policy mechanism, [Mozilla itself has an entire portal](https://developer.mozilla.org/en-US/) for this.
+* FFCK project **does not care about backward-compatibility to older/outdated Browser** versions.
 
 
 ### Privacy aspect
