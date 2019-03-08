@@ -42,11 +42,11 @@ Archiving more security is way harder than trying to build defences against priv
 
 
 ### Research
-* [Firefox Security/Anti tracking policy](https://wiki.mozilla.org/Security/Anti_tracking_policy)
-* [Mozilla Security Center (Mozilla.com)](https://www.mozilla.org/en-US/security/)
+* [Firefox Security/Anti tracking policy (wiki.mozilla.org)](https://wiki.mozilla.org/Security/Anti_tracking_policy)
+* [Mozilla Security Center (mozilla.com)](https://www.mozilla.org/en-US/security/)
 * [Firefox security blog (blog.mozilla.com)](https://blog.mozilla.org/security/)
-* [Browser hardening (Blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
-* [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
+* [Browser hardening (blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
+* [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation (drive.google.com)](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
 * [Firefox Public Data Report](https://data.firefox.com/dashboard/user-activity)
-* [Mozilla policy-templates](https://github.com/mozilla/policy-templates)
-* [Tor Browser user.js](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
+* [Mozilla policy-templates (github.com)](https://github.com/mozilla/policy-templates)
+* [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
