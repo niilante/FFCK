@@ -105,7 +105,6 @@ user_pref("clipboard.autocopy", false);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
-user_pref("device.sensors.enabled", false);
 user_pref("devtools.chrome.enabled", false);
 user_pref("devtools.debugger.force-local", true);
 user_pref("devtools.debugger.remote-enabled", false);
@@ -115,17 +114,12 @@ user_pref("devtools.webide.enabled", false);
 user_pref("dom.allow_cut_copy", false);
 user_pref("dom.archivereader.enabled", false);
 user_pref("dom.battery.enabled", false);
-user_pref("dom.enable_performance", false);
-user_pref("dom.enable_resource_timing", false);
 user_pref("dom.enable_user_timing", false);
 user_pref("dom.event.clipboardevents.enabled", false);
 user_pref("dom.flyweb.enabled", false);
-user_pref("dom.gamepad.enabled", false);
 user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled",	false);
 user_pref("dom.ipc.plugins.reportCrashURL", false);
-user_pref("dom.maxHardwareConcurrency", 2);
 user_pref("dom.mozTCPSocket.enabled", false);
-user_pref("dom.netinfo.enabled", false);
 user_pref("dom.network.enabled", false);
 user_pref("dom.serviceWorkers.enabled", false);
 user_pref("dom.telephony.enabled", false);
@@ -168,9 +162,7 @@ user_pref("media.navigator.video.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("media.peerconnection.ice.no_host", true);
-user_pref("media.video_stats.enabled", false);
 user_pref("media.webspeech.recognition.enable", false);
-user_pref("media.webspeech.synth.enabled", false);
 user_pref("middlemouse.contentLoadURL", false);
 user_pref("network.IDN_show_punycode", true);
 user_pref("network.allow-experiments", false);
@@ -337,7 +329,6 @@ user_pref("toolkit.telemetry.unified", false);
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 user_pref("webgl.disabled", true);
-user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("webgl.min_capability_mode", true);
 //
 // Problematic or irrelevant in terms of privacy
@@ -358,6 +349,17 @@ user_pref("webgl.min_capability_mode", true);
 //user_pref("pageThumbs.enabled", false);
 //user_pref("offline-apps.allow_by_default", false);
 //user_pref("browser.safebrowsing.provider.google.lists:
+//
+// In case you enabled privacy.resistFingerprinting you don't need the following entries:
+//user_pref("dom.enable_performance", false);
+//user_pref("dom.enable_resource_timing", false);
+//user_pref("media.webspeech.synth.enabled", false);
+//user_pref("media.video_stats.enabled", false);
+//user_pref("device.sensors.enabled", false);
+//user_pref("dom.maxHardwareConcurrency", 2);
+//user_pref("dom.netinfo.enabled", false);
+//user_pref("webgl.enable-debug-renderer-info", false);
+//user_pref("dom.gamepad.enabled", false);
 //
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.url", "");
