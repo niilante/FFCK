@@ -17,7 +17,7 @@ Source:
 #2 Wont-fix
 ================================
 
-I not waste my and anyone's time trying to fix something which is protocol related and needs to be fixed within the source. Disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
+I not waste my and anyones else time trying to fix something which is protocol specific and needs to be fixed within the source. disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
 
 
 * WebRTC
@@ -86,3 +86,16 @@ Same like #6, there is a high chance of false positives, one [popular example is
 
 You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) (or manually edit the User-Agent string) and choose "Google Chrome” or “Microsot Edge” as User-Agent. Currently Firefox 65 doesn’t support [NPAPI](https://en.wikipedia.org/wiki/NPAPI) which is required for the web version.
 
+
+9# How to workaround Google's CAPTCHA problem
+================================
+
+In case you use uBlock copy the following rules under Options > My Rules and then hit apply.
+```bash
+* https://www.google.com/recaptcha/api * noop
+* https://www.gstatic.com/recaptcha/api * noop
+* https://www.recaptcha.net/recaptcha/api script noop
+* https://www.google.com/js/bg/ script noop
+```
+
+The config related toggle is `privacy.resistFingerprint` + `privacy.firstparty.isolate` which is disabled in this configuration for several reasons, not only because it _can_ break Google's CAPTCHA system but moreover because it breaks a [lot of other pages too](https://bugzilla.mozilla.org/show_bug.cgi?id=1299996). 
