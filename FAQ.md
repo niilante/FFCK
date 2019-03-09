@@ -5,7 +5,7 @@ We configure NoScript to allow JavaScript by default in Tor Browser because many
 
 There's a tradeoff here. On the one hand, we should leave JavaScript enabled by default so websites work the way users expect. On the other hand, we should disable JavaScript by default to better protect against browser vulnerabilities ( not just a theoretical concern!). But there's a third issue: websites can easily determine whether you have allowed JavaScript for them, and if you disable JavaScript by default but then allow a few websites to run scripts (the way most people use NoScript), then your choice of whitelisted websites acts as a sort of cookie that makes you recognizable (and distinguishable), thus harming your anonymity.
 
-Ultimately, we want the default Tor bundles to use a combination of firewalls (like the iptables rules in Tails) and sandboxes to make JavaScript not so scary. In the shorter term, TBB 3.0 will hopefully allow users to choose their JavaScript settings more easily — but the partitioning concern will remain.
+Ultimately, we want the default Tor bundles to use a combination of firewalls (like the iptables rules in Tails) and sandboxes to make JavaScript not so scary. In the shorter term, TBB 3.0 will hopefully allow users to choose their JavaScript settings more easily but the partitioning concern will remain.
 
 Until we get there, feel free to leave JavaScript on or off depending on your security, anonymity, and usability priorities.
 
@@ -14,7 +14,7 @@ Source:
 
 
 
-#2 Wont fix
+#2 Wont-fix
 ================================
 
 I not waste my and anyone's time trying to fix something which is protocol related and needs to be fixed within the source. Disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
@@ -37,9 +37,10 @@ There bunch of websites which testing specific API's, but it's questionable if y
 #4 What is Telemetry?
 ================================
 
+```
 Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
 Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
-
+```
 
 #5 Optional addons to comply several Firefox functions
 ================================
@@ -55,3 +56,20 @@ The following extensions are not there to 'harden' Mozilla Firefox there only my
 * [Kee](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
 * [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
 * [Extension source viewer](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
+
+
+6# Why is Safe Browsing and other Mozilla services are disabled, shouldn't that protect me against malware?
+================================
+
+* Any kind of censorship (no matter if meant well or not) is a bad thing.
+* Blacklisting the Internet will never work. A Malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
+* An attacker can use the open sourced list to build strategies to bypass them, which means such filter lists are depending on how often and well they are maintained. In other words an attacker could grab the list, check if he is on the list or randomize the name each time your Browser loads the payload. Such filter lists can't work with regular expressions since this would break legitimate domains too.
+
+If you want such censorship or blocking I suggest you [work with your own list instead](https://www.monperrus.net/martin/anti-phishing-protection-without-google-safebrowsing) which you can control and not any organization which you have no control over. I suggest [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) or/uMatrix/uBo combination which allowing you to create/use your own lists or allowing you to make exclusions, another benefit is that those are faster compared to Google's or Mozilla's Safe browsing (_needs more evidence_).
+
+
+7# Why aren't digital Signatures enforced by default to prevent Malware downloads?
+================================
+
+Same like #6, there is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
+
