@@ -52,3 +52,4 @@ Archiving more security is way harder than trying to build defenses against priv
 * [Firefox Public Data Report](https://data.firefox.com/dashboard/user-activity)
 * [Mozilla policy-templates (github.com)](https://github.com/mozilla/policy-templates)
 * [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
+* [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
