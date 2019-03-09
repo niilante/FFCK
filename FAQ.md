@@ -22,8 +22,8 @@ I not waste my and anyone's time trying to fix something which is protocol relat
 
 * WebRTC
 * Entirely disabling JS (see also ^^ #1)
-* OpenGL/Vulkan
-* Stuff which breaks functionally such as 'xyz' API
+* OpenGL/Vulkan related stuff
+* Stuff which breaks functionally such as 'xyz' API unless there is evidence that it can be abused
 * [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things
 
 
@@ -34,6 +34,7 @@ I not waste my and anyone's time trying to fix something which is protocol relat
 There bunch of websites which testing specific API's, but it's questionable if you need the tweaks, I do believe that critical security things need to be fixed in the source code and not via any 'tweaks'. That said when you never enable JavaScript or visit pages which abusing privileges or such API's you're secure and do not need any tweaks.
 
 
+
 #4 What is Telemetry?
 ================================
 
@@ -41,6 +42,8 @@ There bunch of websites which testing specific API's, but it's questionable if y
 Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
 Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
 ```
+
+
 
 #5 Optional addons to comply several Firefox functions
 ================================
@@ -52,10 +55,11 @@ The following extensions are not there to 'harden' Mozilla Firefox there only my
 * [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)
 * [Decentralyes](https://decentraleyes.org/)
 * [uMatrix](https://github.com/gorhill/uMatrix)
-* [NoScript](https://noscript.net/)
+* [NoScript](https://noscript.net/) (already integrated into Tor Browser)
 * [Kee](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
 * [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
 * [Extension source viewer](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
+
 
 
 6# Why is Safe Browsing and other Mozilla services are disabled, shouldn't that protect me against malware?
@@ -63,13 +67,22 @@ The following extensions are not there to 'harden' Mozilla Firefox there only my
 
 * Any kind of censorship (no matter if meant well or not) is a bad thing.
 * Blacklisting the Internet will never work. A Malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
+* The hash is unique and can expose you or reveal your browsing habits. 
 * An attacker can use the open sourced list to build strategies to bypass them, which means such filter lists are depending on how often and well they are maintained. In other words an attacker could grab the list, check if he is on the list or randomize the name each time your Browser loads the payload. Such filter lists can't work with regular expressions since this would break legitimate domains too.
 
 If you want such censorship or blocking I suggest you [work with your own list instead](https://www.monperrus.net/martin/anti-phishing-protection-without-google-safebrowsing) which you can control and not any organization which you have no control over. I suggest [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) or/uMatrix/uBo combination which allowing you to create/use your own lists or allowing you to make exclusions, another benefit is that those are faster compared to Google's or Mozilla's Safe browsing (_needs more evidence_).
+
 
 
 7# Why aren't digital Signatures enforced by default to prevent Malware downloads?
 ================================
 
 Same like #6, there is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
+
+
+
+8# Why does Skype-Web refuse to work in Firefox?
+================================
+
+You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) (or manually edit the User-Agent string) and choose "Google Chrome” or “Microsot Edge” as User-Agent. Currently Firefox 65 doesn’t support [NPAPI](https://en.wikipedia.org/wiki/NPAPI) which is required for the web version.
 
