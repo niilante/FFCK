@@ -25,6 +25,7 @@
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
+user_pref("network.http.keep-alive.timeout", 45);
 user_pref("extensions.allowPrivateBrowsingByDefault", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 user_pref("browser.discovery.enabled", false);
