@@ -10,7 +10,7 @@
 					==== Introduced by CHEF-KOCH ==== 
 	
 	
-![Matrix](https://img.shields.io/matrix/cknews:matrix.org.svg?label=CK%27s%20Technology%20News%20-%20Matrix%20Chat&server_fqdn=matrix.org&style=popout)
+[![Matrix](https://img.shields.io/matrix/cknews:matrix.org.svg?label=CK%27s%20Technology%20News%20-%20Matrix%20Chat&server_fqdn=matrix.org&style=popout)](https://matrix.to/#/#cknews:matrix.org)
 ![Twitter Follow](https://img.shields.io/twitter/follow/@CKsTechNews.svg?label=Follow%20%40CKsTechNews&style=social)
 [![Discord](https://discordapp.com/api/guilds/418256415874875402/widget.png)](https://discord.me/CHEF-KOCH)
 [![Say Thanks!](https://img.shields.io/badge/Say%20Thanks-!-1EAEDB.svg)](https://saythanks.io/to/CHEF-KOCH)
@@ -35,7 +35,7 @@ Several changes you can make within the Firefox options (and the invisible ones 
 
 The project list is not designed to secure Firefox, it is designed to bring _as much as privacy (via about:flags changes) as possible_. The project owner does not believe that the configuration increases any security aspect of the Browser, there was never a proof given that a about:config really has an impact on the overall security level of each individual config user.
 
-Problems:
+Possible Problems:
 * An attacker can use the open source list to find weaknesses (forgotten flags, mistakes or find other strategies to bypass it)
 * The Browser itself ignores several flags or the provided options are bugged or entirely broken
 * The flags are depending on the Browser source code which basically spoken means that if the source is flawed or doesn't worked as advertised an attacker can find its way around with new a Proof of concept (PoC) which might not even public available.
