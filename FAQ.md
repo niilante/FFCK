@@ -59,6 +59,7 @@ The following extensions are not there to 'harden' Mozilla Firefox there only my
 * [Kee](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
 * [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
 * [Extension source viewer](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
+* [Permission Inspector](https://github.com/tsl143/addonManager)
 
 
 
