@@ -44,7 +44,7 @@ Possible Problems:
 Archiving more security is way harder than trying to build defenses against privacy related attacks because [those two things are not the same](https://www.globalsign.com/en/blog/what-is-the-difference-between-privacy-and-security/) and the philosophy (in my opinion) must be that important problems have to be always addresses by the Browser itself without the need to change some flags/options. Stay away from ["Ultimative Firefox Privacy & Security Guides"](https://www.bestvpn.com/guides/firefox-privacy-security-guide/) those are in 99% of all cases [clickbait](https://en.wikipedia.org/wiki/Clickbait) and are very soon outdated, browser security itself is very very hard to archive if not almost impossible and needs constantly to be monitored.
 
 
-### Research
+### References
 * [Firefox Security/Anti tracking policy (wiki.mozilla.org)](https://wiki.mozilla.org/Security/Anti_tracking_policy)
 * [Mozilla Security Center (mozilla.com)](https://www.mozilla.org/en-US/security/)
 * [Firefox security blog (blog.mozilla.com)](https://blog.mozilla.org/security/)
@@ -54,3 +54,4 @@ Archiving more security is way harder than trying to build defenses against priv
 * [Mozilla policy-templates (github.com)](https://github.com/mozilla/policy-templates)
 * [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
+* [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
