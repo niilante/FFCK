@@ -347,7 +347,7 @@ user_pref("webgl.min_capability_mode", true);
 //user_pref("browser.sessionstore.max_windows_undo", 0);
 //user_pref("browser.sessionstore.max_tabs_undo", 0);
 //user_pref("browser.sessionhistory.max_entries", 1);
-//user_pref("browser.sessionstore.interval", 50000);
+user_pref("browser.sessionstore.interval", 300000);
 //user_pref("ui.use_standins_for_native_colors", true);
 //user_pref("privacy.userContext.longPressBehavior", 2);
 //user_pref("plugins.enumerable_names", "");
