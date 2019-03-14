@@ -25,6 +25,7 @@
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
+user_pref("alerts.useSystemBackend", true);
 user_pref("layout.css.servo.enable", true);
 user_pref("dom.ipc.processCount", 10);  //-1 
 user_pref("media.av1.use-dav1d", true);
