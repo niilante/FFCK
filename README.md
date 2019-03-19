@@ -55,3 +55,4 @@ Archiving more security is way harder than trying to build defenses against priv
 * [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
 * [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
+* [Issuehub (issuehub.io)](http://issuehub.io/?label[]=firefox)
