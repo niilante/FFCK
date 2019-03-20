@@ -25,10 +25,15 @@
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
+user_pref("urlclassifier.features.cryptomining.blacklistTables", "base-cryptomining-track-digest256");
+user_pref("urlclassifier.features.cryptomining.whitelistTables", "mozstd-trackwhite-digest256");
+user_pref("urlclassifier.features.fingerprinting.blacklistTables", "base-fingerprinting-track-digest256");
+user_pref("urlclassifier.features.fingerprinting.whitelistTables", "mozstd-trackwhite-digest256");
 user_pref("browser.safebrowsing.provider.mozilla.lists", "base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256");
+user_pref("app.normandy.remotesettings.enabled", false);
 user_pref("alerts.useSystemBackend", true);
 user_pref("layout.css.servo.enable", true);
-user_pref("dom.ipc.processCount", 10);  //-1 
+user_pref("dom.ipc.processCount", 10);  //-1
 user_pref("media.av1.use-dav1d", true);
 user_pref("network.http.keep-alive.timeout", 45);
 user_pref("extensions.allowPrivateBrowsingByDefault", false);
