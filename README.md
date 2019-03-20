@@ -26,6 +26,17 @@ This project provides a hardened user.js (and some other files) which are design
 * FFCK project **does hope to provide a middle way between privacy and a _normal_ daily usage habit** without breaking too much.
 
 
+### Project Goals
+
+* Limit the possibilities to track the user through web analytics.
+* Harden the browser against known data disclosure or code execution vulnerabilities (see _Security aspect_).
+* Limit the browser from storing anything even remotely sensitive persistently.
+* Harden the browser's encryption (cipher suites, protocols, trusted CAs).
+* Limit possibilities to uniquely identify the browser/device using browser fingerprinting.
+* Reduce the overall attack surface by disabling various features.
+* Still be usable in daily use environment. 
+
+
 ### Privacy aspect
 
 Several changes you can make within the Firefox options (and the invisible ones via about:config) might reducing the overall attack surface, they can be tested against several [test pages](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List) to check wherever they work or not. Those pages are mostly PoC pages to prove that certain things can be exploited or are vulnerable, however those changes are highly depending on the settings and Browser version and need to be constantly maintained to adopt new changes which are might coming from the Browser or new web standards itself. 
@@ -43,16 +54,3 @@ Possible Problems:
 
 Archiving more security is way harder than trying to build defenses against privacy related attacks because [those two things are not the same](https://www.globalsign.com/en/blog/what-is-the-difference-between-privacy-and-security/) and the philosophy (in my opinion) must be that important problems have to be always addresses by the Browser itself without the need to change some flags/options. Stay away from ["Ultimative Firefox Privacy & Security Guides"](https://www.bestvpn.com/guides/firefox-privacy-security-guide/) those are in 99% of all cases [clickbait](https://en.wikipedia.org/wiki/Clickbait) and are very soon outdated, browser security itself is very very hard to archive if not almost impossible and needs constantly to be monitored.
 
-
-### References
-* [Firefox Security/Anti tracking policy (wiki.mozilla.org)](https://wiki.mozilla.org/Security/Anti_tracking_policy)
-* [Mozilla Security Center (mozilla.com)](https://www.mozilla.org/en-US/security/)
-* [Firefox security blog (blog.mozilla.com)](https://blog.mozilla.org/security/)
-* [Browser hardening (blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
-* [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation (drive.google.com)](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
-* [Firefox Public Data Report](https://data.firefox.com/dashboard/user-activity)
-* [Mozilla policy-templates (github.com)](https://github.com/mozilla/policy-templates)
-* [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
-* [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
-* [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
-* [Issuehub (issuehub.io)](http://issuehub.io/?label[]=firefox)
