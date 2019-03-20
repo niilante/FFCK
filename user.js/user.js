@@ -25,6 +25,9 @@
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
+user_pref("media.autoplay.default", 1);
+user_pref("mmedia.autoplay.enabled.user-gestures-needed", false);
+user_pref("media.autoplay.allow-muted", false);
 user_pref("urlclassifier.features.cryptomining.blacklistTables", "base-cryptomining-track-digest256");
 user_pref("urlclassifier.features.cryptomining.whitelistTables", "mozstd-trackwhite-digest256");
 user_pref("urlclassifier.features.fingerprinting.blacklistTables", "base-fingerprinting-track-digest256");
