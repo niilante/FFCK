@@ -29,33 +29,31 @@ I don't waste my and anyones else time trying to fix something which is protocol
 
 ### Does any of these tweaks really increase my security and how can I check it?
 
-There bunch of websites which testing specific API's, but it's questionable if you need the tweaks, I do believe that critical security things need to be fixed in the source code and not via any 'tweaks'. That said when you never enable JavaScript or visit pages which abusing privileges or such API's you're secure and do not need any tweaks.
+There [bunch of websites which testing specific API's](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List), but it's questionable if you need several tweaks, I do believe that critical security things need to be fixed in the Mozilla Browser source code and not via any 'tweaks' or configurations. That said e.g. when you never enable JavaScript or visit pages x which abusing privileges or such API's you're secure and do not need any tweaks.
 
 
 
 ### What is Telemetry?
 
-```
-Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
+> Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
 Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
-```
 
 
 
-### Optional addons to comply several Firefox functions
+### Optional addons to comply several Firefox integrated functions
 
-The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions. It's not meant that such addons are there to 'secure' your web-habits, there also not there to avoid data leaks.
+The following extensions are not there to 'harden' Mozilla Firefox, it's more my personally recommendation to comply certain Fiefox functions. It's not meant that such addons are there to 'secure' your overall web-habits, there also not there to avoid any data leaks.
 
-* [Temporary Containers Firefox Add-on](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
-* [Multi-Account Containers](https://github.com/mozilla/multi-account-containers)
-* [Nano Adblocker](https://github.com/NanoAdblocker/NanoCore)
-* [Decentralyes](https://decentraleyes.org/)
-* [uMatrix](https://github.com/gorhill/uMatrix)
-* [NoScript](https://noscript.net/) (already integrated into Tor Browser)
-* [Kee](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
-* [Violentmonkey](https://github.com/violentmonkey/violentmonkey)
-* [Extension source viewer](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
-* [Permission Inspector](https://github.com/tsl143/addonManager)
+* [Temporary Containers Firefox Add-on (github.com)](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
+* [Multi-Account Containers (github.com)](https://github.com/mozilla/multi-account-containers)
+* [Nano Adblocker (github.com)](https://github.com/NanoAdblocker/NanoCore)
+* [Decentralyes (decentraleyes.org)](https://decentraleyes.org/)
+* [uMatrix (github.com)](https://github.com/gorhill/uMatrix)
+* ~~[NoScript (noscript.net)](https://noscript.net/)~~ (already integrated into Tor Browser)
+* [Kee (github.com)](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
+* [Violentmonkey (github.com)](https://github.com/violentmonkey/violentmonkey)
+* [Extension source viewer (addons.mozilla.org)](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
+* [Permission Inspector (github.com)](https://github.com/tsl143/addonManager)
 
 
 
