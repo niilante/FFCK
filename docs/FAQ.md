@@ -40,6 +40,21 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 
 
 
+### Which telemetry is disabled by default in user.js?
+
+- All Normandy and Shield Studies are disabled 
+- Recommended addons are turned off
+- Crypto-miners are blocked (Mozilla can collect data about which mines data to improve their own list)
+- The extensions blocklist URL is sanitized
+- The search URL from the search box in `about:addons` is sanitized
+- Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`
+- Real time checking of downloads (i.e., cloud-delivered "protection") is turned off
+- All report and data sharing URLs are changed and all possible data sharing services are disabled
+- Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
+- Crash reports & Health Report are disabled
+
+
+
 ### Optional addons to comply several Firefox integrated functions
 
 The following extensions are not there to 'harden' Mozilla Firefox, it's more my personally recommendation to comply certain Fiefox functions. It's not meant that such addons are there to 'secure' your overall web-habits, there also not there to avoid any data leaks.
@@ -57,7 +72,7 @@ The following extensions are not there to 'harden' Mozilla Firefox, it's more my
 
 
 
-### Why is Safe Browsing and other Mozilla services are disabled, shouldn't that protect me against malware?
+### Why is Safe-Browsing etc disabled, shouldn't that protect me against malware?
 
 * Any kind of censorship (no matter if meant well or not) is a bad thing.
 * Blacklisting the Internet will never work. A Malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
@@ -70,7 +85,7 @@ If you want such censorship or blocking I suggest you [work with your own list i
 
 ### Why aren't digital Signatures enforced by default to prevent Malware downloads?
 
-Same like #6, there is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
+There is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
 
 
 
@@ -83,6 +98,7 @@ You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firef
 ### How to workaround Google's CAPTCHA problem
 
 In case you use uBlock copy the following rules under Options > My Rules and then hit apply.
+
 ```bash
 * https://www.google.com/recaptcha/api * noop
 * https://www.gstatic.com/recaptcha/api * noop
@@ -92,23 +108,12 @@ In case you use uBlock copy the following rules under Options > My Rules and the
 
 The config related toggle is `privacy.resistFingerprint` + `privacy.firstparty.isolate` which is disabled in this configuration for several reasons, not only because it _can_ break Google's CAPTCHA system but moreover because it breaks a [lot of other pages too](https://bugzilla.mozilla.org/show_bug.cgi?id=1299996).
 
+Because of certain problems with time/Google I decided to not enable several anti-fingerprinting features. It's also questionable if they really increase your privacy since there are other methods on the web which bypass them.
+
 
 
 ### Do I still need Tor Browser even after using a hardened user.js configuration?
 
 The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicity designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politican person etc. I highly recommend to use Tor Browser as your default and only Browser. 
 
-
-### Which telemetry is disabled by default in user.js?
-
-- All Normandy and Shield Studies are disabled 
-- Recommended addons are turned off
-- Crypto-miners are blocked (Mozilla can collect data about which mines data to improve their own list)
-- The extensions blocklist URL is sanitized
-- The search URL from the search box in `about:addons` is sanitized
-- Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`
-- Real time checking of downloads (i.e., cloud-delivered "protection") is turned off
-- All report and data sharing URLs are changed and all possible data sharing services are disabled
-- Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
-- Crash reports & Health Report are disabled
 
