@@ -1,5 +1,4 @@
-Linux
-========
+### Linux
 
 Drop the hardened user.js file into your Firefox profile directory at <code>~/.mozilla/firefox/XXXXXXXX.your_profile_name</code> and verify that the settings are effective from about:support (check the "Important Modified Preferences" and "user.js Preferences" sections).
 
@@ -7,29 +6,37 @@ If you want to be able to keep your user.js up-to-date with this repository, you
 
 ```bash
 cd ~/.mozilla/firefox
-git clone 'https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/user.js'
+git clone 'https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/user.js/user.js'
 cd XXXXXXXX.your_profile_name
 ln -s ../CHEF-KOCH/FFCK user.js
 ```
 
+### MacOS
 
-Android
-========
+The `user.js` must be dropped into `~/Library/Application Support/Firefox/Profiles/XXXXXXXX.your_profile_name`. 
+
+
+### Android
+
 
 On Firefox for Android (Fennec), you need to drop the file to <code>/data/data/org.mozilla.firefox/files/mozilla/XXXXXXXX.your_profile_name</code>. If you use Jolla and run Firefox through Alien Dalvik, the location needs to be prefixed with <code>/opt/alien</code>.
 
 
-Windows
-========
+### Sailfish OS + Alien Dalvik
 
-On Windows, you need to drop the user.js file to <code>%appdata%\Mozilla\Firefox\Profiles\XXXXXXXX.your_profile_name</code>.
-
+Basically the same like Android except that the dir is under: `/opt/alien/data/data/org.mozilla.firefox/files/mozilla/XXXXXXXX.your_profile_name`.
 
 
-MSI
-========
+### Windows
 
-You can install Firefox as .MSI (download).
+
+On Windows, you need to drop the user.js file to <code>%appdata%\Mozilla\Firefox\Profiles\XXXXXXXX.your_profile_name</code>. For portable versions use `[firefox dir]\Data\profile\` instead.
+
+
+
+### MSI Package
+
+You can install Firefox as .MSI package (download).
 
 ```bash
 msiexec /passive /norestart /i „https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en“ START_MENU_SHORTCUT=true DESKTOP_SHORTCUT=true INSTALL_MAINTENANCE_SERVICE=false REMOVE_DISTRIBUTION_DIR=false TASKBAR_SHORTCUT=true /quiet /norestart
@@ -43,14 +50,38 @@ msiexec.exe /i „c:MSidefault.msi“ INSTALL_DIRECTORY_PATH=“C:Firefox“ TAS
 
 
 My configuration doesn't load or FF not applies the new values - what can I do?
-========
+
 
 If you have one incorrect or outdated preference Firefox stops reading the user.js file at that error - none of the prefs beyond that point are read.
+
+
+### System-wide based user.js installation
+
+There are several files which you have to create manually (some examples already can be found in FFCK Project).
+
+* `systemwide_user.js`: Contains the default values which aren't set by _about:config_. Those settings are kept on every browser session.
+* `locked_user.js`: This is file acts like a locked preferences file for every new Fierfox which you create.
+* `debian_locked.js`: This file can't be changed or overridden.
+* `fenec_locked.js`: This file can't be changed or overridden.
+
+The files belong into the following directories: 
+* Linux: `/etc/firefox/syspref.js` or below FF 60 in `/etc/firefox/firefox.js`
+* Linux (Debian): `/etc/firefox-esr/firefox-esr.js` or for Archlinux under: `/usr/lib/firefox/mozilla.cfg`
+* MacOS: `/Applications/Firefox.app/Contents/Resources/mozilla.cfg`
+* Windows: `\Mozilla Firefox\mozilla.cfg`
+
+
+### Troubleshooting
+
+* In case you configuration file doesn't load check your `mozilla.cfg` and ensure there is a blank comment line `//` on the first line.
+* Check if the syntax doesn't contain any error(s).
+* Make sure the update url is correct.
+* Verify if you settings getting applied, open _about:support_ and check `Important Modified Preferences` which is under the `user.js Preferences` section. 
 
 
 Resources
 ========
 
-* https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data
-* https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles
-* http://forums.mozillazine.org/viewtopic.php?f=38&t=2477123
+* [Profiles - Where Firefox stores your bookmarks, passwords and other user data (support.mozilla.org/)](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
+* [Use the Profile Manager to create and remove Firefox profiles (support.mozilla.org)](https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles)
+* [user.js (forums.mozillazine.org)](http://forums.mozillazine.org/viewtopic.php?f=38&t=2477123)
