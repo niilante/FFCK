@@ -42,7 +42,8 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 
 ### Which telemetry is disabled by default in user.js?
 
-- All Normandy and Shield Studies are disabled 
+- All Normandy and Shield Studies are disabled
+- ALl Health reporting features are turned off
 - Recommended addons are turned off
 - Crypto-miners are blocked (Mozilla can collect data about which mines data to improve their own list)
 - The extensions blocklist URL is sanitized
@@ -51,7 +52,8 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 - Real time checking of downloads (i.e., cloud-delivered "protection") is turned off
 - All report and data sharing URLs are changed and all possible data sharing services are disabled
 - Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
-- Crash reports & Health Report are disabled
+- Crash reports are disabled
+- All Heartbeat(s) are disabled
 
 
 
