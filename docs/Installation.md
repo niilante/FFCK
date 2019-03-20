@@ -8,7 +8,7 @@ If you want to be able to keep your user.js up-to-date with this repository, you
 cd ~/.mozilla/firefox
 git clone 'https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/user.js/user.js'
 cd XXXXXXXX.your_profile_name
-ln -s ../CHEF-KOCH/FFCK user.js
+ln -s ../CHEF-KOCH/user.js/FFCK user.js
 ```
 
 ### MacOS
@@ -34,9 +34,9 @@ On Windows, you need to drop the user.js file to <code>%appdata%\Mozilla\Firefox
 
 
 
-### MSI Package
+### MSI Package Download
 
-You can install Firefox as .MSI package (download).
+You can install Firefox as .MSI package.
 
 ```bash
 msiexec /passive /norestart /i „https://download.mozilla.org/?product=firefox-msi-latest-ssl&os=win64&lang=en“ START_MENU_SHORTCUT=true DESKTOP_SHORTCUT=true INSTALL_MAINTENANCE_SERVICE=false REMOVE_DISTRIBUTION_DIR=false TASKBAR_SHORTCUT=true /quiet /norestart
@@ -49,10 +49,10 @@ msiexec.exe /i „c:MSidefault.msi“ INSTALL_DIRECTORY_PATH=“C:Firefox“ TAS
 ```
 
 
-My configuration doesn't load or FF not applies the new values - what can I do?
+### Permanent Tor Firefox profile
 
+Tor always recommends just using the Tor browser generated configuration, the file already pre-configured and hardened to _resist common exploits_ (no evidence).
 
-If you have one incorrect or outdated preference Firefox stops reading the user.js file at that error - none of the prefs beyond that point are read.
 
 
 ### System-wide based user.js installation
@@ -60,7 +60,7 @@ If you have one incorrect or outdated preference Firefox stops reading the user.
 There are several files which you have to create manually (some examples already can be found in FFCK Project).
 
 * `systemwide_user.js`: Contains the default values which aren't set by _about:config_. Those settings are kept on every browser session.
-* `locked_user.js`: This is file acts like a locked preferences file for every new Fierfox which you create.
+* `locked_user.js`: This is file acts like a locked preferences file for every new Firefox which you create.
 * `debian_locked.js`: This file can't be changed or overridden.
 * `fenec_locked.js`: This file can't be changed or overridden.
 
@@ -73,7 +73,7 @@ The files belong into the following directories:
 
 ### Troubleshooting
 
-* In case you configuration file doesn't load check your `mozilla.cfg` and ensure there is a blank comment line `//` on the first line.
+* In case your configuration file doesn't load check your `mozilla.cfg` and ensure there is a blank comment line `//` on the first line.
 * Check if the syntax doesn't contain any error(s).
 * Make sure the update url is correct.
 * Verify if you settings getting applied, open _about:support_ and check `Important Modified Preferences` which is under the `user.js Preferences` section. 
