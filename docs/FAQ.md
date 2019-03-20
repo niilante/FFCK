@@ -119,3 +119,9 @@ Because of certain problems with time/Google I decided to not enable several ant
 The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicity designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politican person etc. I highly recommend to use Tor Browser as your default and only Browser. 
 
 
+
+### Why are several Scripts or filter-lists gone after I updated to Firefox 66.0?
+
+Firefox 66 changed the storage backend from json blobs to IndexedDB files, in other words during this migration process it's very much likely that e.g. Tapermonkey or the internal database gets corrupted. The same can happen with your passwords whenever `logins.json` or/and `key3.DB` gets corrupted you might [lose all of your passwords](https://support.mozilla.org/en-US/questions/1181868). I highly suggest that you use KeePass or another password manager instead of Mozilla's own password manager function. 
+
+
