@@ -1,5 +1,4 @@
-#1 Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe?
-================================
+### Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe?
 
 We configure NoScript to allow JavaScript by default in Tor Browser because many websites will not work with JavaScript disabled. Most users would give up on Tor entirely if a website they want to use requires JavaScript, because they would not know how to allow a website to use JavaScript (or that enabling JavaScript might make a website work).
 
@@ -14,8 +13,7 @@ Source:
 
 
 
-#2 Wont-fix
-================================
+### Wont-fix
 
 I not waste my and anyones else time trying to fix something which is protocol specific and needs to be fixed within the source. disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
 
@@ -28,15 +26,13 @@ I not waste my and anyones else time trying to fix something which is protocol s
 
 
 
-#3 Does any of these tweaks really increase my security and how can I check it?
-================================
+### Does any of these tweaks really increase my security and how can I check it?
 
 There bunch of websites which testing specific API's, but it's questionable if you need the tweaks, I do believe that critical security things need to be fixed in the source code and not via any 'tweaks'. That said when you never enable JavaScript or visit pages which abusing privileges or such API's you're secure and do not need any tweaks.
 
 
 
-#4 What is Telemetry?
-================================
+### What is Telemetry?
 
 ```
 Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
@@ -45,8 +41,7 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 
 
 
-#5 Optional addons to comply several Firefox functions
-================================
+### Optional addons to comply several Firefox functions
 
 The following extensions are not there to 'harden' Mozilla Firefox there only my personally recommendation to comply certain Fiefox functions. It's not meant that such addons are there to 'secure' your web-habits, there also not there to avoid data leaks.
 
@@ -63,8 +58,7 @@ The following extensions are not there to 'harden' Mozilla Firefox there only my
 
 
 
-6# Why is Safe Browsing and other Mozilla services are disabled, shouldn't that protect me against malware?
-================================
+### Why is Safe Browsing and other Mozilla services are disabled, shouldn't that protect me against malware?
 
 * Any kind of censorship (no matter if meant well or not) is a bad thing.
 * Blacklisting the Internet will never work. A Malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
@@ -75,22 +69,19 @@ If you want such censorship or blocking I suggest you [work with your own list i
 
 
 
-7# Why aren't digital Signatures enforced by default to prevent Malware downloads?
-================================
+### Why aren't digital Signatures enforced by default to prevent Malware downloads?
 
 Same like #6, there is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
 
 
 
-8# Why does Skype-Web refuse to work in Firefox?
-================================
+### Why does Skype-Web refuse to work in Firefox?
 
 You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) (or manually edit the User-Agent string) and choose "Google Chrome” or “Microsot Edge” as User-Agent. Currently Firefox 65 doesn’t support [NPAPI](https://en.wikipedia.org/wiki/NPAPI) which is required for the web version.
 
 
 
-9# How to workaround Google's CAPTCHA problem
-================================
+### How to workaround Google's CAPTCHA problem
 
 In case you use uBlock copy the following rules under Options > My Rules and then hit apply.
 ```bash
@@ -104,7 +95,30 @@ The config related toggle is `privacy.resistFingerprint` + `privacy.firstparty.i
 
 
 
-10# Do I still need Tor Browser even after using a hardened user.js configuration?
-================================
+### Do I still need Tor Browser even after using a hardened user.js configuration?
 
 The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicity designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politican person etc. I highly recommend to use Tor Browser as your default and only Browser. 
+
+
+### Which telemetry is disabled by default in user.js?
+
+- All Normandy and Shield Studies are disabled 
+- Recommended addons are turned off
+- Crypto-miners are blocked (Mozilla can collect data about which mines data to improve their own list)
+- The extensions blocklist URL is sanitized
+- The search URL from the search box in `about:addons` is sanitized
+- Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`
+- Real time checking of downloads (i.e., cloud-delivered "protection") is turned off
+- All report and data sharing URLs are changed and all possible data sharing services are disabled
+- Do Not Track is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
+- Crash reports & Health Report are disabled
+
+
+### Where is my Firefox profile folder located?
+
+OS | Path
+----- | -----
+Windows | `C:\Users\(your username)\AppData\Roaming\Mozilla\Firefox\Profiles\(random string).default`
+macOS | `Users/(your username)/Library/Application Support/Firefox/Profiles/(random string).default`
+Linux | `~/.mozilla/firefox/(random string).default`
+
