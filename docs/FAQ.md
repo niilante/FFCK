@@ -1,28 +1,29 @@
+## FFCK Project FAQ
+
 ### Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe?
 
-We configure NoScript to allow JavaScript by default in Tor Browser because many websites will not work with JavaScript disabled. Most users would give up on Tor entirely if a website they want to use requires JavaScript, because they would not know how to allow a website to use JavaScript (or that enabling JavaScript might make a website work).
+> We configure NoScript to allow JavaScript by default in Tor Browser because many websites will not work with JavaScript disabled. Most users would give up on Tor entirely if a website they want to use requires JavaScript, because they would not know how to allow a website to use JavaScript (or that enabling JavaScript might make a website work).
 
-There's a tradeoff here. On the one hand, we should leave JavaScript enabled by default so websites work the way users expect. On the other hand, we should disable JavaScript by default to better protect against browser vulnerabilities ( not just a theoretical concern!). But there's a third issue: websites can easily determine whether you have allowed JavaScript for them, and if you disable JavaScript by default but then allow a few websites to run scripts (the way most people use NoScript), then your choice of whitelisted websites acts as a sort of cookie that makes you recognizable (and distinguishable), thus harming your anonymity.
+> There's a tradeoff here. On the one hand, we should leave JavaScript enabled by default so websites work the way users expect. On the other hand, we should disable JavaScript by default to better protect against browser vulnerabilities ( not just a theoretical concern!). But there's a third issue: websites can easily determine whether you have allowed JavaScript for them, and if you disable JavaScript by default but then allow a few websites to run scripts (the way most people use NoScript), then your choice of whitelisted websites acts as a sort of cookie that makes you recognizable (and distinguishable), thus harming your anonymity.
 
-Ultimately, we want the default Tor bundles to use a combination of firewalls (like the iptables rules in Tails) and sandboxes to make JavaScript not so scary. In the shorter term, TBB 3.0 will hopefully allow users to choose their JavaScript settings more easily but the partitioning concern will remain.
+> Ultimately, we want the default Tor bundles to use a combination of firewalls (like the iptables rules in Tails) and sandboxes to make JavaScript not so scary. In the shorter term, TBB 3.0 will hopefully allow users to choose their JavaScript settings more easily but the partitioning concern will remain.
 
-Until we get there, feel free to leave JavaScript on or off depending on your security, anonymity, and usability priorities.
+> Until we get there, feel free to leave JavaScript on or off depending on your security, anonymity, and usability priorities.
 
 Source:
-* https://www.torproject.org/docs/faq.html.en#TBBJavaScriptEnabled
+* [Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe? (torproject.org)](https://www.torproject.org/docs/faq.html.en#TBBJavaScriptEnabled)
 
 
 
 ### Wont-fix
 
-I not waste my and anyones else time trying to fix something which is protocol specific and needs to be fixed within the source. disabling it makes less sense because a) not every site use it b) not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
+I don't waste my and anyones else time trying to fix something which is protocol specific, this has to be fixed fixed within the source/protocol. Disabling everything makes less sense because a) not every site might use it b) it might not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
 
-
-* WebRTC
-* Entirely disabling JS (see also ^^ #1)
-* OpenGL/Vulkan related stuff
-* Stuff which breaks functionally such as 'xyz' API unless there is evidence that it can be abused
-* [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things
+* WebRTC - I disabled it by default, you not need to disable it in uBlock.
+* JavaScript will not be entirely disabled - You can go ahead and do this per-site basis via uBo.
+* OpenGL/Vulkan related stuff - OpenGL is parcially disabled. There are no known attacks or fingerprint methods on the VulkanAPI (it's opn source and could be fixed anyway even if someone finds attacks).
+* Stuff which breaks functionally such as 'xyz' API unless there is evidence that it can be abused in the real-world.
+* [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things.
 
 
 
@@ -113,17 +114,3 @@ The short answer is yes, Tor not only has additional anti-fingerprinting related
 - Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
 - Crash reports & Health Report are disabled
 
-
-### Where is my Firefox profile folder located?
-
-OS | Path
------ | -----
-Windows | `C:\Users\(your username)\AppData\Roaming\Mozilla\Firefox\Profiles\(random string).default`
-macOS | `Users/(your username)/Library/Application Support/Firefox/Profiles/(random string).default`
-Linux | `~/.mozilla/firefox/(random string).default`
-Linux (Debian) | `/etc/firefox-esr/firefox-esr.j`
-Linux (Gentoo, Archlinux) | `/usr/lib/firefox/mozilla.cfg`
-
-**Additional installation steps** for Windows / OS X / Gentoo / Archlinux
-
-Use the `local-settings.js` and put it into the Firefox installation directory
