@@ -1,23 +1,4 @@
 //
-//user_pref("browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar", false);
-//user_pref("network.http.referer.XOriginPolicy", 2);
-//user_pref("browser.cache.memory.enable", false);
-//user_pref("dom.disable_beforeunload", true);
-//user_pref("dom.event.contextmenu.enabled", false);
-//user_pref("dom.indexedDB.enabled", false);
-//user_pref("dom.storage.enabled", false);
-//user_pref("general.appname.override", "Netscape");
-//user_pref("general.appversion.override", "5.0 (Windows)");
-//user_pref("general.oscpu.override", "Windows NT 6.1");
-//user_pref("general.platform.override", "Win32");
-//user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; rv:45.0) Gecko/20100101 Firefox/45.0");
-//user_pref("media.gmp-provider.enabled", false);
-//user_pref("privacy.donottrackheader.enabled", true);
-//user_pref("privacy.firstparty.isolate", true);
-//user_pref("security.ssl.require_safe_negotiation", true);
-//user_pref("signon.storeWhenAutocompleteOff", false);
-//user_pref("xpinstall.signatures.required", true);
-//
 // Problematic (defaults)
 //user_pref("privacy.resistFingerprinting", true);
 //user_pref("privacy.resistFingerprinting.auto.DeclineNoUserInputCanvasPrompts", true);
@@ -31,7 +12,7 @@ user_pref("browser.chrome.errorReporter.submitUrl", "");
 user_pref("browser.privatebrowsing.searchUI", false);
 user_pref("dom.media.autoplay.autoplay-policy-api", true);
 user_pref("media.autoplay.blackList-override-default", true);
-user_pref("urlclassifier.disallow_completions", "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256"); // prev: "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,except-flashinfobar-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256"
+user_pref("urlclassifier.disallow_completions", "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256"); // prev: "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,except-flashinfobar-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256");
 user_pref("browser.security.newcerterrorpage.enabled", true);
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
