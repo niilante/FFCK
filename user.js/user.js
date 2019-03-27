@@ -6,7 +6,6 @@
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
 user_pref("dom.webnotifications.requireuserinteraction", true);
-user_pref("dom.keyboardevent.keypress.hack.use_legacy_keycode_and_charcode", "powerpoint.officeapps.live.com");
 //user_pref("layout.css.isolation.enabled", true); //default
 user_pref("intl.charset.fallback.utf8_for_file", false);
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
