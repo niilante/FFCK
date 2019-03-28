@@ -220,7 +220,7 @@ user_pref("network.protocol-handler.external.ms-windows-store", false);
 user_pref("network.protocol-handler.warn-external-default", true);
 user_pref("network.proxy.socks_remote_dns", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
-user_pref("network.trr.mode",  5);
+//user_pref("network.trr.mode", 5);
 user_pref("pdfjs.disabled", true);
 user_pref("places.history.enabled", false);
 user_pref("plugin.state.flash", 0);
