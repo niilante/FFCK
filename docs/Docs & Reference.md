@@ -11,27 +11,42 @@
 * [Mozilla preferences for uber-geeks (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Mozilla_preferences_for_uber-geeks)
 * [Mozilla Privacy Principles (wiki.mozilla.org)](https://wiki.mozilla.org/Privacy/Principles)
 * [Mozilla Security Blog (blog.mozilla.org)](https://blog.mozilla.org/security/category/security/)
-* [Policy Templates for Firefox (github.com)](https://github.com/mozilla/policy-templates)
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 
 
+### Developer Tools & resources
+
+* [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
+* [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
+* [The Mozilla Learning Network]](https://learning.mozilla.org/en-US/)
+* [Mozilla Source Code Directory Structure](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Directory_structure)
+
+
+### Templates
+
+* [Policy Templates for Firefox (github.com)](https://github.com/mozilla/policy-templates)
+
+
 ### Misc References
+
 * [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
-* [About:config entries - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/About:config_entries)
-* [CVEs for Firefox - cvedetails.com (cvedetails.com)](https://www.cvedetails.com/vulnerability-list/vendor_id-452/product_id-3264/Mozilla-Firefox.html)
-* [CVEs for Firefox - mitre.org (mitre.org)](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox)
-* [Firefox Public Data Report](https://data.firefox.com/dashboard/user-activity)
-* [Security and privacy-related preferences - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/Category:Security_and_privacy-related_preferences)
+* [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
+
+
+### About:config related
+
+* [About:config entries - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/About:config_entries)
 
 
 ### About:flags
 
 * [Diff between various Firefox .js configurations in upcoming releases (cat-in-136.github.io)](https://cat-in-136.github.io/)
 
+
 ### Web Security
 
-* [Web security](https://developer.mozilla.org/en-US/docs/Web/Security)
+* [Web security (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/Security)
 * [Browser Exploitation Framework (beefproject.com)](https://beefproject.com/)
 * [Center for Internet Security - Mozilla Firefox benchmarks (benchmarks.cisecurity.org)](https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.desktop.browsers.firefox)
 * [Mozilla policy-templates (github.com)](https://github.com/mozilla/policy-templates)
@@ -41,12 +56,16 @@
 * [Firefox Issuehub (issuehub.io)](http://issuehub.io/?label[]=firefox)
 * [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation (drive.google.com)](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
 * [Privacy & Security related add-ons on AMO (addons.mozilla.org)](https://addons.mozilla.org/firefox/extensions/privacy-security/)
+* [CVEs for Firefox - cvedetails.com (cvedetails.com)](https://www.cvedetails.com/vulnerability-list/vendor_id-452/product_id-3264/Mozilla-Firefox.html)
+* [CVEs for Firefox - mitre.org (mitre.org)](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox)
+
 
 ### Mozilla Privacy
 
+* [Security and privacy-related preferences - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/Category:Security_and_privacy-related_preferences)
 * [Polaris - advance privacy technology for the web (wiki.mozilla.org)](https://wiki.mozilla.org/Polaris)
 * [Known Vulnerabilities for Firefox (mozilla.org)](https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/)
-* [Data Privacy Principles](https://www.mozilla.org/en-GB/privacy/principles/)
+* [Data Privacy Principles (mozilla.org)](https://www.mozilla.org/en-GB/privacy/principles/)
 * [Mozilla Privacy Policy (mozilla.org)](https://www.mozilla.org/en-US/privacy/)
 
 
