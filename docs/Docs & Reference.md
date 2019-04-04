@@ -44,6 +44,11 @@
 * [Diff between various Firefox .js configurations in upcoming releases (cat-in-136.github.io)](https://cat-in-136.github.io/)
 
 
+### Autoplay
+
+- [Allow or block media autoplay in Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/block-autoplay#w_add-sites-to-your-list-to-autoplay-media)
+
+
 ### Web Security
 
 * [Web security (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/Security)
