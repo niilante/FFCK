@@ -5,6 +5,7 @@
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 //
+user_pref("media.videocontrols.picture-in-picture.enabled", true);
 user_pref("security.certerrors.permanentOverride", false);
 user_pref("dom.webnotifications.requireuserinteraction", true);
 //user_pref("layout.css.isolation.enabled", true); //default
