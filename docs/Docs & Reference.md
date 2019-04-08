@@ -14,7 +14,7 @@
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 
 
-### Developer Tools & resources
+### Developer Tools & Resources
 
 * [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
 * [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
@@ -30,7 +30,9 @@
 ### Misc References
 
 * [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
+* [Certificate revocation list (wikipedia.org)](https://en.wikipedia.org/wiki/Certificate_revocation_list)
 * [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
+* [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
 
 
@@ -74,12 +76,19 @@
 * [Mozilla Privacy Policy (mozilla.org)](https://www.mozilla.org/en-US/privacy/)
 
 
+### Mozilla Themes
+
+* [Shadowfox (github.com)](https://github.com/overdodactyl/ShadowFox)
+* [Quantum Nox (github.com)(https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) 
+
+
 ### Tor related
 
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
 * [The Design and Implementation of the Tor Browser (torproject.org)](https://www.torproject.org/projects/torbrowser/design/)
 * [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
 * [Browser hardening (blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
+
 
 ### TLS/SSL
 
@@ -95,3 +104,16 @@
 * [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/) 
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
 * [Privacy Online Test And Resource Compendium (POTARC) (github.com)](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
+
+
+### Controversial Topics
+
+* [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262)
+* [Firefox Shield Studies](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies)
+* [Firefox is on a slippery slope](https://drewdevault.com/2017/12/16/Firefox-is-on-a-slippery-slope.html)
+* [Google Analytics is used to track users](https://github.com/mozilla/addons-frontend/issues/2785)
+* [Mozilla retires Firefox’s sponsored tiles, hunts for new revenue streams](https://arstechnica.com/information-technology/2015/12/firefox-retires-much-maligned-sponsored-tiles-hunts-for-new-revenue-streams/)
+* [Mozilla ships Cliqz experiment in Germany for ~1% of new installs, collects surf data, including URLs](https://old.reddit.com/r/firefox/comments/74n0b2/mozilla_ships_cliqz_experiment_in_germany_for_1/) 
+* [Mozilla Snippet concerns](https://old.reddit.com/r/privacytoolsIO/comments/abfgj5/mozilla_responds_to_bookingcom_snippet_concerns/)
+* [Mozilla's creepy Mr Robot stunt in Firefox flops in touching tribute to TV show's 2nd season](https://www.theregister.co.uk/2017/12/18/mozilla_mr_robot_firefox_promotion/) 
+* [Switch to WebExtensions](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
