@@ -18,7 +18,7 @@
 
 * [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
 * [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
-* [The Mozilla Learning Network]](https://learning.mozilla.org/en-US/)
+* [The Mozilla Learning Network](https://learning.mozilla.org/en-US/)
 * [Mozilla Source Code Directory Structure](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Directory_structure)
 
 
@@ -80,10 +80,10 @@
 ### Mozilla Themes
 
 * [Shadowfox (github.com)](https://github.com/overdodactyl/ShadowFox)
-* [Quantum Nox (github.com)(https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) 
+* [Quantum Nox (github.com)](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) 
 
 
-### Tor related
+### Tor Related
 
 * [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject) 
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
@@ -92,7 +92,7 @@
 * [Browser hardening (blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
 
 
-### TLS/SSL
+### TLS & SSL
 
 * [Bulletproof SSL and TLS (feistyduck.com)](https://www.feistyduck.com/books/bulletproof-ssl-and-tls/)
 * [Mozilla Included CA Certificate List (wiki.mozilla.org)](https://wiki.mozilla.org/CA:IncludedCAs)
