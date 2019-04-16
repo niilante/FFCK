@@ -25,6 +25,7 @@
 ### Templates
 
 * [Policy Templates for Firefox (github.com)](https://github.com/mozilla/policy-templates)
+* [FrontMotion Firefox Community Edition](https://getadmx.com/?Category=FrontMotion)
 
 
 ### Misc References
