@@ -8,6 +8,8 @@
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
 //user_pref("layout.css.isolation.enabled", true); //default
 //user_pref("network.trr.mode", 5);
+user_pref("extensions.shield-recipe-client.first_run", false);
+user_pref("extensions.shield-recipe-client.user_id", "14a0a78f-38a0-4468-bddd-d482c8950b3c");
 user_pref("alerts.useSystemBackend", true);
 user_pref("app.normandy.remotesettings.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
