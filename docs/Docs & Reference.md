@@ -14,6 +14,10 @@
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 
 
+### Extensions
+* [Catalog of classic Firefox add-ons created before WebExtensions apocalypse (github.com)](https://github.com/JustOff/ca-archive)
+
+
 ### Developer Tools & Resources
 
 * [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
