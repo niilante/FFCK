@@ -10,7 +10,8 @@ I do not believe in software [security through obscurity](https://en.wikipedia.o
 - [Buster Captcha Solver](https://addons.mozilla.org/en-US/firefox/addon/buster-captcha-solver/) - Buster is a Firefox extension which helps you to solve difficult captchas by completing reCAPTCHA audio challenges using automatic speech recognition. Challenges are solved by clicking on the extension button at the bottom of the reCAPTCHA widget.
 - [Temporary Containers](https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/) - Open tabs, websites, and links in automatically managed disposable containers. Containers isolate data websites store (cookies, storage, and more) from each other, enhancing your privacy and security while you browse.
 - uMatrix/uBO (_or_ Nano Defender/uBO Scope
-- [Cookie AutoDelete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/)
+- [Cookie AutoDelete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/) - Delete Cookies per-site basis or globally with a white-/blacklist policy.
+- [webext-firstpartyisolation](https://github.com/mozfreddyb/webext-firstpartyisolation) - Enable or toggle First Party Isolation Pref.
 
 
 Keep in mind that this list is not a list of extension which I use or say it "harden" your Firefox, it's a list which basically shows what  you could use in order to prevent certain things, like IP leakage etc.
