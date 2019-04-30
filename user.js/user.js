@@ -7,7 +7,7 @@
 //
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
 //user_pref("layout.css.isolation.enabled", true); //default
-//user_pref("network.trr.mode", 5);
+//user_pref("network.trr.mode", 5); //3
 user_pref("extensions.shield-recipe-client.first_run", false);
 user_pref("extensions.shield-recipe-client.user_id", "14a0a78f-38a0-4468-bddd-d482c8950b3c");
 user_pref("alerts.useSystemBackend", true);
@@ -15,7 +15,6 @@ user_pref("app.normandy.remotesettings.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.update.enabled", true);
 user_pref("beacon.enabled", false);
-user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
 user_pref("browser.bookmarks.max_backups", 0);
 user_pref("browser.cache.disk_cache_ssl", false);
@@ -137,7 +136,7 @@ user_pref("extensions.blocklist.url", "https://blocklist.addons.mozilla.org/bloc
 user_pref("extensions.formautofill.creditCards.available", false);
 user_pref("extensions.fxmonitor.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
-user_pref("extensions.pocket.enabled", false);
+user_pref("extensions.pocket.enabled", false); //https://www.change.org/p/mozilla-corporation-simple-option-to-disable-pocket-in-firefox
 user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.update.enabled", true);
@@ -186,7 +185,6 @@ user_pref("media.webspeech.recognition.enable", false);
 user_pref("media.wmf.deblacklisting-for-telemetry-in-gpu-process", false);
 user_pref("middlemouse.contentLoadURL", false);
 user_pref("mmedia.autoplay.enabled.user-gestures-needed", false);
-user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.thirdparty.sessionOnly", true);
@@ -227,6 +225,11 @@ user_pref("network.protocol-handler.external.moz-extension",	false);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 user_pref("network.protocol-handler.warn-external-default", true);
 user_pref("network.proxy.socks_remote_dns", true);
+//user_pref("network.captive-portal-service.enabled", true);
+//user_pref("network.trr.wait-for-portal", true);
+user_pref("network.trr.early-AAAA, false);
+user_pref("network.trr.uri", https://doh.securedns.eu/dns-query);
+user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS 
 user_pref("network.security.esni.enabled", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("pdfjs.disabled", true);
@@ -280,7 +283,7 @@ user_pref("security.insecure_field_warning.contextual.enabled", true);
 user_pref("security.insecure_password.ui.enabled", true);
 user_pref("security.mixed_content.block_active_content", true);
 user_pref("security.mixed_content.block_display_content", true);
-user_pref("security.OCSP.enabled", 1);
+user_pref("security.OCSP.enabled", 0);
 user_pref("security.OCSP.require", true);
 user_pref("security.OCSP.timeoutMilliseconds.hard", 10000);
 user_pref("security.OCSP.timeoutMilliseconds.soft", 2500);
@@ -384,6 +387,7 @@ user_pref("webgl.min_capability_mode", true);
 //user_pref("browser.sessionstore.max_windows_undo", 0);
 //user_pref("browser.sessionstore.max_tabs_undo", 0);
 //user_pref("browser.sessionhistory.max_entries", 1);
+//user_pref("breakpad.reportURL", "");
 user_pref("browser.sessionstore.interval", 300000);
 //user_pref("ui.use_standins_for_native_colors", true);
 //user_pref("privacy.userContext.longPressBehavior", 2);
@@ -393,6 +397,7 @@ user_pref("browser.sessionstore.interval", 300000);
 //user_pref("browser.safebrowsing.provider.google.lists:
 //user_pref("privacy.donottrackheader.enabled", true);
 //user_pref("media.eme.enabled", true);
+//user_pref("layout.css.devPixelsPerPx", 1.25; //macOS Retina
 //
 // In case you enabled privacy.resistFingerprinting you don't need the following entries:
 //user_pref("dom.enable_performance", false);
@@ -429,3 +434,5 @@ user_pref("urlclassifier.trackingWhitelistTable", false);
 user_pref("urlclassifier.blockedTable", false);
 user_pref("urlclassifier.disallow_completions", false);
 user_pref("browser.safebrowsing.provider.google.updateURL", "");
+// Linux
+//user_pref("widget.content.gtk-theme-override", Adwaita:light);
