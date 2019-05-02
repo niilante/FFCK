@@ -126,3 +126,4 @@
 * [Mozilla Snippet concerns](https://old.reddit.com/r/privacytoolsIO/comments/abfgj5/mozilla_responds_to_bookingcom_snippet_concerns/)
 * [Mozilla's creepy Mr Robot stunt in Firefox flops in touching tribute to TV show's 2nd season (theregister.co.uk)](https://www.theregister.co.uk/2017/12/18/mozilla_mr_robot_firefox_promotion/) 
 * [Switch to WebExtensions (blog.mozilla.org)](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
+* [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
