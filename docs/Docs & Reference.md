@@ -44,6 +44,7 @@
 ### About:config related
 
 * [About:config entries - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/About:config_entries)
+* [Compare different user.js (jm42.github.io)](https://jm42.github.io/compare-user.js/)
 
 
 ### About:flags
