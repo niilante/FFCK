@@ -86,12 +86,12 @@
 ### Mozilla Themes
 
 * [Shadowfox (github.com)](https://github.com/overdodactyl/ShadowFox)
-* [Quantum Nox (github.com)](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme) 
+* [Quantum Nox (github.com)](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme)
 
 
 ### Tor Related
 
-* [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject) 
+* [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject)
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
 * [The Design and Implementation of the Tor Browser (torproject.org)](https://www.torproject.org/projects/torbrowser/design/)
 * [Tor Browser user.js (gitweb.torproject.org)](https://gitweb.torproject.org/tor-browser.git/plain/browser/app/profile/firefox.js)
@@ -109,7 +109,7 @@
 
 ### Test Pages & Resources
 
-* [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/) 
+* [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
 * [Privacy Online Test And Resource Compendium (POTARC) (github.com)](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
 
@@ -122,9 +122,10 @@
 * [Google Analytics is used to track users (github.com/)](https://github.com/mozilla/addons-frontend/issues/2785)
 * [Firefox Test Pilot (testpilot.firefox.com)](https://testpilot.firefox.com/)
 * [Mozilla retires Firefox’s sponsored tiles, hunts for new revenue streams (arstechnica.com)](https://arstechnica.com/information-technology/2015/12/firefox-retires-much-maligned-sponsored-tiles-hunts-for-new-revenue-streams/)
-* [Mozilla ships Cliqz experiment in Germany for ~1% of new installs, collects surf data, including URLs (reddit.com)](https://old.reddit.com/r/firefox/comments/74n0b2/mozilla_ships_cliqz_experiment_in_germany_for_1/) 
+* [Mozilla ships Cliqz experiment in Germany for ~1% of new installs, collects surf data, including URLs (reddit.com)](https://old.reddit.com/r/firefox/comments/74n0b2/mozilla_ships_cliqz_experiment_in_germany_for_1/)
 * [Mozilla Tracking Test (github.com)](https://github.com/mozilla/tracking-test)
 * [Mozilla Snippet concerns](https://old.reddit.com/r/privacytoolsIO/comments/abfgj5/mozilla_responds_to_bookingcom_snippet_concerns/)
-* [Mozilla's creepy Mr Robot stunt in Firefox flops in touching tribute to TV show's 2nd season (theregister.co.uk)](https://www.theregister.co.uk/2017/12/18/mozilla_mr_robot_firefox_promotion/) 
+* [Mozilla's creepy Mr Robot stunt in Firefox flops in touching tribute to TV show's 2nd season (theregister.co.uk)](https://www.theregister.co.uk/2017/12/18/mozilla_mr_robot_firefox_promotion/)
 * [Switch to WebExtensions (blog.mozilla.org)](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
 * [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
+* [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)

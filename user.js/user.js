@@ -1,13 +1,14 @@
 // Temp workaround for invalid add-on certificates
+// https://gist.github.com/CHEF-KOCH/0b4e22b2eb30ddc4211f5f8855eae59e
 // https://discourse.mozilla.org/t/certificate-issue-causing-add-ons-to-be-disabled-or-fail-to-install/39047
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1548973
 // https://twitter.com/statuses/1124527050490933248
-user_pref("xpinstall.signatures.required", false);
-user_pref("app.normandy.enabled", true);
-user_pref("app.normandy.first_run", true);
+//user_pref("xpinstall.signatures.required", false);
+//user_pref("app.normandy.enabled", true);
+//user_pref("app.normandy.first_run", true);
 
-// Fix is to install 66.0.4, the entry gets removed/changed OR/AND
-// https://storage.googleapis.com/moz-fx-normandy-prod-addons/extensions/hotfix-update-xpi-intermediate%40mozilla.com-1.0.2-signed.xpi /7works also with 66.0.3
+// Fix is to install 66.0.4, the entry gets removed/changed OR/AND use - can take up to 6 hours to take effect!
+// https://storage.googleapis.com/moz-fx-normandy-prod-addons/extensions/hotfix-update-xpi-intermediate%40mozilla.com-1.0.2-signed.xpi //works with 66.0.3+
 
 ///
 //
@@ -53,7 +54,7 @@ user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
-user_pref("browser.newtabpage.activity-stream.disableSnippets", true); 
+user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "{}");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
@@ -241,7 +242,7 @@ user_pref("network.proxy.socks_remote_dns", true);
 //user_pref("network.trr.wait-for-portal", true);
 user_pref("network.trr.early-AAAA, false);
 user_pref("network.trr.uri", https://doh.securedns.eu/dns-query);
-user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS 
+user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS
 user_pref("network.security.esni.enabled", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("pdfjs.disabled", true);
@@ -434,7 +435,7 @@ user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
-user_pref("browser.safebrowsing.enabled", false); 
+user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("urlclassifier.downloadAllowTable", false);
