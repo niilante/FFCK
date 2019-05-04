@@ -1,3 +1,9 @@
+// Temp workaround for invalid add-on certificates
+// https://discourse.mozilla.org/t/certificate-issue-causing-add-ons-to-be-disabled-or-fail-to-install/39047
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1548973
+// https://twitter.com/statuses/1124527050490933248
+user_pref("xpinstall.signatures.required", false); // Fix is to install 66.0.4, the entry gets removed/changed
+///
 //
 // Problematic (defaults)
 //user_pref("privacy.resistFingerprinting", true);
