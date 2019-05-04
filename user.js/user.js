@@ -2,7 +2,13 @@
 // https://discourse.mozilla.org/t/certificate-issue-causing-add-ons-to-be-disabled-or-fail-to-install/39047
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1548973
 // https://twitter.com/statuses/1124527050490933248
-user_pref("xpinstall.signatures.required", false); // Fix is to install 66.0.4, the entry gets removed/changed
+user_pref("xpinstall.signatures.required", false);
+user_pref("app.normandy.enabled", true);
+user_pref("app.normandy.first_run", true);
+
+// Fix is to install 66.0.4, the entry gets removed/changed OR/AND
+// https://storage.googleapis.com/moz-fx-normandy-prod-addons/extensions/hotfix-update-xpi-intermediate%40mozilla.com-1.0.2-signed.xpi /7works also with 66.0.3
+
 ///
 //
 // Problematic (defaults)
