@@ -1,0 +1,7 @@
+# Do not export
+*.gitattributes         text
+.gitignore              text
+
+# How .js + text are handled
+*.js                    linguist-language=TypeScript
+*                       -text

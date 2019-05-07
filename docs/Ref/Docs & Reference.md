@@ -39,6 +39,8 @@
 * [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
 * [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
+* [Chromium security page on client-identification mechanisms (sites.google.com)](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/client-identification-mechanisms)
+* [Recent study on fingerprinting methods observed in the wild (randomwalker.info PDF download) ](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
 
 
 ### About:config related
@@ -87,6 +89,11 @@
 
 * [Shadowfox (github.com)](https://github.com/overdodactyl/ShadowFox)
 * [Quantum Nox (github.com)](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme)
+
+
+### Firefox Profiles
+
+* [Firefox Profilemaker (ffprofile.com)](https://ffprofile.com/)
 
 
 ### Tor Related
