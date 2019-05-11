@@ -1,16 +1,3 @@
-// Temp workaround for invalid add-on certificates
-// https://gist.github.com/CHEF-KOCH/0b4e22b2eb30ddc4211f5f8855eae59e
-// https://discourse.mozilla.org/t/certificate-issue-causing-add-ons-to-be-disabled-or-fail-to-install/39047
-// https://bugzilla.mozilla.org/show_bug.cgi?id=1548973
-// https://twitter.com/statuses/1124527050490933248
-//user_pref("xpinstall.signatures.required", false);
-//user_pref("app.normandy.enabled", true);
-//user_pref("app.normandy.first_run", true);
-
-// Fix is to install 66.0.4, the entry gets removed/changed OR/AND use - can take up to 6 hours to take effect!
-// https://storage.googleapis.com/moz-fx-normandy-prod-addons/extensions/hotfix-update-xpi-intermediate%40mozilla.com-1.0.2-signed.xpi //works with 66.0.3+
-
-///
 //
 // Problematic (defaults)
 //user_pref("privacy.resistFingerprinting", true);
@@ -156,7 +143,6 @@ user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("extensions.allowPrivateBrowsingByDefault", false);
-user_pref("extensions.allowPrivateBrowsingByDefault", false);
 user_pref("extensions.blocklist.enabled", true);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%20/%20/");
 user_pref("extensions.formautofill.creditCards.available", false);
@@ -200,7 +186,6 @@ user_pref("layout.css.visited_links_enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("loop.logDomains", false);
 user_pref("media.autoplay.allow-muted", false);
-user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.blackList-override-default", true);
 user_pref("media.autoplay.block-webaudio", true);
 user_pref("media.autoplay.blocked", 1);
@@ -237,7 +222,7 @@ user_pref("network.manage-offline-status", false);
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false);
 user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
-user_pref("network.protocol-handler.expose-all", false);
+user_pref("network.protocol-handler.expose-all", true);
 user_pref("network.protocol-handler.expose.about", true);
 user_pref("network.protocol-handler.expose.blob", true);
 user_pref("network.protocol-handler.expose.chrome", true);
@@ -265,7 +250,7 @@ user_pref("network.proxy.socks_remote_dns", true);
 //user_pref("network.trr.wait-for-portal", true);
 user_pref("network.trr.early-AAAA, false);
 user_pref("network.trr.uri", https://doh.securedns.eu/dns-query);
-user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS
+user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS example
 user_pref("network.security.esni.enabled", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("pdfjs.disabled", true);
@@ -401,9 +386,11 @@ user_pref("toolkit.telemetry.bhrping.enabled", false);
 user_pref("toolkit.telemetry.enabled", false);
 user_pref("toolkit.telemetry.firstshutdownping.enabled", false);
 user_pref("toolkit.telemetry.hybridcontent.enabled", false);
+user_pref("browser.ping-centre.telemetry", false);
 user_pref("toolkit.telemetry.newprofileping.enabled", false);
 user_pref("toolkit.telemetry.shutdownpingsender.enabled", false);
 user_pref("toolkit.telemetry.unified", false);
+user_pref("toolkit.telemetry.debugSlowSql", false);
 user_pref("toolkit.telemetry.updateping.enabled", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("urlclassifier.features.cryptomining.blacklistTables", "base-cryptomining-track-digest256");
@@ -416,7 +403,7 @@ user_pref("webgl.disabled", true);
 user_pref("webgl.enable-webgl2", true);
 user_pref("webgl.min_capability_mode", false);
 //
-// Problematic or irrelevant in terms of privacy
+// Irrelevant in terms of privacy
 //user_pref("excludeFlashFonts", true); // Firefox >= 52
 //user_pref("excludeJsFonts", true); // Firefox >= 52
 //user_pref("privacy.cpd.siteSettings", false);
@@ -476,7 +463,6 @@ user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
 user_pref("browser.safebrowsing.provider.google.gethashURL", "");
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.enabled", false);
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
 user_pref("urlclassifier.downloadAllowTable", false);
@@ -487,10 +473,8 @@ user_pref("urlclassifier.trackingTable", false);
 user_pref("urlclassifier.trackingWhitelistTable", false);
 user_pref("urlclassifier.blockedTable", false);
 user_pref("urlclassifier.disallow_completions", false);
-user_pref("browser.safebrowsing.provider.google.updateURL", "");
 // Linux
 //user_pref("widget.content.gtk-theme-override", "Breeze");
-
 
 // Network
 user_pref("network.connectivity-service.DNSv4.domain", "");
