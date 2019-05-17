@@ -29,8 +29,9 @@
 ### Templates
 
 * [Policy Templates for Firefox (github.com)](https://github.com/mozilla/policy-templates)
-* [FrontMotion Firefox Community Edition](https://getadmx.com/?Category=FrontMotion)
-* [HardenIT](https://harden.it/)
+* [FrontMotion Firefox Community Edition (getadmx.com)](https://getadmx.com/?Category=FrontMotion)
+* [HardenIT (harden.it)](https://harden.it/)
+* [Official Mozilla SSL Configuration Generator (mozilla.github.io)](https://mozilla.github.io/ssl-config-generator) + ([Source Code](https://github.com/mozilla/ssl-config-generator))
 
 
 ### Misc References
