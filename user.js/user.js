@@ -170,6 +170,7 @@ user_pref("identity.fxaccounts.enabled", false); //Disable sync
 user_pref("layers.acceleration.disabled", true);
 user_pref("layout.spellcheckDefault", 2);
 user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.enabled", true);
 user_pref("intl.accept_languages", "en-US, en");
 user_pref("intl.charset.fallback.utf8_for_file", false);
 user_pref("intl.locale.matchOS", false);
