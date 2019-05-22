@@ -8,6 +8,7 @@
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
 //user_pref("layout.css.isolation.enabled", true); //default
 //user_pref("network.trr.mode", 5); //3
+user_pref("browser.in-content.dark-mode", true);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Workaround for userChrome.css not loading
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
