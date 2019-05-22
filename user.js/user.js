@@ -8,6 +8,8 @@
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
 //user_pref("layout.css.isolation.enabled", true); //default
 //user_pref("network.trr.mode", 5); //3
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("alerts.showFavicons", true);
 user_pref("browser.backspace_action", 2);
 user_pref("extensions.shield-recipe-client.first_run", false);
@@ -45,7 +47,6 @@ user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "{}");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
@@ -279,7 +280,6 @@ user_pref("privacy.cpd.offlineApps", true);
 user_pref("privacy.cpd.sessions", true);
 user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
-user_pref("privacy.resistFingerprinting", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
