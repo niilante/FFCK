@@ -125,3 +125,8 @@ The short answer is yes, Tor not only has additional anti-fingerprinting related
 Firefox 66 changed the storage backend from json blobs to IndexedDB files, in other words during this migration process it's very much likely that e.g. Tapermonkey or the internal database gets corrupted. The same can happen with your passwords whenever `logins.json` or/and `key3.DB` gets corrupted you might [lose all of your passwords](https://support.mozilla.org/en-US/questions/1181868). I highly suggest that you use KeePass or another password manager instead of Mozilla's own password manager function. 
 
 
+### CanvasBlocker extension Vs. the Firefox integrated solution
+
+The integrated fingerprinting method is (for now) disabled in the configuration due to several reasons but let me explain the basics first.
+
+Mozilla Firefox uses the same technique as the Tor Browser (_which is not really a surprise_), the technique will always returns a "white" canvas fingerprint to the website, tis means a website can detect that the current browser is blocking canvas fingerprinting methods. The difference here between CanvasBlocker is that (by default) it will return a "random" generated canvas ID with each new request. In theory this could make it harder for the website to detect if you faked your ID or not. The downside is that it will make your Browser slower (we are talking about some milliseconds). Personally I would go with the addon and that's the reason why the integrated method is disabled in my configuration.
