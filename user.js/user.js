@@ -32,7 +32,7 @@ user_pref("browser.contentblocking.cryptomining.preferences.ui.enabled", true);
 user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled", true);
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 user_pref("browser.discovery.enabled", false);
-user_pref("browser.display.use_document_fonts", 0);
+user_pref("browser.display.use_document_fonts", 1);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.forbid_open_with", false);
 user_pref("browser.download.manager.retention", 0);
