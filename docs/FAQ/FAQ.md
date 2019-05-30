@@ -110,7 +110,7 @@ In case you use uBlock copy the following rules under Options > My Rules and the
 
 The config related toggle is `privacy.resistFingerprint` + `privacy.firstparty.isolate` which is disabled in this configuration for several reasons, not only because it _can_ break Google's CAPTCHA system but moreover because it breaks a [lot of other pages too](https://bugzilla.mozilla.org/show_bug.cgi?id=1299996).
 
-Because of certain problems with time/Google I decided to not enable several anti-fingerprinting features. It's also questionable if they really increase your privacy since there are other methods on the web which bypass them.
+Because of certain problems with time/Google I decided to not enable several anti-fingerprinting features. It's also questionable if they really increase your privacy since there are other methods on the web which bypasses them.
 
 
 
@@ -130,3 +130,8 @@ Firefox 66 changed the storage backend from json blobs to IndexedDB files, in ot
 The integrated fingerprinting method is (for now) disabled in the configuration due to several reasons but let me explain the basics first.
 
 Mozilla Firefox uses the same technique as the Tor Browser (_which is not really a surprise_), the technique will always returns a "white" canvas fingerprint to the website, tis means a website can detect that the current browser is blocking canvas fingerprinting methods. The difference here between CanvasBlocker is that (by default) it will return a "random" generated canvas ID with each new request. In theory this could make it harder for the website to detect if you faked your ID or not. The downside is that it will make your Browser slower (we are talking about some milliseconds). Personally I would go with the addon and that's the reason why the integrated method is disabled in my configuration.
+
+
+### Disabling locked toolkit.telemetry.enabled (and others)
+
+Manually create (or download) the file `autoconfig.js` (_other names won't work_) it belongs into the `/defaults/pref/autoconfig.js` dir. In my repo it's [this file](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/autoconfig.js) and drop it together with the [mozilla.cfg](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/mozilla.cfg) into your Firefox profile.
