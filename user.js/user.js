@@ -8,6 +8,16 @@
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
 //user_pref("layout.css.isolation.enabled", true); //default
 //user_pref("network.trr.mode", 5); //3
+//user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
+user_pref("stoolkit.telemetry.firstShutdownPing.enabled", false);
+user_pref("security.identitypopup.recordEventElemetry", false);
+user_pref("security.certerrors.recordEventTelemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.ut.events", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
+user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion", false);
 user_pref("browser.in-content.dark-mode", true);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Workaround for userChrome.css not loading
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
