@@ -14,6 +14,23 @@
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 
 
+#### Mozilla Autoconfig 
+* [Debugging Firefox Autoconfig Problems](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
+* [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
+* [Firefox Autoconfig Files Continued](https://mike.kaply.com/2012/03/20/customizing-firefox-autoconfig-files-continued/)
+* [Advanced Autoconfig Files](https://mike.kaply.com/2012/03/22/customizing-firefox-advanced-autoconfig-files/)
+* [The SIPB Firefox Locker - Maintainers](http://web.mit.edu/~firefox/www/maintainers/autoconfig.html)
+* [Thunderbird_Configuration](https://wpkg.org/Thunderbird#Thunderbird_Configuration)
+* [Configuration utilities for administrators](http://kb.mozillazine.org/Configuration_utilities_for_administrators)
+* [Locking preferences](http://kb.mozillazine.org/Locking_preferences)
+* [Mission Control Desktop AKA AutoConfig](https://developer.mozilla.org/docs/MCD,_Mission_Control_Desktop_AKA_AutoConfig)
+* [A brief guide to Mozilla preferences](https://developer.mozilla.org/docs/Mozilla/Preferences/A_brief_guide_to_Mozilla_preferences)
+* [Deploying Firefox in an Enterprise Environment](https://developer.mozilla.org/Firefox/Enterprise_deployment)
+* [Deploying Thunderbird in the Enterprise](https://developer.mozilla.org/docs/Mozilla/Thunderbird/Deploying_Thunderbird_in_the_Enterprise)
+* [Mozilla - /extensions/pref/autoconfig](https://dxr.mozilla.org/mozilla-central/source/extensions/pref/autoconfig/)
+* [Mozilla - /modules/libpref](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/)
+
+
 ### Extensions
 * [Catalog of classic Firefox add-ons created before WebExtensions apocalypse (github.com)](https://github.com/JustOff/ca-archive)
 
