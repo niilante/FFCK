@@ -1,14 +1,19 @@
 //
 // Problematic (defaults)
 //user_pref("privacy.resistFingerprinting", true);
-//user_pref("privacy.resistFingerprinting.auto.DeclineNoUserInputCanvasPrompts", true);
 //user_pref("privacy.resistFingerprinting.jsmloglevel", "Warn");
 //user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
+user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 //
 //user_pref("browser.chrome.errorReporter.enabled", false); //default
 //user_pref("layout.css.isolation.enabled", true); //default
 //user_pref("network.trr.mode", 5); //3
 //user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("browser.search.context.loadInBackground", true);
+user_pref("browser.tabs.loadBookmarksInBackground", true);
+user_pref("browser.tabs.insertAfterCurrent", true);
+user_pref("full-screen-api.transition-duration.enter", 100 100);
+user_pref("full-screen-api.transition-duration.leave", 0 0);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.hybridContent.enabled", false);
