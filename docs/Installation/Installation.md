@@ -19,7 +19,7 @@ The `user.js` must be dropped into `~/Library/Application Support/Firefox/Profil
 ### Android
 
 
-On Firefox for Android (Fennec), you need to drop the file to <code>/data/data/org.mozilla.firefox/files/mozilla/XXXXXXXX.your_profile_name</code>. If you use Jolla and run Firefox through Alien Dalvik, the location needs to be prefixed with <code>/opt/alien</code>.
+On Firefox for Android (Fenix), you need to drop the file to <code>/data/data/org.mozilla.firefox/files/mozilla/XXXXXXXX.your_profile_name</code>. If you use Jolla and run Firefox through Alien Dalvik, the location needs to be prefixed with <code>/opt/alien</code>.
 
 
 ### Sailfish OS + Alien Dalvik
@@ -77,6 +77,14 @@ The files belong into the following directories:
 * Check if the syntax doesn't contain any error(s).
 * Make sure the update url is correct.
 * Verify if you settings getting applied, open _about:support_ and check `Important Modified Preferences` which is under the `user.js Preferences` section. 
+
+
+### Installing Android (Fenix) Preview Builds
+1. [Join](https://groups.google.com/forum/#!forum/fenix-nightly) the [Firefox Preview (Fenix) test group](https://groups.google.com/forum/#!forum/fenix-nightly).
+2. [Opt-in](https://play.google.com/apps/testing/org.mozilla.fenix)
+3. Download from the [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.fenix)
+
+If case you would rather download an [APK](https://tools.taskcluster.net/index/project.mobile.fenix.v2.nightly/latest), you can do that too. Keep in mind that manually installed APKs do not auto-update! See above how to deal with the user.js configuration. 
 
 
 Resources
