@@ -135,3 +135,29 @@ Mozilla Firefox uses the same technique as the Tor Browser (_which is not really
 ### Disabling locked toolkit.telemetry.enabled (and others)
 
 Manually create (or download) the file `autoconfig.js` (_other names won't work_) it belongs into the `/defaults/pref/autoconfig.js` dir. In my repo it's [this file](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/autoconfig.js) and drop it together with the [mozilla.cfg](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/mozilla.cfg) into your Firefox profile.
+
+### Which extensions could I use to reduce tracking behavior?
+
+That's a difficult question because every user has other needs, so I'll only list the extension which I used in my daily Firefox times. 
+
+* [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/)
+* [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/)
+* [Privacy Settings](https://add0n.com/privacy-settings.html)
+* [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
+* [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
+* ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
+* [CanvasBlocker](https://addons.mozilla.org/firefox/addon/canvasblocker/)
+* [IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)
+* [Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)
+* [Smart Referer](https://addons.mozilla.org/firefox/addon/smart-referer/)
+* [ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/) 
+* [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/)
+* [ClearURLs](https://addons.mozilla.org/firefox/addon/clearurls/)
+* [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+* [Redirector](https://addons.mozilla.org/firefox/addon/redirector/)
+* [Request Control](https://addons.mozilla.org/en-US/firefox/addon/requestcontrol)
+* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/)
+* ~~Temporary Containers~~ [Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations) with [Integrations](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)
+* [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/) (because I like to control it per-site basis) 
+
+Keep in mind that I'm a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you that "they are the best" is always a bad idea.
