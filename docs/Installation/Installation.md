@@ -1,6 +1,6 @@
 ### Linux
 
-Drop the hardened user.js file into your Firefox profile directory at <code>~/.mozilla/firefox/XXXXXXXX.your_profile_name</code> and verify that the settings are effective from about:support (check the "Important Modified Preferences" and "user.js Preferences" sections).
+Drop the new and hardened user.js file into your Firefox profile directory at <code>~/.mozilla/firefox/XXXXXXXX.your_profile_name</code> and verify that the settings are effective from about:support (check the "Important Modified Preferences" and "user.js Preferences" sections).
 
 If you want to be able to keep your user.js up-to-date with this repository, you can clone the latter in the main Mozilla directory and create a link to the user.js file from your profile:
 
@@ -80,16 +80,8 @@ The files belong into the following directories:
 
 
 ### Installing Android (Fenix) Preview Builds
-1. [Join](https://groups.google.com/forum/#!forum/fenix-nightly) the [Firefox Preview (Fenix) test group](https://groups.google.com/forum/#!forum/fenix-nightly).
-2. [Opt-in](https://play.google.com/apps/testing/org.mozilla.fenix)
-3. Download from the [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.fenix)
+1. [Join](https://groups.google.com/forum/#!forum/fenix-nightly) the [Firefox Preview (Fenix) test group].(https://groups.google.com/forum/#!forum/fenix-nightly).
+2. [Opt-in](https://play.google.com/apps/testing/org.mozilla.fenix).
+3. Download from the [Google Play Store](https://play.google.com/store/apps/details?id=org.mozilla.fenix).
 
-If case you would rather download an [APK](https://tools.taskcluster.net/index/project.mobile.fenix.v2.nightly/latest), you can do that too. Keep in mind that manually installed APKs do not auto-update! See above how to deal with the user.js configuration. 
-
-
-Resources
-========
-
-* [Profiles - Where Firefox stores your bookmarks, passwords and other user data (support.mozilla.org/)](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data)
-* [Use the Profile Manager to create and remove Firefox profiles (support.mozilla.org)](https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-firefox-profiles)
-* [user.js (forums.mozillazine.org)](http://forums.mozillazine.org/viewtopic.php?f=38&t=2477123)
+If case you would rather download an [APK](https://tools.taskcluster.net/index/project.mobile.fenix.v2.nightly/latest), you can do that too. Keep in mind that manually installed APKs do not auto-update! See above how to deal with the user.js configuration.
