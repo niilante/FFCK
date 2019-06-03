@@ -140,6 +140,10 @@
 * [Privacy Online Test And Resource Compendium (POTARC) (github.com)](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
 
 
+### Bug Reporting under Android 
+* [Report a Firefox Preview bug (bughunterissues.mozilla.community)](https://bughunterissues.mozilla.community/)
+
+
 ### Controversial Topics
 
 * [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy (bugzilla.mozilla.org)](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262)
