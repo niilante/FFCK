@@ -7,6 +7,7 @@ user_pref("browser.tabs.loadBookmarksInBackground", true);
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("full-screen-api.transition-duration.enter", 100 100);
 user_pref("full-screen-api.transition-duration.leave", 0 0);
+user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.prompted", 2);
 user_pref("toolkit.telemetry.rejected", true);
