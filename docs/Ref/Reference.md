@@ -14,6 +14,10 @@
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 
 
+### Shield Studies
+* [Detect (show) Shield Studies (Beta) (jeffersonscher.com/)](https://www.jeffersonscher.com/sumo/shield.php)
+
+
 #### Mozilla Autoconfig 
 * [Debugging Firefox Autoconfig Problems](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
 * [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
