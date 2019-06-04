@@ -3,6 +3,7 @@ user_pref("app.normandy.enabled", false);
 user_pref("app.update.auto", false);
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
+user_pref("dom.ipc.processPriorityManager.enabled", true);
 user_pref("dom.targetBlankNoOpener.enabled", false);
 user_pref("font.name.serif.x-unicode", "Bitstream Vera Sans");
 user_pref("font.name.serif.x-western", "Bitstream Vera Sans");
