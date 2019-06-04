@@ -68,6 +68,8 @@ user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.launcherProcess.enabled", true);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.cfr", "");
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
