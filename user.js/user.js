@@ -4,6 +4,8 @@ user_pref("app.update.auto", false);
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
 user_pref("browser.tabs.loadBookmarksInBackground", true);
+user_pref("privacy.resistFingerprinting.letterboxing", false);
+user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "");
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("full-screen-api.transition-duration.enter", 100 100);
 user_pref("full-screen-api.transition-duration.leave", 0 0);
