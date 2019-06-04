@@ -15,7 +15,8 @@
 
 
 ### Shield Studies
-* [Detect (show) Shield Studies (Beta) (jeffersonscher.com/)](https://www.jeffersonscher.com/sumo/shield.php)
+
+* [Detect (show) Shield Studies (Beta) (jeffersonscher.com)](https://www.jeffersonscher.com/sumo/shield.php)
 
 
 #### Mozilla Autoconfig 
@@ -36,6 +37,7 @@
 
 
 ### Extensions
+
 * [Catalog of classic Firefox add-ons created before WebExtensions apocalypse (github.com)](https://github.com/JustOff/ca-archive)
 
 
@@ -77,7 +79,7 @@
 * [Diff between various Firefox .js configurations in upcoming releases (cat-in-136.github.io)](https://cat-in-136.github.io/)
 
 
-### Autoplay
+### Autoplay Info
 
 - [Allow or block media autoplay in Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/block-autoplay#w_add-sites-to-your-list-to-autoplay-media)
 
@@ -150,6 +152,7 @@
 
 ### Controversial Topics
 
+* [An index of discussions about the Cliqz controversy (old.reddit.com)](https://old.reddit.com/r/firefox/comments/756s0f/an_index_of_discussions_about_the_cliqz/)
 * [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy (bugzilla.mozilla.org)](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262)
 * [Firefox Shield Studies (wiki.mozilla.org/)](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies)
 * [Firefox is on a slippery slope (drewdevault.com)](https://drewdevault.com/2017/12/16/Firefox-is-on-a-slippery-slope.html)
