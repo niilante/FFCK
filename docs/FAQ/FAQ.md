@@ -161,3 +161,8 @@ That's a difficult question because every user has other needs, so I'll only lis
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/) (because I like to control it per-site basis) 
 
 Keep in mind that I'm a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you that "they are the best" is always a bad idea.
+
+### Where does Firefox Multi-Account Containers Extension store its settings?
+
+The extension localstorage is located under `<your-profile-folder>\storage\default\moz-extension+++<your-extension-id>...\idb\....sqlite`. The ID for the extension itself is a random string that's unique you can read it via developer tools or `moz-extension://<your-ID-here>/confirm-page.html?url=...`
+
