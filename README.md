@@ -65,3 +65,11 @@ Test pages like [Panopticlick](https://panopticlick.eff.org/) have several probl
 * A test pages does not covers every scenario, it is possible that new tricks (unknown ones) are already available on the internet which are (not yet) covered.
 * You don't need to hide/fake every possible outcome because that forces a website to develop new techniques to bypass it - as often done e.g. The New York Times detects ad-blockers and each time this got "fixed" it ended up with more trackers & anti-adblock scripts. The goal should be to _swim with the mass_.
 * The test page or the results itself can be manipulated to fake the results or to _corrupt_ the database (with wrong results).
+
+### How do I switch from Chrome to Firefox?
+
+There are several pages you can read to make your switch easier:
+
+* [Switching to Firefox (reddit.com)](https://old.reddit.com/r/firefox/wiki/switching-to-firefox)
+* [Join Firefox (blog.mozilla.org)](https://blog.mozilla.org/firefox/join-firefox/)
+* [Switching to Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/switching-chrome-firefox)
