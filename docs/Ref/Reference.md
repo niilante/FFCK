@@ -14,6 +14,10 @@
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 
 
+### Firefox's Enhanced Tracking Protection whitelist
+
+* [Disconnect whitelist (disconnect.me)](https://disconnect.me/trackerprotection/unblocked)
+
 ### Shield Studies
 
 * [Detect (show) Shield Studies (Beta) (jeffersonscher.com)](https://www.jeffersonscher.com/sumo/shield.php)
