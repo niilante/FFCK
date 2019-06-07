@@ -11,6 +11,7 @@ user_pref("browser.tabs.loadBookmarksInBackground", true);
 user_pref("privacy.resistFingerprinting.letterboxing", false);
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
 user_pref("browser.tabs.insertAfterCurrent", true);
+user_pref("browser.tabs.unloadOnLowMemory", true);
 user_pref("full-screen-api.transition-duration.enter", 100 100);
 user_pref("full-screen-api.transition-duration.leave", 0 0);
 user_pref("toolkit.cosmeticAnimations.enabled", false);
