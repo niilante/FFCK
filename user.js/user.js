@@ -1,6 +1,9 @@
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.update.auto", false);
+user_pref("gfx.content.azure.accelerated", true);
+user_pref("gfx.canvas.azure.accelerated", true);
+user_pref("reader.parse-on-load.enabled", false);
 user_pref("accessibility.blockautorefresh", true); // Workaround
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
@@ -33,7 +36,7 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Worka
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("alerts.showFavicons", true);
-user_pref("browser.backspace_action", 2);
+user_pref("browser.backspace_action", 0); //2
 user_pref("extensions.shield-recipe-client.first_run", false);
 user_pref("extensions.shield-recipe-client.user_id", "14a0a78f-38a0-4468-bddd-d482c8950b3c");
 user_pref("alerts.useSystemBackend", true);
@@ -113,8 +116,10 @@ user_pref("browser.startup.page", 3);
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.loadDivertedInBackground", true);
+user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.tabs.warnOnClose", false);
 user_pref("browser.tabs.warnOnOpen", false);
+user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("dom.popup_allowed_events", "change click dblclick mouseup notificationclick reset submit");
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);
 user_pref("browser.send_pings.require_same_host", true);
@@ -159,7 +164,7 @@ user_pref("dom.flyweb.enabled", false);
 user_pref("dom.forms.autocomplete.formautofill", false);
 user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled",	false);
 user_pref("dom.ipc.plugins.reportCrashURL", false);
-user_pref("dom.ipc.processCount", 12);
+user_pref("dom.ipc.processCount", 64);
 user_pref("dom.media.autoplay.autoplay-policy-api", true);
 user_pref("dom.mozTCPSocket.enabled", false);
 user_pref("dom.network.enabled", false);
@@ -198,7 +203,7 @@ user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.update.enabled", true);
 user_pref("font.blacklist.underline_offset", "");
-user_pref("general.autoScroll", false);
+user_pref("general.autoScroll", true);
 user_pref("general.buildID.override", "20100101");
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.logging.enabled", false);
@@ -479,7 +484,7 @@ user_pref("privacy.donottrackheader.value", 0);
 // In case you enabled privacy.resistFingerprinting you don't need the following entries:
 //user_pref("dom.enable_performance", false);
 //user_pref("dom.enable_resource_timing", false);
-//user_pref("media.webspeech.synth.enabled", false);
+user_pref("media.webspeech.synth.enabled", false);
 //user_pref("media.video_stats.enabled", false);
 //user_pref("device.sensors.enabled", false);
 //user_pref("dom.maxHardwareConcurrency", 2);
