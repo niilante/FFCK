@@ -1,6 +1,7 @@
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.update.auto", false);
+user_pref("accessibility.blockautorefresh", true); // Workaround
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
 user_pref("dom.ipc.processPriorityManager.enabled", true);
