@@ -18,6 +18,12 @@
 
 * [Disconnect whitelist (disconnect.me)](https://disconnect.me/trackerprotection/unblocked)
 
+
+### Source Code indexing tools
+
+* [Searchfox (searchfox.org)](https://searchfox.org/) ([source code](https://github.com/mozsearch/mozsearch))
+
+
 ### Shield Studies
 
 * [Detect (show) Shield Studies (Beta) (jeffersonscher.com)](https://www.jeffersonscher.com/sumo/shield.php)
