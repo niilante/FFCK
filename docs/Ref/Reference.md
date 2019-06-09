@@ -162,6 +162,7 @@
 
 ### Controversial Topics
 
+* [Mozilla Firefox gets a Premium Version starting Oct. 2019](https://t3n.de/news/mozilla-ceo-chris-beard-anbieten-1168614/)
 * [An index of discussions about the Cliqz controversy (old.reddit.com)](https://old.reddit.com/r/firefox/comments/756s0f/an_index_of_discussions_about_the_cliqz/)
 * [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy (bugzilla.mozilla.org)](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262)
 * [Firefox Shield Studies (wiki.mozilla.org/)](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies)
