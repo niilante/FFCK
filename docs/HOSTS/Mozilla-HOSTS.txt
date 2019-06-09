@@ -1,4 +1,5 @@
 ## Block Mozilla related connections, services & websites
+# v0.9
 
 #0.0.0.0 30boxes.com
 #0.0.0.0 accounts.firefox.com
@@ -41,7 +42,6 @@
 0.0.0.0 mozsocial.cliqz.com
 0.0.0.0 sb-ssl.google.com
 0.0.0.0 search.services.mozilla.com
-0.0.0.0 self-repair.mozilla.org
 0.0.0.0 self-repair.mozilla.org
 0.0.0.0 services.addons.mozilla.org
 0.0.0.0 setup.services.mozilla.com
