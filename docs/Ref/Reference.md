@@ -162,6 +162,7 @@
 
 ### Controversial Topics
 
+* [Firefox "Monitor" service uses Google Analytics (mastodon.social)](https://mastodon.social/@CKsTechnologyNews/102244513347194873)
 * [Mozilla Firefox gets a Premium Version starting Oct. 2019 (t3n.de)](https://t3n.de/news/mozilla-ceo-chris-beard-anbieten-1168614/)
 * [An index of discussions about the Cliqz controversy (old.reddit.com)](https://old.reddit.com/r/firefox/comments/756s0f/an_index_of_discussions_about_the_cliqz/)
 * [Mozilla under fire: Inside the 9-day reign of fallen CEO Brendan Eich (cnet.com)](https://www.cnet.com/news/mozilla-under-fire-inside-the-9-day-reign-of-fallen-ceo-brendan-eich/)
