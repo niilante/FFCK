@@ -12,6 +12,7 @@
 * [Mozilla Privacy Principles (wiki.mozilla.org)](https://wiki.mozilla.org/Privacy/Principles)
 * [Mozilla Security Blog (blog.mozilla.org)](https://blog.mozilla.org/security/category/security/)
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
+* [Firefox Site Compatibility documents (fxsitecompat.dev)](https://www.fxsitecompat.dev/en-CA/docs/)
 
 
 ### Firefox's Enhanced Tracking Protection whitelist
@@ -21,7 +22,7 @@
 
 ### Add-on signing check
 
-* [Disable add-on signing check in Release (all) versions of Firefox](https://stackoverflow.com)(https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
+* [Disable add-on signing check in Release (all) versions of Firefox (https://stackoverflow.com)](https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
 
 
 ### Source Code indexing tools
