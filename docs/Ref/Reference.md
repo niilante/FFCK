@@ -21,7 +21,7 @@
 
 ### Add-on signing check
 
-* [Disable add-on signing check in Release (all) versions of Firefox (https://stackoverflow.com)(https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
+* [Disable add-on signing check in Release (all) versions of Firefox] (https://stackoverflow.com)(https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
 
 
 ### Source Code indexing tools
@@ -72,7 +72,7 @@
 * [Official Mozilla SSL Configuration Generator (mozilla.github.io)](https://mozilla.github.io/ssl-config-generator) + ([Source Code](https://github.com/mozilla/ssl-config-generator))
 
 
-### Misc References
+### Other References
 
 * [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
 * [Certificate revocation list (wikipedia.org)](https://en.wikipedia.org/wiki/Certificate_revocation_list)
@@ -81,6 +81,7 @@
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
 * [Chromium security page on client-identification mechanisms (sites.google.com)](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/client-identification-mechanisms)
 * [Recent study on fingerprinting methods observed in the wild (randomwalker.info PDF download) ](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
+* [Is Firefox better than Chrome? It comes down to privacy. (washingtonpost.com)](https://www.washingtonpost.com/gdpr-consent/?destination=%2ftechnology%2f2019%2f06%2f21%2fgoogle-chrome-has-become-surveillance-software-its-time-switch%2f%3f)
 
 
 ### About:config related
