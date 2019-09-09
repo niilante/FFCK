@@ -84,6 +84,7 @@
 * [Recent study on fingerprinting methods observed in the wild (randomwalker.info PDF download)](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
 * [Is Firefox better than Chrome? It comes down to privacy. (washingtonpost.com)](https://www.washingtonpost.com/gdpr-consent/?destination=%2ftechnology%2f2019%2f06%2f21%2fgoogle-chrome-has-become-surveillance-software-its-time-switch%2f%3f)
 * [Mozilla Firefox Hardware Report (hardware.metrics.mozilla.com)](https://hardware.metrics.mozilla.com/)
+* [mozregression (https://mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
 
 
 ### About:config related
