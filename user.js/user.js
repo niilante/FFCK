@@ -1,3 +1,4 @@
+user_pref("layout.frame_rate.precise", true); //disable in case you have scrolling issues
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.update.auto", false);
@@ -8,7 +9,6 @@ user_pref("reader.parse-on-load.enabled", false);
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
 user_pref("dom.ipc.processPriorityManager.enabled", true);
-user_pref("dom.targetBlankNoOpener.enabled", false);
 user_pref("font.name.serif.x-unicode", "Bitstream Vera Sans");
 user_pref("font.name.serif.x-western", "Bitstream Vera Sans");
 user_pref("browser.tabs.loadBookmarksInBackground", true);
@@ -108,7 +108,6 @@ user_pref("browser.search.region", "US");
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
 user_pref("browser.security.newcerterrorpage.enabled", true);
-user_pref("browser.startup.blankWindow", true);
 user_pref("browser.selfsupport.url", "");
 user_pref("browser.startup.page", 3);
 user_pref("browser.startup.homepage_override.mstone", "ignore");
@@ -169,7 +168,6 @@ user_pref("dom.mozTCPSocket.enabled", false);
 user_pref("dom.network.enabled", false);
 user_pref("network.trr.skip-AAAA-when-not-supported", true);
 user_pref("network.trr.wait-for-A-and-AAAA", true);
-user_pref("dom.serviceWorkers.enabled", false);
 user_pref("dom.telephony.enabled", false);
 user_pref("dom.vibrator.enabled", false);
 user_pref("dom.vr.enabled", false);
@@ -223,7 +221,11 @@ user_pref("javascript.options.wasm", false);
 user_pref("javascript.use_us_english_locale", true);
 user_pref("keyword.enabled", false);
 user_pref("keyword.URL", "");
+user_pref("html5.offmainthread", true);
 user_pref("layers.acceleration.force-enabled", true);
+user_pref("layers.async-video.enabled", true);
+user_pref("layers.offmainthreadcomposition.async-animations", true);
+user_pref("layers.offmainthreadcomposition.enabled", true);
 user_pref("layers.omtp.paint-workers", 4);
 user_pref("layout.css.servo.enable", true);
 user_pref("layout.css.visited_links_enabled", false);
@@ -454,8 +456,6 @@ user_pref("webgl.min_capability_mode", false);
 user_pref("privacy.clearOnShutdown.siteSettings", false);
 //user_pref("browser.sessionstore.resume_from_crash", false);
 //user_pref("browser.sessionstore.max_windows_undo", 0);
-//user_pref("browser.sessionstore.max_tabs_undo", 0);
-//user_pref("browser.sessionhistory.max_entries", 1);
 //user_pref("breakpad.reportURL", "");
 //user_pref("urlclassifier.disallow_completions", "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256");
 //user_pref("browser.safebrowsing.provider.mozilla.lists", "base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256");
@@ -486,7 +486,7 @@ user_pref("media.webspeech.synth.enabled", false);
 //user_pref("device.sensors.enabled", false);
 //user_pref("dom.maxHardwareConcurrency", 2);
 //user_pref("dom.netinfo.enabled", false);
-//user_pref("webgl.enable-debug-renderer-info", false);
+user_pref("webgl.enable-debug-renderer-info", false);
 //user_pref("dom.gamepad.enabled", false);
 //
 user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
@@ -534,6 +534,22 @@ user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
 //user_pref("extensions.greasemonkey.stats.optedin", false);
 //user_pref("extensions.greasemonkey.stats.url", "");
 
+// Memory (old but "good")
+//user_pref("browser.cache.memory.capacity", xx); //set your own amount based on your own needs
+//user_pref("browser.sessionhistory.max_entries", 1);
+//user_pref("browser.sessionstore.max_tabs_undo", 0);
+//user_pref("browser.tabs.animate", false);
+//user_pref("config.trim_on_minimize ", true); //does not exist anymore
+//user_pref("image.mem.max_decoded_image_kb", xx); //set your own amount based on your own needs
+//user_pref("avascript.options.mem.max", xx); //set your own amount based on your own needs
+//user_pref("javascript.options.mem.high_water_mark ", xx); //set your own amount based on your own needs
+
+// To be removed 
+user_pref("print.print_footerleft", "");
+user_pref("print.print_footerright", "");
+user_pref("print.print_headerleft", "");
+user_pref("print.print_headerright", "");
+
 //https://developer.mozilla.org/en-US/docs/Code_snippets/Preferences
 //https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/userAgent
 //user_pref("general.useragent.locale", "en-EN"); //enforce en
@@ -553,3 +569,8 @@ user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
 //user_pref("security.csp.experimentalEnabled", false);
 //user_pref("font.blacklist.underline_offset", "");
 //user_pref("lightweightThemes.update.enabled", false);
+//user_pref("webgl.force-enabled", true);
+//user_pref("browser.startup.blankWindow", true);
+//user_pref("network.dnsCacheEntries", 100);
+//user_pref("dom.serviceWorkers.enabled", false);
+//user_pref("dom.targetBlankNoOpener.enabled", false);
