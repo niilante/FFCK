@@ -4,7 +4,7 @@ user_pref("app.update.auto", false);
 user_pref("gfx.content.azure.accelerated", true);
 user_pref("gfx.canvas.azure.accelerated", true);
 user_pref("reader.parse-on-load.enabled", false);
-user_pref("accessibility.blockautorefresh", true); // Workaround
+//user_pref("accessibility.blockautorefresh", true); // Workaround
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
 user_pref("dom.ipc.processPriorityManager.enabled", true);
@@ -44,7 +44,6 @@ user_pref("app.normandy.remotesettings.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.update.enabled", true);
 user_pref("beacon.enabled", false);
-user_pref("browser.aboutHomeSnippets.updateUrl", "");
 user_pref("browser.bookmarks.max_backups", 0); //3-5 suggestion
 user_pref("browser.cache.disk_cache_ssl", false);
 user_pref("browser.cache.disk.enable", false);
@@ -58,7 +57,7 @@ user_pref("browser.contentblocking.cryptomining.preferences.ui.enabled", true);
 user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled", true);
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 user_pref("browser.discovery.enabled", false);
-user_pref("browser.display.use_document_fonts", 1);
+user_pref("browser.display.use_document_fonts", 0);
 user_pref("browser.download.folderList", 2);
 user_pref("browser.download.forbid_open_with", false);
 user_pref("browser.download.manager.retention", 0);
@@ -77,7 +76,6 @@ user_pref("browser.newtabpage.activity-stream.asrouter.providers.cfr", "");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
-user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "{}");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
@@ -120,7 +118,7 @@ user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.tabs.warnOnClose", false);
 user_pref("browser.tabs.warnOnOpen", false);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
-user_pref("dom.popup_allowed_events", "change click dblclick mouseup notificationclick reset submit");
+user_pref("dom.popup_allowed_events", "change click dblclick mouseup notificationclick reset submit"); //click dblclick
 user_pref("browser.tabs.warnOnCloseOtherTabs", false);
 user_pref("browser.send_pings.require_same_host", true);
 user_pref("browser.send_pings", false);
@@ -166,8 +164,11 @@ user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled",	false);
 user_pref("dom.ipc.plugins.reportCrashURL", false);
 user_pref("dom.ipc.processCount", 64);
 user_pref("dom.media.autoplay.autoplay-policy-api", true);
+user_pref("media.block-autoplay-until-in-foreground", true); 
 user_pref("dom.mozTCPSocket.enabled", false);
 user_pref("dom.network.enabled", false);
+user_pref("network.trr.skip-AAAA-when-not-supported", true);
+user_pref("network.trr.wait-for-A-and-AAAA", true);
 user_pref("dom.serviceWorkers.enabled", false);
 user_pref("dom.telephony.enabled", false);
 user_pref("dom.vibrator.enabled", false);
@@ -180,16 +181,17 @@ user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("extensions.autoDisableScopes", 14);
+user_pref("extensions.getAddons.discovery.api_url", "");
 user_pref("extensions.CanvasBlocker@kkapsner.de.whiteList", "");
 user_pref("extensions.allowPrivateBrowsingByDefault", false);
 user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%20/%20/");
 user_pref("extensions.formautofill.creditCards.available", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.fxmonitor.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
 //user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.shield-recipe-client.api_url", "");
-user_pref("extensions.pocket.enabled", false); //https://www.change.org/p/mozilla-corporation-simple-option-to-disable-pocket-in-firefox
 user_pref("extensions.screenshots.disabled", true);
 user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("full-screen-api.warning.delay", 0);
@@ -202,9 +204,7 @@ user_pref("extensions.screenshots.upload-disabled", true);
 user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.update.enabled", true);
-user_pref("font.blacklist.underline_offset", "");
 user_pref("general.autoScroll", true);
-user_pref("general.buildID.override", "20100101");
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
@@ -227,7 +227,6 @@ user_pref("layers.acceleration.force-enabled", true);
 user_pref("layers.omtp.paint-workers", 4);
 user_pref("layout.css.servo.enable", true);
 user_pref("layout.css.visited_links_enabled", false);
-user_pref("lightweightThemes.update.enabled", false);
 user_pref("loop.logDomains", false);
 user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.blackList-override-default", true);
@@ -303,7 +302,6 @@ user_pref("places.history.enabled", false);
 user_pref("plugin.state.flash", 0);
 user_pref("plugin.state.java", 0);
 user_pref("plugin.state.libgnome-shell-browser-plugin", 0);
-user_pref("plugins.click_to_play", true);
 user_pref("plugins.update.notifyUser", true);
 user_pref("preference security.enterprise_roots.enabled", true);
 user_pref("privacy.clearOnShutdown.cache", true);
@@ -340,7 +338,6 @@ user_pref("security.cert_pinning.enforcement_level", 2);
 user_pref("security.certerrors.permanentOverride", false);
 user_pref("security.csp.enable_violation_events", false);
 user_pref("security.csp.enable", true);
-user_pref("security.csp.experimentalEnabled", false);
 user_pref("security.data_uri.block_toplevel_data_uri_navigations", true);
 user_pref("security.dialog_enable_delay", 500);
 user_pref("security.fileuri.strict_origin_policy", true);
@@ -525,6 +522,7 @@ user_pref("urlclassifier.blockedTable", false);
 user_pref("urlclassifier.disallow_completions", false);
 // Linux
 //user_pref("widget.content.gtk-theme-override", "Breeze");
+user_pref("middlemouse.paste", false);
 
 // Network
 user_pref("network.connectivity-service.DNSv4.domain", "");
@@ -535,3 +533,23 @@ user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
 // Only in case you use GreasyMonkey
 //user_pref("extensions.greasemonkey.stats.optedin", false);
 //user_pref("extensions.greasemonkey.stats.url", "");
+
+//https://developer.mozilla.org/en-US/docs/Code_snippets/Preferences
+//https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/userAgent
+//user_pref("general.useragent.locale", "en-EN"); //enforce en
+//user_pref("general.oscpu.override", "Windows NT 6.1");
+//user_pref("general.platform.override", "5.0 (Windows)");
+//user_pref("general.useragent.override", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)");
+//user_pref("general.appname.override", "Microsoft Internet Explorer");
+//user_pref("general.buildID.override", "20100101");
+//user_pref("general.appversion.override, "5.0");
+
+// Redundant and outdated as same as the fingerprint stuff
+//user_pref("extensions.pocket.enabled", false); //https://www.change.org/p/mozilla-corporation-simple-option-to-disable-pocket-in-firefox
+//user_pref("plugins.click_to_play", true);
+//user_pref("plugin.sessionPermissionNow.intervalInMinutes", 0);
+//user_pref("browser.aboutHomeSnippets.updateUrl", "");
+//user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
+//user_pref("security.csp.experimentalEnabled", false);
+//user_pref("font.blacklist.underline_offset", "");
+//user_pref("lightweightThemes.update.enabled", false);
