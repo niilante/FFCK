@@ -22,7 +22,7 @@
 
 ### Add-on signing check
 
-* [Disable add-on signing check in Release (all) versions of Firefox (https://stackoverflow.com)](https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
+* [Disable add-on signing check in Release (all) versions of Firefox (stackoverflow.com)](https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
 
 
 ### Source Code indexing tools
@@ -81,7 +81,7 @@
 * [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
 * [Chromium security page on client-identification mechanisms (sites.google.com)](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/client-identification-mechanisms)
-* [Recent study on fingerprinting methods observed in the wild (randomwalker.info PDF download) ](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
+* [Recent study on fingerprinting methods observed in the wild (randomwalker.info PDF download)](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
 * [Is Firefox better than Chrome? It comes down to privacy. (washingtonpost.com)](https://www.washingtonpost.com/gdpr-consent/?destination=%2ftechnology%2f2019%2f06%2f21%2fgoogle-chrome-has-become-surveillance-software-its-time-switch%2f%3f)
 * [Mozilla Firefox Hardware Report (hardware.metrics.mozilla.com)](https://hardware.metrics.mozilla.com/)
 
@@ -139,7 +139,7 @@
 * [Firefox Profilemaker (ffprofile.com)](https://ffprofile.com/)
 
 
-### Tor Related
+### Tor related
 
 * [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject)
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
@@ -148,7 +148,7 @@
 * [Browser hardening (blog.torproject.org)](https://blog.torproject.org/blog/isec-partners-conducts-tor-browser-hardening-study)
 
 
-### TLS & SSL
+### TLS & SSL related
 
 * [Bulletproof SSL and TLS (feistyduck.com)](https://www.feistyduck.com/books/bulletproof-ssl-and-tls/)
 * [Mozilla Included CA Certificate List (wiki.mozilla.org)](https://wiki.mozilla.org/CA:IncludedCAs)
@@ -168,7 +168,7 @@
 * [Report a Firefox Preview bug (bughunterissues.mozilla.community)](https://bughunterissues.mozilla.community/)
 
 
-### Controversial Topics
+### (Past) privacy incidents
 
 * [Firefox "Monitor" service uses Google Analytics (mastodon.social)](https://mastodon.social/@CKsTechnologyNews/102244513347194873)
 * [Mozilla Firefox gets a Premium Version starting Oct. 2019 (t3n.de)](https://t3n.de/news/mozilla-ceo-chris-beard-anbieten-1168614/)
