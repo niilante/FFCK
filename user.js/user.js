@@ -1,3 +1,4 @@
+user_pref("gfx.color_management.mode", 0); //def.2 
 user_pref("layout.frame_rate.precise", true); //disable in case you have scrolling issues
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
