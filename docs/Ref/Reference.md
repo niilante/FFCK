@@ -19,6 +19,11 @@
 * [Disconnect whitelist (disconnect.me)](https://disconnect.me/trackerprotection/unblocked)
 
 
+### Add-on signing check
+
+* [Disable add-on signing check in Release (all) versions of Firefox (https://stackoverflow.com)(https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
+
+
 ### Source Code indexing tools
 
 * [Searchfox (searchfox.org)](https://searchfox.org/) ([source code](https://github.com/mozsearch/mozsearch))
