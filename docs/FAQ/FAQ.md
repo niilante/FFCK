@@ -166,3 +166,7 @@ Keep in mind that I'm a _power user_ which means you might not need all the list
 
 The extension localstorage is located under `<your-profile-folder>\storage\default\moz-extension+++<your-extension-id>...\idb\....sqlite`. The ID for the extension itself is a random string that's unique you can read it via developer tools or `moz-extension://<your-ID-here>/confirm-page.html?url=...`
 
+
+### Is there a master list of all about:config flags (incl. the hidden ones)?
+
+All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features) or [here](http://kb.mozillazine.org/About:config_entries), this includes even the experimental ones. If you search only for the hidden prefs you will not find them easily in the source code or via search because there is no single master list. 
