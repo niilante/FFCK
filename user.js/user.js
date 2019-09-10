@@ -1,3 +1,7 @@
+//Workaround for single monitor users 
+// See here: https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-chrome/
+//user_pref("gfx.color_management.enablev4", true);
+//user_pref("gfx.color_management.mode", 1);
 user_pref("media.gpu-process-decoder", true); //do not change otherwise YT 60fps videos might freeze/stutter
 user_pref("gfx.webrender.force-disabled", true); //Workaround for FF69 stutter + responsive issue
 user_pref("gfx.color_management.mode", 0); //Default: 2 
