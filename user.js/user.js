@@ -1,5 +1,6 @@
-user_pref("gfx.color_management.mode", 0); //def.2 
-user_pref("layout.frame_rate.precise", true); //disable in case you have scrolling issues
+user_pref("gfx.webrender.force-disabled", true); //Workaround for FF69 stutter + responsive issue
+user_pref("gfx.color_management.mode", 0); //Default: 2 
+user_pref("layout.frame_rate.precise", true); //Disable in case you have scrolling issues
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.update.auto", false);
