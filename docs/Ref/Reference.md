@@ -13,6 +13,7 @@
 * [Mozilla Security Blog (blog.mozilla.org)](https://blog.mozilla.org/security/category/security/)
 * [Security Advisories for Firefox (mozilla.org)](https://www.mozilla.org/security/known-vulnerabilities/firefox.html)
 * [Firefox Site Compatibility documents (fxsitecompat.dev)](https://www.fxsitecompat.dev/en-CA/docs/)
+* [Firefox Account data practices (mozilla.org)](https://www.mozilla.org/en-US/about/legal/terms/services/)
 
 
 ### Firefox's Enhanced Tracking Protection whitelist
