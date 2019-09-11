@@ -185,16 +185,13 @@ user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("extensions.autoDisableScopes", 14);
-user_pref("extensions.getAddons.discovery.api_url", "");
 user_pref("extensions.CanvasBlocker@kkapsner.de.whiteList", "");
 user_pref("extensions.allowPrivateBrowsingByDefault", false);
 user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.blocklist.url", "https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%20/%20/");
 user_pref("extensions.formautofill.creditCards.available", false);
-user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("extensions.fxmonitor.enabled", false);
 user_pref("extensions.getAddons.cache.enabled", false);
-//user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.shield-recipe-client.api_url", "");
 user_pref("extensions.screenshots.disabled", true);
 user_pref("gfx.downloadable_fonts.woff2.enabled", false);
@@ -203,7 +200,6 @@ user_pref("extensions.update.autoUpdateDefault", true);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("extensions.webextensions.restrictedDomains", "");
-user_pref("extensions.webservice.discoverURL", "");
 user_pref("extensions.screenshots.upload-disabled", true);
 user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
@@ -465,7 +461,6 @@ user_pref("privacy.clearOnShutdown.siteSettings", false);
 //user_pref("urlclassifier.disallow_completions", "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256");
 //user_pref("browser.safebrowsing.provider.mozilla.lists", "base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256");
 user_pref("extensions.webextensions.userScripts.enabled", true);
-user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 user_pref("browser.sessionstore.interval", 300000);
 user_pref("browser.sessionstore.interval.idle", 300000);
 //user_pref("ui.use_standins_for_native_colors", true);
@@ -549,12 +544,6 @@ user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
 //user_pref("avascript.options.mem.max", xx); //set your own amount based on your own needs
 //user_pref("javascript.options.mem.high_water_mark ", xx); //set your own amount based on your own needs
 
-// To be removed 
-user_pref("print.print_footerleft", "");
-user_pref("print.print_footerright", "");
-user_pref("print.print_headerleft", "");
-user_pref("print.print_headerright", "");
-
 //https://developer.mozilla.org/en-US/docs/Code_snippets/Preferences
 //https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/userAgent
 //user_pref("general.useragent.locale", "en-EN"); //enforce en
@@ -574,9 +563,20 @@ user_pref("print.print_headerright", "");
 //user_pref("security.csp.experimentalEnabled", false);
 //user_pref("font.blacklist.underline_offset", "");
 //user_pref("lightweightThemes.update.enabled", false);
+//user_pref("extensions.htmlaboutaddons.discover.enabled", false);
 //user_pref("webgl.force-enabled", true);
 //user_pref("browser.startup.blankWindow", true);
+
+//70+
+user_pref("print.print_footerleft", "");
+user_pref("print.print_footerright", "");
+user_pref("print.print_headerleft", "");
+user_pref("print.print_headerright", "");
+//user_pref("extensions.getAddons.showPane", false);
 //user_pref("network.dnsCacheEntries", 100);
 //user_pref("dom.serviceWorkers.enabled", false);
 //user_pref("dom.targetBlankNoOpener.enabled", false);
+//user_pref("extensions.webservice.discoverURL", "");
 //user_pref("browser.cache.disk_cache_ssl", false);
+// user_pref("extensions.getAddons.discovery.api_url", "");
+//user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
