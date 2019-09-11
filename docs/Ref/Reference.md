@@ -1,5 +1,4 @@
 ## Official Mozilla documentation(s)
-
 * [Advices from Mozilla Firefox on privacy and government surveillance (mozilla.org)](https://www.mozilla.org/en-US/teach/smarton/surveillance/)
 * [DXR - Firefox Datareporting preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/toolkit/components/telemetry/datareporting-prefs.js)
 * [DXR - Firefox General preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/init/all.js)
@@ -17,22 +16,18 @@
 
 
 ### Firefox's Enhanced Tracking Protection whitelist
-
 * [Disconnect whitelist (disconnect.me)](https://disconnect.me/trackerprotection/unblocked)
 
 
 ### Add-on signing check
-
 * [Disable add-on signing check in Release (all) versions of Firefox (stackoverflow.com)](https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
 
 
 ### Source Code indexing tools
-
 * [Searchfox (searchfox.org)](https://searchfox.org/) ([source code](https://github.com/mozsearch/mozsearch))
 
 
 ### Shield Studies
-
 * [Detect (show) Shield Studies (Beta) (jeffersonscher.com)](https://www.jeffersonscher.com/sumo/shield.php)
 
 
@@ -54,12 +49,10 @@
 
 
 ### Extensions
-
 * [Catalog of classic Firefox add-ons created before WebExtensions apocalypse (github.com)](https://github.com/JustOff/ca-archive)
 
 
 ### Developer Tools & Resources
-
 * [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
 * [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
 * [The Mozilla Learning Network](https://learning.mozilla.org/en-US/)
@@ -67,7 +60,6 @@
 
 
 ### Templates
-
 * [Policy Templates for Firefox (github.com)](https://github.com/mozilla/policy-templates)
 * [FrontMotion Firefox Community Edition (getadmx.com)](https://getadmx.com/?Category=FrontMotion)
 * [HardenIT (harden.it)](https://harden.it/)
@@ -75,7 +67,6 @@
 
 
 ### Other References
-
 * [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
 * [Certificate revocation list (wikipedia.org)](https://en.wikipedia.org/wiki/Certificate_revocation_list)
 * [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
@@ -89,23 +80,19 @@
 
 
 ### About:config related
-
 * [About:config entries - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/About:config_entries)
 * [Compare different user.js (jm42.github.io)](https://jm42.github.io/compare-user.js/)
 
 
 ### About:flags
-
 * [Diff between various Firefox .js configurations in upcoming releases (cat-in-136.github.io)](https://cat-in-136.github.io/)
 
 
 ### Autoplay Info
-
 - [Allow or block media autoplay in Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/block-autoplay#w_add-sites-to-your-list-to-autoplay-media)
 
 
 ### Web Security
-
 * [Web security (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/Security)
 * [Browser Exploitation Framework (beefproject.com)](https://beefproject.com/)
 * [Center for Internet Security - Mozilla Firefox benchmarks (benchmarks.cisecurity.org)](https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.desktop.browsers.firefox)
@@ -121,7 +108,6 @@
 
 
 ### Mozilla Privacy
-
 * [Security and privacy-related preferences - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/Category:Security_and_privacy-related_preferences)
 * [Polaris - advance privacy technology for the web (wiki.mozilla.org)](https://wiki.mozilla.org/Polaris)
 * [Known Vulnerabilities for Firefox (mozilla.org)](https://www.mozilla.org/en-US/security/known-vulnerabilities/firefox/)
@@ -131,18 +117,15 @@
 
 
 ### Mozilla Themes
-
 * [Shadowfox (github.com)](https://github.com/overdodactyl/ShadowFox)
 * [Quantum Nox (github.com)](https://github.com/Izheil/Quantum-Nox-Firefox-Dark-Full-Theme)
 
 
 ### Firefox Profile related
-
 * [Firefox Profilemaker (ffprofile.com)](https://ffprofile.com/)
 
 
 ### Tor related
-
 * [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject)
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
 * [The Design and Implementation of the Tor Browser (torproject.org)](https://www.torproject.org/projects/torbrowser/design/)
@@ -151,7 +134,6 @@
 
 
 ### TLS & SSL related
-
 * [Bulletproof SSL and TLS (feistyduck.com)](https://www.feistyduck.com/books/bulletproof-ssl-and-tls/)
 * [Mozilla Included CA Certificate List (wiki.mozilla.org)](https://wiki.mozilla.org/CA:IncludedCAs)
 * [Potentially problematic CA practices (wiki.mozilla.org)](https://wiki.mozilla.org/CA:Problematic_Practices)
@@ -160,7 +142,6 @@
 
 
 ### Test Pages & Resources
-
 * [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
 * [Privacy Online Test And Resource Compendium (POTARC) (github.com)](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
@@ -172,7 +153,6 @@
 
 
 ### (Past) privacy incidents
-
 * [Firefox "Monitor" service uses Google Analytics (mastodon.social)](https://mastodon.social/@CKsTechnologyNews/102244513347194873)
 * [Mozilla Firefox gets a Premium Version starting Oct. 2019 (t3n.de)](https://t3n.de/news/mozilla-ceo-chris-beard-anbieten-1168614/)
 * [An index of discussions about the Cliqz controversy (old.reddit.com)](https://old.reddit.com/r/firefox/comments/756s0f/an_index_of_discussions_about_the_cliqz/)
@@ -190,3 +170,6 @@
 * [Switch to WebExtensions (blog.mozilla.org)](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
 * [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
+
+### Other riticism
+* [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/) 
