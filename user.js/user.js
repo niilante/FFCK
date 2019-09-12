@@ -80,7 +80,7 @@ user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.cfr", "");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
+//user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "{}");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
@@ -110,12 +110,13 @@ user_pref("browser.privatebrowsing.searchUI", false);
 user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.geoSpecificDefaults", false);
+user_pref("geo.provider.use_corelocation", false);
 user_pref("browser.search.region", "US");
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
 user_pref("browser.security.newcerterrorpage.enabled", true);
 user_pref("browser.selfsupport.url", "");
-user_pref("browser.startup.page", 3);
+user_pref("browser.startup.page", 3); //0 for blank
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.loadDivertedInBackground", true);
@@ -134,6 +135,7 @@ user_pref("browser.ssl_override_behavior", 1);
 user_pref("browser.startup.homepage_override.buildID", "20100101");
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
+user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.tabs.drawInTitlebar", true);
 user_pref("browser.uitour.enabled", false);
 user_pref("browser.urlbar.autocomplete.enabled", false);
@@ -289,15 +291,16 @@ user_pref("network.protocol-handler.external.ftp", false);
 user_pref("network.protocol-handler.external.http", false);
 user_pref("network.protocol-handler.external.https", false);
 user_pref("network.protocol-handler.external.javascript",	false);
-user_pref("network.protocol-handler.external.moz-extension",	false);
+user_pref("network.protocol-handler.external.moz-extension", false);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 user_pref("network.protocol-handler.warn-external-default", true);
 user_pref("network.proxy.socks_remote_dns", true);
-user_pref("network.captive-portal-service.enabled", false);
-//user_pref("network.trr.wait-for-portal", true);
+//user_pref("network.captive-portal-service.enabled", true); //enable on mobile (Wifi)
+//user_pref("network.trr.wait-for-portal", true); //enable on mobile (Wifi)
 user_pref("network.trr.early-AAAA, false);
-//user_pref("network.trr.uri", https://doh.securedns.eu/dns-query);
-//user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS example
+user_pref("network.trr.mode", 2);
+user_pref("network.trr.uri", https://doh.securedns.eu/dns-query); //example
+user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS example
 user_pref("network.security.esni.enabled", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("pdfjs.disabled", true);
@@ -325,12 +328,14 @@ user_pref("privacy.cpd.sessions", true);
 user_pref("privacy.firstparty.isolate.restrict_opener_access", true);
 user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
+user_pref("dom.indexedDB.enabled", true);
 user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.fingerprinting.enabled", true);
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
 user_pref("privacy.usercontext.about_newtab_segregation.enabled", true);
+user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("privacy.window.maxInnerHeight", 900);
@@ -520,9 +525,11 @@ user_pref("urlclassifier.trackingTable", false);
 user_pref("urlclassifier.trackingWhitelistTable", false);
 user_pref("urlclassifier.blockedTable", false);
 user_pref("urlclassifier.disallow_completions", false);
+user_pref("geo.provider.ms-windows-location", false);
 // Linux
 //user_pref("widget.content.gtk-theme-override", "Breeze");
 user_pref("middlemouse.paste", false);
+user_pref("geo.provider.use_gpsd", false);
 
 // Network
 user_pref("network.connectivity-service.DNSv4.domain", "");
