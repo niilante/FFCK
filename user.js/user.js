@@ -1,3 +1,11 @@
+//Full screen API
+user_pref("full-screen-api.transition-duration.enter", 0 0);
+user_pref("full-screen-api.transition-duration.leave", 0 0);
+user_pref("toolkit.cosmeticAnimations.enabled", false); //problematic
+user_pref("browser.fullscreen.animate", false); //removed
+user_pref("full-screen-api.transition.timeout", 0);
+user_pref("full-screen-api.warning.timeout", 0);
+user_pref("full-screen-api.warning.delay", 0);
 //Workaround for single monitor users 
 // See here: https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-chrome/
 //user_pref("gfx.color_management.enablev4", true);
@@ -23,9 +31,6 @@ user_pref("privacy.resistFingerprinting.letterboxing", false);
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.tabs.unloadOnLowMemory", true);
-user_pref("full-screen-api.transition-duration.enter", 100 100);
-user_pref("full-screen-api.transition-duration.leave", 0 0);
-user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.prompted", 2);
 user_pref("toolkit.telemetry.rejected", true);
@@ -587,3 +592,4 @@ user_pref("print.print_headerright", "");
 //user_pref("browser.cache.disk_cache_ssl", false);
 // user_pref("extensions.getAddons.discovery.api_url", "");
 //user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+//user_pref("alerts.disableSlidingEffect", 0);
