@@ -16,6 +16,7 @@ user_pref("gfx.color_management.mode", 0); //Default: 2
 user_pref("layout.frame_rate.precise", true); //Disable in case you have scrolling issues
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
+user_pref("browser.urlbar.quantumbar", true);
 user_pref("app.update.auto", false);
 user_pref("gfx.content.azure.accelerated", true);
 user_pref("gfx.canvas.azure.accelerated", true);
