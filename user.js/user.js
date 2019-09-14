@@ -244,7 +244,7 @@ user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.blackList-override-default", true);
 user_pref("media.autoplay.block-webaudio", true);
 user_pref("media.autoplay.blocked", 1);
-user_pref("media.autoplay.default", 1);
+user_pref("media.autoplay.default", 5);
 user_pref("media.av1.use-dav1d", true);
 user_pref("media.getusermedia.audiocapture.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
