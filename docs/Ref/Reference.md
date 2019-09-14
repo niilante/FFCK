@@ -172,4 +172,5 @@
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
 
 ### Other riticism
-* [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/) 
+* [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/)
+* [Criticism of Firefox on Android by the GrapheneOS project (grapheneos.org)](https://grapheneos.org/usage#web-browsing) - ([discussion](https://old.reddit.com/r/firefox/comments/d2lq23/criticism_of_firefox_on_android_by_the_grapheneos/))
