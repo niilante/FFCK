@@ -170,3 +170,8 @@ The extension localstorage is located under `<your-profile-folder>\storage\defau
 ### Is there a master list of all about:config flags (incl. the hidden ones)?
 
 All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features) or [here](http://kb.mozillazine.org/About:config_entries), this includes even the experimental ones. If you search only for the hidden prefs you will not find them easily in the source code or via search because there is no single master list. 
+
+
+### How to get addons in Mozilla Fennec?
+
+You can install extensions in Fennec by installing [this](https://tools.taskcluster.net/index/project.mobile.fenix.v2.fennec-production/latest) into your Fennec, however this does not come without any [drawbacks](https://old.reddit.com/r/firefox/comments/d2hww8/fenix_have_supported_addons/). 
