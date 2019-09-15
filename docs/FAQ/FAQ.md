@@ -175,3 +175,7 @@ All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozill
 ### How to get addons in Mozilla Fennec?
 
 You can install extensions in Fennec by installing [this](https://tools.taskcluster.net/index/project.mobile.fenix.v2.fennec-production/latest) into your Fennec, however this does not come without any [drawbacks](https://old.reddit.com/r/firefox/comments/d2hww8/fenix_have_supported_addons/). 
+
+### I can't see any pictures after I used "save image as" option, what can I do?
+
+Windows, Linux and MacOS (by defaault) does not support the format and that's basically the reason why you can't open .webp with the integrated tools to view images. This is also not really a Firefox problem, the problem is that Adobe does not supports the [WebP](http://www.telegraphics.com.au/sw/product/WebPFormat) standard. You can open such formats with e.g. GIMP, a solution for Photoshop users would be to add a filter for this format. 
