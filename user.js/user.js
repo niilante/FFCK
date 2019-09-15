@@ -1,3 +1,7 @@
+// "Workaround" for something which is not broken, save images only as .jpg, .png etc.
+user_pref("image.webp.enabled", false);
+user_pref("image.http.accept", "*/\*");
+user_pref("network.http.accept-encoding.secure", "gzip, deflate, br");
 //Full screen API
 user_pref("full-screen-api.transition-duration.enter", 0 0);
 user_pref("full-screen-api.transition-duration.leave", 0 0);
@@ -566,6 +570,7 @@ user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
 //user_pref("general.appname.override", "Microsoft Internet Explorer");
 //user_pref("general.buildID.override", "20100101");
 //user_pref("general.appversion.override, "5.0");
+//user_pref("network.http.accept.default, "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"); 
 
 // Redundant and outdated as same as the fingerprint stuff
 //user_pref("extensions.pocket.enabled", false); //https://www.change.org/p/mozilla-corporation-simple-option-to-disable-pocket-in-firefox
