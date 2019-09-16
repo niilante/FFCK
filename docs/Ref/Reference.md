@@ -171,6 +171,7 @@
 * [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
 
-### Other riticism
+### Other criticism
 * [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/)
 * [Criticism of Firefox on Android by the GrapheneOS project (grapheneos.org)](https://grapheneos.org/usage#web-browsing) - ([discussion](https://old.reddit.com/r/firefox/comments/d2lq23/criticism_of_firefox_on_android_by_the_grapheneos/))
+* [Mozilla and Creative Commons want to reimagine the internet without ads, and they have $100M to do (fastcompany.com)](https://www.fastcompany.com/90403645/mozilla-and-creative-commons-want-to-reimagine-the-internet-without-ads-and-they-have-100m-to-do-it) [(reddit)](https://old.reddit.com/r/firefox/comments/d52fpp/mozilla_and_creative_commons_want_to_reimagine/)
