@@ -1,3 +1,4 @@
+user_pref("ui.key.menuAccessKeyFocuses", false); // Disable alt-key menu bar showing behavior
 // "Workaround" for something which is not broken, save images only as .jpg, .png etc.
 user_pref("image.webp.enabled", false);
 user_pref("image.http.accept", "*/\*");
