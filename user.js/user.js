@@ -9,7 +9,10 @@ user_pref("toolkit.cosmeticAnimations.enabled", false); //problematic
 user_pref("browser.fullscreen.animate", false); //removed
 user_pref("full-screen-api.transition.timeout", 0);
 user_pref("full-screen-api.warning.timeout", 0);
+user_pref("dom.push.enabled", false);
 user_pref("full-screen-api.warning.delay", 0);
+user_pref("dom.push.connection.enabled", false);
+user_pref("dom.push.serverURL", "");
 //Workaround for single monitor users 
 // See here: https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-chrome/
 //user_pref("gfx.color_management.enablev4", true);
@@ -25,7 +28,6 @@ user_pref("app.update.auto", false);
 user_pref("gfx.content.azure.accelerated", true);
 user_pref("gfx.canvas.azure.accelerated", true);
 user_pref("reader.parse-on-load.enabled", false);
-//user_pref("accessibility.blockautorefresh", true); // Workaround
 user_pref("privacy.resistFingerprinting.autoDeclineNoUserInputCanvasPrompts", false);
 user_pref("browser.search.context.loadInBackground", true);
 user_pref("dom.ipc.processPriorityManager.enabled", true);
@@ -100,7 +102,7 @@ user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.cfr", "");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
-//user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.onboarding", "{}");
 user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.config", "{}");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
@@ -228,9 +230,9 @@ user_pref("dom.disable_window_open_feature.toolbar", true);
 user_pref("dom.disable_window_open_feature.minimizable", true);
 user_pref("dom.event.contextmenu.enabled", false);
 user_pref("dom.disable_window_open_feature.titlebar", true);
-//user_pref("dom.disable_window_open_feature.status", true);
+user_pref("dom.disable_window_open_feature.status", true);
 user_pref("dom.disable_window_open_feature.personalbar", true);
-//user_pref("dom.disable_window_open_feature.resizable", true);
+user_pref("dom.disable_window_open_feature.resizable", true);
 user_pref("dom.vr.enabled", false);
 user_pref("dom.disable_window_open_feature.close", true);
 user_pref("experiments.activeExperiment", false);
@@ -557,39 +559,22 @@ user_pref("browser.uitour.url", "");
 user_pref("browser.sessionstore.resume_from_crash", false);
 //user_pref("browser.sessionstore.max_windows_undo", 0);
 user_pref("breakpad.reportURL", "");
-//user_pref("urlclassifier.disallow_completions", "test-malware-simple,test-harmful-simple,test-phish-simple,test-unwanted-simple,test-track-simple,test-trackwhite-simple,test-block-simple,goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256");
-//user_pref("browser.safebrowsing.provider.mozilla.lists", "base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256");
-// user_pref("browser.safebrowsing.allowOverride", false);
 user_pref("extensions.webextensions.userScripts.enabled", true);
 user_pref("browser.sessionstore.interval", 60000);
-//user_pref("browser.sessionstore.interval.idle", 300000);
-//user_pref("ui.use_standins_for_native_colors", true);
 user_pref("ui.caretWidth", 2);
 user_pref("media.gmp-provider.enabled", false);
 user_pref("view_source.wrap_long_lines", true);
-//user_pref("image.animation_mode", "once");
 user_pref("privacy.userContext.longPressBehavior", 2);
-//user_pref("plugins.enumerable_names", "");
 user_pref("ui.popup.disable_autohide", false);
-//user_pref("pageThumbs.enabled", false);
 user_pref("offline-apps.allow_by_default", false);
-//user_pref("browser.safebrowsing.provider.google.lists ...
 user_pref("network.http.referer.hideOnionSource", true);
 user_pref("privacy.donottrackheader.enabled", false);
 user_pref("privacy.donottrackheader.value", 0);
 user_pref("media.eme.enabled", false);
 //user_pref("layout.css.devPixelsPerPx", 1.25; //macOS Retina
-//
-// In case you enabled privacy.resistFingerprinting you don't need the following entries:
-//user_pref("dom.enable_performance", false);
-//user_pref("dom.enable_resource_timing", false);
 user_pref("media.webspeech.synth.enabled", false);
-//user_pref("media.video_stats.enabled", false);
-//user_pref("device.sensors.enabled", false);
-//user_pref("dom.maxHardwareConcurrency", 2);
-//user_pref("dom.netinfo.enabled", false);
 user_pref("webgl.enable-debug-renderer-info", false);
-//user_pref("dom.gamepad.enabled", false);
+user_pref("dom.gamepad.enabled", false);
 //
 user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
 user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
@@ -627,62 +612,21 @@ user_pref("geo.provider.ms-windows-location", false);
 //user_pref("widget.content.gtk-theme-override", "Breeze");
 user_pref("middlemouse.paste", false);
 user_pref("geo.provider.use_gpsd", false);
-
 // Network
 user_pref("network.connectivity-service.DNSv4.domain", "");
 user_pref("network.connectivity-service.DNSv6.domain", "");
 user_pref("network.connectivity-service.IPv4.url", "http://0.0.0.0");
 user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
-
 // Only in case you use GreasyMonkey
 //user_pref("extensions.greasemonkey.stats.optedin", false);
 //user_pref("extensions.greasemonkey.stats.url", "");
-
-// Memory (old but "good")
-//user_pref("browser.cache.memory.capacity", xx); //set your own amount based on your own needs
 user_pref("browser.sessionhistory.max_entries", 4);
-//user_pref("browser.sessionstore.max_tabs_undo", 0);
-//user_pref("browser.tabs.animate", false);
-//user_pref("config.trim_on_minimize ", true); //does not exist anymore
-//user_pref("image.mem.max_decoded_image_kb", xx); //set your own amount based on your own needs
-//user_pref("avascript.options.mem.max", xx); //set your own amount based on your own needs
-//user_pref("javascript.options.mem.high_water_mark ", xx); //set your own amount based on your own needs
-
-//https://developer.mozilla.org/en-US/docs/Code_snippets/Preferences
-//https://developer.mozilla.org/en-US/docs/Web/API/NavigatorID/userAgent
-//user_pref("general.useragent.locale", "en-EN"); //enforce en
-//user_pref("general.oscpu.override", "Windows NT 6.1");
-//user_pref("general.platform.override", "5.0 (Windows)");
-//user_pref("general.useragent.override", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1)");
-//user_pref("general.appname.override", "Microsoft Internet Explorer");
-//user_pref("general.buildID.override", "20100101");
-//user_pref("general.appversion.override, "5.0");
-//user_pref("network.http.accept.default, "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8"); 
-
-// Redundant and outdated as same as the fingerprint stuff
-//user_pref("extensions.pocket.enabled", false); //https://www.change.org/p/mozilla-corporation-simple-option-to-disable-pocket-in-firefox
-//user_pref("plugins.click_to_play", true);
-//user_pref("plugin.sessionPermissionNow.intervalInMinutes", 0);
-//user_pref("browser.aboutHomeSnippets.updateUrl", "");
-//user_pref("browser.newtabpage.activity-stream.disableSnippets", true);
-//user_pref("security.csp.experimentalEnabled", false);
-//user_pref("font.blacklist.underline_offset", "");
-//user_pref("lightweightThemes.update.enabled", false);
-//user_pref("extensions.htmlaboutaddons.discover.enabled", false);
-//user_pref("webgl.force-enabled", true);
-//user_pref("browser.startup.blankWindow", true);
-
+user_pref("browser.tabs.animate", false);
 user_pref("print.print_footerleft", "");
 user_pref("print.print_footerright", "");
 user_pref("print.print_headerleft", "");
 user_pref("print.print_headerright", "");
 user_pref("extensions.getAddons.showPane", false);
-//user_pref("network.dnsCacheEntries", 100);
 user_pref("dom.serviceWorkers.enabled", true);
 user_pref("dom.targetBlankNoOpener.enabled", true);
 user_pref("dom.IntersectionObserver.enabled", false);
-//user_pref("extensions.webservice.discoverURL", "");
-//user_pref("browser.cache.disk_cache_ssl", false);
-// user_pref("extensions.getAddons.discovery.api_url", "");
-//user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
-//user_pref("alerts.disableSlidingEffect", 0);
