@@ -1,5 +1,6 @@
-user_pref("ui.key.menuAccessKeyFocuses", false); // Disable alt-key menu bar showing behavior
-// "Workaround" for something which is not broken, save images only as .jpg, .png etc.
+// Disable alt-key menu bar showing behavior
+user_pref("ui.key.menuAccessKeyFocuses", false);
+// Disable .webp
 user_pref("image.webp.enabled", false);
 user_pref("image.http.accept", "*/\*");
 user_pref("network.http.accept-encoding.secure", "gzip, deflate, br");
@@ -18,7 +19,7 @@ user_pref("dom.push.serverURL", "");
 // See here: https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-chrome/
 //user_pref("gfx.color_management.enablev4", true);
 //user_pref("gfx.color_management.mode", 1);
-user_pref("media.gpu-process-decoder", true); //do not change otherwise YT 60fps videos might freeze/stutter
+user_pref("media.gpu-process-decoder", true); // Do not (!) change otherwise YT 60fps videos might freeze/stutter
 user_pref("gfx.webrender.force-disabled", true); //Workaround for FF69 stutter + responsive issue
 user_pref("gfx.color_management.mode", 0); //Default: 2 
 user_pref("layout.frame_rate.precise", true); //Disable in case you have scrolling issues
@@ -258,6 +259,7 @@ user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("extensions.update.autoUpdateDefault", true);
 user_pref("general.warnOnAboutConfig", false);
+user_pref("general.smoothScroll.msdPhysics.enabled", true);
 user_pref("full-screen-api.warning.timeout", 0);
 user_pref("extensions.webextensions.restrictedDomains", "");
 user_pref("extensions.screenshots.upload-disabled", true);
