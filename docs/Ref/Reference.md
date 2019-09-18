@@ -82,13 +82,13 @@
 ### About:config related
 * [About:config entries - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/About:config_entries)
 * [Compare different user.js (jm42.github.io)](https://jm42.github.io/compare-user.js/)
-
-
-### About:flags
 * [Diff between various Firefox .js configurations in upcoming releases (cat-in-136.github.io)](https://cat-in-136.github.io/)
 
+### Where have we (platform features overview)
+* [Platform/GFX/WebRender Where (wiki.mozilla.org)](http://arewewebrenderyet.com/)
 
-### Autoplay Info
+
+### Autoplay
 - [Allow or block media autoplay in Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/block-autoplay#w_add-sites-to-your-list-to-autoplay-media)
 
 
