@@ -4,7 +4,7 @@ user_pref("ui.key.menuAccessKeyFocuses", false);
 user_pref("image.webp.enabled", false);
 user_pref("image.http.accept", "*/\*");
 user_pref("network.http.accept-encoding.secure", "gzip, deflate, br");
-//Full screen API
+// Full screen API
 user_pref("full-screen-api.transition-duration.enter", 0 0);
 user_pref("full-screen-api.transition-duration.leave", 0 0);
 user_pref("toolkit.cosmeticAnimations.enabled", false); //problematic
@@ -15,7 +15,7 @@ user_pref("dom.push.enabled", false);
 user_pref("full-screen-api.warning.delay", 0);
 user_pref("dom.push.connection.enabled", false);
 user_pref("dom.push.serverURL", "");
-//Workaround for single monitor users 
+// - Workaround for single monitor users -
 // See here: https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-chrome/
 //user_pref("gfx.color_management.enablev4", true);
 //user_pref("gfx.color_management.mode", 1);
@@ -58,7 +58,7 @@ user_pref("security.certerrors.recordEventTelemetry", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.ut.events", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion", false);
-user_pref("browser.in-content.dark-mode", true);
+user_pref("browser.in-content.dark-mode", true); //https://overdodactyl.github.io/ShadowFox/
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Workaround for userChrome.css not loading
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
@@ -77,6 +77,7 @@ user_pref("browser.cache.disk.enable", false);
 user_pref("browser.disableResetPrompt", true);
 user_pref("browser.cache.offline.enable", false);
 user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
+user_pref("browser.sessionstore_max_tabs_undo", 0); //1=last closed window
 user_pref("browser.casting.enabled", false);
 user_pref("browser.chrome.errorReporter.submitUrl", "");
 user_pref("captivedetect.canonicalURL", "");
@@ -561,7 +562,7 @@ user_pref("privacy.cpd.siteSettings", false);
 user_pref("privacy.clearOnShutdown.siteSettings", false);
 user_pref("browser.uitour.url", "");
 user_pref("browser.sessionstore.resume_from_crash", false);
-//user_pref("browser.sessionstore.max_windows_undo", 0);
+user_pref("browser.sessionstore.max_windows_undo", 0);
 user_pref("breakpad.reportURL", "");
 user_pref("extensions.webextensions.userScripts.enabled", true);
 user_pref("browser.sessionstore.interval", 60000);
