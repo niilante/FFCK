@@ -21,7 +21,7 @@ user_pref("dom.push.serverURL", "");
 //user_pref("gfx.color_management.mode", 1);
 user_pref("media.gpu-process-decoder", true); // Do not (!) change otherwise YT 60fps videos might freeze/stutter
 user_pref("gfx.webrender.force-disabled", true); //Workaround for FF69 stutter + responsive issue
-user_pref("gfx.color_management.mode", 0); //Default: 2 
+user_pref("gfx.color_management.mode", 0); //Default: 2
 user_pref("layout.frame_rate.precise", true); //Disable in case you have scrolling issues
 user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
@@ -379,11 +379,12 @@ user_pref("network.gio.supported-protocols", "");
 user_pref("network.file.disable_unc_paths", false);
 //user_pref("network.captive-portal-service.enabled", true); //enable on mobile (Wifi)
 //user_pref("network.trr.wait-for-portal", true); //enable on mobile (Wifi)
-user_pref("network.trr.early-AAAA, false);
-user_pref("network.trr.mode", 2);
+user_pref("network.trr.early-AAAA", false);
+user_pref("network.trr.mode", 3); //2, if problems
 user_pref("network.trr.uri", https://doh.securedns.eu/dns-query); //example
-user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS example
+user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS (example)
 user_pref("network.security.esni.enabled", true);
+//user_pref("network.trr.resolvers", ""); // Full list here: https://github.com/curl/curl/wiki/DNS-over-HTTPS
 user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("pdfjs.disabled", true);
 user_pref("places.history.enabled", false);
