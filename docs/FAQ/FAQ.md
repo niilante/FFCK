@@ -10,30 +10,39 @@
 
 > Until we get there, feel free to leave JavaScript on or off depending on your security, anonymity, and usability priorities.
 
+**Update 2019:**
+Since NoScript (is in my opinion) _useless_ because Mozilla decided to immitate Google to switch over to the WebExtension API, the above statement is no longer true, for this repository. I think uMatrix or any other "web-filter" extension is better, the old NoScript had several protection mechanism (XSS, CSS-exf., CRFG etc), which are now been integrated (not all of them) into the Browser directly, which means you don't need NoScript anymore - there are other hardening and extensions which I think are better designed to do the job!. My point ov view is and always will be that Mozilla/Google should work directly with extensions hand-in-hand together to find best solution for everyone and not the ones which "know which extensions are security wise" good to have, not everyone is interested in those topics and I think the Browser should integrate everyhing out of the box for every user so that we don't need any extensions (that would be the perfect solution in a perfect world). 
+
 Source:
 * [Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe? (torproject.org)](https://www.torproject.org/docs/faq.html.en#TBBJavaScriptEnabled)
 
 
 
-### Wont-fix
+### Wont-fix Stuff in this configuration
 
-I don't waste my and anyones else time trying to fix something which is protocol specific, this has to be fixed fixed within the source/protocol. Disabling everything makes less sense because a) not every site might use it b) it might not directly compromise your security setup c) not every page is exploitable or abuse this (since there is less benefit from doing it) d) I believe in layer security and not software 'security'.
+I don't waste my lifetime and anyones else time trying to fix something which is protocol specific, this has to be fixed within the Browser source code or the protocol. Disabling everything makes less sense because a) not every site/server might use it b) it might not directly compromise your security or privacy setup c) not every page is exploitable or abuse xyz hole. In most cases exploiting something needs additional steps to make it effective for an attacker to "gain something from it" d) I believe in layer security and not software 'security'.
 
-* WebRTC - I disabled it by default, you not need to disable it in uBlock.
-* JavaScript will not be entirely disabled - You can go ahead and do this per-site basis via uBo.
-* OpenGL/Vulkan related stuff - OpenGL is parcially disabled. There are no known attacks or fingerprint methods on the VulkanAPI (it's opn source and could be fixed anyway even if someone finds attacks).
-* Stuff which breaks functionally such as 'xyz' API unless there is evidence that it can be abused in the real-world.
-* [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things.
+* Basically **every connection is disabled**, except for getting **certificate updates** (blacklist). 
+* **WebRTC** - I disabled it by default, you not need to disable it in uBlock.
+* **WebGL is enabled**, the attack surface is practical too low, (except for fingerprinting) and some pages might need it e.g. ShaderToys, Switching to HTML5 is not an option, it also has several fingerprining problems. That been said, the fingerprint on test pages getting a higher score here, because it's enabled but there are optional extensions to control it per-site basis.
+* **JavaScript will not be entirely disabled** - You can go ahead and do this per-site basis via uBlock or directly via Browser (whitelist).
+* **OpenGL/Vulkan related stuff** - OpenGL is parcially disabled. There are no known attacks or fingerprint methods on the VulkanAPI.
+* **Stuff which breaks functionally** such as 'xyz' (e.g. VR, GamePad) based APIs, unless there is evidence that it can be abused in the real-world.
+* [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things, this includes Java, Adobe Flash and other plugins. If a website needs Flash then stay away from it (however in e.g. China or Korea this is maybe not the best suggestions because the Gov. forces some pages to use e.g. Flash, it's not a joke!).
+* **Reducing any network traffic and memory footprint** is the long term mission in this project. -  I don't think that any resources should be wasted, if it's only 1 kB in Memory or 1 kB as network traffic, create a plain text file, store your private address in it and check the file-size, it's 1KB and this could already expose your true identity.
+* **Disabling X reduces attack surface** - Dunno, which dude started this crap (I guess it was me) when I first said this about Flash in a forum in the mid 90s. "Reducing the attack surface" can be misintepretet, not everything which is loaded will be executed, so there is no attack scenario and some things need explicit permission e.g. if a website wants to gain access to your webcam. Stop saying e.g. disable x because it reduces the attack surface, no that's not always true and in most cases in crippled the web-experience for all users. 
+* **This project does not aim to filter the web** - I don't think filtering the web is the answer, it leads us to more tracking, more restrictions and hurts the little ones (e.g. the ads topic). I see other configuration which disabling basically everything, this is not the mission here, it should make sense and should benefit everyone without been worried that protocol/ad/extenion xyu might leak your data. If you worried that e.g. a CDN leaks your data, because it collects your IP (due to security reasons e.g. to prevent DOS attacks or other attacks/exfl.) then use a VPN and "obfuscate" (hide) your real IP if that is your main concern.
+* **Crypto-miners** - "workers" are disabled. - You see in the configuration that the workers-flag itself is enabled (debug reasons) but since we start Firefox in Private Browsing Mode (PBM) it automatically gets disabled (restricted) once you started the fox.
 
 
 
 ### Does any of these tweaks really increase my security and how can I check it?
 
-There [bunch of websites which testing specific API's](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List), but it's questionable if you need several tweaks, I do believe that critical security things need to be fixed in the Mozilla Browser source code and not via any 'tweaks' or configurations. That said e.g. when you never enable JavaScript or visit pages x which abusing privileges or such API's you're secure and do not need any tweaks.
+There are [bunch of websites which testing specific API's](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List), but it's questionable if you need "several about:config tweaks". I do believe that critical security things need to be fixed in the Mozilla Browser source code and not via any 'tweaks' or configurations. E.g when you never enabled JavaScript in the first place or visit page x, which might abuses privileges or other API's, you might never be affected because certain attacks are based on well-known "internet problems" (JavaScript, fingerprinting etc). Migrating those possible attacks are fine, however inspecting websites via debugger is better. Ask the website owner to "fix" it or mention possible alternatives, most webmasters are still not aware of more private alternatives which they could have been used to "harden" their website.
 
 
 
-### What is Telemetry?
+### Telemetry?
 
 > Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
 Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
@@ -42,10 +51,9 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 
 ### Which telemetry is disabled by default in user.js?
 
-- All Normandy and Shield Studies are disabled
+- All Normandy and Shield Studies are disabled.
 - ALl Health reporting features are turned off
 - Recommended addons are turned off
-- Crypto-miners are blocked (Mozilla can collect data about which mines data to improve their own list)
 - The extensions blocklist URL is sanitized
 - The search URL from the search box in `about:addons` is sanitized
 - Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`
@@ -54,6 +62,7 @@ Please note and consider to leave telemetry enabled, this helps Mozilla to secur
 - Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
 - Crash reports are disabled
 - All Heartbeat(s) are disabled
+- **..in other words, every telemetry is been disabled - because in my point of view this belongs into test/nightly builds and not into stable or ESR releases**
 
 
 
@@ -74,7 +83,7 @@ The following extensions are not there to 'harden' Mozilla Firefox, it's more my
 
 
 
-### Why is Safe-Browsing etc disabled, shouldn't that protect me against malware?
+### Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?
 
 * Any kind of censorship (no matter if meant well or not) is a bad thing.
 * Blacklisting the Internet will never work. A Malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
@@ -176,6 +185,12 @@ All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozill
 
 You can install extensions in Fennec by installing [this](https://tools.taskcluster.net/index/project.mobile.fenix.v2.fennec-production/latest) into your Fennec, however this does not come without any [drawbacks](https://old.reddit.com/r/firefox/comments/d2hww8/fenix_have_supported_addons/). 
 
+
 ### I can't see any pictures after I used "save image as" option, what can I do?
 
-Windows, Linux and MacOS (by defaault) does not support the format and that's basically the reason why you can't open .webp with the integrated tools to view images. This is also not really a Firefox problem, the problem is that Adobe does not supports the [WebP](http://www.telegraphics.com.au/sw/product/WebPFormat) standard. You can open such formats with e.g. GIMP, a solution for Photoshop users would be to add a filter for this format. 
+Windows, Linux and MacOS (by defaault) does not support the format and that's basically the reason why you can't open .webp with the integrated tools to view webp images. This is not really a Firefox problem, the problem is that Adobe does not supports the [WebP](http://www.telegraphics.com.au/sw/product/WebPFormat) standard (most apps using the Adobe standards/implementations). However, you can open such formats with free programs e.g. GIMP. A solution for Photoshop users would be to add a filter for this format. In our configuration we enforced (by default) to save images only as .jpg, .jpeg etc. to workaround this.
+
+
+### About:config filtering with Nightly Builds 
+
+The old syntax `about:config?filter=bookmarks` [does not work anymore](https://old.reddit.com/r/firefox/comments/d6alv2/aboutconfig_filter_in_nightly/), this is not a bug but was disabled due to several concerns, see [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1501450). The new filtering syntax is `chrome://global/content/config.xul?filter=/abc|def/` (_yes, it's "chrome" but it works in Firefox too_).
