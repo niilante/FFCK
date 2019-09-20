@@ -278,7 +278,6 @@ user_pref("geo.wifi.uri", "https://location.services.mozilla.com/v1/geolocate?ke
 user_pref("gfx.font_rendering.cleartype_params.rendering_mode", 5);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("gfx.font_rendering.graphite.enabled", false);
-user_pref("identity.fxaccounts.enabled", false);
 user_pref("layers.acceleration.disabled", false);
 user_pref("layout.spellcheckDefault", 2);
 user_pref("gfx.webrender.all", true);
@@ -624,7 +623,7 @@ user_pref("network.connectivity-service.DNSv4.domain", "");
 user_pref("network.connectivity-service.DNSv6.domain", "");
 user_pref("network.connectivity-service.IPv4.url", "http://0.0.0.0");
 user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0");
-// Only in case you use GreasyMonkey
+// Only in case you use e.g. GreasyMonkey
 //user_pref("extensions.greasemonkey.stats.optedin", false);
 //user_pref("extensions.greasemonkey.stats.url", "");
 user_pref("browser.sessionhistory.max_entries", 4);
@@ -637,3 +636,9 @@ user_pref("extensions.getAddons.showPane", false);
 user_pref("dom.serviceWorkers.enabled", true);
 user_pref("dom.targetBlankNoOpener.enabled", true);
 user_pref("dom.IntersectionObserver.enabled", false);
+// Sync + example how to configure it per-extension: services.sync.prefs.<SETTING>
+//user_pref("services.sync.ui.hidden", true);
+user_pref("identity.fxaccounts.enabled", false);
+user_pref("services.sync.prefs.dangerously_allow_arbitrary", false);
+user_pref("services.sync.prefs.sync.privacy.fuzzyfox.enabled", false);
+user_pref("services.sync.prefs.sync.privacy.fuzzyfox.clockgrainus", false);
