@@ -194,3 +194,8 @@ Windows, Linux and MacOS (by defaault) does not support the format and that's ba
 ### About:config filtering with Nightly Builds 
 
 The old syntax `about:config?filter=bookmarks` [does not work anymore](https://old.reddit.com/r/firefox/comments/d6alv2/aboutconfig_filter_in_nightly/), this is not a bug but was disabled due to several concerns, see [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1501450). The new filtering syntax is `chrome://global/content/config.xul?filter=/abc|def/` (_yes, it's "chrome" but it works in Firefox too_).
+
+
+### I'm looking for a specific CSS tweak e.g. to make the context menu dark
+
+A collection of userstyle "tweaks"can be found under [this project (firefox-csshacks)](https://github.com/MrOtherGuy/firefox-csshacks).
