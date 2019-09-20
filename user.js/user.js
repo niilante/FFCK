@@ -127,6 +127,7 @@ user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.safebrowsing.appRepURL", "");
+user_pref("browser.safebrowsing.passwords.enabled", false);
 user_pref("browser.offline-apps.notify", true);
 user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.pingcentre.telemetry", false);
