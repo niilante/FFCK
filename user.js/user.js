@@ -386,9 +386,25 @@ user_pref("network.trr.bootstrapAddress", 146.185.167.43); //SecureDNS (example)
 user_pref("network.security.esni.enabled", true);
 //user_pref("network.trr.resolvers", ""); // Full list here: https://github.com/curl/curl/wiki/DNS-over-HTTPS
 user_pref("network.stricttransportsecurity.preloadlist", true);
-user_pref("pdfjs.disabled", true);
+user_pref("pdfjs.disabled", false);
+user_pref("pdfjs.disableAutoFetch", true);
+user_pref("pdfjs.disableStream", true);
+user_pref("pdfjs.enabledCache.initialized", true);
+user_pref("pdfjs.enabledCache.state", true);
+user_pref("pdfjs.firstRun", false);
+user_pref("pdfjs.migrationVersion", 2);
+user_pref("pdfjs.previousHandler.alwaysAskBeforeHandling", true);
+user_pref("pdfjs.previousHandler.preferredAction", 4);
 user_pref("places.history.enabled", false);
+user_pref("gecko.handlerService.migrated", true);
 user_pref("network.connectivity-service.enabled", false);
+user_pref("network.cookie.prefsMigrated", true);
+user_pref("browser.onboarding.tour.onboarding-tour-addons.completed", true);
+user_pref("browser.onboarding.tour.onboarding-tour-customize.completed", true);
+user_pref("browser.onboarding.tour.onboarding-tour-default-browser.completed", true);
+user_pref("browser.onboarding.tour.onboarding-tour-performance.completed", true);
+user_pref("browser.onboarding.tour.onboarding-tour-private-browsing.completed", true);
+user_pref("browser.onboarding.tour.onboarding-tour-screenshots.completed", true);
 user_pref("plugin.state.flash", 0);
 user_pref("plugin.state.java", 0);
 user_pref("plugin.state.libgnome-shell-browser-plugin", 0);
