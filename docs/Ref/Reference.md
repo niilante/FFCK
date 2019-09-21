@@ -125,7 +125,7 @@
 * [Firefox Profilemaker (ffprofile.com)](https://ffprofile.com/)
 
 
-### Tor related
+### Tor Browser related
 * [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject)
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
 * [The Design and Implementation of the Tor Browser (torproject.org)](https://www.torproject.org/projects/torbrowser/design/)
@@ -160,7 +160,7 @@
 * [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy (bugzilla.mozilla.org)](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262)
 * [Firefox Shield Studies (wiki.mozilla.org/)](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies)
 * [Firefox is on a slippery slope (drewdevault.com)](https://drewdevault.com/2017/12/16/Firefox-is-on-a-slippery-slope.html)
-* [Google Analytics is used to track users (github.com/)](https://github.com/mozilla/addons-frontend/issues/2785)
+* [Google Analytics is used to track users (github.com)](https://github.com/mozilla/addons-frontend/issues/2785)
 * [Firefox Test Pilot (testpilot.firefox.com)](https://testpilot.firefox.com/)
 * [Mozilla retires Firefox’s sponsored tiles, hunts for new revenue streams (arstechnica.com)](https://arstechnica.com/information-technology/2015/12/firefox-retires-much-maligned-sponsored-tiles-hunts-for-new-revenue-streams/)
 * [Mozilla ships Cliqz experiment in Germany for ~1% of new installs, collects surf data, including URLs (reddit.com)](https://old.reddit.com/r/firefox/comments/74n0b2/mozilla_ships_cliqz_experiment_in_germany_for_1/)
@@ -172,9 +172,10 @@
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
 
 ### Other criticism
+* Aesthetic criticisms (design,...)
 * [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/)
 * [Criticism of Firefox on Android by the GrapheneOS project (grapheneos.org)](https://grapheneos.org/usage#web-browsing) - ([discussion](https://old.reddit.com/r/firefox/comments/d2lq23/criticism_of_firefox_on_android_by_the_grapheneos/))
-* [Mozilla and Creative Commons want to reimagine the internet without ads, and they have $100M to do (fastcompany.com)](https://www.fastcompany.com/90403645/mozilla-and-creative-commons-want-to-reimagine-the-internet-without-ads-and-they-have-100m-to-do-it) [(reddit)](https://old.reddit.com/r/firefox/comments/d52fpp/mozilla_and_creative_commons_want_to_reimagine/)
+* [Mozilla and Creative Commons want to reimagine the internet without ads, and they have $100M to do (fastcompany.com)](https://www.fastcompany.com/90403645/mozilla-and-creative-commons-want-to-reimagine-the-internet-without-ads-and-they-have-100m-to-do-it) [(via reddit.com)](https://old.reddit.com/r/firefox/comments/d52fpp/mozilla_and_creative_commons_want_to_reimagine/)
 
 ### No longer maintained
 - [mozillazine.org](http://forums.mozillazine.org/viewtopic.php?f=38&t=3055133)
