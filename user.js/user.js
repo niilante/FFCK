@@ -22,8 +22,9 @@ user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutHomeSnippets.updateUrl", ""); //Snippets
 user_pref("browser.backspace_action", 0); //2
 user_pref("browser.bookmarks.max_backups", 0); // 3-5 suggestion
-user_pref("browser.cache.cache_isolation", false); //set to true might breaks thinks
+user_pref("browser.cache.cache_isolation", false); //set to true might breaks websites
 user_pref("browser.cache.disk.enable", false);
+user_pref("browser.cache.frecency_experiment", 0);
 user_pref("browser.cache.memory.capacity", 0); //-1 since 70
 user_pref("browser.cache.memory.enable", false);
 user_pref("browser.cache.offline.enable", false);
@@ -192,7 +193,7 @@ user_pref("browser.urlbar.autoFill", false);
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.filter.javascript", true);
-user_pref("browser.urlbar.matchBuckets", "suggestion:4,general:5"); //general:5,suggestion:Infinity
+user_pref("browser.urlbar.matchBuckets", "suggestion:4,general:5");
 user_pref("browser.urlbar.maxRichResults", 0);
 user_pref("browser.urlbar.megabar", false);
 user_pref("browser.urlbar.oneOffSearches", false);
@@ -840,7 +841,7 @@ user_pref("ui.key.menuAccessKeyFocuses", false);
 user_pref("ui.popup.disable_autohide", false);
 user_pref("ui.scrolling.negate_wheel_scroll", false);
 user_pref("urlclassifier.blockedTable", false);
-user_pref("urlclassifier.disallow_completions", "goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256,social-tracking-protection-digest256,social-tracking-protection-facebook-digest256,social-tracking-protection-linkedin-digest256,social-tracking-protection-twitter-digest256"); // prev: "goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256"
+user_pref("urlclassifier.disallow_completions", "goog-downloadwhite-digest256,base-track-digest256,mozstd-trackwhite-digest256,content-track-digest256,mozplugin-block-digest256,mozplugin2-block-digest256,block-flash-digest256,except-flash-digest256,allow-flashallow-digest256,except-flashallow-digest256,block-flashsubdoc-digest256,except-flashsubdoc-digest256,goog-passwordwhite-proto,ads-track-digest256,social-track-digest256,analytics-track-digest256,base-fingerprinting-track-digest256,content-fingerprinting-track-digest256,base-cryptomining-track-digest256,content-cryptomining-track-digest256,fanboyannoyance-ads-digest256,fanboysocial-ads-digest256,easylist-ads-digest256,easyprivacy-ads-digest256,adguard-ads-digest256,social-tracking-protection-digest256,social-tracking-protection-facebook-digest256,social-tracking-protection-linkedin-digest256,social-tracking-protection-twitter-digest256");
 user_pref("urlclassifier.downloadAllowTable", false);
 user_pref("urlclassifier.downloadBlockTable", false);
 user_pref("urlclassifier.features.cryptomining.annotate.blacklistTables", "base-cryptomining-track-digest256");
