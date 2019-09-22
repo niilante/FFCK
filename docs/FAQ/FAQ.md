@@ -199,3 +199,9 @@ The old syntax `about:config?filter=bookmarks` [does not work anymore](https://o
 ### I'm looking for a specific CSS tweak e.g. to make the context menu dark
 
 A collection of userstyle "tweaks"can be found under [this project (firefox-csshacks)](https://github.com/MrOtherGuy/firefox-csshacks).
+
+
+### Is it possible to downgrade my FF profile?
+
+Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hardcoded and a environment variable. You can add `--allow-downgrade` to the target field on your Firefox shortcut. Keep in mind that this parameter is unsupported and you do this at your own risk. 
+
