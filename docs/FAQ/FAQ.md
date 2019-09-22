@@ -1,24 +1,6 @@
 ## FFCK Project FAQ
 
-### Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe?
-
-> We configure NoScript to allow JavaScript by default in Tor Browser because many websites will not work with JavaScript disabled. Most users would give up on Tor entirely if a website they want to use requires JavaScript, because they would not know how to allow a website to use JavaScript (or that enabling JavaScript might make a website work).
-
-> There's a tradeoff here. On the one hand, we should leave JavaScript enabled by default so websites work the way users expect. On the other hand, we should disable JavaScript by default to better protect against browser vulnerabilities ( not just a theoretical concern!). But there's a third issue: websites can easily determine whether you have allowed JavaScript for them, and if you disable JavaScript by default but then allow a few websites to run scripts (the way most people use NoScript), then your choice of whitelisted websites acts as a sort of cookie that makes you recognizable (and distinguishable), thus harming your anonymity.
-
-> Ultimately, we want the default Tor bundles to use a combination of firewalls (like the iptables rules in Tails) and sandboxes to make JavaScript not so scary. In the shorter term, TBB 3.0 will hopefully allow users to choose their JavaScript settings more easily but the partitioning concern will remain.
-
-> Until we get there, feel free to leave JavaScript on or off depending on your security, anonymity, and usability priorities.
-
-**Update 2019:**
-Since NoScript (is in my opinion) _useless_ because Mozilla decided to immitate Google to switch over to the WebExtension API, the above statement is no longer true, for this repository. I think uMatrix or any other "web-filter" extension is better, the old NoScript had several protection mechanism (XSS, CSS-exf., CRFG etc), which are now been integrated (not all of them) into the Browser directly, which means you don't need NoScript anymore - there are other hardening and extensions which I think are better designed to do the job!. My point ov view is and always will be that Mozilla/Google should work directly with extensions hand-in-hand together to find best solution for everyone and not the ones which "know which extensions are security wise" good to have, not everyone is interested in those topics and I think the Browser should integrate everyhing out of the box for every user so that we don't need any extensions (that would be the perfect solution in a perfect world). 
-
-Source:
-* [Why is NoScript configured to allow JavaScript by default in Tor Browser? Isn't that unsafe? (torproject.org)](https://www.torproject.org/docs/faq.html.en#TBBJavaScriptEnabled)
-
-
-
-### Wont-fix Stuff in this configuration
+### Wont-fix stuff in this configuration
 
 I don't waste my lifetime and anyones else time trying to fix something which is protocol specific, this has to be fixed within the Browser source code or the protocol. Disabling everything makes less sense because a) not every site/server might use it b) it might not directly compromise your security or privacy setup c) not every page is exploitable or abuse xyz hole. In most cases exploiting something needs additional steps to make it effective for an attacker to "gain something from it" d) I believe in layer security and not software 'security'.
 
@@ -208,7 +190,7 @@ Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hardc
 
 ### GDrive, GMail, YouTube are slow in Firefox - What can I do?!
 
-Google decided to cook their own soup, the redesigned their own services, GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (aka homebrew) stuff. This is called "Polymer". Polymer is (by default) enabled on the new design. The only chance you have is to [opt-in into the old layout](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). In other words, Google has _maybe_ found a way to force competing browsers into planned obsolescence (or at least that's their plan).
+Google decided to cook their own soup, they redesigned their own services e.g. GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (aka homebrew) stuff. This is called "Polymer". Polymer is (by default) enabled on the new design. The only chance you have is to [opt-in into the old layout](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). In other words, Google has _maybe_ found a way to force competing browsers into planned obsolescence (or at least that's their plan).
 
 > YouTube page load is 5x slower in Firefox and Edge than in Chrome because YouTube's Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en).
 
