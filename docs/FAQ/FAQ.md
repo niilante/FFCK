@@ -205,3 +205,10 @@ A collection of userstyle "tweaks"can be found under [this project (firefox-cssh
 
 Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hardcoded and a environment variable. You can add `--allow-downgrade` to the target field on your Firefox shortcut. Keep in mind that this parameter is unsupported and you do this at your own risk. 
 
+
+### GDrive, GMail, YouTube are slow in Firefox - What can I do?!
+
+Google decided to cook their own soup, the redesigned their own services, GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (aka homebrew) stuff. This is called "Polymer". Polymer is (by default) enabled on the new design. The only chance you have is to [opt-in into the old layout](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). In other words, Google has _maybe_ found a way to force competing browsers into planned obsolescence (or at least that's their plan).
+
+> YouTube page load is 5x slower in Firefox and Edge than in Chrome because YouTube's Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en).
+
