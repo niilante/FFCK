@@ -1,5 +1,4 @@
-## Official Mozilla documentation(s)
-* [Advices from Mozilla Firefox on privacy and government surveillance (mozilla.org)](https://www.mozilla.org/en-US/teach/smarton/surveillance/)
+## Official Mozilla documentation
 * [DXR - Firefox Datareporting preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/toolkit/components/telemetry/datareporting-prefs.js)
 * [DXR - Firefox General preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/init/all.js)
 * [DXR - Firefox Healthreport preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/toolkit/components/telemetry/healthreport-prefs.js)
@@ -19,11 +18,11 @@
 * [Disconnect whitelist (disconnect.me)](https://disconnect.me/trackerprotection/unblocked)
 
 
-### Add-on signing check
+### Add-on signing Check
 * [Disable add-on signing check in Release (all) versions of Firefox (stackoverflow.com)](https://stackoverflow.com/questions/31952727/how-can-i-disable-signature-checking-for-firefox-add-ons)
 
 
-### Source Code indexing tools
+### Source Code Indexing Tools
 * [Searchfox (searchfox.org)](https://searchfox.org/) ([source code](https://github.com/mozsearch/mozsearch))
 
 
@@ -57,6 +56,7 @@
 * [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
 * [The Mozilla Learning Network](https://learning.mozilla.org/en-US/)
 * [Mozilla Source Code Directory Structure](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Directory_structure)
+* [Debugger for Firefox extension (VSCode) (marketplace.visualstudio.com/)](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
 
 
 ### Templates
@@ -77,6 +77,7 @@
 * [Is Firefox better than Chrome? It comes down to privacy. (washingtonpost.com)](https://www.washingtonpost.com/gdpr-consent/?destination=%2ftechnology%2f2019%2f06%2f21%2fgoogle-chrome-has-become-surveillance-software-its-time-switch%2f%3f)
 * [Mozilla Firefox Hardware Report (hardware.metrics.mozilla.com)](https://hardware.metrics.mozilla.com/)
 * [mozregression (https://mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
+* [Advices from Mozilla Firefox on privacy and government surveillance (mozilla.org)](https://www.mozilla.org/en-US/teach/smarton/surveillance/)
 
 
 ### About:config related
