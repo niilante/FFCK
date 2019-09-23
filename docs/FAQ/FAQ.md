@@ -1,8 +1,29 @@
 ## FFCK Project FAQ
 
+### Why is `resistFingerprinting` disabled?
+
+Multiple reasons, some are bug related, others might break some _useful_ functions. To name several reasons why I don't enabled the anti-fingerprinting option are:
+
+- Breaks [timezone](https://old.reddit.com/r/firefox/comments/7tqvpr/privacyresistfingerprinting_timezone/) dection (_by design_)
+- [Performance problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1394735#c1)
+- [Canvas problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1429865)
+- [Website problems](https://old.reddit.com/r/firefox/comments/a2wwwl/vimeo_stopped_working_with_firefox_and/)
+- [Addon installation problems](https://old.reddit.com/r/firefox/comments/87h2le/privacyresistfingerprinting_prevents_installing/)
+- [User agent "problems"](https://old.reddit.com/r/firefox/comments/bro9sk/privacyresistfingerprinting_user_agent/) (_by design_)
+- Window resizing [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1494212) (_by design_)
+- .. there are other [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1235231), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1449139), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=921942) & even more [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=462743)
+
+What now? Well since I don't think that Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting) (RFP) is (at this stage) useful, we use other (older) flags in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough.
+
+
+### Why are some flags disabled when I can control them via FF Settings?
+
+Some flags are preset in case you _accidently_ installed addon x e.g. Screenshots. Enforcing to disable e.g. screenshots out-of-the box is usually not needed because if the addon is not installed the toggle simply does nothing.
+
+
 ### Wont-fix stuff in this configuration
 
-I don't waste my lifetime and anyones else time trying to fix something which is protocol specific, this has to be fixed within the Browser source code or the protocol. Disabling everything makes less sense because a) not every site/server might use it b) it might not directly compromise your security or privacy setup c) not every page is exploitable or abuse xyz hole. In most cases exploiting something needs additional steps to make it effective for an attacker to "gain something from it" d) I believe in layer security and not software 'security'.
+I don't waste my lifetime and anyones else time trying to "fix" something which is protocol specific, this has to be fixed within the Browsers source code or the protocol specification. Disabling everything makes less sense because a) not every site/server might use it b) it might not directly compromise your security or privacy setup c) not every page is exploitable or abuse xyz hole. In most cases exploiting something needs additional steps to make it effective for an attacker to "gain something from it" d) I believe in layer security and not software 'security'.
 
 * Basically **every connection is disabled**, except for getting **certificate updates** (blacklist). 
 * **WebRTC** - I disabled it by default, you not need to disable it in uBlock.
@@ -17,17 +38,19 @@ I don't waste my lifetime and anyones else time trying to fix something which is
 * **Crypto-miners** - "workers" are disabled. - You see in the configuration that the workers-flag itself is enabled (debug reasons) but since we start Firefox in Private Browsing Mode (PBM) it automatically gets disabled (restricted) once you started the fox.
 
 
+### Why are studies & telemetry disabled?
+
+> Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
+Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
+
+The biggest "pro" argument for telemetry is that some Mozilla Developers think that some old or new features aren't used enough to justify maintenance (if you disable telemetry), this might helps them to focus on _more important_ things. This is overall not abad argument, however I think telemetry & studies should be moved to nightly or beta (testing) builds only and do not belong into any stable Firefox builds.
+
+Telemetry itself is not a privacy problem, Mozilla made sure that its annonymized and doesn't expose any "private" information such as your browsing behvior but I think the overall _benefit_ is not existend since most bugs are been manually submitted via bug tracker, reddit & co and it causes a _lot of traffic_ (which we want to avoid).
+
 
 ### Does any of these tweaks really increase my security and how can I check it?
 
 There are [bunch of websites which testing specific API's](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List), but it's questionable if you need "several about:config tweaks". I do believe that critical security things need to be fixed in the Mozilla Browser source code and not via any 'tweaks' or configurations. E.g when you never enabled JavaScript in the first place or visit page x, which might abuses privileges or other API's, you might never be affected because certain attacks are based on well-known "internet problems" (JavaScript, fingerprinting etc). Migrating those possible attacks are fine, however inspecting websites via debugger is better. Ask the website owner to "fix" it or mention possible alternatives, most webmasters are still not aware of more private alternatives which they could have been used to "harden" their website.
-
-
-
-### Telemetry?
-
-> Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
-Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
 
 
 
@@ -67,12 +90,14 @@ The following extensions are not there to 'harden' Mozilla Firefox, it's more my
 
 ### Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?
 
-* Any kind of censorship (no matter if meant well or not) is a bad thing.
-* Blacklisting the Internet will never work. A Malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
-* The hash is unique and can expose you or reveal your browsing habits. 
-* An attacker can use the open sourced list to build strategies to bypass them, which means such filter lists are depending on how often and well they are maintained. In other words an attacker could grab the list, check if he is on the list or randomize the name each time your Browser loads the payload. Such filter lists can't work with regular expressions since this would break legitimate domains too.
+* Any kind of censorship (no matter if meant well or not) is in general a bad thing.
+* Blacklisting the whole internet will never work. A malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
+* The hash is unique and can expose you or reveal your browsing habits (_addressed by configuration hardening_)
+* An attacker can use the open source domain list to build strategies in order to bypass them, which means such filter lists are depending on how often and well they are maintained. In other words an attacker could grab the list, check if he is on the list or randomize the name each time your Browser loads the payload. Such filter lists can't work with regular expressions since this would break legitimate domains too.
+* Some filter lists cause a lot traffic.
+* The filter lists are maybe stored on Google (CDN) Server (which then might tracks you).
 
-If you want such censorship or blocking I suggest you [work with your own list instead](https://www.monperrus.net/martin/anti-phishing-protection-without-google-safebrowsing) which you can control and not any organization which you have no control over. I suggest [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) or/uMatrix/uBo combination which allowing you to create/use your own lists or allowing you to make exclusions, another benefit is that those are faster compared to Google's or Mozilla's Safe browsing (_needs more evidence_).
+If you want such censorship or blocking I suggest you [work with your own list instead](https://www.monperrus.net/martin/anti-phishing-protection-without-google-safebrowsing) which YOU can control and not any organization which you have no control over. I suggest [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) or/uMatrix/uBo combination which allowing you to create/use your own lists or allowing you to make exclusions, another benefit is that those are faster compared to Google's or Mozilla's Safe browsing (_needs more evidence_).
 
 
 
@@ -90,14 +115,12 @@ You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firef
 
 ### How to workaround Google's CAPTCHA problem
 
-In case you use uBlock copy the following rules under Options > My Rules and then hit apply.
+In case you use uBlock copy the following rules under `Options > My Rules` and then hit `apply`.
 
-```bash
-* https://www.google.com/recaptcha/api * noop
-* https://www.gstatic.com/recaptcha/api * noop
-* https://www.recaptcha.net/recaptcha/api script noop
-* https://www.google.com/js/bg/ script noop
-```
+* `https://www.google.com/recaptcha/api * noop`
+* `https://www.gstatic.com/recaptcha/api * noop`
+* `https://www.recaptcha.net/recaptcha/api script noop`
+* `https://www.google.com/js/bg/ script noop`
 
 The config related toggle is `privacy.resistFingerprint` + `privacy.firstparty.isolate` which is disabled in this configuration for several reasons, not only because it _can_ break Google's CAPTCHA system but moreover because it breaks a [lot of other pages too](https://bugzilla.mozilla.org/show_bug.cgi?id=1299996).
 
@@ -111,7 +134,7 @@ The short answer is yes, Tor not only has additional anti-fingerprinting related
 
 
 
-### Why are several Scripts or filter-lists gone after I updated to Firefox 66.0?
+### Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?
 
 Firefox 66 changed the storage backend from json blobs to IndexedDB files, in other words during this migration process it's very much likely that e.g. Tapermonkey or the internal database gets corrupted. The same can happen with your passwords whenever `logins.json` or/and `key3.DB` gets corrupted you might [lose all of your passwords](https://support.mozilla.org/en-US/questions/1181868). I highly suggest that you use KeePass or another password manager instead of Mozilla's own password manager function. 
 
@@ -127,13 +150,13 @@ Mozilla Firefox uses the same technique as the Tor Browser (_which is not really
 
 Manually create (or download) the file `autoconfig.js` (_other names won't work_) it belongs into the `/defaults/pref/autoconfig.js` dir. In my repo it's [this file](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/autoconfig.js) and drop it together with the [mozilla.cfg](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/mozilla.cfg) into your Firefox profile.
 
-### Which extensions could I use to reduce tracking behavior?
+### Which extensions could I use to reduce the tracking behavior?
 
 That's a difficult question because every user has other needs, so I'll only list the extension which I used in my daily Firefox times. 
 
 * [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/)
 * [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/)
-* [Privacy Settings](https://add0n.com/privacy-settings.html)
+* [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a gimmick_, we enforce this via user.js)
 * [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
 * ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
@@ -151,7 +174,7 @@ That's a difficult question because every user has other needs, so I'll only lis
 * ~~Temporary Containers~~ [Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations) with [Integrations](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/) (because I like to control it per-site basis) 
 
-Keep in mind that I'm a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you that "they are the best" is always a bad idea.
+Keep in mind that I'm a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you to that "they are the best" is always a bad idea.
 
 ### Where does Firefox Multi-Account Containers Extension store its settings?
 
