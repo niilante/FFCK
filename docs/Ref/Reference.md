@@ -23,7 +23,7 @@
 
 
 ### Source Code Indexing Tools
-* [Searchfox (searchfox.org)](https://searchfox.org/) ([source code](https://github.com/mozsearch/mozsearch))
+* [Searchfox (searchfox.org)](https://searchfox.org) ([source code](https://github.com/mozsearch/mozsearch))
 
 
 ### Shield Studies
@@ -31,20 +31,20 @@
 
 
 #### Mozilla Autoconfig 
-* [Debugging Firefox Autoconfig Problems](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
-* [Firefox Autoconfig Files](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
-* [Firefox Autoconfig Files Continued](https://mike.kaply.com/2012/03/20/customizing-firefox-autoconfig-files-continued/)
-* [Advanced Autoconfig Files](https://mike.kaply.com/2012/03/22/customizing-firefox-advanced-autoconfig-files/)
-* [The SIPB Firefox Locker - Maintainers](http://web.mit.edu/~firefox/www/maintainers/autoconfig.html)
-* [Thunderbird_Configuration](https://wpkg.org/Thunderbird#Thunderbird_Configuration)
-* [Configuration utilities for administrators](http://kb.mozillazine.org/Configuration_utilities_for_administrators)
-* [Locking preferences](http://kb.mozillazine.org/Locking_preferences)
-* [Mission Control Desktop AKA AutoConfig](https://developer.mozilla.org/docs/MCD,_Mission_Control_Desktop_AKA_AutoConfig)
-* [A brief guide to Mozilla preferences](https://developer.mozilla.org/docs/Mozilla/Preferences/A_brief_guide_to_Mozilla_preferences)
-* [Deploying Firefox in an Enterprise Environment](https://developer.mozilla.org/Firefox/Enterprise_deployment)
-* [Deploying Thunderbird in the Enterprise](https://developer.mozilla.org/docs/Mozilla/Thunderbird/Deploying_Thunderbird_in_the_Enterprise)
-* [Mozilla - /extensions/pref/autoconfig](https://dxr.mozilla.org/mozilla-central/source/extensions/pref/autoconfig/)
-* [Mozilla - /modules/libpref](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/)
+* [Debugging Firefox Autoconfig Problems (mike.kaply.com)](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
+* [Firefox Autoconfig Files (mike.kaply.com)](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
+* [Firefox Autoconfig Files Continued (mike.kaply.com)](https://mike.kaply.com/2012/03/20/customizing-firefox-autoconfig-files-continued/)
+* [Advanced Autoconfig Files (mike.kaply.com)](https://mike.kaply.com/2012/03/22/customizing-firefox-advanced-autoconfig-files/)
+* [The SIPB Firefox Locker - Maintainers (web.mit.edu)](http://web.mit.edu/~firefox/www/maintainers/autoconfig.html)
+* [Thunderbird_Configuration (wpkg.org)](https://wpkg.org/Thunderbird#Thunderbird_Configuration)
+* [Configuration utilities for administrators (kb.mozillazine.org)](http://kb.mozillazine.org/Configuration_utilities_for_administrators)
+* [Locking preferences (kb.mozillazine.org)](http://kb.mozillazine.org/Locking_preferences)
+* [Mission Control Desktop AKA AutoConfig (developer.mozilla.org)](https://developer.mozilla.org/docs/MCD,_Mission_Control_Desktop_AKA_AutoConfig)
+* [A brief guide to Mozilla preferences (developer.mozilla.org)](https://developer.mozilla.org/docs/Mozilla/Preferences/A_brief_guide_to_Mozilla_preferences)
+* [Deploying Firefox in an Enterprise Environment (developer.mozilla.org)](https://developer.mozilla.org/Firefox/Enterprise_deployment)
+* [Deploying Thunderbird in the Enterprise (developer.mozilla.or)](https://developer.mozilla.org/docs/Mozilla/Thunderbird/Deploying_Thunderbird_in_the_Enterprise)
+* [Mozilla - /extensions/pref/autoconfig (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/extensions/pref/autoconfig/)
+* [Mozilla - /modules/libpref (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/)
 
 
 ### Extensions
@@ -54,9 +54,9 @@
 ### Developer Tools & Resources
 * [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
 * [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
-* [The Mozilla Learning Network](https://learning.mozilla.org/en-US/)
-* [Mozilla Source Code Directory Structure](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Directory_structure)
-* [Debugger for Firefox extension (VSCode) (marketplace.visualstudio.com/)](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
+* [The Mozilla Learning Network (learning.mozilla.org)](https://learning.mozilla.org/en-US/)
+* [Mozilla Source Code Directory Structure (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Source_Code/Directory_structure)
+* [Debugger for Firefox extension (VSCode) (marketplace.visualstudio.com)](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
 
 
 ### Templates
@@ -68,16 +68,15 @@
 
 ### Other References
 * [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
-* [Certificate revocation list (wikipedia.org)](https://en.wikipedia.org/wiki/Certificate_revocation_list)
 * [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
 * [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
-* [Chromium security page on client-identification mechanisms (sites.google.com)](https://sites.google.com/a/chromium.org/dev/Home/chromium-security/client-identification-mechanisms)
-* [Recent study on fingerprinting methods observed in the wild (randomwalker.info PDF download)](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
+* [Recent study on fingerprinting methods observed in the wild (randomwalker.info (.PDF))](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
 * [Is Firefox better than Chrome? It comes down to privacy. (washingtonpost.com)](https://www.washingtonpost.com/gdpr-consent/?destination=%2ftechnology%2f2019%2f06%2f21%2fgoogle-chrome-has-become-surveillance-software-its-time-switch%2f%3f)
 * [Mozilla Firefox Hardware Report (hardware.metrics.mozilla.com)](https://hardware.metrics.mozilla.com/)
-* [mozregression (https://mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
+* [mozregression (mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
 * [Advices from Mozilla Firefox on privacy and government surveillance (mozilla.org)](https://www.mozilla.org/en-US/teach/smarton/surveillance/)
+* [Firefox uses too much memory or CPU resources (support.mozilla.org)](https://support.mozilla.org/en-US/kb/firefox-uses-too-much-memory-or-cpu-resources)
 
 
 ### About:config related
@@ -94,6 +93,7 @@
 
 
 ### Web Security
+* [Certificate revocation list (wikipedia.org)](https://en.wikipedia.org/wiki/Certificate_revocation_list)
 * [Web security (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Web/Security)
 * [Browser Exploitation Framework (beefproject.com)](https://beefproject.com/)
 * [Center for Internet Security - Mozilla Firefox benchmarks (benchmarks.cisecurity.org)](https://benchmarks.cisecurity.org/downloads/browse/index.cfm?category=benchmarks.desktop.browsers.firefox)
@@ -105,7 +105,7 @@
 * [Technical Security Audit - Firefox Application Update Service for Mozilla Corporation (drive.google.com)](https://drive.google.com/file/d/1v53GCYPxzoZmB1dCop1yJfZgS1wi64dS/view)
 * [Privacy & Security related add-ons on AMO (addons.mozilla.org)](https://addons.mozilla.org/firefox/extensions/privacy-security/)
 * [CVEs for Firefox - cvedetails.com (cvedetails.com)](https://www.cvedetails.com/vulnerability-list/vendor_id-452/product_id-3264/Mozilla-Firefox.html)
-* [CVEs for Firefox - mitre.org (mitre.org)](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox)
+* [CVEs list for Firefox (mitre.org)](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox)
 
 
 ### Mozilla Privacy
@@ -146,7 +146,7 @@
 * [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
 * [Privacy Online Test And Resource Compendium (POTARC) (github.com)](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
-* [Mozilla Storage Test Page](https://firefox-storage-test.glitch.me/) (make sure everything is green otherwise your profile database is damaged)
+* [Mozilla Storage Test Page (firefox-storage-test.glitch)](https://firefox-storage-test.glitch.me/) (make sure everything is green otherwise your profile database is damaged)
 
 
 ### Bug Reporting under Android 
@@ -159,14 +159,14 @@
 * [An index of discussions about the Cliqz controversy (old.reddit.com)](https://old.reddit.com/r/firefox/comments/756s0f/an_index_of_discussions_about_the_cliqz/)
 * [Mozilla under fire: Inside the 9-day reign of fallen CEO Brendan Eich (cnet.com)](https://www.cnet.com/news/mozilla-under-fire-inside-the-9-day-reign-of-fallen-ceo-brendan-eich/)
 * [Firefox browser trusts DarkMatter CA certificate to cause security industry controversy (bugzilla.mozilla.org)](https://bugzilla.mozilla.org/show_bug.cgi?id=1427262)
-* [Firefox Shield Studies (wiki.mozilla.org/)](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies)
+* [Firefox Shield Studies (wiki.mozilla.org)](https://wiki.mozilla.org/Firefox/Shield/Shield_Studies)
 * [Firefox is on a slippery slope (drewdevault.com)](https://drewdevault.com/2017/12/16/Firefox-is-on-a-slippery-slope.html)
 * [Google Analytics is used to track users (github.com)](https://github.com/mozilla/addons-frontend/issues/2785)
 * [Firefox Test Pilot (testpilot.firefox.com)](https://testpilot.firefox.com/)
 * [Mozilla retires Firefox’s sponsored tiles, hunts for new revenue streams (arstechnica.com)](https://arstechnica.com/information-technology/2015/12/firefox-retires-much-maligned-sponsored-tiles-hunts-for-new-revenue-streams/)
 * [Mozilla ships Cliqz experiment in Germany for ~1% of new installs, collects surf data, including URLs (reddit.com)](https://old.reddit.com/r/firefox/comments/74n0b2/mozilla_ships_cliqz_experiment_in_germany_for_1/)
 * [Mozilla Tracking Test (github.com)](https://github.com/mozilla/tracking-test)
-* [Mozilla Snippet concerns](https://old.reddit.com/r/privacytoolsIO/comments/abfgj5/mozilla_responds_to_bookingcom_snippet_concerns/)
+* [Mozilla Snippet concerns (old.reddit.com)](https://old.reddit.com/r/privacytoolsIO/comments/abfgj5/mozilla_responds_to_bookingcom_snippet_concerns/)
 * [Mozilla's creepy Mr Robot stunt in Firefox flops in touching tribute to TV show's 2nd season (theregister.co.uk)](https://www.theregister.co.uk/2017/12/18/mozilla_mr_robot_firefox_promotion/)
 * [Switch to WebExtensions (blog.mozilla.org)](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
 * [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
