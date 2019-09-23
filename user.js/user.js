@@ -2,7 +2,7 @@
 // See: Workarounds.md for known problems & workarounds!
 //
 //user_pref("network.trr.resolvers", ""); // Full list here: https://github.com/curl/curl/wiki/DNS-over-HTTPS
-user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
+//user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
 user_pref("services.sync.ui.hidden", true);
 user_pref("alerts.showFavicons", true);
 user_pref("alerts.useSystemBackend", true);
@@ -455,7 +455,7 @@ user_pref("layout.css.text-decoration-thickness.enabled", true);
 user_pref("layout.css.text-underline-offset.enabled", true);
 user_pref("layout.css.use-counters-unimplemented.enabled", false);
 user_pref("layout.css.visited_links_enabled", false);
-user_pref("layout.frame_rate.precise", true); //Disable in case you have scrolling issues
+user_pref("layout.frame_rate.precise", true); // Disable in case you have scrolling issues!
 user_pref("layout.framevisibility.amountscrollbeforeupdatehorizontal", 2);
 user_pref("layout.framevisibility.amountscrollbeforeupdatevertical", 2);
 user_pref("layout.reflow.synthMouseMove", true);
@@ -501,7 +501,7 @@ user_pref("media.peerconnection.ice.no_host", true);
 user_pref("media.peerconnection.ice.obfuscate_host_addresses", false);
 user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", false);
 user_pref("media.peerconnection.mtransport_process", false);
-user_pref("media.rdd-opus.enabled", false);
+user_pref("media.rdd-opus.enabled", true);
 user_pref("media.rdd-wav.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.enabled", true);
 user_pref("media.webrtc.net.force_disable_rtcp_reception", false);
@@ -533,7 +533,7 @@ user_pref("network.dns.skipTRR-when-parental-control-enabled", true);
 user_pref("network.file.disable_unc_paths", false);
 user_pref("network.ftp.enabled", false);
 user_pref("network.gio.supported-protocols", "");
-user_pref("network.http.accept-encoding.secure", "gzip, deflate, br");
+user_pref("network.http.accept-encoding.secure", "gzip, deflate, br"); // br fixed blurriness
 user_pref("network.http.altsvc.enabled", false);
 user_pref("network.http.altsvc.oe", false);
 user_pref("network.http.altsvc.proxy_checks", true);
@@ -549,8 +549,8 @@ user_pref("network.http.referer.XOriginPolicy", 1);
 user_pref("network.http.referer.XOriginTrimmingPolicy", 0);
 user_pref("network.http.sendOriginHeader", 2);
 user_pref("network.http.sendRefererHeader", 1);
-user_pref("network.http.spdy.bug1556491", true); //irrelevant
-user_pref("network.http.spdy.bug1563695", true); //irrelevant
+user_pref("network.http.spdy.bug1556491", true); //irrelevant, workaround
+user_pref("network.http.spdy.bug1563695", true); //irrelevant, workaround
 user_pref("network.http.spdy.enabled.deps", false);
 user_pref("network.http.spdy.enabled.http2", false);
 user_pref("network.http.spdy.enabled", false);
@@ -572,7 +572,7 @@ user_pref("network.protocol-handler.expose.blob", true);
 user_pref("network.protocol-handler.expose.chrome", true);
 user_pref("network.protocol-handler.expose.data", true);
 user_pref("network.protocol-handler.expose.file", true);
-user_pref("network.protocol-handler.expose.ftp", true);
+user_pref("network.protocol-handler.expose.ftp", false);
 user_pref("network.protocol-handler.expose.http", true);
 user_pref("network.protocol-handler.expose.https", true);
 user_pref("network.protocol-handler.expose.javascript", true);
