@@ -24,10 +24,25 @@ user_pref("browser.backspace_action", 0); //2
 user_pref("browser.bookmarks.max_backups", 0); // 3-5 suggestion
 user_pref("browser.cache.cache_isolation", false); //set to true might breaks websites
 user_pref("browser.cache.disk.enable", false);
+user_pref("browser.cache.disk.smart_size.enabled", false);
 user_pref("browser.cache.frecency_experiment", 0);
 user_pref("browser.cache.memory.capacity", 0); //-1 since 70
 user_pref("browser.cache.memory.enable", false);
+user_pref("browser.cache.memory.max_entry_size", 5120); // 0= no limit
+user_pref("browser.cache.disk.capacity", 256000); //default, only if disk cache enabled
 user_pref("browser.cache.offline.enable", false);
+user_pref("browser.cache.disk.max_chunks_memory_usage", 40960);
+//user_pref("browser.cache.disk_cache_ssl", true);
+user_pref("browser.cache.check_doc_frequency", 3);
+user_pref("browser.cache.disk.metadata_memory_limit", 250); // 0.25 MB
+user_pref("browser.cache.offline.insecure.enable",  false);
+user_pref("browser.cache.max_shutdown_io_lag", 2); // in seconds
+user_pref("browser.cache.frecency_half_life_hours", 6); // 6 hours
+user_pref("browser.cache.disk.preload_chunk_count", 4); // 1 MB of read ahead
+user_pref("browser.cache.disk.max_priority_chunks_memory_usage", 40960);
+user_pref("browser.cache.disk.free_space_soft_limit", 5120); // 5MB
+user_pref("browser.cache.disk.free_space_hard_limit", 1024); // 1MB -> -1 for no limit
+user_pref("browser.cache.disk.max_entry_size", 51200);  // 50 MB
 user_pref("browser.casting.enabled", false); // Send Video To Device
 user_pref("browser.chrome.errorReporter.submitUrl", "");
 user_pref("browser.contentblocking.cryptomining.preferences.ui.enabled", true);
@@ -65,11 +80,15 @@ user_pref("browser.fixup.alternate.enabled", false);
 user_pref("browser.fixup.hide_user_pass", true);
 user_pref("browser.fixup.typo.scheme", true);
 user_pref("browser.formfill.enable", false);
+user_pref("dom.registerProtocolHandler.insecure.enabled", false); // Insecure registerProtocolHandler 
 user_pref("browser.formfill.expire_days", 0);
 user_pref("browser.fullscreen.animate", false); //removed
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 user_pref("browser.in-content.dark-mode", true); //https://overdodactyl.github.io/ShadowFox/
+user_pref("dom.quotaManager.testing", false);
 user_pref("browser.launcherProcess.enabled", true);
+user_pref("dom.workers.maxPerDomain", 512); // default
+user_pref("media.hardware-video-decoding.enabled", true);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.link.open_newwindow.restriction", 0);
 user_pref("browser.link.open_newwindow", 3);
@@ -169,6 +188,8 @@ user_pref("browser.startup.homepage_override.buildID", "20100101");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.page", 3); //0 for blank
+user_pref("gesture.swipeLeft", '');
+user_pref("gesture.swipeRight", '');
 user_pref("browser.tabs.animate", false);
 user_pref("browser.tabs.closeWindowWithLastTab", false);
 user_pref("browser.tabs.crashReporting.sendReport", false);
@@ -487,7 +508,9 @@ user_pref("media.getusermedia.screensharing.enabled", false);
 user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-manager.url", "");
 user_pref("media.gmp-provider.enabled", false);
+user_pref("media.webvtt.pseudo.enabled", true);
 user_pref("media.gmp-widevinecdm.enabled", false);
+user_pref("media.webvtt.debug.logging", false);
 user_pref("media.gmp-widevinecdm.visible", false);
 user_pref("media.gpu-process-decoder", true); // Do not (!) change otherwise YT 60fps videos might freeze/stutter
 user_pref("media.media-capabilities.enabled", true);
@@ -603,8 +626,11 @@ user_pref("network.trr.uri", https://doh.securedns.eu/dns-query); //example
 user_pref("network.trr.wait-for-A-and-AAAA", true);
 user_pref("offline-apps.allow_by_default", false);
 user_pref("page_load.deprioritization_period", 5000);
+user_pref("offline-apps.quota.warn", 51200); //in kB
+user_pref("browser.cache.compression_level", 0); // 0=disable comp, 1 = best speed, 9 = best compression
 user_pref("pdfjs.disableAutoFetch", true);
 user_pref("pdfjs.disabled", false);
+user_pref("browser.cache.offline.capacity", 512000); // offline cache capacity in kilobyte
 user_pref("pdfjs.disableStream", true);
 user_pref("pdfjs.enabledCache.initialized", true);
 user_pref("pdfjs.enabledCache.state", true);
@@ -811,7 +837,7 @@ user_pref("stoolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.cosmeticAnimations.enabled", false); //problematic
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.coverage.opt-out", true);
-user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true); // Workaround for userChrome.css not loading
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrping.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
@@ -874,3 +900,5 @@ user_pref("webgl.renderer-string-override", " ");
 user_pref("webgl.vendor-string-override", " ");
 user_pref("widget.content.gtk-theme-override", "Breeze");
 user_pref("widget.disable-native-theme", false);
+user_pref("dom.datatransfer.mozAtAPIs", false);
+user_pref("fission.rebuild_frameloaders_on_remoteness_change", false);
