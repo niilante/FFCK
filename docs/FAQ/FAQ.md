@@ -1,22 +1,31 @@
 ## FFCK Project FAQ
 
+### Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"
+
+* Private Browsing Mode = Stronger, Regular session cookies are **not written to disk**.
+* Delete cookies when Firefox closes = Basically changes the expiration date of persistent cookies (for the current session only). Similar like closing a private window, the cookies getting deleted after closing the window. In a regular browsing session the cookies **are written to disk**.
+
+### Anti-Private Browser mode detection
+
+Some websites [detecting if you're in an incognito or private browsing mode](https://gist.github.com/jherax/a81c8c132d09cc354a0e2cb911841ff1) e.g. Boston Globe or Washington Post. This can be avoided by [disabling JavaScript](https://www.deviceinfo.me/), however this will cause the website to _break_. The most known workaround is to use [Chrome 76](https://www.blog.google/outreach-initiatives/google-news-initiative/protecting-private-browsing-chrome/) / [Firefox 66+](https://bugzilla.mozilla.org/show_bug.cgi?id=781982) which have a _basic_ protection against this kind of _fingerprinting_. However, pages like Washington Post quickly inspected the Browser source code and found new strategies to bypass the "anti-incognito paywall detection", that been said [Incognito Mode is not a full privacy system!](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=en). However, there is no final solution to this topic, as said, news pages adopting the changes and watching the source code but some [external extension](https://github.com/iamadamdev/bypass-paywalls-firefox) or [scripts](https://burles.co/en/) might still working.
+
 ### Why is `resistFingerprinting` disabled?
 
 Multiple reasons, some are bug related, others might break some _useful_ functions. To name several reasons why I don't enabled the anti-fingerprinting option are:
 
-- Breaks [timezone](https://old.reddit.com/r/firefox/comments/7tqvpr/privacyresistfingerprinting_timezone/) dection (_by design_)
-- [Performance problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1394735#c1)
-- [Canvas problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1429865)
-- [Website problems](https://old.reddit.com/r/firefox/comments/a2wwwl/vimeo_stopped_working_with_firefox_and/)
-- [Addon installation problems](https://old.reddit.com/r/firefox/comments/87h2le/privacyresistfingerprinting_prevents_installing/)
-- [User agent "problems"](https://old.reddit.com/r/firefox/comments/bro9sk/privacyresistfingerprinting_user_agent/) (_by design_)
-- Window resizing [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1494212) (_by design_)
-- .. there are other [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1235231), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1449139), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=921942) & even more [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=462743)
+* Breaks [timezone](https://old.reddit.com/r/firefox/comments/7tqvpr/privacyresistfingerprinting_timezone/) dection (_by design_)
+* [Performance problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1394735#c1)
+* [Canvas problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1429865)
+* [Website problems](https://old.reddit.com/r/firefox/comments/a2wwwl/vimeo_stopped_working_with_firefox_and/)
+* [Addon installation problems](https://old.reddit.com/r/firefox/comments/87h2le/privacyresistfingerprinting_prevents_installing/)
+* [User agent "problems"](https://old.reddit.com/r/firefox/comments/bro9sk/privacyresistfingerprinting_user_agent/) (_by design_)
+* Window resizing [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1494212) (_by design_)
+* .. there are other [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1235231), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1449139), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=921942) & even more [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=462743)
 
-What now? Well since I don't think that Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting) (RFP) is (at this stage) useful, we use other (older) flags in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough.
+What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (in his current state) useful, we use other (older) flags in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It's impossible to defeat all fingerprinting mechanism without destroying the normal "web surfing fun". 
 
 
-### Why are some flags disabled when I can control them via FF Settings?
+### Why are some flags disabled when I can control them via FF "Settings"?
 
 Some flags are preset in case you _accidently_ installed addon x e.g. Screenshots. Enforcing to disable e.g. screenshots out-of-the box is usually not needed because if the addon is not installed the toggle simply does nothing.
 
