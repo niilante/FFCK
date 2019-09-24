@@ -165,23 +165,24 @@ That's a difficult question because every user has other needs, so I'll only lis
 
 * [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/)
 * [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/)
-* [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a gimmick_, we enforce this via user.js)
+* [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a _"gimmick"_, we enforce this via user.js)
 * [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
 * ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
 * [CanvasBlocker](https://addons.mozilla.org/firefox/addon/canvasblocker/)
 * [IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)
 * [Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)
-* [Smart Referer](https://addons.mozilla.org/firefox/addon/smart-referer/)
+* ~~[Smart Referer](https://addons.mozilla.org/firefox/addon/smart-referer/)~~
 * [ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/) 
 * [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/)
 * [ClearURLs](https://addons.mozilla.org/firefox/addon/clearurls/)
-* [Violentmonkey](https://addons.mozilla.org/firefox/addon/violentmonkey/)
+* [Firemonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/)
 * [Redirector](https://addons.mozilla.org/firefox/addon/redirector/)
 * [Request Control](https://addons.mozilla.org/en-US/firefox/addon/requestcontrol)
 * [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/)
 * ~~Temporary Containers~~ [Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations) with [Integrations](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/) (because I like to control it per-site basis) 
+* [inØsight — Zero Width Obfuscation](https://addons.mozilla.org/en-US/firefox/addon/in0sight/)
 
 Keep in mind that I'm a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you to that "they are the best" is always a bad idea.
 
