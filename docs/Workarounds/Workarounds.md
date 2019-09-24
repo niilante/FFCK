@@ -44,3 +44,9 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 * `user_pref("network.captive-portal-service.enabled", true);`
 * `user_pref("network.trr.wait-for-portal", true);`
 
+
+### Persistent drop-down menu (in case you are affected)
+* `user_pref("ui.popup.disable_autohide", false);`
+* `user_pref("devtools.command-button-noautohide.enabled", false);`
+* `user_pref("devtools.command-button-noautohide.enabled", false);`
+
