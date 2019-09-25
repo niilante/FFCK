@@ -1,24 +1,21 @@
-## Block (all) Mozilla related connections incl. services & websites & extensions
+## Block (all) Mozilla related connections incl. services, sync, websites & extensions
 # v1.1
 #
-# ASN: AS36856 | 63.245.208.0/23
+# ASN: AS36856 | 63.245.208.0/23 & 2620:101:8030::/47
 
 0.0.0.0 30boxes.com
 0.0.0.0 accounts.firefox.com
 0.0.0.0 activations.cdn.mozilla.net
 0.0.0.0 add.my.yahoo.com
 0.0.0.0 addons.mozilla.org
-0.0.0.0 ajax.googleapis.com
 0.0.0.0 anf1.fuzzing.mozilla.org
 0.0.0.0 api.accounts.firefox.com
-0.0.0.0 api.imgur.com
 0.0.0.0 aus5.mozilla.org
 0.0.0.0 aus6.mozilla.org
 0.0.0.0 auth.services.mozilla.com
 0.0.0.0 blocked.cdn.mozilla.net
 0.0.0.0 blocklist.addons.mozilla.org
 0.0.0.0 blocklists.settings.services.mozilla.com
-0.0.0.0 cdnjs.cloudflare.com
 0.0.0.0 code.cdn.mozilla.net
 0.0.0.0 compose.mail.yahoo.com
 0.0.0.0 crash-stats.mozilla.org
@@ -50,6 +47,7 @@
 0.0.0.0 mozilla.cloudflare-dns.com
 0.0.0.0 mozilla.hu
 0.0.0.0 mozilla.org.uk
+0.0.0.0 mozilla.design
 0.0.0.0 mozillafirefox.com
 0.0.0.0 mozillaservice.com
 0.0.0.0 mozsecworld.org
@@ -70,6 +68,7 @@
 0.0.0.0 shavar.services.mozilla.com
 0.0.0.0 snippets.cdn.mozilla.net
 0.0.0.0 support.mozilla.org
+0.0.0.0 taskcluster.net
 0.0.0.0 telemetry-experiment.cdn.mozilla.net
 0.0.0.0 telemetry.mozilla.org
 0.0.0.0 thunderbird.hu
