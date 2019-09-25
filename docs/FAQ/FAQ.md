@@ -1,5 +1,9 @@
 ## FFCK Project FAQ
 
+### My Firefox update X broke something, is that because of your config?
+
+No, but what you could do is to run [mozregression](https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/) which shows what exactly broke since you updated your Firefox. The output can be submitted to Mozilla, which helps developers to fix possuble problems in further builds.
+
 ### Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"
 
 * Private Browsing Mode = Stronger, Regular session cookies are **not written to disk**.
