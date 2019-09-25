@@ -17,14 +17,14 @@
 
 ### Project Overview
 
-This project provides a hardened user.js (and some other files) which are designed for everyone to drag & drop into his Firefox profile folder, the process can of course be automated via scripts/programs.
+This project provides a hardened user.js (and some other files) which are designed for everyone to drag & drop into his Firefox/Fenix profile folder, this process can (of course) be automated via external scripts/programs.
 
-* **More is not always better** and can lead into problems (website breakage).
+* **More is not always better** and can lead into problems (website breakage, bugs etc.).
 * FFCK project **does hope to provide a middle way between privacy and a _normal_ daily usage habit** without breaking too much.
 * FFCK project **does not believe in FUD or claims made-up without evidence**.
-* FFCK project **does not care about backward-compatibility to older/outdated Browser** versions.
 * FFCK project **does not explain web standards** or is designed to talk about web security policy mechanism, [Mozilla itself has an entire portal](https://developer.mozilla.org/en-US/) for this.
-* FFCK project is **not a documentation** for each about:config flag.
+* FFCK project ** does not document each about:config flag**, if you want a documentation, check the [official docs (all.js)](https://hg.mozilla.org/releases/mozilla-release/raw-file/aca7f47aa8dbf8e5858f5d1318317b463b7a94b7/modules/libpref/init/all.js)
+* The owner of this project **highly recommended** that you only use the latest stable Firefox version (or for _testing beta_).
 
 
 ### Project Goals
@@ -45,7 +45,7 @@ Several changes you can make within the Firefox options (and the invisible ones 
 
 ### Security aspect
 
-The project list is not designed to secure Firefox, it is designed to bring _as much as privacy (via about:flags changes) as possible_. The project owner does not believe that the configuration increases any security aspect of the Browser, there was never a proof given that a about:config really has an impact on the overall security level of each individual config user.
+The project list is _not designed to secure Firefox_, it is designed to bring _as much as privacy (via about:flags changes) as possible_. The project owner does not believe that the configuration increases any security aspect of the Browser itself, there was never a proof given that a about:config really has an impact on the overall security level of each individual config user.
 
 Possible Problems:
 * An attacker can use the open source list to find weaknesses (forgotten flags, mistakes or find other strategies to bypass it)
