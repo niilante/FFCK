@@ -56,6 +56,19 @@ Possible Problems:
 Archiving more security is way harder than trying to build defenses against privacy related attacks because [those two things are not the same](https://www.globalsign.com/en/blog/what-is-the-difference-between-privacy-and-security/) and the philosophy (in my opinion) must be that important problems have to be always addresses by the Browser itself without the need to change some flags/options. Stay away from ["Ultimative Firefox Privacy & Security Guides"](https://www.bestvpn.com/guides/firefox-privacy-security-guide/) those are in 99% of all cases [clickbait](https://en.wikipedia.org/wiki/Clickbait) and are very soon outdated, browser security itself is very very hard to archive if not almost impossible and needs constantly to be monitored.
 
 
+### What does Firefox (by default) submits?
+
+Firefox (by default) sends more/same stuff back than Chrome does, I believe this is not needed in an stable environment, that's why all of this was disabled.
+
+* [Blacklist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#1225) & [Whitelist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#974) specific stuff
+* [Tracker matchlist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#1011) 
+* [Tracking protection state](https://telemetry.mozilla.org/new-pipeline/dist.html#!cumulative=0&end_date=2017-09-17&keys=__none__!__none__!__none__&max_channel_version=nightly%252F57&measure=FENNEC_TRACKING_PROTECTION_STATE&min_channel_version=null&processType=*&product=Firefox!Fennec&sanitize=1&sort_keys=submissions&start_date=2017-08-02&table=1&trim=1&use_submission_date=0)
+* **NO telemetry pings are sent while in Private Browsing mode**
+* [Shavar checks](https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing)
+* Session based telemetry when [TP was enabled](https://feeding.cloud.geek.nz/posts/how-tracking-protection-works-in-firefox/)
+* [Ads](https://mozilla.github.io/tracking-test/ads.html), [Analytic](https://mozilla.github.io/tracking-test/analytics.html), [Social](https://mozilla.github.io/tracking-test/social.html), [Content](https://mozilla.github.io/tracking-test/full.html) & [filter list](https://mozilla.github.io/tracking-test/disconnect.html) specific checks/report/updates...
+
+
 ### Why I'm still fingerprintable?
 
 Test pages like [Panopticlick](https://panopticlick.eff.org/) have several problems which needs to be addresses and that's why they are not 100% reliable -_in the real-world_.
