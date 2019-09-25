@@ -1,5 +1,5 @@
 ## Block (all) Mozilla related connections incl. services, sync, websites & extensions
-# v1.1
+# v1.2
 #
 # ASN: AS36856 | 63.245.208.0/23 & 2620:101:8030::/47
 
@@ -33,6 +33,7 @@
 0.0.0.0 firefox.pt
 0.0.0.0 firefoxbrowser.com
 0.0.0.0 firefoxflicks.com
+0.0.0.0 firefox-storage-test.glitch.me
 0.0.0.0 ftp.mozilla.org
 0.0.0.0 getfirefox.com
 0.0.0.0 hello.firefox.com
@@ -40,7 +41,6 @@
 0.0.0.0 input.mozilla.org
 0.0.0.0 location.services.mozilla.com
 0.0.0.0 loop.services.mozilla.com
-0.0.0.0 mail.google.com
 0.0.0.0 malware-error.mozilla.com
 0.0.0.0 marketplace.firefox.com
 0.0.0.0 mozilla-podcast.com
@@ -49,6 +49,7 @@
 0.0.0.0 mozilla.org.uk
 0.0.0.0 mozilla.design
 0.0.0.0 mozillafirefox.com
+0.0.0.0 mozilla.github.io
 0.0.0.0 mozillaservice.com
 0.0.0.0 mozsecworld.org
 0.0.0.0 mozsocial.cliqz.com
