@@ -1,7 +1,15 @@
-# Do not export
-*.gitattributes         text
-.gitignore              text
+*                   text=auto
 
-# How .js + text are handled
-*.js                    linguist-language=TypeScript
-*                       -text
+*.md                text
+*.yml               text
+*.txt               text
+*.sh                text eol=lf
+*.js                linguist-language=TypeScript
+*.bat               -text
+*.PNG               git-encoding=BINARY    working-tree-encoding=BINARY
+*.jpg               git-encoding=BINARY    working-tree-encoding=BINARY
+*.zip               git-encoding=BINARY    working-tree-encoding=BINARY
+*.ico               git-encoding=BINARY    working-tree-encoding=BINARY
+.gitattributes      export-ignore
+.gitignore          export-ignore
+*.yml               export-ignore
