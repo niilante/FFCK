@@ -3,6 +3,7 @@
 /.tmp
 /build
 /dist
+.cache
 
 # misc
 /connect.lock
@@ -14,9 +15,13 @@
 *~
 *.orig
 .vagrant
+*.vsix
 
 # VS Code
 vscode/
+typings/*
+!typings/custom/
+testing
 
 # OSX
 .DS_Store
