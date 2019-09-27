@@ -1,4 +1,32 @@
-# FFCK Project FAQ
+## - [FFCK Project FAQ](#ffck-project-faq)
+- [Which Referrer extensions do I need?](#which-referrer-extensions-do-i-need)
+- [My Firefox update X broke something, is that because of your config?](#my-firefox-update-x-broke-something-is-that-because-of-your-config)
+- [Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"](#cookies-in-private-mode-pbm-vs-%22delete-cookies-when-firefox-closes%22)
+- [Anti-Private Browser mode detection](#anti-private-browser-mode-detection)
+- [Why is `resistFingerprinting` disabled?](#why-is-resistfingerprinting-disabled)
+- [Why are some flags disabled when I can control them via FF "Settings"?](#why-are-some-flags-disabled-when-i-can-control-them-via-ff-%22settings%22)
+- [Wont-fix stuff](#wont-fix-stuff)
+- [Why are studies & telemetry disabled?](#why-are-studies--telemetry-disabled)
+- [Does any of these tweaks really increase my security and how can I check it?](#does-any-of-these-tweaks-really-increase-my-security-and-how-can-i-check-it)
+- [Which Telemetry is disabled via user.js?](#which-telemetry-is-disabled-via-userjs)
+- [Optional addons to enhance several Firefox integrated functions](#optional-addons-to-enhance-several-firefox-integrated-functions)
+- [Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?](#why-is-%22safe-browsing%22-etc-disabled-shouldnt-that-protect-me-against-malware)
+- [Why aren't digital Signatures enforced by default to prevent Malware downloads?](#why-arent-digital-signatures-enforced-by-default-to-prevent-malware-downloads)
+- [Why does Skype-Web refuse to work in Firefox?](#why-does-skype-web-refuse-to-work-in-firefox)
+- [How to workaround Google's CAPTCHA problem](#how-to-workaround-googles-captcha-problem)
+- [Do I still need Tor Browser even after using a hardened user.js configuration?](#do-i-still-need-tor-browser-even-after-using-a-hardened-userjs-configuration)
+- [Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?](#why-are-several-scripts-or-filter-lists-gone-after-i-updated-to-firefox-660)
+- [CanvasBlocker extension Vs. the Firefox integrated solution](#canvasblocker-extension-vs-the-firefox-integrated-solution)
+- [Disabling locked toolkit.telemetry.enabled (and others)](#disabling-locked-toolkittelemetryenabled-and-others)
+- [Which extensions could I use to reduce the tracking behavior?](#which-extensions-could-i-use-to-reduce-the-tracking-behavior)
+- [Where does Firefox Multi-Account Containers Extension store its settings?](#where-does-firefox-multi-account-containers-extension-store-its-settings)
+- [Is there a master list of all about:config flags (incl. the hidden ones)?](#is-there-a-master-list-of-all-aboutconfig-flags-incl-the-hidden-ones)
+- [How to get addons in Mozilla Fennec?](#how-to-get-addons-in-mozilla-fennec)
+- [I can't see any pictures after I used "save image as" option, what can I do?](#i-cant-see-any-pictures-after-i-used-%22save-image-as%22-option-what-can-i-do)
+- [About:config filtering with Nightly Builds](#aboutconfig-filtering-with-nightly-builds)
+- [I'm looking for a specific CSS tweak e.g. to make the context menu dark](#im-looking-for-a-specific-css-tweak-eg-to-make-the-context-menu-dark)
+- [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
+- [GDrive, GMail, YouTube are slow in Firefox - What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
 
 ## Which Referrer extensions do I need?
 
@@ -9,20 +37,24 @@ A list of active maintained referer extension is avbl. over [here](https://gitla
 
 Both extensions are a bit different, SR aims to remove the Referer headers from HTTP(S) requests while Neat URL tries to remove the well-known tracking parameters from the URL you visit or clicked.
 
+
 ## My Firefox update X broke something, is that because of your config?
 
 No, but what you could do is to run [mozregression](https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/) which shows what exactly broke since you updated your Firefox. The output can be submitted to Mozilla, which helps developers to fix possible problems in further builds.
 
-### Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"
+
+## Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"
 
 * Private Browsing Mode = Stronger, Regular session cookies are **not written to disk**.
 * Delete cookies when Firefox closes = Basically changes the expiration date of persistent cookies (for the current session only). Similar like closing a private window, the cookies getting deleted after closing the window. In a regular browsing session the cookies **are written to disk**.
 
-### Anti-Private Browser mode detection
+
+## Anti-Private Browser mode detection
 
 Some websites [detecting if you're in an incognito or private browsing mode](https://gist.github.com/jherax/a81c8c132d09cc354a0e2cb911841ff1) e.g. Boston Globe or Washington Post. This can be avoided by [disabling JavaScript](https://www.deviceinfo.me/), however this will cause the website to _break_. The most known workaround is to use [Chrome 76](https://www.blog.google/outreach-initiatives/google-news-initiative/protecting-private-browsing-chrome/) / [Firefox 66+](https://bugzilla.mozilla.org/show_bug.cgi?id=781982) which have a _basic_ protection against this kind of _fingerprinting_. However, pages like Washington Post quickly inspected the Browser source code and found new strategies to bypass the "anti-incognito paywall detection", that been said [Incognito Mode is not a full privacy system!](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=en). However, there is no final solution to this topic, as said, news pages adopting the changes and watching the source code but some [external extension](https://github.com/iamadamdev/bypass-paywalls-firefox) or [scripts](https://burles.co/en/) might still working.
 
-### Why is `resistFingerprinting` disabled?
+
+## Why is `resistFingerprinting` disabled?
 
 Multiple reasons, some are bug related, others might break some _useful_ functions. To name several reasons why I don't enabled the anti-fingerprinting option are:
 
@@ -38,12 +70,12 @@ Multiple reasons, some are bug related, others might break some _useful_ functio
 What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (in his current state) useful, we use other (older) flags in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It's impossible to defeat all fingerprinting mechanism without destroying the normal "web surfing fun". 
 
 
-### Why are some flags disabled when I can control them via FF "Settings"?
+## Why are some flags disabled when I can control them via FF "Settings"?
 
 Some flags are preset in case you _accidently_ installed addon x e.g. Screenshots. Enforcing to disable e.g. screenshots out-of-the box is usually not needed because if the addon is not installed the toggle simply does nothing.
 
 
-### Wont-fix stuff in this configuration
+## Wont-fix stuff
 
 I don't waste my lifetime and anyones else time trying to "fix" something which is protocol specific, this has to be fixed within the Browsers source code or the protocol specification. Disabling everything makes less sense because a) not every site/server might use it b) it might not directly compromise your security or privacy setup c) not every page is exploitable or abuse xyz hole. In most cases exploiting something needs additional steps to make it effective for an attacker to "gain something from it" d) I believe in layer security and not software 'security'.
 
@@ -60,7 +92,7 @@ I don't waste my lifetime and anyones else time trying to "fix" something which 
 * **Crypto-miners** - "workers" are disabled. - You see in the configuration that the workers-flag itself is enabled (debug reasons) but since we start Firefox in Private Browsing Mode (PBM) it automatically gets disabled (restricted) once you started the fox.
 
 
-### Why are studies & telemetry disabled?
+## Why are studies & telemetry disabled?
 
 > Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
 Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser,it's not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn't help at all cause something is missing and it consumes overall more time. 
@@ -70,13 +102,12 @@ The biggest "pro" argument for telemetry is that some Mozilla Developers think t
 Telemetry itself is not a privacy problem, Mozilla made sure that its annonymized and doesn't expose any "private" information such as your browsing behvior but I think the overall _benefit_ is not existend since most bugs are been manually submitted via bug tracker, reddit & co and it causes a _lot of traffic_ (which we want to avoid).
 
 
-### Does any of these tweaks really increase my security and how can I check it?
+## Does any of these tweaks really increase my security and how can I check it?
 
 There are [bunch of websites which testing specific API's](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List), but it's questionable if you need "several about:config tweaks". I do believe that critical security things need to be fixed in the Mozilla Browser source code and not via any 'tweaks' or configurations. E.g when you never enabled JavaScript in the first place or visit page x, which might abuses privileges or other API's, you might never be affected because certain attacks are based on well-known "internet problems" (JavaScript, fingerprinting etc). Migrating those possible attacks are fine, however inspecting websites via debugger is better. Ask the website owner to "fix" it or mention possible alternatives, most webmasters are still not aware of more private alternatives which they could have been used to "harden" their website.
 
 
-
-### Which telemetry is disabled by default in user.js?
+## Which Telemetry is disabled via user.js?
 
 - All Normandy and Shield Studies are disabled.
 - ALl Health reporting features are turned off
@@ -92,8 +123,7 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 - **..in other words, every telemetry is been disabled - because in my point of view this belongs into test/nightly builds and not into stable or ESR releases**
 
 
-
-### Optional addons to comply several Firefox integrated functions
+## Optional addons to enhance several Firefox integrated functions
 
 The following extensions are not there to 'harden' Mozilla Firefox, it's more my personally recommendation to comply certain Fiefox functions. It's not meant that such addons are there to 'secure' your overall web-habits, there also not there to avoid any data leaks.
 
@@ -109,8 +139,7 @@ The following extensions are not there to 'harden' Mozilla Firefox, it's more my
 * [Permission Inspector (github.com)](https://github.com/tsl143/addonManager)
 
 
-
-### Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?
+## Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?
 
 * Any kind of censorship (no matter if meant well or not) is in general a bad thing.
 * Blacklisting the whole internet will never work. A malware author could still get it's way around, whenever a whitelist domain loads additional third-party payload from a malware domain (which is not on the list).
@@ -123,19 +152,19 @@ If you want such censorship or blocking I suggest you [work with your own list i
 
 
 
-### Why aren't digital Signatures enforced by default to prevent Malware downloads?
+## Why aren't digital Signatures enforced by default to prevent Malware downloads?
 
 There is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
 
 
 
-### Why does Skype-Web refuse to work in Firefox?
+## Why does Skype-Web refuse to work in Firefox?
 
 You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) (or manually edit the User-Agent string) and choose "Google Chrome” or “Microsot Edge” as User-Agent. Currently Firefox 65 doesn’t support [NPAPI](https://en.wikipedia.org/wiki/NPAPI) which is required for the web version.
 
 
 
-### How to workaround Google's CAPTCHA problem
+## How to workaround Google's CAPTCHA problem
 
 In case you use uBlock copy the following rules under `Options > My Rules` and then hit `apply`.
 
@@ -150,29 +179,29 @@ Because of certain problems with time/Google I decided to not enable several ant
 
 
 
-### Do I still need Tor Browser even after using a hardened user.js configuration?
+## Do I still need Tor Browser even after using a hardened user.js configuration?
 
 The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicity designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politican person etc. I highly recommend to use Tor Browser as your default and only Browser. 
 
 
 
-### Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?
+## Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?
 
 Firefox 66 changed the storage backend from json blobs to IndexedDB files, in other words during this migration process it's very much likely that e.g. Tapermonkey or the internal database gets corrupted. The same can happen with your passwords whenever `logins.json` or/and `key3.DB` gets corrupted you might [lose all of your passwords](https://support.mozilla.org/en-US/questions/1181868). I highly suggest that you use KeePass or another password manager instead of Mozilla's own password manager function. 
 
 
-### CanvasBlocker extension Vs. the Firefox integrated solution
+## CanvasBlocker extension Vs. the Firefox integrated solution
 
 The integrated fingerprinting method is (for now) disabled in the configuration due to several reasons but let me explain the basics first.
 
 Mozilla Firefox uses the same technique as the Tor Browser (_which is not really a surprise_), the technique will always returns a "white" canvas fingerprint to the website, tis means a website can detect that the current browser is blocking canvas fingerprinting methods. The difference here between CanvasBlocker is that (by default) it will return a "random" generated canvas ID with each new request. In theory this could make it harder for the website to detect if you faked your ID or not. The downside is that it will make your Browser slower (we are talking about some milliseconds). Personally I would go with the addon and that's the reason why the integrated method is disabled in my configuration.
 
 
-### Disabling locked toolkit.telemetry.enabled (and others)
+## Disabling locked toolkit.telemetry.enabled (and others)
 
 Manually create (or download) the file `autoconfig.js` (_other names won't work_) it belongs into the `/defaults/pref/autoconfig.js` dir. In my repo it's [this file](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/autoconfig.js) and drop it together with the [mozilla.cfg](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/mozilla.cfg) into your Firefox profile.
 
-### Which extensions could I use to reduce the tracking behavior?
+## Which extensions could I use to reduce the tracking behavior?
 
 That's a difficult question because every user has other needs, so I'll only list the extension which I used in my daily Firefox times. 
 
@@ -199,42 +228,42 @@ That's a difficult question because every user has other needs, so I'll only lis
 
 Keep in mind that I'm a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you to that "they are the best" is always a bad idea.
 
-### Where does Firefox Multi-Account Containers Extension store its settings?
+## Where does Firefox Multi-Account Containers Extension store its settings?
 
 The extension localstorage is located under `<your-profile-folder>\storage\default\moz-extension+++<your-extension-id>...\idb\....sqlite`. The ID for the extension itself is a random string that's unique you can read it via developer tools or `moz-extension://<your-ID-here>/confirm-page.html?url=...`
 
 
-### Is there a master list of all about:config flags (incl. the hidden ones)?
+## Is there a master list of all about:config flags (incl. the hidden ones)?
 
 All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features) or [here](http://kb.mozillazine.org/About:config_entries), this includes even the experimental ones. If you search only for the hidden prefs you will not find them easily in the source code or via search because there is no single master list. 
 
 
-### How to get addons in Mozilla Fennec?
+## How to get addons in Mozilla Fennec?
 
 You can install extensions in Fennec by installing [this](https://tools.taskcluster.net/index/project.mobile.fenix.v2.fennec-production/latest) into your Fennec, however this does not come without any [drawbacks](https://old.reddit.com/r/firefox/comments/d2hww8/fenix_have_supported_addons/). 
 
 
-### I can't see any pictures after I used "save image as" option, what can I do?
+## I can't see any pictures after I used "save image as" option, what can I do?
 
 Windows, Linux and MacOS (by defaault) does not support the format and that's basically the reason why you can't open .webp with the integrated tools to view webp images. This is not really a Firefox problem, the problem is that Adobe does not supports the [WebP](http://www.telegraphics.com.au/sw/product/WebPFormat) standard (most apps using the Adobe standards/implementations). However, you can open such formats with free programs e.g. GIMP. A solution for Photoshop users would be to add a filter for this format. In our configuration we enforced (by default) to save images only as .jpg, .jpeg etc. to workaround this.
 
 
-### About:config filtering with Nightly Builds 
+## About:config filtering with Nightly Builds 
 
 The old syntax `about:config?filter=bookmarks` [does not work anymore](https://old.reddit.com/r/firefox/comments/d6alv2/aboutconfig_filter_in_nightly/), this is not a bug but was disabled due to several concerns, see [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1501450). The new filtering syntax is `chrome://global/content/config.xul?filter=/abc|def/` (_yes, it's "chrome" but it works in Firefox too_).
 
 
-### I'm looking for a specific CSS tweak e.g. to make the context menu dark
+## I'm looking for a specific CSS tweak e.g. to make the context menu dark
 
 A collection of userstyle "tweaks"can be found under [this project (firefox-csshacks)](https://github.com/MrOtherGuy/firefox-csshacks).
 
 
-### Is it possible to downgrade my FF profile?
+## Is it possible to downgrade my FF profile?
 
 Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hardcoded and a environment variable. You can add `--allow-downgrade` to the target field on your Firefox shortcut. Keep in mind that this parameter is unsupported and you do this at your own risk. 
 
 
-### GDrive, GMail, YouTube are slow in Firefox - What can I do?!
+## GDrive, GMail, YouTube are slow in Firefox - What can I do?!
 
 Google decided to cook their own soup, they redesigned their own services e.g. GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (aka homebrew) stuff. This is called "Polymer". Polymer is (by default) enabled on the new design. The only chance you have is to [opt-in into the old layout](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). In other words, Google has _maybe_ found a way to force competing browsers into planned obsolescence (or at least that's their plan).
 
