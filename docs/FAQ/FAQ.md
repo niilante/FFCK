@@ -1,8 +1,17 @@
-## FFCK Project FAQ
+# FFCK Project FAQ
 
-### My Firefox update X broke something, is that because of your config?
+## Which Referrer extensions do I need?
 
-No, but what you could do is to run [mozregression](https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/) which shows what exactly broke since you updated your Firefox. The output can be submitted to Mozilla, which helps developers to fix possuble problems in further builds.
+A list of active maintained referer extension is avbl. over [here](https://gitlab.com/KevinRoebert/ClearUrls/wikis/Similar-Addons). However this is normally up to you, my suggestion is that you combine both Smart Referer and Neat URL because both working different from each another.  
+
+* **Neat URL**: This extensions tries to remove various tracking parameters from the URL itself. For example it removes the UTM parameter `example.com/?utm_source=github` - Everyting after ? will be automatically removed because this could sent back to the origin server.
+* **Smart Referer**: Smart Referer basically omits the Referer header from HTTP(S) requests unless the request is to the same domain as the page you're already on. This means that the Referer header normally includes the address of the page you were on before navigating to the current page (_there are some exceptions_). This e.g. protects your from websites which trying to get your browsing habits (history).
+
+Both extensions are a bit different, SR aims to remove the Referer headers from HTTP(S) requests while Neat URL tries to remove the well-known tracking parameters from the URL you visit or clicked.
+
+## My Firefox update X broke something, is that because of your config?
+
+No, but what you could do is to run [mozregression](https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/) which shows what exactly broke since you updated your Firefox. The output can be submitted to Mozilla, which helps developers to fix possible problems in further builds.
 
 ### Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"
 
