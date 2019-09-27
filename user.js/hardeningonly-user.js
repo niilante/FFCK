@@ -60,10 +60,15 @@ user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("extensions.privatebrowsing.notification", true);
-user_pref("signon.autofillForms", false);
-user_pref("signon.rememberSignons", false); // KeePass
 user_pref("startup.homepage_override_url", "");
 user_pref("startup.homepage_welcome_url", "");
+
+
+// Password Manager
+user_pref("signon.autofillForms", false);
+user_pref("signon.rememberSignons", false); // KeePass
+user_pref("pref.privacy.disable_button.view_passwords", false);
+
 
 // Network Stack
 user_pref("browser.send_pings", false);
@@ -82,7 +87,7 @@ user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
 user_pref("network.trr.bootstrapAddress", "");
-user_pref("network.trr.mode", 0); // Use OS wide DNS systems instead, Unbound or DNSCryptv2
+user_pref("network.trr.mode", 0); // Use OS wide DNS systems instead, Unbound or DNSCryptv2!
 
 // Device Fingerprinting
 user_pref("beacon.enabled", false);
