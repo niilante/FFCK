@@ -180,3 +180,7 @@
 
 ### No longer maintained
 - [mozillazine.org](http://forums.mozillazine.org/viewtopic.php?f=38&t=3055133)
+
+
+## AI based tool to check privacy policies to flag risky apps
+- [Guard](https://useguard.com/)
