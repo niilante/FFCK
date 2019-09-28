@@ -1,5 +1,5 @@
 //
-//      All-in-One Hardening project by CK
+//      All-in-One Hardening user.js project by CK
 //
 //
 //  See: Workarounds.md for known problems & possible workarounds!
@@ -15,7 +15,7 @@
 //
 //      See issue tracker for known issues & discussions!
 //
-//      Version: 0.56
+//      Version: 0.57
 //
 //      Codename: AGTUC
 //
@@ -668,7 +668,7 @@ user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
 user_pref("extensions.abuseReport.enabled", true);
 user_pref("extensions.abuseReport.url", ""); // https://addons.mozilla.org/api/v4/abuse/report/addon/
-user_pref("extensions.allowPrivateBrowsingByDefault", false);
+user_pref("extensions.allowPrivateBrowsingByDefault", true);
 user_pref("extensions.autoDisableScopes", 14);
 user_pref("extensions.blocklist.detailsURL", ""); // https://blocked.cdn.mozilla.net/
 user_pref("extensions.blocklist.enabled", true);
@@ -683,10 +683,11 @@ user_pref("extensions.formautofill.creditCards.available", false);
 user_pref("extensions.formautofill.creditCards.enabled", false);
 user_pref("extensions.formautofill.heuristics.enabled", false);
 user_pref("extensions.fxmonitor.enabled", false);
+user_pref("extensions.privatebrowsing.notification", false); //removed
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.getAddons.discovery.api_url", ""); //https://services.addons.mozilla.org/api/v4/discovery/?lang=%LOCALE%&edition=%DISTRIBUTION%"
 user_pref("extensions.getAddons.showPane", false);
-user_pref("extensions.htmlaboutaddons.enabled", true);
+user_pref("extensions.htmlaboutaddons.enabled", false);
 user_pref("extensions.htmlaboutaddons.inline-options.enabled", true);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", true);
 user_pref("extensions.langpacks.signatures.required", false);
