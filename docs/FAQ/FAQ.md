@@ -124,7 +124,7 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 - **..in other words, every telemetry is been disabled - because in my point of view this belongs into test/nightly builds and not into stable or ESR releases**
 
 
-## Optional addons to enhance several Firefox integrated functions
+## Optional addons to enhance several Firefox functions
 
 The following extensions are not there to 'harden' Mozilla Firefox, it's more my personally recommendation to comply certain Firefox functions. It's not meant that such addons are there to 'secure' your overall web-habits, there also not there to avoid any data leaks.
 
@@ -138,6 +138,7 @@ The following extensions are not there to 'harden' Mozilla Firefox, it's more my
 * [Violentmonkey (github.com)](https://github.com/violentmonkey/violentmonkey)
 * [Extension source viewer (addons.mozilla.org)](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
 * [Permission Inspector (github.com)](https://github.com/tsl143/addonManager)
+* [Donkey Defender](https://addons.mozilla.org/en-US/firefox/addon/donkey-defender/) & [source code](https://gitlab.com/regen-open-development/donkey-defender)
 
 
 ## Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?
