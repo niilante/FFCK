@@ -110,18 +110,18 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 
 ## Which Telemetry is disabled via user.js?
 
-- All Normandy and Shield Studies are disabled.
-- All Health reporting features are turned off
-- Recommended addons are turned off
-- The extensions blocklist URL is sanitized
-- The search URL from the search box in `about:addons` is sanitized
-- Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`
-- Real time checking of downloads (i.e., cloud-delivered "protection") is turned off
-- All report and data sharing URLs are changed and all possible data sharing services are disabled
-- Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature
-- Crash reports are disabled
-- All Heartbeat(s) are disabled
-- **..in other words, every telemetry is been disabled - because in my point of view this belongs into test/nightly builds and not into stable or ESR releases**
+- All Normandy and Shield Studies are disabled!
+- All Health reporting features are turned off!
+- Recommended addons are turned off!
+- The extensions blocklist URL is sanitized!
+- The search URL from the search box in `about:addons` is sanitized!
+- Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`!
+- Real time checking of downloads (i.e., cloud-delivered "protection") is turned off!
+- All report and data sharing URLs are changed and all possible data sharing services are disabled!
+- Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature!
+- Crash reports are disabled!
+- All Heartbeat(s) are disabled!
+- **...in other words, every single telemetry has been disabled - because in my point of view this belongs into test/nightly builds and not into stable or ESR releases**
 
 
 ## Optional addons to enhance several Firefox functions
@@ -139,6 +139,7 @@ The following extensions are not there to 'harden' Mozilla Firefox, it's more my
 * [Extension source viewer (addons.mozilla.org)](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
 * [Permission Inspector (github.com)](https://github.com/tsl143/addonManager)
 * [Donkey Defender](https://addons.mozilla.org/en-US/firefox/addon/donkey-defender/) & [source code](https://gitlab.com/regen-open-development/donkey-defender)
+* [Snowflake](https://addons.mozilla.org/de/firefox/addon/torproject-snowflake/) 
 
 
 ## Why is "Safe-browsing" etc disabled, shouldn't that protect me against malware?
