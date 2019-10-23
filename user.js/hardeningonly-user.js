@@ -4,12 +4,16 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      Newer than user.js! There are differences (on purpose)!
 //
-//      Version 0.61
+//      Version 0.62
 //
 //      Todo: DoH, spoofing & some other things.
+//      Disabling VP9 Codec needs a userscript since FF 70+
+//      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
+//      https://greasyfork.org/en/scripts/390992-hide-hdr-support-from-youtube
+//      https://addons.mozilla.org/en-US/firefox/addon/enhanced-h264ify/
 // 
 
-// user_pref("network.http.referer.XOriginPolicy", 2);
+//user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("app.update.auto", true);
 //user_pref("browser.cache.memory.enable", false);
 //user_pref("dom.disable_beforeunload",  true);
