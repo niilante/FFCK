@@ -1,5 +1,4 @@
 ## [FFCK Project FAQ](#ffck-project-faq)
-- [FFCK Project FAQ](#ffck-project-faq)
 - [Which Referrer extensions do I need?](#which-referrer-extensions-do-i-need)
 - [My Firefox update X broke something, is that because of your config?](#my-firefox-update-x-broke-something-is-that-because-of-your-config)
 - [Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"](#cookies-in-private-mode-pbm-vs-%22delete-cookies-when-firefox-closes%22)
@@ -273,4 +272,7 @@ Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hard 
 Google decided to cook their own soup, they redesigned their own services e.g. GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (aka homebrew) stuff. This is called "Polymer". Polymer is (by default) enabled on the new design. The only chance you have is to [opt-in into the old layout](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). In other words, Google has _maybe_ found a way to force competing browsers into planned obsolescence (or at least that's their plan).
 
 > YouTube page load is 5x slower in Firefox and Edge than in Chrome because YouTube's Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en).
+
+## Policy Templates
+You can get the latest Firefox / ESR templates from [here](https://github.com/mozilla/policy-templates/releases/tag/v1.10).
 
