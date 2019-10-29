@@ -27,6 +27,9 @@
 //user_pref("security.ssl.require_safe_negotiation", true);
 //user_pref("signon.storeWhenAutocompleteOff", false);
 //user_pref("xpinstall.signatures.required", true);
+user_pref("extensions.formautofill.addresses.enabled", false);
+user_pref("extensions.formautofill.creditCards.enabled ", false);
+user_pref("extensions.formautofill.heuristics.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.update.enabled", true);
 user_pref("beacon.enabled", false);
