@@ -27,7 +27,7 @@
 - [I'm looking for a specific CSS tweak e.g. to make the context menu dark](#im-looking-for-a-specific-css-tweak-eg-to-make-the-context-menu-dark)
 - [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
 - [GDrive, GMail, YouTube are slow in Firefox - What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
-- [What are StaticPrefs?}(#what-are-staticprefs)
+- [What are StaticPrefs?](#what-are-staticprefs)
 
 ## Which Referrer extensions do I need?
 
@@ -41,7 +41,7 @@ Both extensions are a bit different, SR aims to remove the Referer headers from 
 
 ## My Firefox update X broke something, is that because of your config?
 
-No, but what you could do is to run [mozregression](https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/) which shows what exactly broke since you updated your Firefox. The output can be submitted to Mozilla, which helps developers to fix possible problems in further builds.
+No, but what you could do is to run [mozregression](https://blog.nightly.mozilla.org/2016/10/11/found-a-regression-in-firefox-give-us-details-with-mozregression/) which shows what exactly broke since you updated your [Firefox](https://www.mozilla.org/). The output can be submitted to Mozilla, which helps developers to fix possible problems in further builds.
 
 
 ## Cookies in Private Mode (PBM) vs. "Delete cookies when Firefox closes"
