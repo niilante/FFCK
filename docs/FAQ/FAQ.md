@@ -27,6 +27,7 @@
 - [I'm looking for a specific CSS tweak e.g. to make the context menu dark](#im-looking-for-a-specific-css-tweak-eg-to-make-the-context-menu-dark)
 - [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
 - [GDrive, GMail, YouTube are slow in Firefox - What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
+- [What are StaticPrefs?}(#what-are-staticprefs)
 
 ## Which Referrer extensions do I need?
 
@@ -275,4 +276,7 @@ Google decided to cook their own soup, they redesigned their own services e.g. G
 
 ## Policy Templates
 You can get the latest Firefox / ESR templates from [here](https://github.com/mozilla/policy-templates/releases/tag/v1.10).
+
+## What are StaticPrefs?
+[Static prefs](https://github.com/mozilla/gecko-dev/blob/master/modules/libpref/docs/index.md) are special entries which are listed and defined by `StaticPrefList.yaml`. Those prefs shouldn't appear in both StaticPrefList.yaml and all.js! 
 
