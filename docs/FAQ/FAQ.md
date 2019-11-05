@@ -139,6 +139,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [Permission Inspector (github.com)](https://github.com/tsl143/addonManager)
 * [Donkey Defender](https://addons.mozilla.org/en-US/firefox/addon/donkey-defender/) & [source code](https://gitlab.com/regen-open-development/donkey-defender)
 * [Snowflake](https://addons.mozilla.org/de/firefox/addon/torproject-snowflake/) 
+* [Authenticator - Generate 2-Step Verification codes in your browser](https://authenticator.cc/)  & [source code](https://github.com/Authenticator-Extension/Authenticator)
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
