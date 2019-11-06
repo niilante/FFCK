@@ -28,6 +28,7 @@
 - [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
 - [GDrive, GMail, YouTube are slow in Firefox — What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
 - [What are StaticPrefs?](#what-are-staticprefs)
+- [Against obfuscation as a "privacy tool"](#against-obfuscation-as-a-%22privacy tool-%22)
 
 ## Which Referrer extensions do I need?
 
@@ -295,3 +296,4 @@ Here are addons you don't need:
 * [Ghostery](https://www.ghostery.com) - covered by uBlock/uMatrix
 * A.I. based systems (addons) - A.I. is in general a good idea, but "bypassing", fooling or breaking them is often easy and A.I. always needs lots of data first
 * [Disconnect](https://disconnect.me) - covered by uBlock/uMatrix
+* [HTTPS Everywhere](https://addons.mozilla.org/de/firefox/addon/https-everywhere/) Use HTTPS websites only or use [Force HTTPS](Force HTTPS) to blocjk insecure http outgoing connections
