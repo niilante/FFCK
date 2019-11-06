@@ -28,13 +28,13 @@
 - [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
 - [GDrive, GMail, YouTube are slow in Firefox — What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
 - [What are StaticPrefs?](#what-are-staticprefs)
-- [Against obfuscation as a "privacy tool"](#against-obfuscation-as-a-%22privacy tool-%22)
+- [Against obfuscation as a "privacy tool"](#against-obfuscation-as-a-%22privacy-tool-%22)
 
 ## Which Referrer extensions do I need?
 
 A list of active maintained referer extension is available over [here](https://gitlab.com/KevinRoebert/ClearUrls/wikis/Similar-Addons). However this is normally up to you, my suggestion is that you combine both Smart Referer and Neat URL because both working different from each another. 
 
-* **Neat URL**: This extensions tries to remove various tracking parameters from the URL itself. For example it removes the UTM parameter `example.com/?utm_source=github` - Everything after ? will be automatically removed because this could sent back to the origin server.
+* **Neat URL**: This extensions tries to remove various tracking parameters from the URL itself. For example it removes the UTM parameter `example.com/?utm_source=github` - Everything after `?` will be automatically removed because this could sent back to the origin server.
 * **Smart Referer**: Smart Referer basically omits the Referer header from HTTP(S) requests unless the request is to the same domain as the page you’re already on. This means that the Referer header normally includes the address of the page you were on before navigating to the current page (_there are some exceptions_). This e.g. protects your from websites which trying to get your browsing habits (history).
 
 Both extensions are a bit different, SR aims to remove the Referer headers from HTTP(S) requests while Neat URL tries to remove the well-known tracking parameters from the URL you visit or clicked.
@@ -111,18 +111,19 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 
 ## Which Telemetry is disabled via user.js?
 
-- All Normandy and Shield Studies are disabled!
-- All Health reporting features are turned off!
-- Recommended addons are turned off!
-- The extensions blocklist URL is sanitized!
-- The search URL from the search box in `about:addons` is sanitized!
-- Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`!
-- Real time checking of downloads (i.e., cloud-delivered “protection”) is turned off!
-- All report and data sharing URLs are changed and all possible data sharing services are disabled!
-- Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature!
-- Crash reports are disabled!
-- All Heartbeat(s) are disabled!
-- **...in other words, every single telemetry has been disabled — because in my point of view this belongs into test/nightly builds and not into stable or ESR releases**
+- [x] All Normandy and Shield Studies are disabled!
+- [x] All Health reporting features are turned off!
+- [x] Recommended addons are turned off!
+- [x] The extensions blocklist URL is sanitized!
+- [x] The search URL from the search box in `about:addons` is sanitized!
+- [x] Extensions are allowed on protected sites, allowing uBO/uMatrix to block Google Analytics on sites like `https://addons.mozilla.org`!
+- [x] Real-time checks of downloaded files (i.e., cloud-delivered “protection”)
+- [x] All report and data sharing URLs are changed and all possible data sharing services are disabled!
+- [x] Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature!
+- [x] Crash reports are disabled!
+- [x] All Heartbeat(s) are disabled!
+ 
+**... or in other words, every single browser based telemetry element gets disabled — because in my point of view, this belongs into test/nightly builds and not into stable or ESR releases**
 
 
 ## Optional addons to enhance several Firefox functions
