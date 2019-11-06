@@ -226,7 +226,6 @@ That’s a difficult question because every user has other needs, so I’ll only
 * [Redirector](https://addons.mozilla.org/firefox/addon/redirector/)
 * [Request Control](https://addons.mozilla.org/en-US/firefox/addon/requestcontrol)
 * [Smart Referer](https://addons.mozilla.org/en-US/firefox/addon/smart-referer/)
-* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) (_questionable_)
 * Temporary Containers ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations) with [Integrations](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/)
 * [inØsight — Zero Width Obfuscation](https://addons.mozilla.org/en-US/firefox/addon/in0sight/)
@@ -281,3 +280,18 @@ You can get the latest Firefox / ESR templates from [here](https://github.com/mo
 
 ## What are StaticPrefs?
 [Static prefs](https://github.com/mozilla/gecko-dev/blob/master/modules/libpref/docs/index.md) are special entries which are listed and defined by `StaticPrefList.yaml`. Those prefs shouldn’t appear in both StaticPrefList.yaml and all.js! 
+
+
+## Against obfuscation as a "privacy tool"
+We [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
+
+Here are addons you don't need:
+* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode).
+* [TrackMeNot](http://trackmenot.io/) - covered by uBlock/uMatrix
+* [AdNauseam](https://adnauseam.io/) - covered by uBlock/uMatrix
+* [Go Rando](https://bengrosser.com/projects/go-rando/) - _questionable_
+* [HyperFace](https://ahprojects.com/) - _questionable_
+* [NoScript](https://bugzilla.mozilla.org/show_bug.cgi?id=1462989#c20) - CSP headers & some stuff got already included within the Browser
+* [Ghostery](https://www.ghostery.com) - covered by uBlock/uMatrix
+* A.I. based systems (addons) - A.I. is in general a good idea, but "bypassing", fooling or breaking them is often easy and A.I. always needs lots of data first
+* [Disconnect](https://disconnect.me) - covered by uBlock/uMatrix
