@@ -271,7 +271,7 @@ user_pref("security.insecure_field_warning.contextual.enabled", true);
 user_pref("security.insecure_password.ui.enabled", true);
 user_pref("security.mixed_content.block_active_content", true);
 user_pref("security.mixed_content.block_display_content", true);
-user_pref("security.OCSP.enabled", 1);
+user_pref("security.OCSP.enabled", 0);
 user_pref("security.OCSP.require", true);
 user_pref("security.password_lifetime", 1);
 user_pref("security.pki.sha1_enforcement_level", 1);
