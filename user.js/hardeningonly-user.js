@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      Newer than user.js! There are differences (on purpose)!
 //
-//      Version 0.63
+//      Version 0.64
 //
 //      Todo: DoH, spoofing & some other things.
 //      Disabling VP9 Codec needs a userscript since FF 70+
@@ -209,22 +209,22 @@ user_pref("network.protocol-handler.external.moz-extension", false);
 user_pref("network.protocol-handler.warn-external-default", true);
 user_pref("network.proxy.socks_remote_dns", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
-user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "SecureDNS", "url": "https://doh.securedns.eu/dns-query" },{ "name": "AppliedPrivacy", "url": "https://doh.appliedprivacy.net/query" },{ "name": "Digitale Gesellschaft (CH)", "url": "https://dns.digitale-gesellschaft.ch/dns-query" }, { "name": "Quad9", "url": "https://dns.quad9.net/dns-query" }]'); 
+user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "Quad9", "url": "https://dns.quad9.net/dns-query" },{"name": "AdGuard Default", "url": "https://dns.adguard.com/dns-query"},{ "name": "AdGuard Family Protection", "url": "https://dns-family.adguard.com/dns-query"},{"name": "Google", "url": "https://dns.google/dns-query"},{"name": "CleanBrowsing", "url": "https://doh.cleanbrowsing.org/doh/family-filter"},{"name": "PowerDNS", "url": "https://doh.powerdns.org"},{"name": "SecureDNS.eu", "url": "https://doh.securedns.eu/dns-query"},{"name": "DNSWarden AdBlocking", "url": "https://doh.dnswarden.com/adblock"},{"name": "Foundation for Applied Privacy", "url": "https://doh.appliedprivacy.net/query"},{"name": "BlahDNS Germany", "url": "https://doh-de.blahdns.com/dns-query"},{"name": "BlahDNS Japan", "url": "https://doh-jp.blahdns.com/dns-query"}]'); 
 user_pref("network.trr.mode", 3); //https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/ & https://wiki.mozilla.org/Trusted_Recursive_Resolver
 user_pref("network.trr.excluded-domains", "");
 user_pref("network.trr.builtin-excluded-domains", "localhost,local");
-user_pref("network.trr.bootstrapAddress", "176.103.130.132"); //AdGuard w/ Family Shield (example)
-user_pref("network.trr.uri", "https://dns-family.adguard.com/dns-query");
+user_pref("network.trr.bootstrapAddress", "1.1.1.1"); //Cloudflare
+user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");
 user_pref("network.security.esni.enabled", true);
 user_pref("network.trr.max-fails", 4);
 user_pref("network.trr.disable-ECS", true);
 user_pref("network.trr.blacklist-duration", 55);
 user_pref("network.trr.skip-AAAA-when-not-supported", true);
-user_pref("network.trr.early-AAAA", false);
+user_pref("network.trr.early-AAAA", true);
 user_pref("network.trr.request-timeout", 2660);
 //user_pref("network.trr.confirmationNS", "example.com");
-user_pref("network.trr.useGET", false);
-user_pref("network.trr.allow-rfc1918", false); 
+user_pref("network.trr.useGET", true);
+user_pref("network.trr.allow-rfc1918", true); 
 user_pref("network.trr.wait-for-portal", false);
 user_pref("pdfjs.disabled", false);
 user_pref("places.history.enabled", false);
