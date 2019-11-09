@@ -9,7 +9,7 @@
 - [Why are studies & telemetry disabled?](#why-are-studies--telemetry-disabled)
 - [Does any of these tweaks really increase my security and how can I check it?](#does-any-of-these-tweaks-really-increase-my-security-and-how-can-i-check-it)
 - [Which Telemetry is disabled via user.js?](#which-telemetry-is-disabled-via-userjs)
-- [Optional addons to enhance several Firefox integrated functions](#optional-addons-to-enhance-several-firefox-integrated-functions)
+- [Optional addons to enhance some Firefox integrated functions](#optional-addons-to-enhance-some-firefox-integrated-functions)
 - [Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?](#why-is-%22safe-browsing%22-etc-disabled-shouldnt-that-protect-me-against-malware)
 - [Why aren’t digital Signatures enforced by default to prevent Malware downloads?](#why-arent-digital-signatures-enforced-by-default-to-prevent-malware-downloads)
 - [Why does Skype-Web refuse to work in Firefox?](#why-does-skype-web-refuse-to-work-in-firefox)
@@ -126,7 +126,7 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 **... or in other words, every single browser based telemetry element gets disabled — because in my point of view, this belongs into test/nightly builds and not into stable or ESR releases**
 
 
-## Optional addons to enhance several Firefox functions
+## Optional addons to enhance some Firefox functions
 
 The following extensions are not there to ‘harden’ Mozilla Firefox, it's more my personally recommendation to comply certain Firefox functions. It’s not meant that such addons are there to ‘secure’' your overall web-habits, there also not there to avoid any data leaks.
 
@@ -142,6 +142,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [Donkey Defender](https://addons.mozilla.org/en-US/firefox/addon/donkey-defender/) & [source code](https://gitlab.com/regen-open-development/donkey-defender)
 * [Snowflake](https://addons.mozilla.org/de/firefox/addon/torproject-snowflake/) 
 * [Authenticator - Generate 2-Step Verification codes in your browser](https://authenticator.cc/)  & [source code](https://github.com/Authenticator-Extension/Authenticator)
+* [Terms of Service; Didn't Read](https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/)
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
