@@ -271,9 +271,14 @@ Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hard 
 
 ## GDrive, GMail, YouTube are slow in Firefox — What can I do?!
 
-Google decided to cook their own soup, they redesigned their own services e.g. GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (aka homebrew) stuff. This is called "Polymer". Polymer is (by default) enabled on the new design. The only chance you have is to [opt-in into the old layout](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). In other words, Google has _maybe_ found a way to force competing browsers into planned obsolescence (or at least that’s their plan).
+Google redesigned their own services e.g. GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (a.k.a homebrew APIs) stuff. This is called "Polymer". Polymer is (by default) enabled on every Google website.
 
-> YouTube page load is 5x slower in Firefox and Edge than in Chrome because Youtube’s Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en).
+> YouTube page load is 5x slower in Firefox and Edge than in Chrome because Youtube’s Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). 
+
+There are three things you can do:
+* Manually disable the new design (polymer) over [https://www.youtube.com/?disable_polymer=true](https://www.youtube.com/?disable_polymer=true) 
+* [Install an addon](https://addons.mozilla.org/de/firefox/addon/disable-polymer-youtube/) ([Chrome](https://chrome.google.com/webstore/detail/restore-classic-for-youtu/dhnphdafbioamppmaiaebbdobfhbhnlm)). 
+* Or via "hacky" solution, fake the user agent e.g. set it to "Opera 12.14" which works via [User Agent switcher](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) & or other addons/extensions/about:config.
 
 
 ## Policy Templates
