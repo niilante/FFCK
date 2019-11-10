@@ -1,12 +1,17 @@
-## Block (all) Mozilla related connections incl. services, sync, websites & extensions
-# v1.2
+## Block (ALL) Mozilla related connections incl. services, sync, websites & extensions
+# http://kb.mozillazine.org/Connections_established_on_startup_-_Firefox
+# v1.3
 #
-# ASN: AS36856 | 63.245.208.0/23 & 2620:101:8030::/47
+# ASN:    AS36856 
+# IP:     63.245.208.0/23 
+# IPV6:   2620:101:8030::/47
 
 0.0.0.0 30boxes.com
+0.0.0.0 content-signature-2.cdn.mozilla.net
 0.0.0.0 accounts.firefox.com
 0.0.0.0 activations.cdn.mozilla.net
 0.0.0.0 add.my.yahoo.com
+0.0.0.0 classify-client.services.mozilla.com
 0.0.0.0 addons.mozilla.org
 0.0.0.0 anf1.fuzzing.mozilla.org
 0.0.0.0 api.accounts.firefox.com
