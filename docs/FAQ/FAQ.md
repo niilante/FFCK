@@ -66,11 +66,12 @@ Multiple reasons, some are bug related, others might break some _useful_ functio
 * [Canvas problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1429865)
 * [Website problems](https://old.reddit.com/r/firefox/comments/a2wwwl/vimeo_stopped_working_with_firefox_and/)
 * [Addon installation problems](https://old.reddit.com/r/firefox/comments/87h2le/privacyresistfingerprinting_prevents_installing/)
+* Other important Addon [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1588916)
 * [User agent "problems"](https://old.reddit.com/r/firefox/comments/bro9sk/privacyresistfingerprinting_user_agent/) (_by design_)
 * Window resizing [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1494212) (_by design_)
 * .. there are other [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1235231), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1449139), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=921942) & even more [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=462743)
 
-What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (in his current state) useful, we use other (older) flags in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”. 
+What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (_in his current state_) useful, we use other flags and protection mechanism in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s simply impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”. 
 
 
 ## Why are some flags disabled when I can control them via FF "Settings"?
