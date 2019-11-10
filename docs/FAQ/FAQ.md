@@ -29,6 +29,7 @@
 - [GDrive, GMail, YouTube are slow in Firefox — What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
 - [What are StaticPrefs?](#what-are-staticprefs)
 - [Against obfuscation as a "privacy tool"](#against-obfuscation-as-a-%22privacy-tool-%22)
+- [Enabling DoH breaks my VPN connection](#enabling-doh-breaks-my-vpn-connection)
 
 ## Which Referrer extensions do I need?
 
@@ -283,14 +284,17 @@ There are three things you can do:
 
 
 ## Policy Templates
+
 You can get the latest Firefox / ESR templates from [here](https://github.com/mozilla/policy-templates/releases/tag/v1.10).
 
 
 ## What are StaticPrefs?
+
 [Static prefs](https://github.com/mozilla/gecko-dev/blob/master/modules/libpref/docs/index.md) are special entries which are listed and defined by `StaticPrefList.yaml`. Those prefs shouldn’t appear in both StaticPrefList.yaml and all.js! 
 
 
 ## Against obfuscation as a "privacy tool"
+
 We [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
 
 Here are addons you don't need:
@@ -304,3 +308,8 @@ Here are addons you don't need:
 * A.I. based systems (addons) - A.I. is in general a good idea, but "bypassing", fooling or breaking them is often easy and A.I. always needs lots of data first
 * [Disconnect](https://disconnect.me) - covered by uBlock/uMatrix
 * [HTTPS Everywhere](https://addons.mozilla.org/de/firefox/addon/https-everywhere/) Use HTTPS websites only or use [Force HTTPS](Force HTTPS) to blocjk insecure http outgoing connections
+
+
+## Enabling DoH breaks my VPN connection
+
+It's by design, a VPN with _"DNS leak protection"_ should not allow DOH to work properly.
