@@ -21,7 +21,7 @@
 - [Which extensions could I use to reduce the tracking behavior?](#which-extensions-could-i-use-to-reduce-the-tracking-behavior)
 - [Where does Firefox Multi-Account Containers Extension store its settings?](#where-does-firefox-multi-account-containers-extension-store-its-settings)
 - [Is there a master list of all about:config flags (incl. the hidden ones)?](#is-there-a-master-list-of-all-aboutconfig-flags-incl-the-hidden-ones)
-- [How to get addons in Mozilla Fennec?](#how-to-get-addons-in-mozilla-fennec)
+- [How to install addons in Mozilla Fenix?](#how-to-install-addons-in-mozilla-fenix)
 - [I can’t see any pictures after I used "save image as" option, what can I do?](#i-cant-see-any-pictures-after-i-used-%22save-image-as%22-option-what-can-i-do)
 - [About:config filtering with Nightly Builds](#aboutconfig-filtering-with-nightly-builds)
 - [I’m looking for a specific CSS tweak e.g. to make the context menu dark](#im-looking-for-a-specific-css-tweak-eg-to-make-the-context-menu-dark)
@@ -247,9 +247,13 @@ The localstorage is located under: `<your-profile-folder>\storage\default\moz-ex
 All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features) or [here](http://kb.mozillazine.org/About:config_entries), this includes even the experimental ones. If you search only for the hidden prefs you will not find them easily in the source code or via search because there is no single master list. 
 
 
-## How to get addons in Mozilla Fennec?
+## How to install addons in Mozilla Fenix?
 
-You can install extensions in Fennec by installing [this](https://tools.taskcluster.net/index/project.mobile.fenix.v2.fennec-production/latest) into your Fennec, however this does not come without any [drawbacks](https://old.reddit.com/r/firefox/comments/d2hww8/fenix_have_supported_addons/). 
+* [Install Fennec (Fenix)](https://ftp.mozilla.org/pub/mobile/releases/68.2.0/) ([App Store](https://play.google.com/store/apps/details?id=org.mozilla.firefox))
+* Install your fav. addons, like uBlock.
+* Make sure you open uBlock's setting page and DO NOT close it.
+* Replace the the original Firefox installation with the latest [preview build](https://tools.taskcluster.net/index/project.mobile.fenix.v2.fennec-production.2019.11.02/latest).
+* Open "Firefox Preview", you will notice that the settings tab from uBlock is still there, which means you can control and use your addon incl. their settings without any problems.
 
 
 ## I can’t see any pictures after I used “save image as” option, what can I do?
