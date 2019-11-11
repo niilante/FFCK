@@ -132,9 +132,6 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 
 The following extensions are not there to ‘harden’ Mozilla Firefox, it's more my personally recommendation to comply certain Firefox functions. It’s not meant that such addons are there to ‘secure’' your overall web-habits, there also not there to avoid any data leaks.
 
-* [Temporary Containers Firefox Add-on (github.com)](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
-* [Multi-Account Containers (github.com)](https://github.com/mozilla/multi-account-containers)
-* [Decentralyes (decentraleyes.org)](https://decentraleyes.org/)
 * [uMatrix (github.com)](https://github.com/gorhill/uMatrix)
 * ~~[NoScript (noscript.net)](https://noscript.net/)~~ (already integrated into Tor Browser)
 * [Kee (github.com)](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
@@ -145,6 +142,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [Snowflake](https://addons.mozilla.org/de/firefox/addon/torproject-snowflake/) 
 * [Authenticator - Generate 2-Step Verification codes in your browser](https://authenticator.cc/)  & [source code](https://github.com/Authenticator-Extension/Authenticator)
 * [Terms of Service; Didn't Read](https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/)
+* [Media Reaper - Privacy 1st, Audio & Video Download](http://anonym.es/?https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
@@ -215,6 +213,7 @@ Manually create (or download) the file `autoconfig.js` (_other names won’t wor
 
 That’s a difficult question because every user has other needs, so I’ll only list the extension which I used in my daily Firefox times. 
 
+* [Temporary Containers Firefox Add-on (github.com)](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
 * [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) (_optional_ and more a workaround for some known bugs)
 * [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/)
 * [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a “gimmick”, we enforce this already via user.js_)
@@ -234,6 +233,9 @@ That’s a difficult question because every user has other needs, so I’ll only
 * Temporary Containers ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations) with [Integrations](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/)
 * [inØsight — Zero Width Obfuscation](https://addons.mozilla.org/en-US/firefox/addon/in0sight/)
+* [Multi-Account Containers (github.com)](https://github.com/mozilla/multi-account-containers)
+* [Decentralyes (decentraleyes.org)](https://decentraleyes.org/)
+
 
 Keep in mind that I’m a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you to that “they are the best” is always a bad idea.
 
