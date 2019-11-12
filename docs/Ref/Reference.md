@@ -126,6 +126,10 @@
 * [Firefox Profilemaker (ffprofile.com)](https://ffprofile.com/)
 
 
+### Firefox color management
+* [How to configure Firefox color management (cameratico.com)](https://cameratico.com/guides/firefox-color-management/)
+
+
 ### Tor Browser related
 * [Fusion Project (trac.torproject.org)](https://trac.torproject.org/projects/tor/wiki/org/meetings/2018Rome/Notes/FusionProject)
 * [iSEC Tor Browser evaluation (github.com)](https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle)
