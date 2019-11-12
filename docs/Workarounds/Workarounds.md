@@ -86,3 +86,6 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 * This tip is basically what [speedyfox](https://www.crystalidea.com/speedyfox) does by default, it will vacuum the database, however other tools like CCleaner or Firefox itself does do similar thing except that they don't vacuum all database files, they basically only vacuum selected database files. Firefox vacuums every 30 days your database (by default). However, you can get an "boost" by optimizing all files via:
 * `for f in `find . -name '*.sqlite'`; do echo Vacuuming $f; sqlite3 "$f" vacuum; done`
 
+## Old about:config interface
+Since Firefox 71+ the new about:config interface is enabled by default, in order to revert it you can use `chrome://global/content/config.xul`. It's unclear when Mozilla removed the fallback method.
+
