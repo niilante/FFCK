@@ -38,8 +38,10 @@ user_pref("privacy.donottrackheader.value", 1);
 //user_pref("pref.general.disable_button.default_browser", true);
 user_pref("pref.privacy.disable_button.view_passwords", true);
 user_pref("pref.privacy.disable_button.view_passwords_exceptions", true);
+user_pref("security.secure_connection_icon_color_gray", false);
 //user_pref("pref.downloads.disable_button.edit_actions", true);
 //
+user_pref("security.identityblock.show_extended_validation", true);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled ", false);
 user_pref("extensions.formautofill.heuristics.enabled", false);
