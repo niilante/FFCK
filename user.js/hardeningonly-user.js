@@ -479,7 +479,9 @@ user_pref("browser.urlbar.trimURLs", false);
 user_pref("accessibility.typeaheadfind", false);
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("browser.urlbar.delay", 10);
-
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("browser.protections_panel.enabled", false);
+user_pref("toolkit.cosmeticAnimations.enabled", false);
 
 // Font workarounds
 //user_pref("browser.display.use_document_fonts", 1); //0
