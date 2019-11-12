@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      Newer than user.js! There are differences (on purpose)!
 //
-//      Version 0.66
+//      Version 0.67
 //
 //      Todo: DoH, spoofing & some other things.
 //      Disabling VP9 Codec needs a userscript since FF 70+
@@ -27,7 +27,8 @@
 //user_pref("network.negotiate-auth.allow-insecure-ntlm-v1-https", false);
 user_pref("pdfjs.enableWebGL", false);
 //user_pref("privacy.firstparty.isolate.restrict_opener_access", false);
-user_pref("privacy.donottrackheader.enabled", false); // By default disabled unless PB
+user_pref("privacy.donottrackheader.enabled", false);
+user_pref("privacy.donottrackheader.value", 1);
 //user_pref("security.ssl.require_safe_negotiation", true);
 //user_pref("signon.storeWhenAutocompleteOff", false);
 //user_pref("xpinstall.signatures.required", true);
@@ -42,9 +43,7 @@ user_pref("pref.privacy.disable_button.view_passwords_exceptions", true);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled ", false);
 user_pref("extensions.formautofill.heuristics.enabled", false);
-user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("app.update.enabled", true);
-user_pref("beacon.enabled", false);
 user_pref("breakpad.reportURL", "");
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
@@ -80,32 +79,14 @@ user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.ping-centre.staging.endpoint", "");
 user_pref("browser.ping-centre.production.endpoint", "");
-user_pref("browser.newtabpage.enabled", false);
 user_pref("signon.generation.enabled", false);
-user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.offline-apps.notify", true);
 user_pref("browser.pagethumbnails.capturing_disabled", true);
 //user_pref("browser.link.open_newwindow.restriction", 0);
 user_pref("browser.pocket.enabled", false);
 user_pref("browser.privatebrowsing.autostart", true);
-user_pref("browser.safebrowsing.provider.google.gethashURL", "");
-user_pref("browser.safebrowsing.provider.google.updateURL", "");
-user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
-user_pref("browser.safebrowsing.provider.google4.updateURL", "");
-user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
-user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
-user_pref("browser.safebrowsing.downloads.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
-user_pref("browser.safebrowsing.downloads.remote.url", " ");
-user_pref("browser.safebrowsing.blockedURIs.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
-user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
-user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
-user_pref("browser.safebrowsing.enabled", true);
-user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("privacy.trackingprotection.cryptomining.enabled", false);
-user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("privacy.trackingprotection.fingerprinting.enabled", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.asrouterExperimentEnabled", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
@@ -127,6 +108,7 @@ user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.search.update", false);
 user_pref("browser.selfsupport.url", "");
 user_pref("browser.search.geoSpecificDefaults.url", "");
+user_pref("browser.startup.homepage", "about:blank");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.send_pings.require_same_host", true);
 user_pref("browser.sessionstore.privacy_level", 2);
@@ -148,8 +130,8 @@ user_pref("toolkit.telemetry.infoURL", "");
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
-user_pref("browser.urlbar.trimURLs", false);
 user_pref("camera.control.face_detection.enabled", false);
+user_pref("browser.newtabpage.activity-stream.filterAdult", true);
 user_pref("camera.control.autofocus_moving_callback.enabled", false);
 user_pref("clipboard.autocopy", false);
 user_pref("datareporting.healthreport.service.enabled", false);
@@ -167,7 +149,6 @@ user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 user_pref("dom.allow_cut_copy", false);
 user_pref("dom.archivereader.enabled", false);
 user_pref("dom.enable_performance_navigation_timing", false);
-user_pref("dom.battery.enabled", false);
 user_pref("dom.enable_performance", false);
 user_pref("dom.enable_resource_timing", false);
 user_pref("dom.enable_user_timing", false);
@@ -190,22 +171,11 @@ user_pref("dom.vibrator.enabled", false);
 user_pref("dom.vr.enabled", false);
 user_pref("dom.webaudio.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
-user_pref("experiments.enabled", false);
-user_pref("experiments.manifest.uri", "");
-user_pref("experiments.supported", false);
-user_pref("extensions.blocklist.enabled", false);
-user_pref("extensions.blocklist.url", "");
-user_pref("extensions.webextensions.restrictedDomains", "");
-user_pref("extensions.getAddons.cache.enabled", false);
-user_pref("extensions.htmlaboutaddons.discover.enabled", false);
-user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
-user_pref("extensions.pocket.enabled", false);
-user_pref("extensions.systemAddon.update.enabled", false);
-user_pref("extensions.update.enabled", true);
 user_pref("general.buildID.override", "20100101");
-user_pref("media.autoplay.enabled", false);
 user_pref("media.autoplay.allow-muted", false);
-user_pref("media.autoplay.default", 1);
+user_pref("media.autoplay.default", 2);
+user_pref("media.autoplay.enabled.user-gestures-needed", true); 
+user_pref("media.autoplay.ask-permission", true);
 user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("privacy.history.custom", true);
@@ -423,16 +393,13 @@ user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.maxSamples", 0);
 user_pref("browser.slowStartup.samples", 0);
 user_pref("browser.startup.page", 0);
-user_pref("toolkit.telemetry.server", "");
 user_pref("toolkit.telemetry.hybridContent.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.ecosystemtelemetry.enabled", false);
 user_pref("toolkit.telemetry.enabled", false);
-user_pref("toolkit.telemetry.unified", false);
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
-user_pref("webgl.disabled", true);
 user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("webgl.min_capability_mode", true);
@@ -455,6 +422,62 @@ user_pref("extensions.getAddons.showPane", false);
 user_pref("security.dialog_enable_delay", 1000);
 user_pref("middlemouse.paste", false);
 
+//Search
+user_pref("browser.search.hiddenOneOffs", "Google,Bing,Amazon.com,DuckDuckGo,eBay,Twitter,Wikipedia (en)");
+
+
+//Extensions
+user_pref("extensions.greasemonkey.stats.optedin", false);
+user_pref("extensions.greasemonkey.stats.url", "");
+user_pref("extensions.blocklist.enabled", false);
+user_pref("extensions.webservice.discoverURL", "");
+user_pref("extensions.blocklist.url", "");
+user_pref("extensions.webextensions.restrictedDomains", "");
+user_pref("extensions.getAddons.cache.enabled", false);
+user_pref("extensions.shield-recipe-client.enabled", false);
+user_pref("extensions.htmlaboutaddons.discover.enabled", false);
+user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
+user_pref("extensions.pocket.enabled", false);
+user_pref("extensions.systemAddon.update.enabled", false);
+user_pref("extensions.update.enabled", true);
+user_pref("extensions.shield-recipe-client.api_url", "");
+
+
+//SF 
+user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.safebrowsing.appRepURL", ""); 
+user_pref("browser.safebrowsing.provider.google.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google.updateURL", "");
+user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google4.updateURL", "");
+user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
+user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
+user_pref("browser.safebrowsing.downloads.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
+user_pref("browser.safebrowsing.downloads.remote.url", " ");
+user_pref("browser.safebrowsing.blockedURIs.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.enabled", false);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
+user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
+user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
+user_pref("browser.safebrowsing.enabled", false);
+user_pref("browser.safebrowsing.malware.enabled", false);
+
+
+//Usability
+user_pref("browser.download.autohideButton", false);
+user_pref("browser.disableResetPrompt", true); 
+user_pref("browser.contentblocking.introCount", 20);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.newtabpage.enhanced", false);
+user_pref("browser.newtabpage.enabled", false);
+user_pref("browser.newtabpage.introShown", true);
+user_pref("browser.overlink-delay", 1);
+user_pref("browser.urlbar.trimURLs", false);
+user_pref("accessibility.typeaheadfind", false);
+user_pref("permissions.default.desktop-notification", 2);
+user_pref("browser.urlbar.delay", 10);
+
 
 // Font workarounds
 //user_pref("browser.display.use_document_fonts", 1); //0
@@ -464,6 +487,7 @@ user_pref("gfx.downloadable_fonts.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("gfx.font_rendering.graphite.enabled", false);
 
+
 // Outdated (FF 72+), not privacy/security related - or already set to false (by default)
 user_pref("devtools.webide.enabled", false);
 user_pref("security.csp.enable", true);
@@ -471,7 +495,7 @@ user_pref("security.csp.enable", true);
 user_pref("security.insecure_connection_icon.enabled", true);
 user_pref("security.mixed_content.block_active_content", true);
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
-//user_pref("extensions.autoDisableScopes", 15);
+//user_pref("extensions.autoDisableScopes", 14);
 //user_pref("privacy.usercontext.about_newtab_segregation.enabled", true);
 //user_pref("extensions.incognito.migrated", true);
 //user_pref("browser.chrome.site_icons", true);
@@ -483,6 +507,30 @@ user_pref("media.block-autoplay-until-in-foreground", true);
 //user_pref("dom.disable_window_open_feature.location", true);
 //user_pref("dom.disable_window_open_feature.resizable", true);
 //user_pref("network.http.referer.XOriginTrimmingPolicy", 0);
+//user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
+//user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
+user_pref("browser.tabs.closeWindowWithLastTab", false);
+user_pref("browser.tabs.tabClipWidth", 93);
+user_pref("browser.tabs.warnOnClose", false);
+user_pref("browser.uidensity", 1);
+user_pref("experiments.activeExperiment", false); 
+user_pref("experiments.enabled", false);
+user_pref("experiments.manifest.uri", "");
+user_pref("experiments.supported", false);
+user_pref("toolkit.telemetry.server", "");
+user_pref("media.autoplay.enabled", false);
+//user_pref("media.webm.enabled", false);
+user_pref("dom.battery.enabled", false);
+//user_pref("toolkit.telemetry.cachedClientID", "");
+user_pref("toolkit.telemetry.prompted", 2);
+user_pref("toolkit.telemetry.rejected", true);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
+user_pref("toolkit.telemetry.unified", false);
+user_pref("app.normandy.api_url", ""); 
+user_pref("app.normandy.enabled", false);
+user_pref("app.shield.optoutstudies.enabled", false);
+user_pref("beacon.enabled", false);
+user_pref("webgl.disabled", true);
 
 // Optional params (as per own needs)
 // "browser.uiCustomization.state" 
