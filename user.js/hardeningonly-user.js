@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      Newer than user.js! There are differences (on purpose)!
 //
-//      Version 0.67
+//      Version 0.68
 //
 //      Todo: DoH, spoofing & some other things.
 //      Disabling VP9 Codec needs a userscript since FF 70+
@@ -16,6 +16,14 @@
 //                    uBlock/uMatrix
 //                    
 // 
+
+//Delegated Credentials Study Add-on
+user_pref("dc-experiment.hasRun", false);
+user_pref("dc-experiment.inCohort", false);
+//user_pref("security.tls.enable_delegated_credentials", false);
+user_pref("shieldStudy.logLevel", "None");
+user_pref("dc-experiment.host", "");
+user_pref("dc-experiment.branchTreatment", false);
 
 //user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("app.update.auto", true);
