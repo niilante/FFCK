@@ -25,6 +25,8 @@ user_pref("shieldStudy.logLevel", "None");
 user_pref("dc-experiment.host", "");
 user_pref("dc-experiment.branchTreatment", false);
 
+//user_pref("security.cert_pinning.hpkp.enabled", false); //default
+
 //user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("app.update.auto", true);
 //user_pref("browser.cache.memory.enable", false);
