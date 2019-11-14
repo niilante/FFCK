@@ -305,7 +305,7 @@ You can get the latest Firefox / ESR templates from [here](https://github.com/mo
 We [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
 
 Here are addons you don't need:
-* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode).
+* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode). If you want to use a cookie control addon, go with [CookieMaster](https://addons.mozilla.org/en-US/firefox/addon/cookiemaster/) instead because it (by default) block all cookies and only allow authorized sites, on a per-domain basis. You also can use [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) in combination with uBlock.
 * [TrackMeNot](http://trackmenot.io/) - covered by uBlock/uMatrix
 * [AdNauseam](https://adnauseam.io/) - covered by uBlock/uMatrix
 * [Go Rando](https://bengrosser.com/projects/go-rando/) - _questionable_
@@ -315,6 +315,7 @@ Here are addons you don't need:
 * A.I. based systems (addons) - A.I. is in general a good idea, but "bypassing", fooling or breaking them is often easy and A.I. always needs lots of data first
 * [Disconnect](https://disconnect.me) - covered by uBlock/uMatrix
 * [HTTPS Everywhere](https://addons.mozilla.org/de/firefox/addon/https-everywhere/) Use HTTPS websites only or use [Force HTTPS](Force HTTPS) to blocjk insecure http outgoing connections
+* [User Agent Platform Spoofer](https://addons.mozilla.org/en-US/firefox/addon/user-agent-platform-spoofer/) or similar addons, if you want to spoof your User Agent then use uMatrix integrated function for this.
 
 
 ## Enabling DoH breaks my VPN connection
