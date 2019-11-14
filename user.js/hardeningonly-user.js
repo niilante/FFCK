@@ -6,8 +6,9 @@
 //
 //      Version 0.68
 //
-//      Todo: DoH, spoofing & some other things.
-//      Disabling VP9 Codec needs a userscript since FF 70+
+//      FIXME: DoH
+//
+//      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
 //      https://greasyfork.org/en/scripts/390992-hide-hdr-support-from-youtube
 //      https://addons.mozilla.org/en-US/firefox/addon/enhanced-h264ify/
@@ -17,6 +18,7 @@
 //                    
 // 
 
+user_pref("network.file.disable_unc_paths", true);
 //Delegated Credentials Study Add-on
 user_pref("dc-experiment.hasRun", false);
 user_pref("dc-experiment.inCohort", false);
@@ -26,6 +28,8 @@ user_pref("dc-experiment.host", "");
 user_pref("dc-experiment.branchTreatment", false);
 
 //user_pref("security.cert_pinning.hpkp.enabled", false); //default
+user_pref("network.connectivity-service.enabled", false);
+
 
 //user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("app.update.auto", true);
@@ -90,6 +94,7 @@ user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.ping-centre.staging.endpoint", "");
+user_pref("browser.safebrowsing.reportPhishURL", false);
 user_pref("browser.ping-centre.production.endpoint", "");
 user_pref("signon.generation.enabled", false);
 user_pref("browser.offline-apps.notify", true);
@@ -132,6 +137,7 @@ user_pref("browser.startup.homepage_override.buildID", "20100101");
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.search.reset.enabled", false);
 user_pref("browser.uitour.enabled", false);
+user_pref("browser.uitour.url", "");
 user_pref("browser.urlbar.autocomplete.enabled", false);
 user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.speculativeConnect.enabled", false);
@@ -545,6 +551,14 @@ user_pref("app.normandy.enabled", false);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("beacon.enabled", false);
 user_pref("webgl.disabled", true);
+user_pref("app.update.silent", false);
+user_pref("browser.safebrowsing.provider.google4.dataSharing.enabled", false);
+user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
+user_pref("permissions.manager.defaultsUrl", "");
+user_pref("security.ssl.errorReporting.enabled", false);
+user_pref("security.ssl.errorReporting.url", "");
+user_pref("extensions.webcompat-reporter.enabled", false);
+
 
 // Optional params (as per own needs)
 // "browser.uiCustomization.state" 
