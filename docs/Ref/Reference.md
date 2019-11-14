@@ -177,10 +177,18 @@
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
 
 ### Other criticism
-* Aesthetic criticisms (design,...)
+* Aesthetic criticisms (_design,..._)
 * [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/)
 * [Criticism of Firefox on Android by the GrapheneOS project (grapheneos.org)](https://grapheneos.org/usage#web-browsing) - ([discussion](https://old.reddit.com/r/firefox/comments/d2lq23/criticism_of_firefox_on_android_by_the_grapheneos/))
 * [Mozilla and Creative Commons want to reimagine the internet without ads, and they have $100M to do (fastcompany.com)](https://www.fastcompany.com/90403645/mozilla-and-creative-commons-want-to-reimagine-the-internet-without-ads-and-they-have-100m-to-do-it) [(via reddit.com)](https://old.reddit.com/r/firefox/comments/d52fpp/mozilla_and_creative_commons_want_to_reimagine/)
+* [Google Analytics is used to track users](https://github.com/mozilla/addons-frontend/issues/2785)
+* [FHR](https://web.archive.org/web/20180513014211/https://blog.mozilla.org/metrics/fhr-faq/)
+* [Pocket Privacy Policy](http://web.archive.org/web/20180410043925/https://getpocket.com/privacy?t=privacypolicy)
+* [Snippets Service Data Collection](https://web.archive.org/web/20180410043926/https://abouthome-snippets-service.readthedocs.io/en/latest/data_collection.html)
+* [Metrics Mozilla collects](https://web.archive.org/web/20180530091900/https://github.com/mozilla/activity-stream/blob/master/docs/v2-system-addon/data_events.md)
+* [Captive portal](https://archive.li/57xdG)
+* [How can I stop firefox from constantly connecting to self-repair.mozillia.org](https://archive.li/a17cN)
+
 
 ### No longer maintained
 - [mozillazine.org](http://forums.mozillazine.org/viewtopic.php?f=38&t=3055133)
