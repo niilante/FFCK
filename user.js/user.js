@@ -15,7 +15,7 @@
 //
 //      See issue tracker for known issues & discussions!
 //
-//      Version: 0.57
+//      Version: 0.58
 //
 //      Codename: AGTUC
 //
@@ -2220,10 +2220,13 @@ user_pref("webgl.prefer-16bpp", false);
 user_pref("webgl.renderer-string-override", "");
 user_pref("webgl.vendor-string-override", "");
 user_pref("widget.content.allow-gtk-dark-theme", false);
-user_pref("widget.content.gtk-theme-override", "Breeze");
+user_pref("widget.chrome.allow-gtk-dark-theme", false);
+user_pref("widget.content.gtk-theme-override", "Breeze"); //Adwaita:light
+//user_pref("ui.use_standins_for_native_colors", true)
 user_pref("widget.disable-native-theme", false);
 user_pref("widget.wayland_dmabuf_backend.enabled", false);
 user_pref("widget.window-transforms.disabled", false);
 user_pref("xpinstall.signatures.required", false);
 user_pref("zoom.maxPercent", 300);
 user_pref("zoom.minPercent", 50);
+
