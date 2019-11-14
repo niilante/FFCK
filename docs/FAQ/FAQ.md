@@ -314,7 +314,7 @@ Here are addons you don't need:
 * [Ghostery](https://www.ghostery.com) - covered by uBlock/uMatrix
 * A.I. based systems (addons) - A.I. is in general a good idea, but "bypassing", fooling or breaking them is often easy and A.I. always needs lots of data first
 * [Disconnect](https://disconnect.me) - covered by uBlock/uMatrix
-* [HTTPS Everywhere](https://addons.mozilla.org/de/firefox/addon/https-everywhere/) Use HTTPS websites only or use [Force HTTPS](Force HTTPS) to blocjk insecure http outgoing connections
+* [HTTPS Everywhere](https://addons.mozilla.org/de/firefox/addon/https-everywhere/) Use HTTPS websites only or use [Force HTTPS](Force HTTPS) to blocjk insecure http outgoing connections or [NoHTTP](https://addons.mozilla.org/en-US/firefox/addon/nohttp/)
 * [User Agent Platform Spoofer](https://addons.mozilla.org/en-US/firefox/addon/user-agent-platform-spoofer/) or similar addons, if you want to spoof your User Agent then use uMatrix integrated function for this.
 
 
