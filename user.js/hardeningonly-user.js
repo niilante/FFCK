@@ -444,13 +444,18 @@ user_pref("middlemouse.paste", false);
 user_pref("browser.search.hiddenOneOffs", "Google,Bing,Amazon.com,DuckDuckGo,eBay,Twitter,Wikipedia (en)");
 
 
+// Native implemented extension protection
+user_pref("extensions.webextensions.restrictedDomains", "");
+user_pref("extensions.webextensions.base-content-security-policy", "");
+user_pref("extensions.webextensions.default-content-security-policy", "");
+
+
 //Extensions
 user_pref("extensions.greasemonkey.stats.optedin", false);
 user_pref("extensions.greasemonkey.stats.url", "");
 user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.webservice.discoverURL", "");
 user_pref("extensions.blocklist.url", "");
-user_pref("extensions.webextensions.restrictedDomains", "");
 user_pref("extensions.getAddons.cache.enabled", false);
 user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
