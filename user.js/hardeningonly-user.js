@@ -15,8 +15,8 @@
 //      
 //      Requirements: Firefox x64
 //                    uBlock/uMatrix
-//                    
-// 
+//
+//
 
 user_pref("network.file.disable_unc_paths", true);
 //Delegated Credentials Study Add-on
@@ -212,7 +212,6 @@ user_pref("loop.enabled", false);
 user_pref("loop.logDomains", false);
 user_pref("media.getusermedia.audiocapture.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
-user_pref("media.gmp-gmpopenh264.enabled", false);
 user_pref("media.gmp-manager.url", "");
 user_pref("media.navigator.enabled", false);
 user_pref("media.navigator.video.enabled", false);
@@ -563,6 +562,15 @@ user_pref("permissions.manager.defaultsUrl", "");
 user_pref("security.ssl.errorReporting.enabled", false);
 user_pref("security.ssl.errorReporting.url", "");
 user_pref("extensions.webcompat-reporter.enabled", false);
+
+
+//EME
+//EME free builds: https://ftp.mozilla.org/pub/firefox/releases/71.0b9/win64-EME-free/
+// https://support.mozilla.org/en-US/kb/enable-drm
+//user_pref("media.gmp-gmpopenh264.enabled", false);
+//user_pref("media.gmp-gmpopenh264.autoupdate", false);
+//user_pref("media.gmp-gmpopenh264.provider.enabled", false);
+//user_pref("media.eme.enabled", false); 
 
 
 // Optional params (as per own needs)
