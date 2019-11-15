@@ -135,14 +135,14 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [uMatrix (github.com)](https://github.com/gorhill/uMatrix)
 * ~~[NoScript (noscript.net)](https://noscript.net/)~~ (already integrated into Tor Browser)
 * [Kee (github.com)](https://github.com/kee-org/browser-addon) - Alternative: [Tusk](https://github.com/subdavis/Tusk)
-* [Violentmonkey (github.com)](https://github.com/violentmonkey/violentmonkey)
+* [Violentmonkey (github.com)](https://github.com/violentmonkey/violentmonkey) (_with scripts_)
 * [Extension source viewer (addons.mozilla.org)](https://addons.mozilla.org/en-GB/firefox/addon/crxviewer/)
 * [Permission Inspector (github.com)](https://github.com/tsl143/addonManager)
 * [Donkey Defender](https://addons.mozilla.org/en-US/firefox/addon/donkey-defender/) & [source code](https://gitlab.com/regen-open-development/donkey-defender)
 * [Snowflake](https://addons.mozilla.org/de/firefox/addon/torproject-snowflake/) 
 * [Authenticator - Generate 2-Step Verification codes in your browser](https://authenticator.cc/)  & [source code](https://github.com/Authenticator-Extension/Authenticator)
 * [Terms of Service; Didn't Read](https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/)
-* [Media Reaper - Privacy 1st, Audio & Video Download](http://anonym.es/?https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
+* [Media Reaper - Privacy 1st, Audio & Video Download](https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
@@ -223,14 +223,14 @@ That’s a difficult question because every user has other needs, so I’ll only
 * [CanvasBlocker](https://addons.mozilla.org/firefox/addon/canvasblocker/)
 * ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
 * [Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)
-* [ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/) 
+* ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~
 * [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/)
 * [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/)
 * [Firemonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/)
 * [Redirector](https://addons.mozilla.org/firefox/addon/redirector/)
 * [Request Control](https://addons.mozilla.org/en-US/firefox/addon/requestcontrol)
 * [Smart Referer](https://addons.mozilla.org/en-US/firefox/addon/smart-referer/)
-* Temporary Containers ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations) with [Integrations](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
+* [Temporary Containers](https://addons.mozilla.org/de/firefox/addon/temporary-containers/) ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/)
 * [inØsight — Zero Width Obfuscation](https://addons.mozilla.org/en-US/firefox/addon/in0sight/)
 * [Multi-Account Containers (github.com)](https://github.com/mozilla/multi-account-containers)
