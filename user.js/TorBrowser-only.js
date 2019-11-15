@@ -3,37 +3,98 @@
 //
 //      Don't use Firefox forks, except the Tor Browser!
 //      This is for Tor Browser Bundle only, do not use it on a normal Firefox version.
-//      
-//      Version 0.01 
 //
-//      TODO: Upload, fix and optimize.
+//      Version 0.02
+//
+//      TODO:  Fix and optimize.
 //      TODO: MacOS, Linux & other quirks like backward compatibility.
 //      TODO: This will break the tor "Security Slider".
+
+
+// Last update timer
+// Enforce fake values?!
+user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1573836940);
+user_pref("app.update.lastUpdateTime.background-update-timer", 1573836700);
+user_pref("app.update.lastUpdateTime.blocklist-background-update-timer", 1573837060);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1573836460);
+user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1573836460);
+user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1573836820);
+user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1573836820);
+user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1573837180);
+
+
+// Default overwrites
+// Pretending to use an older (vulnerable) Tor Browser might helps to fool websites?!
+user_pref("browser.startup.homepage_override.buildID", "20190402020101");
+user_pref("browser.startup.homepage_override.mstone", "68.2.0");
+user_pref("browser.startup.homepage_override.torbrowser.version", "9.0.1");
+user_pref("distribution.iniFile.exists.appversion", "68.2.0");
+user_pref("extensions.activeThemeID", "default-theme@mozilla.org");
+user_pref("extensions.blocklist.lastModified", "Fri, 15 Nov 2019 07:50:24 GMT");
+user_pref("extensions.blocklist.pingCountTotal", 2);
+user_pref("extensions.blocklist.pingCountVersion", 2);
+user_pref("extensions.lastAppBuildId", 20190402020101);
+user_pref("extensions.lastAppVersion", "68.2.0");
+user_pref("extensions.lastPlatformVersion", "68.2.0");
+user_pref("extensions.lastTorBrowserVersion", "9.0.1");
+user_pref("extensions.torbutton.lastBrowserVersion", "9.0.1");
+user_pref("extensions.torbutton.lastUpdateCheck", 1573836430.555);
+user_pref("gfx.crash-guard.wmfvpxvideo.appVersion", "68.2.0");
+user_pref("gfx.crash-guard.wmfvpxvideo.deviceID", "0x1c03");
+user_pref("gfx.crash-guard.wmfvpxvideo.driverVersion", "26.21.14.4120");
+user_pref("browser.startup.lastColdStartupCheck", 1573836431);
+user_pref("media.gmp-manager.buildID", "20190402020101");
+user_pref("places.history.expiration.transient_current_max_pages", 112348);
+user_pref("sanity-test.driver-version", "26.21.14.4120");
+user_pref("sanity-test.version", 20190402020101);
+user_pref("security.sandbox.content.tempDirSuffix", "{7ca12269-9ebb-4dc5-8d32-2e274262e2eb}"); // FIXME:
+user_pref("security.sandbox.plugin.tempDirSuffix", "{b8450ff5-4717-4aaa-b59b-a55890c634de}"); // FIXME:
+user_pref("services.settings.last_etag", """1573804224556"");
+user_pref("toolkit.telemetry.cachedClientID", "f9e80444-363a-4eac-a7c2-d34aff3c4eae");
+
+// Extensions
+//HTTPS-E was always BS, block HTTP instead (by default)
+user_pref("devtools.webextensions.https-everywhere-eff@eff.org.enabled", false);
+user_pref("extensions.torbutton.noscript_inited", true);
+user_pref("extensions.torbutton.pref_fixup_version", 1);
+user_pref("extensions.torbutton.security_slider", 2); // enforce mild but usable strong defaults
 
 
 user_pref("app.update.badge", true);
 user_pref("app.update.promptWaitTime", 3600);
 user_pref("app.update.staging.enabled", false);
+user_pref("browser.cache.disk.amount_written", 0);
+user_pref("browser.cache.disk.capacity", 1048576);
 user_pref("browser.cache.disk.enable", false);
+user_pref("browser.cache.disk.filesystem_reported", 1);
 user_pref("browser.cache.offline.enable", false);
+user_pref("browser.contentblocking.category", "standard");
 user_pref("browser.disableResetPrompt", true);
 user_pref("browser.download.manager.addToRecentDocs", false);
 user_pref("browser.download.manager.retention", 1);
 user_pref("browser.download.manager.scanWhenDone", false);
-user_pref("dom.archivereader.enabled", false);
 user_pref("browser.download.panel.shown", true);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("browser.eme.ui.enabled", false);
 user_pref("browser.fixup.alternate.enabled", false);
-user_pref("webgl.min_capability_mode", true);
 user_pref("browser.formfill.enable", false);
+user_pref("browser.laterrun.bookkeeping.sessionCount", 1);
+user_pref("browser.laterrun.enabled", true);
+user_pref("browser.launcherProcess.enabled", true);
 user_pref("browser.link.open_newwindow.restriction", 0);
-user_pref("browser.newtabpage.directory.ping", "data:text/plain,"); 
+user_pref("browser.migration.version", 81);
+user_pref("browser.newtabpage.directory.ping", "data:text/plain,");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,");
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
 user_pref("browser.newtabpage.preload", false);
 user_pref("browser.newtabpage.remote", false);
+user_pref("browser.newtabpage.storageVersion", 1);
+user_pref("browser.onboarding.seen-tourset-version", 4);
+user_pref("browser.onboarding.tour-type", "new");
+user_pref("browser.pageActions.persistedActions", "{"version":1,"ids":["bookmark","pinTab","bookmarkSeparator","copyURL","emailLink","addSearchEngine","shareURL"],"idsInUrlbar":["bookmark"]}");
+user_pref("browser.pagethumbnails.storage_version", 3);
+user_pref("browser.places.importBookmarksHTML", false);
 user_pref("browser.pocket.api", "");
 user_pref("browser.pocket.enabled", false);
 user_pref("browser.pocket.site", "");
@@ -70,10 +131,10 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("browser.slowStartup.maxSamples", 0);
 user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.samples", 0);
-user_pref("browser.startup.homepage_override.buildID", "20100101");
 user_pref("browser.syncPromoViewsLeftMap", "{\"addons\":0, \"passwords\":0, \"bookmarks\":0}");
-user_pref("browser.uiCustomization.state", "{\"placements\":{\"PanelUI-contents\":[\"edit-controls\",\"zoom-controls\",\"new-window-button\",\"save-page-button\",\"print-button\",\"bookmarks-menu-button\",\"history-panelmenu\",\"find-button\",\"preferences-button\",\"add-ons-button\",\"developer-button\",\"https-everywhere-button\",\"downloads-button\"],\"addon-bar\":[\"addonbar-closebutton\",\"status-bar\"],\"PersonalToolbar\":[\"personal-bookmarks\"],\"nav-bar\":[\"noscript-tbb\",\"torbutton-button\",\"urlbar-container\",\"search-container\",\"webrtc-status-button\",\"loop-button\"],\"TabsToolbar\":[\"tabbrowser-tabs\",\"new-tab-button\",\"alltabs-button\"],\"toolbar-menubar\":[\"menubar-items\"]},\"seen\":[],\"dirtyAreaCache\":[\"PersonalToolbar\",\"nav-bar\",\"TabsToolbar\",\"toolbar-menubar\",\"PanelUI-contents\",\"addon-bar\"],\"currentVersion\":4,\"newElementCount\":0}");
+user_pref("browser.uiCustomization.state", "{"placements":{"widget - overflow - fixed - list":[],"nav - bar":["back - button","forward - button","stop - reload - button","urlbar - container","torbutton - button","security - level - button","new- identity - button","downloads - button","fxa - toolbar - menu - button"],"toolbar - menubar":["menubar - items"],"TabsToolbar":["tabbrowser - tabs","new- tab - button","alltabs - button"],"PersonalToolbar":["personal - bookmarks"],"PanelUI - contents":["home - button","edit - controls","zoom - controls","new- window - button","save - page - button","print - button","bookmarks - menu - button","history - panelmenu","find - button","preferences - button","add - ons - button","developer - button"],"addon - bar":["addonbar - closebutton","status - bar"]},"seen":["developer - button","https - everywhere - eff_eff_org - browser - action","_73a6fe31 - 595d - 460b - a920 - fcc0f8843232_ - browser - action"],"dirtyAreaCache":["PersonalToolbar","nav - bar","TabsToolbar","toolbar - menubar"],"currentVersion":16,"currentTorVersion":1,"newElementCount":1}");
 user_pref("browser.uitour.enabled", false);
+user_pref("browser.urlbar.placeholderName", "DuckDuckGo");
 user_pref("browser.usedOnWindows10", true);
 user_pref("browser.zoom.siteSpecific", false);
 user_pref("datareporting.healthreport.about.reportUrl", "data:text/plain,");
@@ -84,9 +145,12 @@ user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);
 user_pref("devtools.appmanager.enabled", false);
 user_pref("devtools.debugger.chrome-debugging-host", "127.0.0.1");
+user_pref("devtools.onboarding.telemetry.logged", true);
 user_pref("devtools.webide.autoinstallADBHelper", false);
 user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 user_pref("devtools.webide.enabled", false);
+user_pref("distribution.iniFile.exists.value", false);
+user_pref("dom.archivereader.enabled", false);
 user_pref("dom.enable_performance", false);
 user_pref("dom.enable_resource_timing", false);
 user_pref("dom.enable_user_timing", false);
@@ -95,7 +159,7 @@ user_pref("dom.gamepad.enabled", false);
 user_pref("dom.indexedDB.enabled", false);
 user_pref("dom.maxHardwareConcurrency", 1);
 user_pref("dom.mozTCPSocket.enabled", false);
-user_pref("dom.network.enabled",false);
+user_pref("dom.network.enabled", false);
 user_pref("dom.push.serverURL", "");
 user_pref("dom.securecontext.whitelist_onions", true);
 user_pref("dom.w3c_touch_events.enabled", 0);
@@ -104,15 +168,24 @@ user_pref("experiments.enabled", false);
 user_pref("extensions.autoDisableScopes", 0);
 user_pref("extensions.bootstrappedAddons", "{}");
 user_pref("extensions.checkCompatibility.4.*", false);
-user_pref("extensions.databaseSchema", 3);
+user_pref("extensions.databaseSchema", 31);
 user_pref("extensions.enabledAddons", "https-everywhere%40eff.org:3.1.4,%7B73a6fe31-595d-460b-a920-fcc0f8843232%7D:2.6.6.1,torbutton%40torproject.org:1.5.2,ubufox%40ubuntu.com:2.6,tor-launcher%40torproject.org:0.1.1pre-alpha,%7B972ce4c6-7e08-4474-a285-3208198ce6fd%7D:17.0.5");
 user_pref("extensions.enabledItems", "langpack-en-US@firefox.mozilla.org:,{73a6fe31-595d-460b-a920-fcc0f8843232}:1.9.9.57,{e0204bd5-9d31-402b-a99d-a6aa8ffebdca}:1.2.4,{972ce4c6-7e08-4474-a285-3208198ce6fd}:3.5.8");
 user_pref("extensions.enabledScopes", 1);
-user_pref("extensions.getAddons.cache.enabled", false); 
+user_pref("extensions.getAddons.cache.enabled", false);
+user_pref("extensions.getAddons.databaseSchema", 5);
 user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.hotfix.id", "");
 user_pref("extensions.pendingOperations", false);
+user_pref("extensions.systemAddonSet", "{ "schema": 1, "addons": {} }");
+user_pref("extensions.torbutton.security_slider_migration", 1);
+user_pref("extensions.torlauncher.default_bridge_type", "");
+user_pref("extensions.torlauncher.prompt_at_startup", false);
+user_pref("extensions.torlauncher.should_remove_meek_helper_profiles", false);
+user_pref("extensions.torlauncher.torrc_fixup_version", 2);
 user_pref("extensions.ui.lastCategory", "addons://list/extension");
+user_pref("extensions.webextensions.uuids", "{"https - everywhere - eff@eff.org":"27887d0c - d485 - 4a7b - 8814 - 6ae68e618dc6","{ 73a6fe31 - 595d - 460b - a920 - fcc0f8843232 } ":"ddfeff98 - ea12 - 4472 - ae77 - e9272beb3776","onboarding@mozilla.org":"fce2af8c - d371 - 41b7 - ac9c - 02ce2d130f9e","default -theme@mozilla.org":"af5ffc7e - bbd1 - 4225 - 9163 - 44c5d749d995","ddg@search.mozilla.org":"e9b18615 - 9890 - 442f - b185 - 10f751b34ec8","ddg - onion@search.mozilla.org":"f2f0d1b0 - 9664 - 4978 - a8b6 - 1982dbd0134c","google@search.mozilla.org":"d2282779 - 70dc - 4cc4 - a6e5 - f7d10ed97b43","yahoo@search.mozilla.org":"3f238b44 - 9b8e - 48d0 - b762 - 91bec44270bb","twitter@search.mozilla.org":"8ee60cfc - edb5 - 46f6 - b9b6 - 7d547b72e6d9","wikipedia@search.mozilla.org":"5c01f5cf - ecf4 - 47a2 - 8501 - 6b58564b7f12","disconnect@search.mozilla.org":"696c00a5 - 4c02 - 4f62 - 83d7 - 38b985d0212d","youtube@search.mozilla.org":"d211fdd7 - 735f - 403c - bb76 - 2d6ecde022b9","startpage@search.mozilla.org":"46e4d665 - 3e7b - 4314 - a3ff - 4b955ca3091b"}");
+user_pref("fission.autostart", false);
 user_pref("font.default.lo", "Noto Sans Lao");
 user_pref("font.default.my", "Noto Sans Myanmar");
 user_pref("font.default.x-western", "sans-serif");
@@ -313,33 +386,44 @@ user_pref("general.productSub.override", "20100101");
 user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.3; rv:68.0) Gecko/20100101 Firefox/68.0");
 user_pref("general.useragent.vendor", "");
 user_pref("general.useragent.vendorSub", "");
+user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
 user_pref("geo.wifi.uri", "");
+user_pref("gfx.crash-guard.status.wmfvpxvideo", 2);
 user_pref("gfx.direct2d.disabled", true);
 user_pref("gfx.downloadable_fonts.fallback_delay", -1);
 user_pref("gfx.font_rendering.graphite.enabled", false);
+user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("intl.accept_charsets", "iso-8859-1,*,utf-8");
 user_pref("intl.accept_languages", "en-us, en");
 user_pref("intl.charset.default", "windows-1252");
 user_pref("intl.charsetmenu.browser.cache", "UTF-8");
 user_pref("javascript.options.asmjs", false);
+user_pref("javascript.options.baselinejit", false);
+user_pref("javascript.options.ion", false);
+user_pref("javascript.options.native_regexp", false);
 user_pref("javascript.use_us_english_locale", true);
 user_pref("layers.acceleration.disabled", true);
-user_pref("mathml.disabled", false);
+user_pref("layers.mlgpu.sanity-test-failed", false);
+user_pref("mathml.disabled", true); // FIXME:
 user_pref("media.audio_data.enabled", false);
 user_pref("media.cache_size", 0);
 user_pref("media.eme.apiVisible", false);
 user_pref("media.eme.enabled", false);
 user_pref("media.gmp-eme-adobe.enabled", false);
 user_pref("media.gmp-eme-adobe.visible", false);
+user_pref("media.gmp-manager.lastCheck", 1573836804);
 user_pref("media.gmp-manager.updateEnabled", false);
 user_pref("media.gmp-manager.url.override", "data:text/plain,");
 user_pref("media.gmp-provider.enabled", false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 user_pref("media.gmp-widevinecdm.visible", false);
+user_pref("media.gmp.storage.version.observed", 1);
+user_pref("media.hardware-video-decoding.failed", false);
 user_pref("media.navigator.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("media.video_stats.enabled", false);
+user_pref("media.webaudio.enabled", false);
 user_pref("media.webspeech.synth.enabled", false);
 user_pref("network.captive-portal-service.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
@@ -383,7 +467,13 @@ user_pref("network.proxy.socks_remote_dns", true);
 user_pref("network.proxy.socks", "127.0.0.1");
 user_pref("network.proxy.type", 1);
 user_pref("network.security.ports.banned", "139,445,9050,9051,9150,9151");
+user_pref("pdfjs.enabledCache.state", true);
+user_pref("pdfjs.migrationVersion", 2);
+user_pref("pdfjs.previousHandler.alwaysAskBeforeHandling", true);
+user_pref("pdfjs.previousHandler.preferredAction", 4);
 user_pref("permissions.memory_only", true);
+user_pref("places.history.enabled", false);
+user_pref("plugin.disable_full_page_plugin_for_types", "application/pdf");
 user_pref("plugin.disable", true);
 user_pref("plugin.expose_full_path", false);
 user_pref("plugin.state.flash", 1);
@@ -391,11 +481,16 @@ user_pref("plugins.click_to_play", true);
 user_pref("plugins.hide_infobar_for_missing_plugin", true);
 user_pref("plugins.hideMissingPluginsNotification", true);
 user_pref("privacy.firstparty.isolate", true);
+user_pref("privacy.history.custom", true);
 user_pref("privacy.resistFingerprinting", true);
+user_pref("privacy.sanitize.pending", "[{"id":"newtab-container","itemsToClear":[],"options":{}}]"); // FIXME:
 user_pref("privacy.suppressModifierKeyEvents", true);
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
 user_pref("privacy.use_utc_timezone", true);
 user_pref("reader.parse-on-load.enabled", false);
+user_pref("sanity-test.advanced-layers", true);
+user_pref("sanity-test.device-id", "0x1c03");
+user_pref("sanity-test.running", false);
 user_pref("security.cert_pinning.enforcement_level", 2);
 user_pref("security.enable_tls_session_tickets", false);
 user_pref("security.family_safety.mode", 0);
@@ -406,12 +501,20 @@ user_pref("security.ssl.enable_false_start", true);
 user_pref("security.ssl.errorReporting.enabled", false);
 user_pref("security.tls.unrestricted_rc4_fallback", false);
 user_pref("security.tls.version.max", 3);
+user_pref("services.blocklist.pinning.checked", 1573836818);
 user_pref("services.blocklist.update_enabled", false);
+user_pref("services.settings.clock_skew_seconds", 6);
+user_pref("services.settings.last_update_seconds", 1573836818);
+user_pref("services.settings.main.hijack-blocklists.last_check", 1573836818);
+user_pref("services.settings.main.language-dictionaries.last_check", 1573836818);
+user_pref("services.settings.main.sites-classification.last_check", 1573836818);
+user_pref("services.settings.security.onecrl.checked", 1573836818);
 user_pref("services.sync.engine.addons", false);
 user_pref("services.sync.engine.prefs", false);
 user_pref("services.sync.engine.tabs", false);
 user_pref("services.sync.ui.hidden", true);
 user_pref("signon.autofillForms", false);
+user_pref("signon.importedFromSqlite", true);
 user_pref("signon.rememberSignons", false);
 user_pref("social.directories", "");
 user_pref("social.remote-install.enabled", false);
@@ -423,11 +526,16 @@ user_pref("startup.homepage_override_url", "https://blog.torproject.org/category
 user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_welcome_url", "");
 user_pref("svg.in-content.enabled", true);
+user_pref("toolkit.startup.last_success", 1573835485);
+user_pref("toolkit.telemetry.enabled", false);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("toolkit.telemetry.unified", false);
+user_pref("ui.osk.debug.keyboardDisplayReason", "IKPOS: Touch screen not found.");
 user_pref("ui.use_standins_for_native_colors", true);
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 user_pref("webgl.enable-webgl2", false);
+user_pref("webgl.min_capability_mode", true);
 user_pref("webgl.min_capability_mode", true);
 user_pref("xpinstall.whitelist.add.36", "");
 user_pref("xpinstall.whitelist.add", "");
