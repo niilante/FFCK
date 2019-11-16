@@ -794,6 +794,7 @@ user_pref("gfx.content.always-paint", false);
 user_pref("gfx.content.azure.accelerated", true);
 user_pref("gfx.content.azure.backends", "direct2d1.1,skia");
 user_pref("gfx.core-animation.enabled", false);
+user_pref("gfx.crash-guard.status.wmfvpxvideo", 0);
 user_pref("gfx.direct2d.destroy-dt-on-paintthread", true);
 user_pref("gfx.direct2d.disabled", false);
 user_pref("gfx.direct3d11.use-double-buffering", false);
