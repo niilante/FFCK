@@ -4,14 +4,14 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      This is for Tor Browser Bundle only, do not use it on a normal Firefox version.
 //
-//      Version 0.03
+//      Version 0.04 BETA
 //
 //      TODO: Fix & optimize.
 //      TODO: MacOS, Linux & other quirks like backward compatibility.
 //      TODO: This will break the "Security Slider" (button with 3 presets).
 
 
-// The argumentation that you should not touch TB (settings) is BS
+// The argumentation that you should not touch TB (settings) is stupid.
 // Because that would mean that:
 //                      - A user installs untrusted addons/extensions.
 //                      - A user uses/installs privacy "tweak" extensions which changing the wrong toggles (that's the whole point of a user config, that you don't need it)
@@ -91,6 +91,7 @@ user_pref("plugin.default.stat", false); // default true
 user_pref("media.autoplay.enabled", false); // default true
 user_pref("media.autoplay.default", 1); // default
 user_pref("media.autoplay.allow-muted", false); // default true
+user_pref("media.autoplay.enabled.user-gestures-needed", false); // default true
 
 
 // GPU
@@ -191,7 +192,7 @@ user_pref("media.gmp-widevinecdm.visible", false);
 user_pref("media.gmp.storage.version.observed", 1);
 user_pref("media.hardware-video-decoding.failed", false);
 user_pref("media.navigator.enabled", false);
-user_pref("media.peerconnection.enabled", false); //WebRTC
+user_pref("media.peerconnection.enabled", false); //WebRTC - default false
 user_pref("media.video_stats.enabled", false);
 user_pref("media.webaudio.enabled", false);
 user_pref("media.webspeech.synth.enabled", false);
@@ -480,7 +481,7 @@ user_pref("network.captive-portal-service.enabled", false);
 // Pocket, Screenshot and other bloatware
 user_pref("extensions.pocket.enabled", false); // default
 user_pref("extensions.screenshots.upload-disabled", false); // default
-user_pref("extensions.screenshots.disabled", false); // default
+user_pref("extensions.screenshots.disabled", true); // default false
 
 
 // Auto formfill 
@@ -488,7 +489,9 @@ user_pref("browser.formfill.enable", false); // default
 user_pref("extensions.formautofill.addresses.enabled", false); // default true
 user_pref("extensions.formautofill.creditCards.enabled", false); // default true
 user_pref("extensions.formautofill.heuristics.enabled", false); // default true
-
+user_pref("signon.autofillForms", false);
+user_pref("signon.importedFromSqlite", true);
+user_pref("signon.rememberSignons", false);
 
 // Geo 
 user_pref("permissions.default.geo", 2); // default 0
@@ -521,6 +524,14 @@ user_pref("dom.w3c_touch_events.enabled", 0);
 user_pref("dom.webaudio.enabled", false);
 
 
+// U2F
+user_pref("security.webauth.u2f", true); // default
+
+
+// IPv6
+user_pref("network.dns.disableIPv6", false); // default
+
+
 // Safe-Browsing 
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
@@ -537,7 +548,7 @@ user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 
 
-
+user_pref("media.mediasource.experimental.enabled", false);
 user_pref("app.update.badge", true);
 user_pref("app.update.promptWaitTime", 3600);
 user_pref("app.update.staging.enabled", false);
@@ -685,7 +696,7 @@ user_pref("privacy.sanitize.pending", "[{"id":"newtab-container","itemsToClear":
 user_pref("privacy.suppressModifierKeyEvents", true);
 user_pref("privacy.trackingprotection.pbmode.enabled", false);
 user_pref("privacy.use_utc_timezone", true);
-user_pref("reader.parse-on-load.enabled", false);
+user_pref("reader.parse-on-load.enabled", false); // default true
 user_pref("sanity-test.advanced-layers", true);
 user_pref("sanity-test.device-id", "0x1c03");
 user_pref("sanity-test.running", false);
@@ -711,9 +722,6 @@ user_pref("services.sync.engine.addons", false);
 user_pref("services.sync.engine.prefs", false);
 user_pref("services.sync.engine.tabs", false);
 user_pref("services.sync.ui.hidden", true);
-user_pref("signon.autofillForms", false);
-user_pref("signon.importedFromSqlite", true);
-user_pref("signon.rememberSignons", false);
 user_pref("social.directories", "");
 user_pref("social.remote-install.enabled", false);
 user_pref("social.share.activationPanelEnabled", false);
@@ -730,13 +738,13 @@ user_pref("ui.osk.debug.keyboardDisplayReason", "IKPOS: Touch screen not found."
 user_pref("ui.use_standins_for_native_colors", true);
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
-user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.min_capability_mode", true);
 user_pref("webgl.min_capability_mode", true);
 user_pref("xpinstall.whitelist.add.36", "");
 user_pref("xpinstall.whitelist.add", "");
-
-
+user_pref("accessibility.force_disabled", 1); // default 0
+user_pref("mousewheel.min_line_scroll_amount", 15); //default 5
+user_pref("browser.tabs.drawInTitlebar", true); //default
 
 // Does not exist in TB
 //user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
@@ -753,6 +761,7 @@ user_pref("xpinstall.whitelist.add", "");
 //user_pref("security.secure_connection_icon_color_gray", false);
 //user_pref("toolkit.coverage.opt-out", "");
 //user_pref("toolkit.telemetry.coverage.opt-out", "");
+//user_pref("media.mediasource.ignore_codecs", false);
 
 
 // uBO rules
