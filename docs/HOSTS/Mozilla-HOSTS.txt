@@ -1,13 +1,13 @@
-# Mozilla-HOSTS by CHEF-KOCH
+# Mozilla blocking HOSTS
+#
+# Author: CHEF-KOCH
+# License: GPL 3.0
 #
 # Update URL: https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/docs/HOSTS/Mozilla-HOSTS.txt
-# 
-# Block (ALL) Mozilla related connections incl. services, sync, websites & extensions
+# Block all Mozilla connections incl. services, sync, websites & addons.
 # About Firefox Startup connections
 # http://kb.mozillazine.org/Connections_established_on_startup_-_Firefox
-#
-# v1.4
-#
+# v1.5
 # ASN:    AS36856
 # IP:     63.245.208.0/23
 # IPV6:   2620:101:8030::/47
@@ -29,6 +29,7 @@
 0.0.0.0 addons-stage.allizom.org
 0.0.0.0 addons-updater.allizom.org
 0.0.0.0 addons.allizom.org
+0.0.0.0 addons.cdn.mozilla.net
 0.0.0.0 addons.mozilla.com
 0.0.0.0 addons.mozilla.jp
 0.0.0.0 addons.mozilla.org
@@ -328,6 +329,7 @@
 0.0.0.0 filer.mozilladanmark.dk
 0.0.0.0 firefox-academic-center.com
 0.0.0.0 firefox-downloaden.de
+0.0.0.0 firefox-settings-attachments.cdn.mozilla.net
 0.0.0.0 firefox-storage-test.glitch.me
 0.0.0.0 firefox.be
 0.0.0.0 firefox.cl
@@ -338,6 +340,7 @@
 0.0.0.0 firefox.no
 0.0.0.0 firefox.org.il
 0.0.0.0 firefox.pt
+0.0.0.0 firefox.settings.services.mozilla.com
 0.0.0.0 firefoxbrowser.com
 0.0.0.0 firefoxccstudio.org
 0.0.0.0 firefoxcropcircle.com
@@ -690,7 +693,9 @@
 0.0.0.0 nl.www.mozilla.com
 0.0.0.0 noc.mozillamessaging.com
 0.0.0.0 noise.addons.mozilla.org
+0.0.0.0 normandy.cdn.mozilla.net
 0.0.0.0 oauth.accounts.firefox.com
+0.0.0.0 ocsp.pki.goog
 0.0.0.0 old.drumbeat.org
 0.0.0.0 omgfirefox.com
 0.0.0.0 onboarding.mozilla.org
@@ -774,6 +779,7 @@
 0.0.0.0 ru.www.mozilla.com
 0.0.0.0 s3.mozillamessaging.com
 0.0.0.0 safebrowsing.google.com
+0.0.0.0 safebrowsing.googleapis.com
 0.0.0.0 sb-ssl.google.com
 0.0.0.0 seamonkey-project.org
 0.0.0.0 seamonkeyproject.org
@@ -899,6 +905,7 @@
 0.0.0.0 userpanel.stage.mozilla.com
 0.0.0.0 ux.firefox.com
 0.0.0.0 v6wiki.mozilla.org
+0.0.0.0 versioncheck-bg.addons.mozilla.org
 0.0.0.0 versioncheck.addons.mozilla.org
 0.0.0.0 video.spreadfirefox.com
 0.0.0.0 videos-cdn.mozilla.net
