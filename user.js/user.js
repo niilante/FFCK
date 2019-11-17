@@ -8,14 +8,14 @@
 //      * Chinese & Taiwanese systems are not supported (font issues & more)!
 //      * XP, iOS & MacOS are not (fully) supported nor tested with recent FF versions!
 //      * Android users MUST use the Android-user.js configuration!
-//      * Supports Firefox versions: ESR (+Tor) stable & beta (focus is beta!)
-//      * I highly suggest you only use the latest stable or beta FF/Tor versions!
+//      * Supports Firefox versions: ESR (stable) & beta (focus is beta!)
+//      * I highly suggest you only use the latest stable or beta (no nightly/dev) FF/Tor versions!
 //
 //      -> Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)      
 //
 //      See issue tracker for known issues & discussions!
 //
-//      Version: 0.58
+//      Version: 0.59
 //
 //      Codename: AGTUC
 //
@@ -749,11 +749,11 @@ user_pref("general.smoothScroll.mouseWheel.durationMinMS", 200);
 user_pref("general.smoothScroll.mouseWheel", true);
 user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 120);
 user_pref("general.smoothScroll.msdPhysics.enabled", true);
-user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 1250);
+user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 600);
 user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 1000);
 user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 12);
 user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", "1.3");
-user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 2000);
+user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 600);
 user_pref("general.smoothScroll.other.durationMaxMS", 150);
 user_pref("general.smoothScroll.other.durationMinMS", 150);
 user_pref("general.smoothScroll.other", true);
@@ -1326,10 +1326,9 @@ user_pref("mousewheel.default.delta_multiplier_y", 100);
 user_pref("mousewheel.default.delta_multiplier_z", 100);
 user_pref("mousewheel.emulate_at_wm_scroll", false);
 user_pref("mousewheel.min_line_scroll_amount", 5);
-user_pref("mousewheel.system_scroll_override_on_root_content.enabled", false);
 user_pref("mousewheel.system_scroll_override_on_root_content.enabled", true);
 user_pref("mousewheel.system_scroll_override_on_root_content.horizontal.factor", 200);
-user_pref("mousewheel.system_scroll_override_on_root_content.vertical.factor", 200);
+user_pref("mousewheel.system_scroll_override_on_root_content.vertical.factor", 420);
 user_pref("mousewheel.system_settings_cache.enabled", true);
 user_pref("mousewheel.system_settings_cache.force_enabled", false);
 user_pref("mousewheel.transaction.ignoremovedelay", 100);
