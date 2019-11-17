@@ -18,6 +18,11 @@
 //
 //
 
+// Enable U2F (FF67+)
+// https://www.nitrokey.com/documentation/enabling-u2f-firefox
+user_pref("security.webauth.u2f", true); //default 
+
+
 user_pref("network.file.disable_unc_paths", true);
 //Delegated Credentials Study Add-on
 user_pref("dc-experiment.hasRun", false);
