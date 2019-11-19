@@ -2194,7 +2194,7 @@ user_pref("webgl.allow-fb-invalidation", false);
 user_pref("webgl.can-lose-context-in-foreground", true);
 user_pref("webgl.default-low-power", false);
 user_pref("webgl.default-no-alpha", false);
-user_pref("webgl.disable-angle", false);
+user_pref("webgl.disable-angle", true);
 user_pref("webgl.disable-DOM-blit-uploads", false);
 user_pref("webgl.disable-extensions", false);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
