@@ -1111,7 +1111,7 @@ user_pref("layout.display-list.dump", false);
 user_pref("layout.display-list.rebuild-frame-limit", 500);
 user_pref("layout.float-fragments-inside-column.enabled", true);
 user_pref("layout.frame_rate.precise", true); // false, in case you have scrolling issues
-user_pref("layout.frame_rate", -1);
+user_pref("layout.frame_rate", 300);
 user_pref("layout.framevisibility.amountscrollbeforeupdatehorizontal", 2);
 user_pref("layout.framevisibility.amountscrollbeforeupdatevertical", 2);
 user_pref("layout.framevisibility.enabled", true);
