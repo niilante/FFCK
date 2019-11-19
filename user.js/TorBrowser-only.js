@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      This is for Tor Browser Bundle only, do not use it on a normal Firefox version.
 //
-//      Version 0.04 BETA
+//      Version 0.05
 //
 //      TODO: Fix & optimize.
 //      TODO: MacOS, Linux & other quirks like backward compatibility.
@@ -22,6 +22,8 @@
 // The defaults + security slider "presents" are BS, deal with it.
 // There are no compromises in security, just use exclusions and that's it. If there are possible fingerprint vectors on the "exclusion list factor" that this has to be addressed within the browser source code.
 
+// SVG
+user_pref("svg.disabled", true); //default on high/highest
 
 
 // Activity streams
@@ -698,7 +700,7 @@ user_pref("privacy.trackingprotection.pbmode.enabled", false);
 user_pref("privacy.use_utc_timezone", true);
 user_pref("reader.parse-on-load.enabled", false); // default true
 user_pref("sanity-test.advanced-layers", true);
-user_pref("sanity-test.device-id", "0x1c03");
+user_pref("sanity-test.device-id", "0x1c03"); // FIXME:
 user_pref("sanity-test.running", false);
 user_pref("security.cert_pinning.enforcement_level", 2);
 user_pref("security.enable_tls_session_tickets", false);
@@ -712,7 +714,7 @@ user_pref("security.tls.unrestricted_rc4_fallback", false);
 user_pref("security.tls.version.max", 3);
 user_pref("services.blocklist.pinning.checked", 1573836818);
 user_pref("services.blocklist.update_enabled", false);
-user_pref("services.settings.clock_skew_seconds", 6);
+user_pref("services.settings.clock_skew_seconds", 5);
 user_pref("services.settings.last_update_seconds", 1573836818);
 user_pref("services.settings.main.hijack-blocklists.last_check", 1573836818);
 user_pref("services.settings.main.language-dictionaries.last_check", 1573836818);
