@@ -492,7 +492,7 @@ user_pref("browser.safebrowsing.malware.enabled", false);
 
 
 //Usability
-user_pref("browser.download.autohideButton", false);
+user_pref("browser.download.autohideButton", true); //Immediately delete downloads.
 user_pref("browser.disableResetPrompt", true); 
 user_pref("browser.contentblocking.introCount", 20);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
