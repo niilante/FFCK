@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      Newer than user.js! There are differences (on purpose)!
 //
-//      Version 0.68
+//      Version 0.69
 //
 //      FIXME: DoH
 //
@@ -17,6 +17,11 @@
 //                    uBlock/uMatrix
 //
 //
+
+// IDN Punycode
+// https://addons.mozilla.org/en-US/firefox/addon/idn-warner/
+user_pref("network.IDN_show_punycode", true);
+
 
 // Enable U2F (FF67+)
 // https://www.nitrokey.com/documentation/enabling-u2f-firefox
@@ -83,6 +88,7 @@ user_pref("browser.download.manager.retention", 0);
 user_pref("browser.library.activity-stream.enabled", false);
 user_pref("extensions.screenshots.disabled", true);
 user_pref("extensions.screenshots.upload-disabled", true);
+user_pref("browser.download.saveLinkAsFilenameTimeout", 0);
 user_pref("browser.download.useDownloadDir", false);
 user_pref("extensions.fxmonitor.enabled", false);
 user_pref("browser.fixup.alternate.enabled", false);
@@ -238,7 +244,6 @@ user_pref("network.http.altsvc.oe", false);
 user_pref("network.http.keep-alive.timeout", 45);
 user_pref("network.http.referer.spoofSource", true);
 user_pref("network.http.speculative-parallel-limit", 0);
-user_pref("network.IDN_show_punycode", true);
 user_pref("network.jar.open-unsafe-types", false);
 user_pref("network.manage-offline-status", false);
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false);
@@ -441,7 +446,7 @@ user_pref("security.insecure_connection_text.enabled", false);
 user_pref("plugins.enumerables_names", "");
 user_pref("javascript.options.ion", false);
 user_pref("extensions.getAddons.showPane", false);
-user_pref("security.dialog_enable_delay", 1000);
+user_pref("security.dialog_enable_delay", 300);
 user_pref("middlemouse.paste", false);
 
 //Search
@@ -491,7 +496,17 @@ user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 
 
-//Usability
+//Dimming
+user_pref("findbar.highlightAll", true);
+//user_pref("findbar.modalHighlight", true);
+
+// Sync
+//user_pref("services.sync.prefs.sync.preference_name", true);
+
+// Userbility
+user_pref("browser.backspace_action", 2);
+user_pref("browser.search.openintab", true);
+user_pref("browser.tabs.loadBookmarksInTabs", true);
 user_pref("browser.download.autohideButton", true); //Immediately delete downloads.
 user_pref("browser.disableResetPrompt", true); 
 user_pref("browser.contentblocking.introCount", 20);
@@ -518,6 +533,11 @@ user_pref("gfx.font_rendering.graphite.enabled", false);
 
 
 // Outdated (FF 72+), not privacy/security related - or already set to false (by default)
+//user_pref("security.sandbox.content.read_path_whitelist", "");
+user_pref("browser.urlbar.formatting.enabled", false);
+user_pref("browser.newtabpage.activity-stream.prerender", false);
+user_pref("browser.altClickSave", true);
+user_pref("layout.word_select.eat_space_to_next_word", false);
 user_pref("devtools.webide.enabled", false);
 user_pref("security.csp.enable", true);
 //user_pref("alerts.showFavicons", false);
@@ -567,6 +587,8 @@ user_pref("permissions.manager.defaultsUrl", "");
 user_pref("security.ssl.errorReporting.enabled", false);
 user_pref("security.ssl.errorReporting.url", "");
 user_pref("extensions.webcompat-reporter.enabled", false);
+
+
 
 
 //EME
