@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      Newer than user.js! There are differences (on purpose)!
 //
-//      Version 0.69
+//      Version 0.70
 //
 //      FIXME: DoH
 //
@@ -27,8 +27,6 @@ user_pref("network.IDN_show_punycode", true);
 // https://www.nitrokey.com/documentation/enabling-u2f-firefox
 user_pref("security.webauth.u2f", true); //default 
 
-
-user_pref("network.file.disable_unc_paths", true);
 //Delegated Credentials Study Add-on
 user_pref("dc-experiment.hasRun", false);
 user_pref("dc-experiment.inCohort", false);
@@ -40,7 +38,7 @@ user_pref("dc-experiment.branchTreatment", false);
 //user_pref("security.cert_pinning.hpkp.enabled", false); //default
 user_pref("network.connectivity-service.enabled", false);
 
-
+user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "");
 //user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("app.update.auto", true);
 //user_pref("browser.cache.memory.enable", false);
@@ -52,7 +50,6 @@ user_pref("network.connectivity-service.enabled", false);
 user_pref("pdfjs.enableWebGL", false);
 //user_pref("privacy.firstparty.isolate.restrict_opener_access", false);
 user_pref("privacy.donottrackheader.enabled", false);
-user_pref("privacy.donottrackheader.value", 1);
 //user_pref("security.ssl.require_safe_negotiation", true);
 //user_pref("signon.storeWhenAutocompleteOff", false);
 //user_pref("xpinstall.signatures.required", true);
@@ -65,6 +62,7 @@ user_pref("pref.privacy.disable_button.view_passwords_exceptions", true);
 user_pref("security.secure_connection_icon_color_gray", false);
 //user_pref("pref.downloads.disable_button.edit_actions", true);
 //
+user_pref("gfx.webrender.picture-caching", false);
 user_pref("security.identityblock.show_extended_validation", true);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled ", false);
@@ -78,7 +76,6 @@ user_pref("browser.cache.disk_cache_ssl", false);
 user_pref("browser.cache.disk.enable", false);
 user_pref("media.cache_size", 0);
 user_pref("browser.cache.offline.enable", false);
-user_pref("browser.casting.enabled", false);
 user_pref("browser.crashReports.unsubmittedCheck.enabled", false);
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
@@ -120,6 +117,7 @@ user_pref("browser.newtabpage.activity-stream.asrouterExperimentEnabled", false)
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
+user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories.options", "");
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.systemtick", false);
@@ -195,6 +193,8 @@ user_pref("dom.netinfo.enabled", false);
 user_pref("dom.network.enabled", false);
 user_pref("dom.serviceWorkers.enabled", true);
 //user_pref("dom.push.connection.enabled", false);
+user_pref("app.normandy.shieldLearnMoreUrl", "");
+user_pref("dom.security.featurePolicy.enabled", true);
 user_pref("dom.telephony.enabled", false);
 user_pref("dom.vibrator.enabled", false);
 user_pref("dom.vr.enabled", false);
@@ -205,8 +205,8 @@ user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.default", 2);
 user_pref("media.autoplay.enabled.user-gestures-needed", true); 
 user_pref("media.autoplay.ask-permission", true);
-user_pref("general.warnOnAboutConfig", false);
 user_pref("geo.enabled", false);
+user_pref("geo.provider.ms-windows-location", false);
 user_pref("privacy.history.custom", true);
 user_pref("places.history.enabled", false);
 user_pref("geo.wifi.logging.enabled", false);
@@ -334,7 +334,6 @@ user_pref("privacy.userContext.longPressBehavior", 2);
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", true);
 user_pref("security.cert_pinning.enforcement_level", 2);
-user_pref("security.csp.experimentalEnabled", true);
 user_pref("security.fileuri.strict_origin_policy", true);
 user_pref("security.insecure_field_warning.contextual.enabled", true);
 user_pref("security.insecure_password.ui.enabled", true);
@@ -344,60 +343,30 @@ user_pref("security.OCSP.require", true);
 user_pref("security.password_lifetime", 1);
 user_pref("security.pki.sha1_enforcement_level", 1);
 user_pref("security.sri.enable", true);
+user_pref("security.block_Worker_with_wrong_mime", true);
+user_pref("security.block_importScripts_with_wrong_mime", true);
 user_pref("security.ssl.disable_session_identifiers", true);
 user_pref("security.ssl.enable_ocsp_must_staple", true);
 user_pref("security.ssl.enable_ocsp_stapling", true);
 user_pref("security.ssl.errorReporting.automatic", false);
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("security.ssl3.dhe_dss_aes_128_sha", false);
-user_pref("security.ssl3.dhe_dss_aes_256_sha", false);
-user_pref("security.ssl3.dhe_dss_camellia_128_sha", false);
-user_pref("security.ssl3.dhe_dss_camellia_256_sha", false);
-user_pref("security.ssl3.dhe_dss_des_ede3_sha", false);
 user_pref("security.ssl3.dhe_rsa_aes_128_sha", false);
 user_pref("security.ssl3.dhe_rsa_aes_256_sha", false);
-user_pref("security.ssl3.dhe_rsa_camellia_128_sha", false);
-user_pref("security.ssl3.dhe_rsa_camellia_256_sha", false);
-user_pref("security.ssl3.dhe_rsa_des_ede3_sha", false);
-user_pref("security.ssl3.ecdh_ecdsa_aes_128_sha", false);
-user_pref("security.ssl3.ecdh_ecdsa_aes_256_sha", false);
-user_pref("security.ssl3.ecdh_ecdsa_des_ede3_sha", false);
-user_pref("security.ssl3.ecdh_ecdsa_null_sha", false);
-user_pref("security.ssl3.ecdh_ecdsa_rc4_128_sha", false);
-user_pref("security.ssl3.ecdh_rsa_aes_128_sha", false);
-user_pref("security.ssl3.ecdh_rsa_aes_256_sha", false);
-user_pref("security.ssl3.ecdh_rsa_des_ede3_sha", false);
-user_pref("security.ssl3.ecdh_rsa_null_sha", false);
-user_pref("security.ssl3.ecdh_rsa_rc4_128_sha", false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256", true);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", true);
 user_pref("security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256", false);
-user_pref("security.ssl3.ecdhe_ecdsa_des_ede3_sha", false);
-user_pref("security.ssl3.ecdhe_ecdsa_null_sha", false);
-user_pref("security.ssl3.ecdhe_ecdsa_rc4_128_sha", false);
+user_pref("security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384", true);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256", true);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);
 user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", true);
 user_pref("security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256", false);
-user_pref("security.ssl3.ecdhe_rsa_des_ede3_sha", false);
-user_pref("security.ssl3.ecdhe_rsa_null_sha", false);
-user_pref("security.ssl3.ecdhe_rsa_rc4_128_sha", false);
-user_pref("security.ssl3.rsa_1024_rc4_56_sha", false);
+user_pref("security.ssl3.ecdhe_rsa_aes_256_gcm_sha384", true);
 user_pref("security.ssl3.rsa_aes_128_sha", true);
 user_pref("security.ssl3.rsa_aes_256_sha", true);
-user_pref("security.ssl3.rsa_camellia_128_sha", false);
-user_pref("security.ssl3.rsa_camellia_256_sha", false);
+user_pref("security.tls.version.enable-deprecated", false); // DO NOT set it to true
 user_pref("security.ssl3.rsa_des_ede3_sha", false);
-user_pref("security.ssl3.rsa_fips_des_ede3_sha", false);
-user_pref("security.ssl3.rsa_null_md5", false);
-user_pref("security.ssl3.rsa_null_sha", false);
-user_pref("security.ssl3.rsa_rc2_40_md5", false);
-user_pref("security.ssl3.rsa_rc4_128_md5", false);
-user_pref("security.ssl3.rsa_rc4_128_sha", false);
-user_pref("security.ssl3.rsa_rc4_40_md5", false);
-user_pref("security.ssl3.rsa_seed_sha", false);
-user_pref("security.tls.unrestricted_rc4_fallback", false);
 user_pref("security.tls.version.fallback-limit", 3);
 user_pref("security.tls.version.max", 4);
 user_pref("security.tls.version.min", 2); //3
@@ -409,7 +378,7 @@ user_pref("signon.management.page.enabled", false);
 user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.rememberSignons", false);
-user_pref("svg.disabled", false);
+user_pref("svg.disabled", true);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.archive.enabled", false);
@@ -534,6 +503,8 @@ user_pref("gfx.font_rendering.graphite.enabled", false);
 
 // Outdated (FF 72+), not privacy/security related - or already set to false (by default)
 //user_pref("security.sandbox.content.read_path_whitelist", "");
+user_pref("browser.casting.enabled", false);
+user_pref("security.csp.experimentalEnabled", true);
 user_pref("browser.urlbar.formatting.enabled", false);
 user_pref("browser.newtabpage.activity-stream.prerender", false);
 user_pref("browser.altClickSave", true);
@@ -577,6 +548,7 @@ user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("toolkit.telemetry.unified", false);
 user_pref("app.normandy.api_url", ""); 
 user_pref("app.normandy.enabled", false);
+user_pref("app.normandy.migrationsApplied", 8);
 user_pref("app.shield.optoutstudies.enabled", false);
 user_pref("beacon.enabled", false);
 user_pref("webgl.disabled", true);
@@ -587,8 +559,9 @@ user_pref("permissions.manager.defaultsUrl", "");
 user_pref("security.ssl.errorReporting.enabled", false);
 user_pref("security.ssl.errorReporting.url", "");
 user_pref("extensions.webcompat-reporter.enabled", false);
-
-
+user_pref("browser.contentblocking.category", false);
+user_pref("network.file.disable_unc_paths", true);
+user_pref("privacy.donottrackheader.value", 1);
 
 
 //EME
@@ -599,6 +572,10 @@ user_pref("extensions.webcompat-reporter.enabled", false);
 //user_pref("media.gmp-gmpopenh264.provider.enabled", false);
 //user_pref("media.eme.enabled", false); 
 
+
+// Lockdown aboutConfig + warnings (outdated)
+//user_pref("general.aboutConfig.enable", false);
+user_pref("general.warnOnAboutConfig", false);
 
 // Optional params (as per own needs)
 // "browser.uiCustomization.state" 
