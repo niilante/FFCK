@@ -7,16 +7,29 @@
 # Block all Mozilla connections incl. services, sync, websites & addons.
 # About Firefox Startup connections
 # http://kb.mozillazine.org/Connections_established_on_startup_-_Firefox
-# v1.5
-# ASN:    AS36856
-# IP:     63.245.208.0/23
-# IPV6:   2620:101:8030::/47
+#
+# Version:  1.6
+# ASN:      AS36856
+# IP:       63.245.208.0/23
+# IPV6:     2620:101:8030::/47
 
+# Cert
+#0.0.0.0 ocsp.digicert.com
+
+# FTP (we still want to DL the builds)
+#0.0.0.0 ftp.mozilla.org
+
+# Addons
+#0.0.0.0 add-ons.mozilla.com
+
+0.0.0.0 104.16.142.228
 0.0.0.0 30boxes.com
+0.0.0.0 36.75.98.34.bc.googleusercontent.com
+0.0.0.0 93.184.220.29
+0.0.0.0 a2-16-106-152.deploy.static.akamaitechnologies.com
 0.0.0.0 accessfirefox.org
 0.0.0.0 accounts.firefox.com
 0.0.0.0 activations.cdn.mozilla.net
-0.0.0.0 add-ons.mozilla.com
 0.0.0.0 add.my.yahoo.com
 0.0.0.0 addon.mozilla.org
 0.0.0.0 addons-cdn.mozilla.net
@@ -265,6 +278,13 @@
 0.0.0.0 dxr.lanedo.com
 0.0.0.0 dxr.mozilla.org
 0.0.0.0 dyna-crashreports.nslb.sj.mozilla.com
+0.0.0.0 ec2-34-223-159-30.us-west-2.compute.amazonaws.com
+0.0.0.0 ec2-35-166-89-106.us-west-2.compute.amazonaws.com
+0.0.0.0 ec2-50-112-59-215.us-west-2.compute.amazonaws.com
+0.0.0.0 ec2-52-33-55-70.us-west-2.compute.amazonaws.com
+0.0.0.0 ec2-52-35-182-58.us-west-2.compute.amazonaws.com
+0.0.0.0 ec2-54-191-170-25.us-west-2.compute.amazonaws.com
+0.0.0.0 ec2-54-72-168-141.eu-west-1.compute.amazonaws.com
 0.0.0.0 ecmascript.org
 0.0.0.0 education.mozilla.org
 0.0.0.0 eklentiler.mozillazine-tr.org
@@ -377,7 +397,6 @@
 0.0.0.0 frenchmozilla.fr
 0.0.0.0 frenchmozilla.net
 0.0.0.0 frenchmozilla.org
-0.0.0.0 ftp.mozilla.org
 0.0.0.0 fundraising.mozilla.org
 0.0.0.0 fxfeeds.mozilla-japan.org
 0.0.0.0 fxfeeds.mozilla.com
@@ -399,6 +418,8 @@
 0.0.0.0 getfirefox.jp
 0.0.0.0 getpersonas-cdn.mozilla.net
 0.0.0.0 getpersonas.com
+0.0.0.0 getpocket.cdn.mozilla.net
+0.0.0.0 getpocket.com
 0.0.0.0 getthunderbird.com
 0.0.0.0 getthunderbird.jp
 0.0.0.0 gfx.tw
@@ -445,6 +466,7 @@
 0.0.0.0 id.www.mozilla.com
 0.0.0.0 identity.mozilla.com
 0.0.0.0 images.spreadfirefox.com
+0.0.0.0 img-getpocket.cdn.mozilla.net
 0.0.0.0 incoming.telemetry.mozilla.org
 0.0.0.0 inform.mozilla.org
 0.0.0.0 input-dev.allizom.org
@@ -564,6 +586,7 @@
 0.0.0.0 mozilla-mexico.org
 0.0.0.0 mozilla-nepal.org
 0.0.0.0 mozilla-nl.org
+0.0.0.0 mozilla-org.public.mdc1.mozilla.com
 0.0.0.0 mozilla-podcast.com
 0.0.0.0 mozilla-russia.org
 0.0.0.0 mozilla-senegal.org
@@ -784,10 +807,16 @@
 0.0.0.0 seamonkey-project.org
 0.0.0.0 seamonkeyproject.org
 0.0.0.0 search.services.mozilla.com
+0.0.0.0 search.services.mozilla.com.
 0.0.0.0 securityquiz.facebook.mozilla.com
 0.0.0.0 securitywiki.mozilla.org
 0.0.0.0 self-repair.mozilla.org
 0.0.0.0 sendto.mozilla.org
+0.0.0.0 server-13-224-196-33.fra2.r.cloudfront.net
+0.0.0.0 server-143-204-101-114.fra50.r.cloudfront.net
+0.0.0.0 server-143-204-101-115.fra50.r.cloudfront.net
+0.0.0.0 server-143-204-101-38.fra50.r.cloudfront.net
+0.0.0.0 server-143-204-101-56.fra50.r.cloudfront.net
 0.0.0.0 services.addons.mozilla.org
 0.0.0.0 services.mozilla.com
 0.0.0.0 services.mozilla.com:443
@@ -881,6 +910,7 @@
 0.0.0.0 ticker.mozilla.org
 0.0.0.0 tiles.services.mozilla.com
 0.0.0.0 tinderbox.mozilla.org
+0.0.0.0 tirol.orf.at
 0.0.0.0 to.mozillacanada.org
 0.0.0.0 togetherjs.com
 0.0.0.0 token.services.mozilla.com
@@ -889,6 +919,7 @@
 0.0.0.0 tr.start3.mozilla.com
 0.0.0.0 tr.www.mozilla.com
 0.0.0.0 tr.www.mozillamessaging.com
+0.0.0.0 tracking-protection.cdn.mozilla.net
 0.0.0.0 tree.mozilla.org
 0.0.0.0 treeherder.mozilla.org
 0.0.0.0 trunk.mozillamessaging.com
