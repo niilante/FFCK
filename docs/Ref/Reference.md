@@ -146,6 +146,10 @@
 * [TLS Cipher Suite Discovery (wiki.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Projects/NSS/TLS_Cipher_Suite_Discovery)
 
 
+### Google Safe-Browsing
+* [How Safe Browsing works in Firefox (feeding.cloud.geek.nz)](https://feeding.cloud.geek.nz/posts/how-safe-browsing-works-in-firefox/)
+
+
 ### Test Pages & Resources
 * [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
