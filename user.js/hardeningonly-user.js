@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 71.0
+//      Version 71.1
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -12,10 +12,30 @@
 //      Requirements: Firefox x64
 //                    uBlock/uMatrix
 
+// DOH 
+// https://github.com/StevenBlack/hosts/issues/968
+user_pref("network.trr.allow-rfc1918", true); 
+user_pref("network.trr.blacklist-duration", 55);
+//user_pref("network.trr.bootstrapAddress", "1.1.1.1"); //Cloudflare
+user_pref("network.trr.builtin-excluded-domains", "localhost,local");
+user_pref("network.trr.disable-ECS", true);
+user_pref("network.trr.early-AAAA", true);
+user_pref("network.trr.excluded-domains", "");
+user_pref("network.trr.max-fails", 4);
+//user_pref("network.trr.mode", 3); //https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/ & https://wiki.mozilla.org/Trusted_Recursive_Resolver
+user_pref("network.trr.request-timeout", 2660);
+user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "Quad9", "url": "https://dns.quad9.net/dns-query" },{"name": "AdGuard Default", "url": "https://dns.adguard.com/dns-query"},{ "name": "AdGuard Family Protection", "url": "https://dns-family.adguard.com/dns-query"},{"name": "Google", "url": "https://dns.google/dns-query"},{"name": "CleanBrowsing", "url": "https://doh.cleanbrowsing.org/doh/family-filter"},{"name": "PowerDNS", "url": "https://doh.powerdns.org"},{"name": "SecureDNS.eu", "url": "https://doh.securedns.eu/dns-query"},{"name": "DNSWarden AdBlocking", "url": "https://doh.dnswarden.com/adblock"},{"name": "Foundation for Applied Privacy", "url": "https://doh.appliedprivacy.net/query"},{"name": "BlahDNS Germany", "url": "https://doh-de.blahdns.com/dns-query"},{"name": "BlahDNS Japan", "url": "https://doh-jp.blahdns.com/dns-query"}]'); 
+user_pref("network.trr.skip-AAAA-when-not-supported", true);
+//user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");
+user_pref("network.trr.useGET", true);
+user_pref("network.trr.wait-for-portal", false);
+
 // IDN Punycode
 // https://addons.mozilla.org/en-US/firefox/addon/idn-warner/
 user_pref("network.IDN_show_punycode", true);
 
+// PrivateBrowsing 
+//user_pref("browser.privatebrowsing.autostart", true);
 
 //PRF
 // https://wiki.mozilla.org/Security/Fusion
@@ -48,6 +68,7 @@ user_pref("shieldStudy.logLevel", "None");
 // App updates, GMP etc
 //user_pref("app.update.auto", true);
 //user_pref("browser.cache.memory.enable", false);
+user_pref("browser.cache.offline.insecure.enable", false);
 //user_pref("browser.link.open_newwindow.restriction", 0);
 //user_pref("browser.sessionstore.max_tabs_undo", 0);
 //user_pref("dom.disable_beforeunload",  true);
@@ -55,16 +76,20 @@ user_pref("shieldStudy.logLevel", "None");
 //user_pref("dom.push.connection.enabled", false);
 //user_pref("dom.storage.enabled", false);
 //user_pref("media.gmp-provider.enabled", false);
-//user_pref("network.http.referer.XOriginPolicy", 2);
+user_pref("network.http.referer.XOriginPolicy", 2);
 //user_pref("network.negotiate-auth.allow-insecure-ntlm-v1-https", false);
 //user_pref("network.trr.confirmationNS", "example.com");
-//user_pref("pref.downloads.disable_button.edit_actions", true);
-//user_pref("pref.general.disable_button.default_browser", true);
+user_pref("network.gio.supported-protocols", "");
+//user_pref("downloads.disable_button.edit_actions", true);
+//user_pref("general.useragent.site_specific_overrides", true);
+//user_pref("general.disable_button.default_browser", true);
 //user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
 //user_pref("privacy.resistFingerprinting.letterboxing", true);
 //user_pref("security.cert_pinning.hpkp.enabled", false); //default
 //user_pref("security.ssl.require_safe_negotiation", true);
 //user_pref("signon.storeWhenAutocompleteOff", false);
+user_pref("signon.showAutoCompleteOrigins", false);
+user_pref("signon.includeOtherSubdomainsInLookup", false);
 //user_pref("xpinstall.signatures.required", true);
 user_pref("app.normandy.shieldLearnMoreUrl", "");
 user_pref("app.update.enabled", true);
@@ -91,6 +116,8 @@ user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.useRemoteL10n", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.campaign.blocks", "{}");
 user_pref("browser.newtabpage.activity-stream.enabled", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.filterAdult", true);
@@ -104,7 +131,6 @@ user_pref("browser.ping-centre.production.endpoint", "");
 user_pref("browser.ping-centre.staging.endpoint", "");
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.pocket.enabled", false);
-user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.safebrowsing.reportPhishURL", false);
 user_pref("browser.search.countryCode", "US");
 user_pref("browser.search.geoSpecificDefaults.url", "");
@@ -208,9 +234,13 @@ user_pref("media.navigator.video.enabled", false);
 user_pref("media.peerconnection.enabled", false);
 user_pref("media.peerconnection.ice.default_address_only", true);
 user_pref("media.peerconnection.ice.no_host", true);
+user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", true);
 user_pref("media.video_stats.enabled", false);
 user_pref("media.webspeech.recognition.enable", false);
 user_pref("media.webspeech.synth.enabled", false);
+user_pref("media.webrtc.hw.h264.enabled", true);
+user_pref("media.peerconnection.dtls.version.max", 771);
+user_pref("media.peerconnection.dtls.version.min", 770);
 user_pref("middlemouse.paste", false);
 user_pref("network.allow-experiments", false);
 user_pref("network.captive-portal-service.enabled", false);
@@ -254,21 +284,6 @@ user_pref("network.protocol-handler.external.moz-extension", false);
 user_pref("network.protocol-handler.warn-external-default", true);
 user_pref("network.security.esni.enabled", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
-user_pref("network.trr.allow-rfc1918", true); 
-user_pref("network.trr.blacklist-duration", 55);
-user_pref("network.trr.bootstrapAddress", "1.1.1.1"); //Cloudflare
-user_pref("network.trr.builtin-excluded-domains", "localhost,local");
-user_pref("network.trr.disable-ECS", true);
-user_pref("network.trr.early-AAAA", true);
-user_pref("network.trr.excluded-domains", "");
-user_pref("network.trr.max-fails", 4);
-user_pref("network.trr.mode", 3); //https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/ & https://wiki.mozilla.org/Trusted_Recursive_Resolver
-user_pref("network.trr.request-timeout", 2660);
-user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "Quad9", "url": "https://dns.quad9.net/dns-query" },{"name": "AdGuard Default", "url": "https://dns.adguard.com/dns-query"},{ "name": "AdGuard Family Protection", "url": "https://dns-family.adguard.com/dns-query"},{"name": "Google", "url": "https://dns.google/dns-query"},{"name": "CleanBrowsing", "url": "https://doh.cleanbrowsing.org/doh/family-filter"},{"name": "PowerDNS", "url": "https://doh.powerdns.org"},{"name": "SecureDNS.eu", "url": "https://doh.securedns.eu/dns-query"},{"name": "DNSWarden AdBlocking", "url": "https://doh.dnswarden.com/adblock"},{"name": "Foundation for Applied Privacy", "url": "https://doh.appliedprivacy.net/query"},{"name": "BlahDNS Germany", "url": "https://doh-de.blahdns.com/dns-query"},{"name": "BlahDNS Japan", "url": "https://doh-jp.blahdns.com/dns-query"}]'); 
-user_pref("network.trr.skip-AAAA-when-not-supported", true);
-user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");
-user_pref("network.trr.useGET", true);
-user_pref("network.trr.wait-for-portal", false);
 user_pref("offline-apps.allow_by_default", false);
 user_pref("offline-apps.quota.warn", 0);
 user_pref("pdfjs.enableWebGL", false);
@@ -329,6 +344,7 @@ user_pref("security.insecure_connection_text.pbmode.enabled", false);
 user_pref("security.insecure_field_warning.contextual.enabled", true);
 user_pref("security.insecure_password.ui.enabled", true);
 user_pref("security.mixed_content.block_display_content", true);
+user_pref("security.mixed_content.block_object_subrequest", true);
 user_pref("security.OCSP.enabled", 0);
 user_pref("security.OCSP.require", true);
 user_pref("security.password_lifetime", 1);
@@ -386,6 +402,15 @@ user_pref("toolkit.telemetry.infoURL", "");
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
+user_pref("trailhead.firstrun.branches", "");
+
+
+//MathML 
+user_pref("mathml.xlink.disabled", true);
+
+
+//WebGL 
+user_pref("webgl.dxgl.enabled", false);
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 user_pref("webgl.enable-debug-renderer-info", false);
@@ -448,6 +473,7 @@ user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.update.enabled", true);
 user_pref("extensions.webservice.discoverURL", "");
+user_pref("extensions.cookiesBehavior.overrideOnTopLevel", false);
 
 
 //DNS
@@ -480,6 +506,9 @@ user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 
 
+//Webshare 
+user_pref("dom.webshare.enabled", false);
+
 //Dimming
 user_pref("findbar.highlightAll", true);
 //user_pref("findbar.modalHighlight", true);
@@ -508,9 +537,10 @@ user_pref("browser.urlbar.trimURLs", false);
 user_pref("permissions.default.desktop-notification", 2);
 user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
+user_pref("media.hardwaremediakeys.enabled", true);
 
 
-// Font workarounds
+// Font
 //user_pref("ayout.css.prefixes.font-features", false);
 //user_pref("browser.display.use_document_fonts", 1); //0
 //user_pref("font.blacklist.underline_offset", ""); //untouched
@@ -518,9 +548,24 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 //user_pref("layout.css.font-loading-api.enabled", true); //false
 user_pref("browser.display.use_document_fonts", 0);
 user_pref("gfx.downloadable_fonts.disable_cache", true);
-user_pref("gfx.downloadable_fonts.enabled", false);
+//user_pref("gfx.downloadable_fonts.enabled", false);
 user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
+
+
+//Abuse Report 
+user_pref("extensions.abuseReport.amoDetailsURL", "https://services.addons.mozilla.org/api/v4/addons/addon/");
+user_pref("extensions.abuseReport.amWebAPI.enabled", false);
+user_pref("extensions.abuseReport.openDialog", false);
+
+
+//Social Tracking 
+user_pref("privacy.socialtracking.notification.counter", 0);
+user_pref("privacy.socialtracking.notification.enabled", true);
+user_pref("privacy.socialtracking.notification.lastShown", "0");
+user_pref("privacy.socialtracking.notification.max", 2);
+user_pref("privacy.socialtracking.notification.period.min", 0);
+user_pref("privacy.socialtracking.notification.session.pageload.min", 0);
 
 
 // Outdated (FF 72+), not privacy/security related - or already set to false (by default)
@@ -541,6 +586,7 @@ user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 //user_pref("privacy.usercontext.about_newtab_segregation.enabled", true);
 //user_pref("security.sandbox.content.read_path_whitelist", "");
 //user_pref("toolkit.telemetry.cachedClientID", "");
+user_pref("app.productInfo.baseURL", false);
 user_pref("app.normandy.api_url", ""); 
 user_pref("app.normandy.enabled", false);
 user_pref("app.normandy.migrationsApplied", 8);
