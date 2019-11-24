@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 71.0.1
+//      Version 71.1
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -78,7 +78,7 @@ user_pref("dc-experiment.inCohort", false);
 user_pref("shieldStudy.logLevel", "None");
 
 
-//Task Jumplist & Minimap (preview)
+//Task Jumplist & MInimap (preview)
 user_pref("browser.taskbar.lists.enabled", false);
 user_pref("browser.taskbar.lists.frequent.enabled", false);
 user_pref("browser.taskbar.lists.recent.enabled", false);
@@ -359,6 +359,7 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);
 user_pref("signon.generation.enabled", false);
 user_pref("signon.management.page.enabled", false);
+user_pref("signon.management.page.breachAlertUrl", "");
 user_pref("signon.rememberSignons", false);
 user_pref("startup.homepage_override_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");
@@ -368,6 +369,33 @@ user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("accessibility.force_disabled", 1);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
 user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
+user_pref("services.settings.server", "");
+
+
+//Lockwise
+// Use "Have I been pwned" via Keepass / addon instead
+user_pref("browser.contentblocking.report.lockwise.enabled", false);
+user_pref("browser.contentblocking.report.lockwise.how_it_works.url", "");
+user_pref("browser.contentblocking.report.lockwise.url", "");
+
+
+
+// Content blocking & Reports
+// YOU DO NOT NEED IT
+user_pref("browser.contentblocking.report.monitor.enabled", false);
+user_pref("browser.contentblocking.report.social.url", "");
+user_pref("browser.contentblocking.report.tracker.url", "");
+user_pref("browser.contentblocking.reportBreakage.url", "");
+user_pref("accessibility.support.url", "");
+user_pref("browser.chrome.errorReporter.infoURL", "");
+user_pref("browser.contentblocking.report.cookie.url", "");
+user_pref("browser.contentblocking.report.cryptominer.url", "");
+user_pref("browser.contentblocking.report.fingerprinter.url", "");
+user_pref("browser.contentblocking.report.manage_devices.url", "");
+user_pref("browser.contentblocking.report.monitor.how_it_works.url", "");
+user_pref("browser.contentblocking.report.monitor.sign_in_url", "");
+user_pref("browser.contentblocking.report.monitor.url", "");
+user_pref("browser.contentblocking.report.proxy_extension.url", "");
 
 
 // Telemetry
@@ -376,6 +404,7 @@ user_pref("browser.ping-centre.staging.endpoint", "");
 user_pref("browser.ping-centre.telemetry", false);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.coverage.opt-out", true);
+user_pref("toolkit.crashreporter.infoURL", "");
 user_pref("toolkit.telemetry.archive.enabled", false);
 user_pref("toolkit.telemetry.bhrPing.enabled", false);
 user_pref("toolkit.telemetry.coverage.opt-out", true);
@@ -423,6 +452,8 @@ user_pref("webgl.min_capability_mode", true);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
+user_pref("datareporting.healthreport.infoURL", false);
+user_pref("datareporting.healthreport.infoURL", "");
 
 
 //Activity Stream
@@ -563,12 +594,21 @@ user_pref("browser.safebrowsing.downloads.remote.url", "");
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
+user_pref("browser.safebrowsing.provider.google.advisoryURL", "");
 user_pref("browser.safebrowsing.provider.google.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google.reportURL", "");
 user_pref("browser.safebrowsing.provider.google.updateURL", "");
+user_pref("browser.safebrowsing.provider.google4.advisoryURL", "");
 user_pref("browser.safebrowsing.provider.google4.gethashURL", "");
+user_pref("browser.safebrowsing.provider.google4.reportURL", "");
 user_pref("browser.safebrowsing.provider.google4.updateURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
+
+
+//Network Connectivity Check
+//user_pref("network.connectivity-service.IPv4.url", "");
+//user_pref("network.connectivity-service.IPv6.url", "");
 
 
 //Webshare
@@ -617,7 +657,7 @@ user_pref("font.system.whitelist", "");
 
 
 //Abuse Report
-user_pref("extensions.abuseReport.amoDetailsURL", "https://services.addons.mozilla.org/api/v4/addons/addon/");
+user_pref("extensions.abuseReport.amoDetailsURL", "https://services.addons.mozilla.org/api/v4/abuse/report/addon/");
 user_pref("extensions.abuseReport.amWebAPI.enabled", false);
 user_pref("extensions.abuseReport.openDialog", false);
 
