@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 71.1
+//      Version 71.0.1
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -12,9 +12,9 @@
 //      Requirements: Firefox x64
 //                    uBlock/uMatrix
 
-// DOH 
+// DOH
 // https://github.com/StevenBlack/hosts/issues/968
-user_pref("network.trr.allow-rfc1918", true); 
+user_pref("network.trr.allow-rfc1918", true);
 user_pref("network.trr.blacklist-duration", 55);
 //user_pref("network.trr.bootstrapAddress", "1.1.1.1"); //Cloudflare
 user_pref("network.trr.builtin-excluded-domains", "localhost,local");
@@ -24,36 +24,49 @@ user_pref("network.trr.excluded-domains", "");
 user_pref("network.trr.max-fails", 4);
 //user_pref("network.trr.mode", 3); //https://blog.cloudflare.com/encrypt-that-sni-firefox-edition/ & https://wiki.mozilla.org/Trusted_Recursive_Resolver
 user_pref("network.trr.request-timeout", 2660);
-user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "Quad9", "url": "https://dns.quad9.net/dns-query" },{"name": "AdGuard Default", "url": "https://dns.adguard.com/dns-query"},{ "name": "AdGuard Family Protection", "url": "https://dns-family.adguard.com/dns-query"},{"name": "Google", "url": "https://dns.google/dns-query"},{"name": "CleanBrowsing", "url": "https://doh.cleanbrowsing.org/doh/family-filter"},{"name": "PowerDNS", "url": "https://doh.powerdns.org"},{"name": "SecureDNS.eu", "url": "https://doh.securedns.eu/dns-query"},{"name": "DNSWarden AdBlocking", "url": "https://doh.dnswarden.com/adblock"},{"name": "Foundation for Applied Privacy", "url": "https://doh.appliedprivacy.net/query"},{"name": "BlahDNS Germany", "url": "https://doh-de.blahdns.com/dns-query"},{"name": "BlahDNS Japan", "url": "https://doh-jp.blahdns.com/dns-query"}]'); 
+user_pref("network.trr.resolvers", '[{ "name": "Cloudflare", "url": "https://mozilla.cloudflare-dns.com/dns-query" },{ "name": "Quad9", "url": "https://dns.quad9.net/dns-query" },{"name": "AdGuard Default", "url": "https://dns.adguard.com/dns-query"},{ "name": "AdGuard Family Protection", "url": "https://dns-family.adguard.com/dns-query"},{"name": "Google", "url": "https://dns.google/dns-query"},{"name": "CleanBrowsing", "url": "https://doh.cleanbrowsing.org/doh/family-filter"},{"name": "PowerDNS", "url": "https://doh.powerdns.org"},{"name": "SecureDNS.eu", "url": "https://doh.securedns.eu/dns-query"},{"name": "DNSWarden AdBlocking", "url": "https://doh.dnswarden.com/adblock"},{"name": "Foundation for Applied Privacy", "url": "https://doh.appliedprivacy.net/query"},{"name": "BlahDNS Germany", "url": "https://doh-de.blahdns.com/dns-query"},{"name": "BlahDNS Japan", "url": "https://doh-jp.blahdns.com/dns-query"}]');
 user_pref("network.trr.skip-AAAA-when-not-supported", true);
 //user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.useGET", true);
 user_pref("network.trr.wait-for-portal", false);
 
+
 // IDN Punycode
 // https://addons.mozilla.org/en-US/firefox/addon/idn-warner/
 user_pref("network.IDN_show_punycode", true);
+user_pref("browser.startup.blankWindow", false);
 
-// PrivateBrowsing 
+
+// PrivateBrowsing
 //user_pref("browser.privatebrowsing.autostart", true);
+
+
+//DnT (practical no website uses it and it's pointless)
+user_pref("privacy.donottrackheader.enabled", false);
+
 
 //PRF
 // https://wiki.mozilla.org/Security/Fusion
 // https://wiki.mozilla.org/Security/Tor_Uplift
 //user_pref("privacy.firstparty.isolate.restrict_opener_access", false);
+//user_pref("privacy.firstparty.isolate.block_post_message", true);
 user_pref("intl.accept_languages", "en-US, en");
 user_pref("javascript.use_us_english_locale", true); //https://hg.mozilla.org/mozilla-central/rev/52d635f2b33d
 user_pref("privacy.firstparty.isolate", true);
 user_pref("privacy.spoof_english", 2);
+user_pref("intl.charset.fallback.override", "windows-1252");
+
 
 // FP
 user_pref("privacy.resistFingerprinting.reduceTimerPrecision.microseconds", 1000);
-user_pref("privacy.resistFingerprinting", false); // Master button for FP
+//user_pref("privacy.resistFingerprinting", false); // Master button for FP
+//user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
+//user_pref("privacy.resistFingerprinting.letterboxing", true);
 
 
 // U2F (FF67+)
 // https://www.nitrokey.com/documentation/enabling-u2f-firefox
-user_pref("security.webauth.u2f", true); //default 
+user_pref("security.webauth.u2f", true); //default
 
 
 //Delegated Credentials Study Add-on
@@ -65,28 +78,35 @@ user_pref("dc-experiment.inCohort", false);
 user_pref("shieldStudy.logLevel", "None");
 
 
+//Task Jumplist & Minimap (preview)
+user_pref("browser.taskbar.lists.enabled", false);
+user_pref("browser.taskbar.lists.frequent.enabled", false);
+user_pref("browser.taskbar.lists.recent.enabled", false);
+user_pref("browser.taskbar.lists.tasks.enabled", false);
+user_pref("browser.taskbar.previews.enable", false);
+
+
 // App updates, GMP etc
-//user_pref("app.update.auto", true);
+user_pref("app.update.auto", false);
 //user_pref("browser.cache.memory.enable", false);
+//user_pref("browser.cache.memory.capacity", 0);
 user_pref("browser.cache.offline.insecure.enable", false);
-//user_pref("browser.link.open_newwindow.restriction", 0);
+user_pref("browser.link.open_newwindow.restriction", 0);
 //user_pref("browser.sessionstore.max_tabs_undo", 0);
-//user_pref("dom.disable_beforeunload",  true);
+user_pref("dom.disable_beforeunload", true);
 //user_pref("dom.event.contextmenu.enabled", false);
 //user_pref("dom.push.connection.enabled", false);
 //user_pref("dom.storage.enabled", false);
 //user_pref("media.gmp-provider.enabled", false);
-user_pref("network.http.referer.XOriginPolicy", 2);
+user_pref("network.http.referer.XOriginPolicy", 1);
 //user_pref("network.negotiate-auth.allow-insecure-ntlm-v1-https", false);
 //user_pref("network.trr.confirmationNS", "example.com");
 user_pref("network.gio.supported-protocols", "");
 //user_pref("downloads.disable_button.edit_actions", true);
 //user_pref("general.useragent.site_specific_overrides", true);
 //user_pref("general.disable_button.default_browser", true);
-//user_pref("privacy.resistFingerprinting.block_mozAddonManager", true);
-//user_pref("privacy.resistFingerprinting.letterboxing", true);
 //user_pref("security.cert_pinning.hpkp.enabled", false); //default
-//user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.ssl.require_safe_negotiation", true);
 //user_pref("signon.storeWhenAutocompleteOff", false);
 user_pref("signon.showAutoCompleteOrigins", false);
 user_pref("signon.includeOtherSubdomainsInLookup", false);
@@ -108,43 +128,36 @@ user_pref("browser.download.folderList", 2);
 user_pref("browser.download.manager.retention", 0);
 user_pref("browser.download.saveLinkAsFilenameTimeout", 0);
 user_pref("browser.download.useDownloadDir", false);
+user_pref("browser.download.manager.addToRecentDocs", false);
+user_pref("browser.download.hide_plugins_without_extensions", false);
 user_pref("browser.fixup.hide_user_pass", true);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 0);
-user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
-user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
-user_pref("browser.newtabpage.activity-stream.asrouter.useRemoteL10n", false);
-user_pref("browser.newtabpage.activity-stream.discoverystream.campaign.blocks", "{}");
-user_pref("browser.newtabpage.activity-stream.enabled", false);
-user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
-user_pref("browser.newtabpage.activity-stream.filterAdult", true);
-user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "");
 user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
 user_pref("browser.offline-apps.notify", true);
 user_pref("browser.onboarding.enabled", false);
 user_pref("browser.pagethumbnails.capturing_disabled", true);
-user_pref("browser.ping-centre.production.endpoint", "");
-user_pref("browser.ping-centre.staging.endpoint", "");
-user_pref("browser.ping-centre.telemetry", false);
 user_pref("browser.pocket.enabled", false);
 user_pref("browser.safebrowsing.reportPhishURL", false);
 user_pref("browser.search.countryCode", "US");
-user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("browser.selfsupport.url", "");
 user_pref("browser.send_pings.require_same_host", true);
 user_pref("browser.sessionstore.max_windows_undo", 0);
 user_pref("browser.sessionstore.privacy_level", 2);
 user_pref("browser.shell.checkDefaultBrowser", false);
 user_pref("browser.shell.shortcutFavicons", false);
+user_pref("browser.sessionstore.resume_from_crash", false);
+user_pref("browser.sessionstore.interval", 20000);
 user_pref("browser.slowStartup.maxSamples", 0);
 user_pref("browser.slowStartup.notificationDisabled", true);
 user_pref("browser.slowStartup.samples", 0);
 user_pref("browser.ssl_override_behavior", 1);
 user_pref("browser.startup.firstrunSkipsHomepage", false);
+user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("browser.startup.homepage_override.buildID", "20100101");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.startup.homepage", "about:blank");
@@ -162,79 +175,44 @@ user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("camera.control.autofocus_moving_callback.enabled", false);
 user_pref("camera.control.face_detection.enabled", false);
+user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
 user_pref("clipboard.autocopy", false);
-user_pref("datareporting.healthreport.service.enabled", false);
-user_pref("datareporting.healthreport.uploadEnabled", false);
-user_pref("datareporting.policy.dataSubmissionEnabled", false);
 user_pref("device.sensors.enabled", false);
+user_pref("browser.zoom.siteSpecific", false);
 user_pref("devtools.chrome.enabled", false);
 user_pref("devtools.debugger.force-local", true);
 user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.webide.autoinstallADBHelper", false);
 user_pref("devtools.webide.autoinstallFxdtAdapters", false);
-user_pref("dom.allow_cut_copy", false);
-user_pref("dom.archivereader.enabled", false);
-user_pref("dom.enable_performance_navigation_timing", false);
-user_pref("dom.enable_performance", false);
-user_pref("dom.enable_resource_timing", false);
-user_pref("dom.enable_user_timing", false);
-user_pref("dom.event.clipboardevents.enabled", false);
-user_pref("dom.flyweb.enabled", false);
-user_pref("dom.gamepad.enabled", false);
-user_pref("dom.idle-observers-api.enabled", false);
-user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
-user_pref("dom.ipc.plugins.reportCrashURL", false);
-user_pref("dom.maxHardwareConcurrency", 2);
-user_pref("dom.min_timeout_value", 4);
-user_pref("dom.mozTCPSocket.enabled", false);
-user_pref("dom.netinfo.enabled", false);
-user_pref("dom.network.enabled", false);
-user_pref("dom.payments.request.supportedRegions", "US,CA");
-user_pref("dom.security.featurePolicy.enabled", true);
-user_pref("dom.serviceWorkers.enabled", true);
-user_pref("dom.telephony.enabled", false);
-user_pref("dom.vibrator.enabled", false);
-user_pref("dom.vr.enabled", false);
-user_pref("dom.webaudio.enabled", false);
-user_pref("dom.webnotifications.enabled", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("extensions.formautofill.creditCards.enabled ", false);
 user_pref("extensions.formautofill.heuristics.enabled", false);
+user_pref("extensions.formautofill.available", "off");
 user_pref("extensions.fxmonitor.enabled", false);
 user_pref("extensions.getAddons.discovery.api_url", "");
-user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.screenshots.disabled", true);
 user_pref("extensions.screenshots.upload-disabled", true);
 user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("general.buildID.override", "20100101");
-user_pref("geo.enabled", false);
-user_pref("geo.provider.ms-windows-location", false);
-user_pref("geo.wifi.logging.enabled", false);
-user_pref("geo.wifi.uri", "");
 user_pref("gfx.webrender.picture-caching", false);
-user_pref("intl.charset.fallback.override", "windows-1252"); 
 user_pref("intl.locale.matchOS", false);
 user_pref("javascript.options.asmjs", false);
-user_pref("javascript.options.ion", false);
 user_pref("javascript.options.wasm", false);
+user_pref("dom.targetBlankNoOpener.enabled", true);
 user_pref("layout.css.visited_links_enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("loop.enabled", false);
 user_pref("loop.logDomains", false);
-user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.ask-permission", true);
-user_pref("media.autoplay.default", 2);
-user_pref("media.autoplay.enabled.user-gestures-needed", true); 
+user_pref("media.autoplay.default", 5);
+user_pref("media.autoplay.enabled.user-gestures-needed", false);
 user_pref("media.cache_size", 0);
 user_pref("media.getusermedia.audiocapture.enabled", false);
 user_pref("media.getusermedia.screensharing.enabled", false);
+user_pref("media.getusermedia.browser.enabled", false);
 user_pref("media.gmp-manager.url", "");
 user_pref("media.navigator.enabled", false);
 user_pref("media.navigator.video.enabled", false);
-user_pref("media.peerconnection.enabled", false);
-user_pref("media.peerconnection.ice.default_address_only", true);
-user_pref("media.peerconnection.ice.no_host", true);
-user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", true);
 user_pref("media.video_stats.enabled", false);
 user_pref("media.webspeech.recognition.enable", false);
 user_pref("media.webspeech.synth.enabled", false);
@@ -243,8 +221,6 @@ user_pref("media.peerconnection.dtls.version.max", 771);
 user_pref("media.peerconnection.dtls.version.min", 770);
 user_pref("middlemouse.paste", false);
 user_pref("network.allow-experiments", false);
-user_pref("network.captive-portal-service.enabled", false);
-user_pref("network.connectivity-service.enabled", false);
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.thirdparty.sessionOnly", true);
@@ -253,13 +229,13 @@ user_pref("network.dns.disablePrefetch", true);
 user_pref("network.http.altsvc.enabled", false);
 user_pref("network.http.altsvc.oe", false);
 user_pref("network.http.keep-alive.timeout", 45);
-user_pref("network.http.referer.spoofSource", true);
 user_pref("network.http.speculative-parallel-limit", 0);
 user_pref("network.jar.open-unsafe-types", false);
 user_pref("network.manage-offline-status", false);
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false);
 user_pref("network.predictor.enabled", false);
 user_pref("network.prefetch-next", false);
+user_pref("browser.link.open_newwindow", 3);
 user_pref("network.protocol-handler.expose-all", false);
 user_pref("network.protocol-handler.expose.about", true);
 user_pref("network.protocol-handler.expose.blob", true);
@@ -291,7 +267,6 @@ user_pref("permissions.default.geo", 2);
 user_pref("places.history.enabled", false);
 user_pref("plugin.default.state", 0);
 user_pref("plugin.scan.plid.all", false);
-user_pref("plugin.state.flash", 0);
 user_pref("plugin.state.java", 0);
 user_pref("plugin.state.libgnome-shell-browser-plugin", 0);
 user_pref("plugins.click_to_play", true);
@@ -307,14 +282,16 @@ user_pref("privacy.clearOnShutdown.history", true);
 user_pref("privacy.clearOnShutdown.offlineApps", true);
 user_pref("privacy.clearOnShutdown.openWindows", true);
 user_pref("privacy.clearOnShutdown.sessions", true);
+user_pref("privacy.clearOnShutdown.siteSettings", false);
 user_pref("privacy.cpd.cache", true);
 user_pref("privacy.cpd.cookies", true);
 user_pref("privacy.cpd.downloads", true);
 user_pref("privacy.cpd.formdata", true);
+user_pref("privacy.cpd.passwords", false);
 user_pref("privacy.cpd.history", true);
+user_pref("privacy.cpd.siteSettings", false);
 user_pref("privacy.cpd.offlineApps", true);
 user_pref("privacy.cpd.sessions", true);
-user_pref("privacy.donottrackheader.enabled", false);
 user_pref("privacy.history.custom", true);
 user_pref("privacy.sanitize.sanitizeOnShutdown", true);
 user_pref("privacy.sanitize.timeSpan", 0);
@@ -343,11 +320,9 @@ user_pref("security.insecure_connection_text.enabled", false);
 user_pref("security.insecure_connection_text.pbmode.enabled", false);
 user_pref("security.insecure_field_warning.contextual.enabled", true);
 user_pref("security.insecure_password.ui.enabled", true);
-user_pref("security.mixed_content.block_display_content", true);
-user_pref("security.mixed_content.block_object_subrequest", true);
-user_pref("security.OCSP.enabled", 0);
+user_pref("security.OCSP.enabled", 1);
 user_pref("security.OCSP.require", true);
-user_pref("security.password_lifetime", 1);
+user_pref("security.password_lifetime", 2);
 user_pref("security.pki.sha1_enforcement_level", 1);
 user_pref("security.secure_connection_icon_color_gray", false);
 user_pref("security.sri.enable", true);
@@ -369,13 +344,13 @@ user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);
 user_pref("security.ssl3.ecdhe_rsa_aes_256_gcm_sha384", true);
 user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", true);
 user_pref("security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256", false);
-user_pref("security.ssl3.rsa_aes_128_sha", true);
+user_pref("security.ssl3.rsa_aes_128_sha", false);
 user_pref("security.ssl3.rsa_aes_256_sha", true);
 user_pref("security.ssl3.rsa_des_ede3_sha", false);
 user_pref("security.tls.version.enable-deprecated", false); // DO NOT set it to true
 user_pref("security.tls.version.fallback-limit", 3);
 user_pref("security.tls.version.max", 4);
-user_pref("security.tls.version.min", 2); //3
+user_pref("security.tls.version.min", 3);
 user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("services.blocklist.update_enabled", true);
 user_pref("shield.savant.enabled", false);
@@ -388,7 +363,17 @@ user_pref("signon.rememberSignons", false);
 user_pref("startup.homepage_override_url", "");
 user_pref("startup.homepage_welcome_url.additional", "");
 user_pref("startup.homepage_welcome_url", "");
-user_pref("svg.disabled", true);
+user_pref("trailhead.firstrun.branches", "");
+user_pref("toolkit.winRegisterApplicationRestart", false);
+user_pref("accessibility.force_disabled", 1);
+user_pref("network.protocol-handler.external.ms-windows-store", false);
+user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
+
+
+// Telemetry
+user_pref("browser.ping-centre.production.endpoint", "");
+user_pref("browser.ping-centre.staging.endpoint", "");
+user_pref("browser.ping-centre.telemetry", false);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.telemetry.archive.enabled", false);
@@ -400,41 +385,119 @@ user_pref("toolkit.telemetry.firstShutdownPing.enabled", false);
 user_pref("toolkit.telemetry.hybridContent.enabled", false);
 user_pref("toolkit.telemetry.infoURL", "");
 user_pref("toolkit.telemetry.newProfilePing.enabled", false);
+user_pref("toolkit.telemetry.prompted", 2);
+user_pref("toolkit.telemetry.rejected", true);
+user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
+user_pref("toolkit.telemetry.server", "127.0.0.1");
 user_pref("toolkit.telemetry.shutdownPingSender.enabled", false);
+user_pref("toolkit.telemetry.unified", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
-user_pref("trailhead.firstrun.branches", "");
 
 
-//MathML 
+//Geo
+user_pref("browser.search.geoSpecificDefaults.url", "");
+user_pref("geo.enabled", false);
+user_pref("geo.provider.ms-windows-location", false);
+user_pref("geo.provider.use_corelocation", false);
+user_pref("geo.provider.use_gpsd", false);
+user_pref("geo.wifi.logging.enabled", false);
+user_pref("geo.wifi.uri", "");
+
+
+//MathML
+user_pref("mathml.disabled", false);
 user_pref("mathml.xlink.disabled", true);
 
 
-//WebGL 
-user_pref("webgl.dxgl.enabled", false);
+//WebGL
 user_pref("webgl.disable-extensions", true);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
+user_pref("webgl.disabled", true);
+user_pref("webgl.dxgl.enabled", false);
 user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.min_capability_mode", true);
 
 
-//Activity Stream 
+//Health
+user_pref("datareporting.healthreport.service.enabled", false);
+user_pref("datareporting.healthreport.uploadEnabled", false);
+user_pref("datareporting.policy.dataSubmissionEnabled", false);
+
+
+//Activity Stream
+user_pref("browser.library.activity-stream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.providers.snippets", "");
+user_pref("browser.newtabpage.activity-stream.asrouter.useRemoteL10n", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.addons", false);
 user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr", false);
 user_pref("browser.newtabpage.activity-stream.asrouterExperimentEnabled", false);
+user_pref("browser.newtabpage.activity-stream.discoverystream.campaign.blocks", "{}");
 user_pref("browser.newtabpage.activity-stream.discoverystream.endpoints", "");
 user_pref("browser.newtabpage.activity-stream.discoverystream.endpointSpocsClear", "");
+user_pref("browser.newtabpage.activity-stream.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.discoverystreamfeed", false);
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories.options", "");
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 user_pref("browser.newtabpage.activity-stream.feeds.systemtick", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.newtabpage.activity-stream.filterAdult", true);
+user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "");
+user_pref("browser.newtabpage.activity-stream.prerender", false);
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 user_pref("browser.newtabpage.activity-stream.sectionOrder", "");
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 0);
+
+
+// DOM
+user_pref("dom.allow_cut_copy", false);
+user_pref("dom.archivereader.enabled", false);
+user_pref("dom.disable_open_during_load", true);
+user_pref("dom.disable_window_move_resize", true);
+user_pref("dom.disable_window_open_feature.close", true);
+user_pref("dom.disable_window_open_feature.location", true);
+user_pref("dom.disable_window_open_feature.menubar", true);
+user_pref("dom.disable_window_open_feature.minimizable", true);
+user_pref("dom.disable_window_open_feature.personalbar", true);
+user_pref("dom.disable_window_open_feature.titlebar", true);
+user_pref("dom.disable_window_open_feature.toolbar", true);
+user_pref("dom.enable_performance_navigation_timing", false);
+user_pref("dom.enable_performance", false);
+user_pref("dom.enable_resource_timing", false);
+user_pref("dom.enable_user_timing", false);
+//user_pref("dom.event.clipboardevents.enabled", false);
+user_pref("dom.flyweb.enabled", false);
+user_pref("dom.gamepad.enabled", false);
+user_pref("dom.idle-observers-api.enabled", false);
+user_pref("dom.ipc.plugins.flash.subprocess.crashreporter.enabled", false);
+user_pref("dom.ipc.plugins.reportCrashURL", false);
+user_pref("dom.maxHardwareConcurrency", 2);
+user_pref("dom.min_timeout_value", 4);
+user_pref("dom.mozTCPSocket.enabled", false);
+user_pref("dom.netinfo.enabled", false);
+user_pref("dom.network.enabled", false);
+user_pref("dom.payments.request.supportedRegions", "US,CA");
+user_pref("dom.popup_allowed_events", "click dblclick");
+user_pref("dom.security.featurePolicy.enabled", true);
+user_pref("dom.telephony.enabled", false);
+user_pref("dom.vibrator.enabled", false);
+user_pref("dom.webaudio.enabled", false);
+user_pref("dom.webnotifications.enabled", false);
+
+
+//Service Workers
+//Better disable via uBO/uM
+user_pref("dom.push.enabled", false);
+user_pref("dom.serviceWorkers.enabled", true);
+user_pref("permissions.default.desktop-notification", 2);
 
 
 //Search
@@ -459,9 +522,12 @@ user_pref("extensions.webextensions.restrictedDomains", "");
 
 
 //Extensions
+user_pref("extensions.enabledScopes", 5);
 user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.blocklist.url", "");
+user_pref("extensions.cookiesBehavior.overrideOnTopLevel", false);
 user_pref("extensions.getAddons.cache.enabled", false);
+user_pref("extensions.getAddons.showPane", false);
 user_pref("extensions.greasemonkey.stats.optedin", false);
 user_pref("extensions.greasemonkey.stats.url", "");
 user_pref("extensions.htmlaboutaddons.discover.enabled", false);
@@ -473,7 +539,6 @@ user_pref("extensions.shield-recipe-client.enabled", false);
 user_pref("extensions.systemAddon.update.enabled", false);
 user_pref("extensions.update.enabled", true);
 user_pref("extensions.webservice.discoverURL", "");
-user_pref("extensions.cookiesBehavior.overrideOnTopLevel", false);
 
 
 //DNS
@@ -486,7 +551,7 @@ user_pref("network.proxy.socks_remote_dns", true);
 
 
 //Safe-Browsing
-user_pref("browser.safebrowsing.appRepURL", ""); 
+user_pref("browser.safebrowsing.appRepURL", "");
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.block_dangerous_host", false);
@@ -494,7 +559,7 @@ user_pref("browser.safebrowsing.downloads.remote.block_dangerous", false);
 user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
 user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
-user_pref("browser.safebrowsing.downloads.remote.url", " ");
+user_pref("browser.safebrowsing.downloads.remote.url", "");
 user_pref("browser.safebrowsing.enabled", false);
 user_pref("browser.safebrowsing.malware.enabled", false);
 user_pref("browser.safebrowsing.phishing.enabled", false);
@@ -506,7 +571,7 @@ user_pref("browser.safebrowsing.provider.mozilla.gethashURL", "");
 user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 
 
-//Webshare 
+//Webshare
 user_pref("dom.webshare.enabled", false);
 
 //Dimming
@@ -522,9 +587,8 @@ user_pref("findbar.highlightAll", true);
 user_pref("accessibility.typeaheadfind", false);
 user_pref("browser.backspace_action", 2);
 user_pref("browser.contentblocking.introCount", 20);
-user_pref("browser.disableResetPrompt", true); 
+user_pref("browser.disableResetPrompt", true);
 user_pref("browser.download.autohideButton", true); //Immediately delete (hide) downloads
-user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 user_pref("browser.newtabpage.enabled", false);
 user_pref("browser.newtabpage.enhanced", false);
 user_pref("browser.newtabpage.introShown", true);
@@ -534,7 +598,6 @@ user_pref("browser.search.openintab", true);
 user_pref("browser.tabs.loadBookmarksInTabs", true);
 user_pref("browser.urlbar.delay", 10);
 user_pref("browser.urlbar.trimURLs", false);
-user_pref("permissions.default.desktop-notification", 2);
 user_pref("toolkit.cosmeticAnimations.enabled", false);
 user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("media.hardwaremediakeys.enabled", true);
@@ -550,15 +613,16 @@ user_pref("gfx.downloadable_fonts.disable_cache", true);
 user_pref("gfx.downloadable_fonts.enabled", true);
 user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
+user_pref("font.system.whitelist", "");
 
 
-//Abuse Report 
+//Abuse Report
 user_pref("extensions.abuseReport.amoDetailsURL", "https://services.addons.mozilla.org/api/v4/addons/addon/");
 user_pref("extensions.abuseReport.amWebAPI.enabled", false);
 user_pref("extensions.abuseReport.openDialog", false);
 
 
-//Social Tracking 
+//Social Tracking
 user_pref("privacy.socialtracking.notification.counter", 0);
 user_pref("privacy.socialtracking.notification.enabled", true);
 user_pref("privacy.socialtracking.notification.lastShown", "0");
@@ -567,26 +631,43 @@ user_pref("privacy.socialtracking.notification.period.min", 0);
 user_pref("privacy.socialtracking.notification.session.pageload.min", 0);
 
 
+//WebRTC
+user_pref("media.peerconnection.enabled", false);
+user_pref("media.peerconnection.ice.default_address_only", true);
+user_pref("media.peerconnection.ice.no_host", true);
+user_pref("media.peerconnection.ice.proxy_only_if_behind_proxy", true);
+
+
+//Captive Portal
+user_pref("captivedetect.canonicalURL", "");
+user_pref("network.captive-portal-service.enabled", false);
+user_pref("network.connectivity-service.enabled", false);
+
+
+//Onion
+user_pref("network.http.referer.hideOnionSource", true);
+
+
 // Outdated (FF 72+), not privacy/security related - or already set to false (by default)
+user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 //user_pref("alerts.showFavicons", false);
-//user_pref("browser.chrome.site_icons", true);
+user_pref("browser.chrome.site_icons", true);
 //user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
-//user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
+user_pref("browser.crashReports.unsubmittedCheck.autoSubmit2", false);
+user_pref("plugin.state.flash", 0);
 //user_pref("browser.send_pings", false);
-//user_pref("dom.disable_window_open_feature.location", true);
-//user_pref("dom.disable_window_open_feature.resizable", true);
-//user_pref("dom.disable_window_open_feature.status", false);
-//user_pref("dom.indexedDB.enabled", false);
-//user_pref("extensions.autoDisableScopes", 14);
+//user_pref("network.http.referer.spoofSource", false);
+user_pref("extensions.autoDisableScopes", 15);
+user_pref("security.csp.experimentalEnabled", true);
 //user_pref("extensions.incognito.migrated", true);
 //user_pref("media.webm.enabled", false);
 //user_pref("network.http.referer.XOriginTrimmingPolicy", 0);
-//user_pref("pdfjs.disabled", false);
 //user_pref("privacy.usercontext.about_newtab_segregation.enabled", true);
 //user_pref("security.sandbox.content.read_path_whitelist", "");
 //user_pref("toolkit.telemetry.cachedClientID", "");
+user_pref("network.auth.subresource-http-auth-allow", 1);
 user_pref("app.productInfo.baseURL", false);
-user_pref("app.normandy.api_url", ""); 
+user_pref("app.normandy.api_url", "");
 user_pref("app.normandy.enabled", false);
 user_pref("app.normandy.migrationsApplied", 8);
 user_pref("app.shield.optoutstudies.enabled", false);
@@ -595,17 +676,16 @@ user_pref("beacon.enabled", false);
 user_pref("browser.altClickSave", true);
 user_pref("browser.casting.enabled", false);
 user_pref("browser.contentblocking.category", false);
-user_pref("browser.newtabpage.activity-stream.prerender", false);
 user_pref("browser.safebrowsing.provider.google4.dataSharing.enabled", false);
 user_pref("browser.safebrowsing.provider.google4.dataSharingURL", "");
 user_pref("browser.tabs.closeWindowWithLastTab", false);
-user_pref("browser.tabs.tabClipWidth", 93);
+user_pref("browser.tabs.tabClipWidth", 90);
 user_pref("browser.tabs.warnOnClose", false);
+user_pref("webchannel.allowObject.urlWhitelist", "");
 user_pref("browser.uidensity", 1);
 user_pref("browser.urlbar.formatting.enabled", false);
 user_pref("devtools.webide.enabled", false);
-user_pref("dom.battery.enabled", false);
-user_pref("experiments.activeExperiment", false); 
+user_pref("experiments.activeExperiment", false);
 user_pref("experiments.enabled", false);
 user_pref("experiments.manifest.uri", "");
 user_pref("experiments.supported", false);
@@ -620,27 +700,36 @@ user_pref("pref.browser.homepage.disable_button.current_page", true);
 user_pref("pref.browser.homepage.disable_button.restore_default", true);
 user_pref("privacy.donottrackheader.value", 1);
 user_pref("security.csp.enable", true);
-user_pref("security.csp.experimentalEnabled", true);
 user_pref("security.insecure_connection_icon.enabled", true);
-user_pref("security.mixed_content.block_active_content", true);
 user_pref("security.ssl.errorReporting.enabled", false);
 user_pref("security.ssl.errorReporting.url", "");
+user_pref("security.tls.enable_0rtt_data", false);
 user_pref("shumway.disabled", true);
-user_pref("toolkit.telemetry.prompted", 2);
-user_pref("toolkit.telemetry.rejected", true);
-user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
-user_pref("toolkit.telemetry.server", "");
-user_pref("toolkit.telemetry.unified", false);
-user_pref("webgl.disabled", true);
+//user_pref("permissions.memory_only", true);
+user_pref("devtools.webide.autoinstallADBExtension", false);
+user_pref("middlemouse.contentLoadURL", false);
+user_pref("network.http.redirection-limit", 8);
+
+
+//Mixed content
+user_pref("security.mixed_content.block_active_content", true);
+user_pref("security.mixed_content.block_display_content", true);
+user_pref("security.mixed_content.block_object_subrequest", true);
 
 
 //EME
 //EME free builds: https://ftp.mozilla.org/pub/firefox/releases/71.0b9/win64-EME-free/
 // https://support.mozilla.org/en-US/kb/enable-drm
-//user_pref("media.eme.enabled", false); 
+user_pref("media.eme.enabled", false);
 //user_pref("media.gmp-gmpopenh264.autoupdate", false);
 //user_pref("media.gmp-gmpopenh264.enabled", false);
 //user_pref("media.gmp-gmpopenh264.provider.enabled", false);
+user_pref("media.gmp-widevinecdm.visible", false);
+user_pref("media.gmp-widevinecdm.enabled", false);
+
+
+//TMP
+user_pref("browser.helperApps.deleteTempFileOnExit", true);
 
 
 // Lockdown aboutConfig + warnings (outdated)
@@ -649,5 +738,7 @@ user_pref("general.warnOnAboutConfig", false);
 
 
 // Optional params (as per own needs)
-// "browser.uiCustomization.state" 
+// "browser.uiCustomization.state"
 // "extensions.webextensions.uuids"
+
+
