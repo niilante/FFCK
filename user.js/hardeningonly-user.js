@@ -542,13 +542,12 @@ user_pref("media.hardwaremediakeys.enabled", true);
 
 // Font
 //user_pref("ayout.css.prefixes.font-features", false);
-//user_pref("browser.display.use_document_fonts", 1); //0
-//user_pref("font.blacklist.underline_offset", ""); //untouched
+user_pref("font.blacklist.underline_offset", "");
 //user_pref("gfx.downloadable_fonts.woff2.enabled", false);
-//user_pref("layout.css.font-loading-api.enabled", true); //false
+user_pref("layout.css.font-loading-api.enabled", false); // Better block fonts manually via uBO e.g. ||fonts.googleapi.com$important,third-party
 user_pref("browser.display.use_document_fonts", 0);
 user_pref("gfx.downloadable_fonts.disable_cache", true);
-//user_pref("gfx.downloadable_fonts.enabled", false);
+user_pref("gfx.downloadable_fonts.enabled", true);
 user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 
