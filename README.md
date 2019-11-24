@@ -23,7 +23,7 @@ This project provides a hardened user.js among some other files which are design
 * FFCK project **does hope to provide a middle way between privacy and a _normal_ daily usage habit** without breaking too much.
 * FFCK project **does not believe in FUD or claims made-up without evidence**.
 * FFCK project **does not explain web standards** or is designed to talk about web security policy mechanism, [Mozilla itself has an entire portal](https://developer.mozilla.org/en-US/) for this.
-* FFCK project **does not document each about:config flag**, if you want a documentation, check the [official docs (all.js)](https://hg.mozilla.org/releases/mozilla-release/raw-file/aca7f47aa8dbf8e5858f5d1318317b463b7a94b7/modules/libpref/init/all.js)
+* FFCK project **does not document each about:config flag**, if you want a documentation, check the [official docs (all.js)](https://hg.mozilla.org/releases/mozilla-release/raw-file/aca7f47aa8dbf8e5858f5d1318317b463b7a94b7/modules/libpref/init/all.js) or [read the given documentation](https://hg.mozilla.org/mozilla-central/file/tip/modules/libpref/init/StaticPrefList.yaml#l687).
 * The owner of this project **highly recommended** that you only use the latest stable Firefox version (or for _testing beta_).
 
 
