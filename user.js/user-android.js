@@ -131,6 +131,17 @@
 // user_pref("security.tls.version.min", 3);
 // user_pref("toolkit.cosmeticAnimations.enabled", false);
 // user_pref("view_source.wrap_long_lines", true);
+user_pref("browser.newtabpage.activity-stream.topSitesRows", 4);
+user_pref("browser.newtabpage.activity-stream.showSearch", false);
+user_pref("browser.newtabpage.activity-stream.feeds.aboutpreferences", false);
+user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
+user_pref("browser.newtabpage.activity-stream.showSponsored", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+user_pref("browser.newtabpage.activity-stream.sectionOrder", "topsites");
+user_pref("browser.library.activity-stream.enabled", false);
+user_pref("extensions.pocket.enabled", false);
 user_pref("accessibility.force_disabled", 0);
 user_pref("alerts.showFavicons", false);
 user_pref("app.feedback.baseURL", "");
