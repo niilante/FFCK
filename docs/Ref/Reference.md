@@ -66,23 +66,31 @@
 * [Official Mozilla SSL Configuration Generator (mozilla.github.io)](https://mozilla.github.io/ssl-config-generator) + ([Source Code](https://github.com/mozilla/ssl-config-generator))
 
 
-### Other References
-* [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
-* [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
-* [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
-* [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
-* [Recent study on fingerprinting methods observed in the wild (randomwalker.info (.PDF))](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
+### Firefox VS. Chrome
 * [Is Firefox better than Chrome? It comes down to privacy. (washingtonpost.com)](https://www.washingtonpost.com/gdpr-consent/?destination=%2ftechnology%2f2019%2f06%2f21%2fgoogle-chrome-has-become-surveillance-software-its-time-switch%2f%3f)
-* [Mozilla Firefox Hardware Report (hardware.metrics.mozilla.com)](https://hardware.metrics.mozilla.com/)
-* [mozregression (mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
-* [Advices from Mozilla Firefox on privacy and government surveillance (mozilla.org)](https://www.mozilla.org/en-US/teach/smarton/surveillance/)
-* [Firefox uses too much memory or CPU resources (support.mozilla.org)](https://support.mozilla.org/en-US/kb/firefox-uses-too-much-memory-or-cpu-resources)
+
+
+### Fingerprinting
+* [Recent study on fingerprinting methods observed in the wild (randomwalker.info (.PDF))](http://randomwalker.info/publications/OpenWPM_1_million_site_tracking_measurement.pdf)
+
+
+### Data Reports
+* [Firefox Public Data Report (data.firefox.com)](https://data.firefox.com/dashboard/user-activity)
+
+
+### Fan-made resources
+* [/r/Firefox (reddit.com)](https://old.reddit.com/r/firefox/)
 
 
 ### About:config related
 * [About:config entries - MozillaZine (kb.mozillazine.org)](http://kb.mozillazine.org/About:config_entries)
 * [Compare different user.js (jm42.github.io)](https://jm42.github.io/compare-user.js/)
 * [Diff between various Firefox .js configurations in upcoming releases (cat-in-136.github.io)](https://cat-in-136.github.io/)
+
+
+### userChrome.css related
+* [userChrome.org (userchrome.org)](https://www.userchrome.org/find-user-style-recipes.html) 
+
 
 ### Where have we (platform features overview)
 * [Platform/GFX/WebRender Where (wiki.mozilla.org)](http://arewewebrenderyet.com/)
@@ -106,6 +114,12 @@
 * [Privacy & Security related add-ons on AMO (addons.mozilla.org)](https://addons.mozilla.org/firefox/extensions/privacy-security/)
 * [CVEs for Firefox - cvedetails.com (cvedetails.com)](https://www.cvedetails.com/vulnerability-list/vendor_id-452/product_id-3264/Mozilla-Firefox.html)
 * [CVEs list for Firefox (mitre.org)](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox)
+* [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
+
+
+### Performance
+* [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
+* [Firefox uses too much memory or CPU resources (support.mozilla.org)](https://support.mozilla.org/en-US/kb/firefox-uses-too-much-memory-or-cpu-resources)
 
 
 ### Mozilla Privacy
@@ -115,6 +129,7 @@
 * [Data Privacy Principles (mozilla.org)](https://www.mozilla.org/en-GB/privacy/principles/)
 * [Mozilla Observatory (observatory.mozilla.org)](https://observatory.mozilla.org/)
 * [Mozilla Privacy Policy (mozilla.org)](https://www.mozilla.org/en-US/privacy/)
+* [Advices from Mozilla Firefox on privacy and government surveillance (mozilla.org)](https://www.mozilla.org/en-US/teach/smarton/surveillance/)
 
 
 ### Mozilla Themes
@@ -155,10 +170,12 @@
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
 * [Privacy Online Test And Resource Compendium (POTARC) (github.com)](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List)
 * [Mozilla Storage Test Page (firefox-storage-test.glitch)](https://firefox-storage-test.glitch.me/) (make sure everything is green otherwise your profile database is damaged)
+* [Mozilla Firefox Hardware Report (hardware.metrics.mozilla.com)](https://hardware.metrics.mozilla.com/)
 
 
-### Bug Reporting under Android 
+### Bug Reporting
 * [Report a Firefox Preview bug (bughunterissues.mozilla.community)](https://bughunterissues.mozilla.community/)
+* [mozregression (mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
 
 
 ### (Past) privacy incidents
@@ -179,6 +196,7 @@
 * [Switch to WebExtensions (blog.mozilla.org)](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
 * [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
+
 
 ### Other criticism
 * Aesthetic criticisms (_design,..._)
