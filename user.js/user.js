@@ -1,6 +1,5 @@
 //
-//      All-in-One Hardening user.js project by CK
-//
+//      All-in-One Hardening user.js project by CHEF-KOCH
 //
 //  See: Workarounds.md for known problems & possible workarounds!
 //
@@ -15,9 +14,7 @@
 //
 //      See issue tracker for known issues & discussions!
 //
-//      Version: 0.60
-//
-//      Codename: AGTUC
+//      Version: 0.61
 //
 // Do not touch (only in case you have problems)
 //
@@ -230,6 +227,7 @@ user_pref("browser.onboarding.tour.onboarding-tour-screenshots.completed", true)
 user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.ping-centre.telemetry", false); // removed
 user_pref("browser.pingcentre.telemetry", false); // outdated
+user_pref("browser.ping-centre.log", false);
 user_pref("browser.pocket.enabled", false);
 user_pref("browser.privatebrowsing.autostart", true);
 user_pref("browser.privatebrowsing.searchUI", false);
@@ -602,6 +600,7 @@ user_pref("dom.storage.snapshot_prefill", 16384);
 user_pref("dom.storage.snapshot_reusing", true);
 user_pref("dom.storageManager.prompt.testing.allow", false);
 user_pref("dom.storageManager.prompt.testing", false);
+user_pref("dom.storage_access.enabled", false);
 user_pref("dom.targetBlankNoOpener.enabled", true);
 user_pref("dom.telephony.enabled", false);
 user_pref("dom.testing.sync-content-blocking-notifications", false);
