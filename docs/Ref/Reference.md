@@ -1,3 +1,38 @@
+# Table of Contents
+* [Official Mozilla documentation](#official-mozilla-documentation)
+* [Firefox's Enhanced Tracking Protection whitelist](#firefox-s-enhanced-tracking-protection-whitelist)
+* [Add-on signing Check](#add-on-signing-check)
+* [Source Code Indexing Tools](#source-code-indexing-tools)
+* [Shield Studies](#shield-studies)
+* [Mozilla Autoconfig](#mozilla-autoconfig)
+* [Extensions](#extensions)
+* [Developer Tools & Resources](#developer-tools---resources)
+* [Templates](#templates)
+* [Firefox VS. Chrome](#firefox-vs-chrome)
+* [Fingerprinting](#fingerprinting)
+* [Data Reports](#data-reports)
+* [Fan-made resources](#fan-made-resources)
+* [About:config related](#about-config-related)
+* [userChrome.css related](#userchromecss-related)
+* [Where have we (platform features overview)](#where-have-we--platform-features-overview-)
+* [Autoplay](#autoplay)
+* [Web Security](#web-security)
+* [Performance](#performance)
+* [Mozilla Privacy](#mozilla-privacy)
+* [Mozilla Themes](#mozilla-themes)
+* [Firefox Profile related](#firefox-profile-related)
+* [Firefox color management](#firefox-color-management)
+* [Tor Browser related](#tor-browser-related)
+* [TLS & SSL related](#tls---ssl-related)
+* [Google Safe-Browsing](#google-safe-browsing)
+* [Test Pages & Resources](#test-pages---resources)
+* [Bug Reporting](#bug-reporting)
+* [(Past) privacy incidents](#-past--privacy-incidents)
+* [Other criticism](#other-criticism)
+* [No longer maintained](#no-longer-maintained)
+* [AI based tool to check privacy policies to flag risky apps](#ai-based-tool-to-check-privacy-policies-to-flag-risky-apps)
+
+
 ## Official Mozilla documentation
 * [DXR - Firefox Datareporting preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/toolkit/components/telemetry/datareporting-prefs.js)
 * [DXR - Firefox General preferences (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/init/all.js)
@@ -30,7 +65,7 @@
 * [Detect (show) Shield Studies (Beta) (jeffersonscher.com)](https://www.jeffersonscher.com/sumo/shield.php)
 
 
-#### Mozilla Autoconfig 
+### Mozilla Autoconfig 
 * [Debugging Firefox Autoconfig Problems (mike.kaply.com)](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
 * [Firefox Autoconfig Files (mike.kaply.com)](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
 * [Firefox Autoconfig Files Continued (mike.kaply.com)](https://mike.kaply.com/2012/03/20/customizing-firefox-autoconfig-files-continued/)
@@ -216,5 +251,5 @@
 - [mozillazine.org](http://forums.mozillazine.org/viewtopic.php?f=38&t=3055133)
 
 
-## AI based tool to check privacy policies to flag risky apps
+### AI based tool to check privacy policies to flag risky apps
 - [Guard](https://useguard.com/)
