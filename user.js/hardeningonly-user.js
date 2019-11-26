@@ -680,12 +680,11 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 
 // Font
 //user_pref("ayout.css.prefixes.font-features", false);
-user_pref("font.blacklist.underline_offset", "");
+//user_pref("font.blacklist.underline_offset", "");
 //user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("layout.css.font-loading-api.enabled", false); // Better block fonts manually via uBO e.g. ||fonts.googleapi.com$important,third-party or Toggle Fonts addon
 user_pref("browser.display.use_document_fonts", 0); //1
 user_pref("gfx.downloadable_fonts.disable_cache", true);
-user_pref("gfx.downloadable_fonts.enabled", true);
 //user_pref("gfx.font_rendering.graphite.enabled", false);
 //user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("font.system.whitelist", "");
