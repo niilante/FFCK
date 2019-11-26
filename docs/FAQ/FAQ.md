@@ -327,7 +327,7 @@ It's by design, a VPN with _"DNS leak protection"_ should not allow DOH to work 
 
 ## Why is `content process limit` not set to 1?
 
-A lot of people complaining about the CPU/RAM usage in Firefox, settings the flag `content process limit` to 1 basically solves all performance and RAM related "problems". However, there is a cost to it. Setting it to 1 reduce the overall Browser security, because once this is done all tabs and windows will be running in a single process. 
+A lot of people complaining about the overal CPU and/or RAM usage in Firefox, settings the flag `dom.ipc.processCount` to 1 basically solves all performance and RAM related "problems". However, there is a cost to it. Setting it to 1 reduce the overall Browser security, because once this is done all tabs and windows will be running in a [single process](https://support.mozilla.org/en-US/kb/performance-settings). 
 
 That means if any website is able to compromise the browser's sandboxing _somehow_, it could more easily access content from every other tab. I you do not care about sandboxing/isolating related things, set it to 1 but **I do not recommend it**. 
 
