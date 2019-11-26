@@ -15,7 +15,7 @@
 //
 //      See issue tracker for known issues & discussions!
 //
-//      Version: 0.59
+//      Version: 0.60
 //
 //      Codename: AGTUC
 //
@@ -343,7 +343,6 @@ user_pref("browser.underline_anchors", true); // leak?
 user_pref("browser.urlbar.autocomplete.enabled", false);
 user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.autoFill", false);
-user_pref("browser.urlbar.clickSelectsAll", false);
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.filter.javascript", true);
