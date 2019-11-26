@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 71.0.3
+//      Version 71.0.4
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -132,7 +132,7 @@ user_pref("dom.disable_beforeunload", true);
 //user_pref("dom.event.contextmenu.enabled", false);
 //user_pref("dom.push.connection.enabled", false);
 //user_pref("dom.storage.enabled", false);
-//user_pref("media.gmp-provider.enabled", false);
+user_pref("media.gmp-provider.enabled", false);
 user_pref("network.http.referer.XOriginPolicy", 1);
 //user_pref("network.negotiate-auth.allow-insecure-ntlm-v1-https", false);
 //user_pref("network.trr.confirmationNS", "example.com");
@@ -279,8 +279,9 @@ user_pref("privacy.sanitize.timeSpan", 0);
 user_pref("privacy.storagePrincipal.enabledForTrackers", false);
 user_pref("privacy.trackingprotection.cryptomining.enabled", false);
 user_pref("privacy.trackingprotection.enabled", true);
+user_pref("browser.contentblocking.database.enabled", false);
 user_pref("privacy.trackingprotection.fingerprinting.annotate.enabled", false);
-user_pref("privacy.trackingprotection.fingerprinting.enabled", false);
+user_pref("privacy.trackingprotection.fingerprinting.enabled", false); // default true since FF72
 user_pref("privacy.trackingprotection.origin_telemetry.enabled", false);
 user_pref("privacy.trackingprotection.pbmode.enabled", true);
 user_pref("privacy.userContext.enabled", true);
@@ -336,7 +337,7 @@ user_pref("plugins.update.notifyUser", true);
 
 
 // Cookie Policy
-user_pref("network.cookie.cookieBehavior", 1);
+user_pref("network.cookie.cookieBehavior", 4);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.thirdparty.sessionOnly", true);
 user_pref("network.cookieSettings.unblocked_for_testing", false);
@@ -429,6 +430,7 @@ user_pref("telemetry.origin_telemetry_test_mode.enabled", false);
 user_pref("browser.ping-centre.production.endpoint", "");
 user_pref("browser.ping-centre.staging.endpoint", "");
 user_pref("browser.ping-centre.telemetry", false);
+user_pref("browser.ping-centre.log", false);
 user_pref("toolkit.coverage.endpoint.base", "");
 user_pref("toolkit.coverage.opt-out", true);
 user_pref("toolkit.crashreporter.infoURL", "");
@@ -553,6 +555,7 @@ user_pref("dom.vibrator.enabled", false);
 user_pref("dom.webaudio.enabled", false);
 user_pref("dom.webnotifications.enabled", false);
 user_pref("dom.webshare.requireinteraction", false);
+user_pref("dom.storage_access.enabled", false);
 
 
 // CSP restriction
