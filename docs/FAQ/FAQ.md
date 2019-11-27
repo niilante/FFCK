@@ -32,6 +32,7 @@
 - [Enabling DoH breaks my VPN connection](#enabling-doh-breaks-my-vpn-connection)
 - [Why is `content process limit` not set to 1?](#why-is-content-process-limit-not-set-to-1)
 - [Working with a second profile](#second-profile)
+- [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacy.trackingprotection.enabled-and-privacy.resistfingerprinting)
 
 ## Which Referrer extensions do I need?
 
@@ -61,7 +62,7 @@ Some websites [detecting if you’re in an incognito or private browsing mode](h
 
 ## Why is `resistFingerprinting` disabled?
 
-Multiple reasons, some are bug related, others might break some _useful_ functions. To name several reasons why I don’t enabled the anti-fingerprinting option are:
+Multiple reasons, some are bug related, others might [break](https://wiki.mozilla.org/Security/Fingerprinting) some _useful_ functions. Another problem is that there is no user-facing documentation about this flag, which makes it hard to track. However, the main arguments are:
 
 * Breaks [time zone](https://old.reddit.com/r/firefox/comments/7tqvpr/privacyresistfingerprinting_timezone/) dection (_by design_)
 * [Performance problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1394735#c1)
@@ -72,8 +73,9 @@ Multiple reasons, some are bug related, others might break some _useful_ functio
 * [User agent "problems"](https://old.reddit.com/r/firefox/comments/bro9sk/privacyresistfingerprinting_user_agent/) (_by design_)
 * Window resizing [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1494212) (_by design_)
 * .. there are other [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1235231), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1449139), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=921942) & even more [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=462743)
+* `Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0` is used as user agent for the Tor Browser and is evry common, but be warned [changing the user agent without changing to a corresponding platform will make your browser nearly unique](https://wiki.archlinux.org/index.php/Firefox/Privacy).
 
-What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (_in his current state_) useful, we use other flags and protection mechanism in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s simply impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”. 
+What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (_in his current state_) not useful, we use other flags and protection mechanism in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s simply impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”. 
 
 
 ## Why are some flags disabled when I can control them via FF "Settings"?
@@ -342,3 +344,8 @@ firefox -P 2profil_name --no-remote | Start another profile in second instance
 firefox -P 2profil_name --no-remote --safe-mode | ""  "" including "secure Mode" (_no addons and themes are been loaded_)
 firefox -P 2profil_name --no-remote --private | ""  ""  ""  "" including "private Mode"
 firefox -P 2profil_name --no-remote --safe-mode --private | ""  ""  ""  "" "" including "secure" and "private Mode"
+
+
+## Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?
+
+One [blocks scripts](https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track), based on a Disconnect.me blocking list) and the other one actually tries to [resist fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting) to such an extent that script blocking is unnecessary (while breaking a lot of things in the process, see above).
