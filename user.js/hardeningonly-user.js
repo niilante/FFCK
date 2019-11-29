@@ -691,6 +691,7 @@ user_pref("gfx.downloadable_fonts.disable_cache", true);
 //user_pref("gfx.font_rendering.graphite.enabled", false);
 //user_pref("gfx.font_rendering.opentype_svg.enabled", false);
 user_pref("font.system.whitelist", "");
+user_pref("gfx.downloadable_fonts.enabled", true);
 
 
 // Abuse Report
