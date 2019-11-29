@@ -61,19 +61,22 @@ user_pref("browser.startup.blankWindow", false);
 user_pref("privacy.donottrackheader.enabled", false);
 
 
-// PRF
+// FPI
 // https://wiki.mozilla.org/Security/Fusion
 // https://wiki.mozilla.org/Security/Tor_Uplift
-//user_pref("privacy.firstparty.isolate.restrict_opener_access", false);
+// https://wiki.mozilla.org/Security/FirstPartyIsolation
+// https://news.ycombinator.com/item?id=17944991
+// https://github.com/mozfreddyb/test-firstpartyisolation
 //user_pref("privacy.firstparty.isolate.block_post_message", true);
+//user_pref("privacy.firstparty.isolate.restrict_opener_access", false);
 user_pref("intl.accept_languages", "en-US, en");
-user_pref("javascript.use_us_english_locale", true); //https://hg.mozilla.org/mozilla-central/rev/52d635f2b33d
-user_pref("privacy.firstparty.isolate", true);
-user_pref("privacy.spoof_english", 2);
 user_pref("intl.charset.fallback.override", "windows-1252");
+user_pref("javascript.use_us_english_locale", true); //https://hg.mozilla.org/mozilla-central/rev/52d635f2b33d
+user_pref("privacy.firstparty.isolate", false); // Remember we use Temporary Containers
+user_pref("privacy.spoof_english", 2);
 
 
-// FP
+// RFP
 user_pref("privacy.resistFingerprinting.reduceTimerPrecision.microseconds", 1000);
 //user_pref("privacy.resistFingerprinting", false); // Master button for FP
 //user_pref("privacy.resistFingerprinting.letterboxing", true);
@@ -157,7 +160,6 @@ user_pref("browser.discovery.sites", "");
 user_pref("browser.fixup.hide_user_pass", true);
 user_pref("browser.formfill.enable", false);
 user_pref("browser.formfill.expire_days", 0);
-user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
 user_pref("browser.newtabpage.directory.ping", "");
@@ -251,7 +253,6 @@ user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("offline-apps.allow_by_default", false);
 user_pref("offline-apps.quota.warn", 0);
 user_pref("pdfjs.enableWebGL", false);
-user_pref("permissions.default.geo", 2);
 user_pref("places.history.enabled", false);
 user_pref("pref.privacy.disable_button.view_passwords_exceptions", true);
 user_pref("pref.privacy.disable_button.view_passwords", true);
@@ -369,6 +370,7 @@ user_pref("signon.management.page.enabled", false);
 user_pref("signon.rememberSignons", false);
 user_pref("signon.showAutoCompleteOrigins", false);
 
+
 // WebRender
 user_pref("gfx.webrender.picture-caching", false);
 
@@ -460,6 +462,7 @@ user_pref("geo.provider.use_corelocation", false);
 user_pref("geo.provider.use_gpsd", false);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.wifi.uri", "");
+user_pref("permissions.default.geo", 2);
 
 
 // MathML
@@ -483,6 +486,10 @@ user_pref("datareporting.healthreport.infoURL", false);
 user_pref("datareporting.healthreport.service.enabled", false);
 user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
+
+
+// Microphone 
+//user_pref("permissions.default.microphone", false);
 
 
 // Activity Stream
@@ -568,6 +575,10 @@ user_pref("extensions.content_script_csp.enabled", false);
 user_pref("dom.push.enabled", false);
 user_pref("dom.serviceWorkers.enabled", true);
 user_pref("permissions.default.desktop-notification", 2);
+
+
+// Camera permission 
+user_pref("permissions.default.camera", false);
 
 
 //Search
@@ -695,7 +706,7 @@ user_pref("gfx.downloadable_fonts.enabled", true);
 
 
 // Abuse Report
-user_pref("extensions.abuseReport.amoDetailsURL", "https://services.addons.mozilla.org/api/v4/abuse/report/addon/");
+user_pref("extensions.abuseReport.amoDetailsURL", "");
 user_pref("extensions.abuseReport.amWebAPI.enabled", false);
 user_pref("extensions.abuseReport.openDialog", false);
 
@@ -707,6 +718,10 @@ user_pref("privacy.socialtracking.notification.lastShown", "0");
 user_pref("privacy.socialtracking.notification.max", 2);
 user_pref("privacy.socialtracking.notification.period.min", 0);
 user_pref("privacy.socialtracking.notification.session.pageload.min", 0);
+
+
+// Hide "What's new"
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 
 
 // WebRTC
@@ -822,9 +837,12 @@ user_pref("browser.newtabpage.activity-stream.prerender", false);
 //user_pref("browser.newtabpage.activity-stream.impressionId", "{335d6084-8fc2-457e-8a29-15d970bb5313}"); //fake
 //user_pref("extensions.contentblocker.enabled", false);
 user_pref("app.update.enabled", true);
+user_pref("privacy.temporary_permission_expire_time_ms", 3000000);
+//user_pref("app.update.lastUpdateTime.telemetry_modules_ping", 0);
 
 
 // Fullscreen API
+// user_pref("permissions.fullscreen.allowed", false);
 //user_pref("full-screen-api.enabled", false);
 //user_pref("full-screen-api.unprefix.enabled", false);
 user_pref("full-screen-api.allow-trusted-requests-only", true);
@@ -848,7 +866,7 @@ user_pref("media.gmp-widevinecdm.visible", false);
 user_pref("media.gmp-widevinecdm.enabled", false);
 
 
-// TMP
+// TMP (Helper)
 user_pref("browser.helperApps.deleteTempFileOnExit", true);
 
 
@@ -858,8 +876,6 @@ user_pref("general.warnOnAboutConfig", false);
 user_pref("browser.aboutConfig.showWarning", false);
 
 
-// Optional params (as per own needs)
-// "browser.uiCustomization.state"
-// "extensions.webextensions.uuids"
-
-
+// Optional params (as per own needs, min uBO + uM + TC)
+//user_pref("browser.uiCustomization.state", "{\"ublock0_raymondhill_net-browser-action\",\"umatrix_raymondhill_net-browser-action\",}");
+//user_pref("extensions.webextensions.uuids", "{\"uBlock0@raymondhill.net\":\"13edaf3e-19f0-4b6c-831c-ee74c95d5491\",\"uMatrix@raymondhill.net\":\"947aea7b-f0ab-4dbe-b40a-6506eed23f3f\"}");
