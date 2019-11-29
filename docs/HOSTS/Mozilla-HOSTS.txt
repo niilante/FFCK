@@ -375,6 +375,7 @@
 0.0.0.0 firefoxparty.authstage.mozilla.com
 0.0.0.0 firefoxtshirt.mozilla.org
 0.0.0.0 firefoxtweetmachine.com
+0.0.0.0 firefox-replay.com
 0.0.0.0 firefoxusercontent.com
 0.0.0.0 fortunes.frenchmozilla.fr
 0.0.0.0 fortunes.frenchmozilla.org
