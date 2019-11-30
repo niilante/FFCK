@@ -14,7 +14,7 @@
 //
 //      See issue tracker for known issues & discussions!
 //
-//      Version: 0.61
+//      Version: 0.62
 //
 // Do not touch (only in case you have problems)
 //
@@ -78,6 +78,7 @@ user_pref("bidi.edit.delete_immediately", true);
 user_pref("bidi.numeral", 0);
 user_pref("bidi.texttype", 1);
 user_pref("breakpad.reportURL", "");
+user_pref("browser.urlbar.update1", true);
 user_pref("browser.aboutHomeSnippets.updateUrl", "");
 user_pref("browser.active_color", "#EE0000");
 user_pref("browser.anchor_color", "#0000EE");
