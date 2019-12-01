@@ -852,7 +852,7 @@ user_pref("gfx.webrender.debug.new-frame-indicator", false);
 user_pref("gfx.webrender.debug.new-scene-indicator", false);
 user_pref("gfx.webrender.debug.picture-caching", false);
 user_pref("gfx.webrender.debug.primitives", false);
-user_pref("gfx.webrender.debug.profiler", false);
+user_pref("gfx.webrender.debug.profiler", true);
 user_pref("gfx.webrender.debug.render-targets", false);
 user_pref("gfx.webrender.debug.show-overdraw", false);
 user_pref("gfx.webrender.debug.slow-frame-indicator", false);
@@ -1110,7 +1110,7 @@ user_pref("layout.display-list.dump", false);
 user_pref("layout.display-list.rebuild-frame-limit", 500);
 user_pref("layout.float-fragments-inside-column.enabled", true);
 user_pref("layout.frame_rate.precise", true); // false, in case you have scrolling issues
-user_pref("layout.frame_rate", 300);
+user_pref("layout.frame_rate", 144);
 user_pref("layout.framevisibility.amountscrollbeforeupdatehorizontal", 2);
 user_pref("layout.framevisibility.amountscrollbeforeupdatevertical", 2);
 user_pref("layout.framevisibility.enabled", true);
