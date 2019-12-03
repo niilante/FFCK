@@ -150,6 +150,7 @@
 * [CVEs for Firefox - cvedetails.com (cvedetails.com)](https://www.cvedetails.com/vulnerability-list/vendor_id-452/product_id-3264/Mozilla-Firefox.html)
 * [CVEs list for Firefox (mitre.org)](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=firefox)
 * [shadow - Firefox jemalloc heap exploitation framework (github.com)](https://github.com/CENSUS/shadow)
+* [Official blocked Add-ons (blocked.cdn.mozilla.net)](https://blocked.cdn.mozilla.net/)
 
 
 ### Performance
