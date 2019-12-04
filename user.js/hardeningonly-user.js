@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 71.0.4
+//      Version 72.0.2
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -80,6 +80,7 @@ user_pref("privacy.spoof_english", 2);
 user_pref("privacy.resistFingerprinting.reduceTimerPrecision.microseconds", 1000);
 //user_pref("privacy.resistFingerprinting", false); // Master button for FP
 //user_pref("privacy.resistFingerprinting.letterboxing", true);
+user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled, false);
 
 
 // U2F (FF67+)
@@ -246,7 +247,6 @@ user_pref("network.jar.open-unsafe-types", false);
 user_pref("network.manage-offline-status", false);
 user_pref("network.negotiate-auth.allow-insecure-ntlm-v1", false);
 user_pref("network.predictor.enabled", false);
-user_pref("network.prefetch-next", false);
 user_pref("browser.link.open_newwindow", 3);
 user_pref("network.security.esni.enabled", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
@@ -281,7 +281,6 @@ user_pref("privacy.storagePrincipal.enabledForTrackers", false);
 user_pref("privacy.trackingprotection.cryptomining.enabled", false);
 user_pref("privacy.trackingprotection.enabled", true);
 user_pref("browser.contentblocking.database.enabled", false);
-user_pref("privacy.trackingprotection.fingerprinting.annotate.enabled", false);
 user_pref("privacy.trackingprotection.fingerprinting.enabled", false); // default true since FF72
 user_pref("privacy.trackingprotection.origin_telemetry.enabled", false);
 user_pref("privacy.trackingprotection.pbmode.enabled", true);
@@ -322,6 +321,12 @@ user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
 user_pref("services.settings.server", "");
 user_pref("network.IDN.whitelist.museum", false);
 user_pref("network.websocket.max-connections", 150);
+user_pref("image.mem.surfacecache.min_expiration_ms", 50000);
+
+// Prefetch
+user_pref("network.dns.disablePrefetchFromHTTPS", true);
+user_pref("network.prefetch-next", false);
+//user_pref("network.predictor.enable-prefetch", false);
 
 
 // Plugins
@@ -623,7 +628,6 @@ user_pref("extensions.webservice.discoverURL", "");
 
 // DNS
 user_pref("browser.fixup.alternate.enabled", false);
-user_pref("network.dns.disablePrefetchFromHTTPS", true);
 user_pref("network.dnsCacheEntries", 0);
 user_pref("network.dnsCacheExpiration", 50);
 user_pref("network.dnsCacheExpirationGracePeriod", 50);
@@ -839,6 +843,7 @@ user_pref("browser.newtabpage.activity-stream.prerender", false);
 user_pref("app.update.enabled", true);
 user_pref("privacy.temporary_permission_expire_time_ms", 3000000);
 //user_pref("app.update.lastUpdateTime.telemetry_modules_ping", 0);
+user_pref("privacy.trackingprotection.fingerprinting.annotate.enabled", false);
 
 
 // Fullscreen API
