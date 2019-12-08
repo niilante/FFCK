@@ -1,6 +1,7 @@
 # Mozilla blocking HOSTS
 #
 # Author: CHEF-KOCH
+# Link: https://github.com/CHEF-KOCH/FFCK/blob/master/docs/HOSTS/Mozilla-HOSTS.txt
 # License: GPL 3.0
 #
 # Update URL: https://raw.githubusercontent.com/CHEF-KOCH/FFCK/master/docs/HOSTS/Mozilla-HOSTS.txt
@@ -9,16 +10,23 @@
 # About Firefox Startup connections
 # http://kb.mozillazine.org/Connections_established_on_startup_-_Firefox
 #
-# Version:  1.8
+# Version:  1.9
 # ASN:      AS36856
 # IP:       63.245.208.0/23
 # IPV6:     2620:101:8030::/47
 
 # Cert
 #0.0.0.0 ocsp.digicert.com
+#0.0.0.0 crl3.digicert.com
 
 # FTP (we still want to DL the builds)
 #0.0.0.0 ftp.mozilla.org
+
+# Icecat
+0.0.0.0 icecat.settings.services.mozilla.com
+
+# Fennec
+0.0.0.0 fennec-catalog.cdn.mozilla.net
 
 # Addons
 #0.0.0.0 add-ons.mozilla.com
@@ -40,6 +48,10 @@
 #0.0.0.0 addons.update.mozilla.org
 #0.0.0.0 addon.mozilla.org
 
+# Bugsnag 
+0.0.0.0 sessions.bugsnag.com 
+
+# Others
 0.0.0.0 104.16.142.228
 0.0.0.0 30boxes.com
 0.0.0.0 36.75.98.34.bc.googleusercontent.com
