@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 72.0.2
+//      Version 72.0.3
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -29,6 +29,10 @@ user_pref("network.trr.skip-AAAA-when-not-supported", true);
 //user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.useGET", true);
 user_pref("network.trr.wait-for-portal", false);
+
+
+// BigInt 
+user_pref("javascript.options.bigint", false);
 
 
 // URL bar
