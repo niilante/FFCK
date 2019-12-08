@@ -65,15 +65,16 @@ Some websites [detecting if you’re in an incognito or private browsing mode](h
 Multiple reasons, some are bug related, others might [break](https://wiki.mozilla.org/Security/Fingerprinting) some _useful_ functions. Another problem is that there is no user-facing documentation about this flag, which makes it hard to track. However, the main arguments are:
 
 * Breaks [time zone](https://old.reddit.com/r/firefox/comments/7tqvpr/privacyresistfingerprinting_timezone/) dection (_by design_)
+* [Breaks all extensions that attempt to spoof calls for canvas hash and some that try to block it](https://bugzilla.mozilla.org/show_bug.cgi?id=1602255)
 * [Performance problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1394735#c1)
 * [Canvas problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1429865)
 * [Website problems](https://old.reddit.com/r/firefox/comments/a2wwwl/vimeo_stopped_working_with_firefox_and/)
 * [Addon installation problems](https://old.reddit.com/r/firefox/comments/87h2le/privacyresistfingerprinting_prevents_installing/)
-* Other important Addon [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1588916)
 * [User agent "problems"](https://old.reddit.com/r/firefox/comments/bro9sk/privacyresistfingerprinting_user_agent/) (_by design_)
 * Window resizing [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1494212) (_by design_)
 * .. there are other [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1235231), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=1449139), [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=921942) & even more [bugs](https://bugzilla.mozilla.org/show_bug.cgi?id=462743)
 * `Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0` is used as user agent for the Tor Browser and is evry common, but be warned [changing the user agent without changing to a corresponding platform will make your browser nearly unique](https://wiki.archlinux.org/index.php/Firefox/Privacy).
+* Other important Addon [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1588916)
 
 What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (_in his current state_) not useful, we use other flags and protection mechanism in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s simply impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”. 
 
@@ -161,17 +162,14 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 If you want such censorship or blocking I suggest you [work with your own list instead](https://www.monperrus.net/martin/anti-phishing-protection-without-google-safebrowsing) which YOU can control and not any organization which you have no control over. I suggest [Unbound](https://www.nlnetlabs.nl/projects/unbound/about/) or/uMatrix/uBo combination which allowing you to create/use your own lists or allowing you to make exclusions, another benefit is that those are faster compared to Google's or Mozilla’s Safe browsing (_needs more evidence_).
 
 
-
 ## Why aren’t digital Signatures enforced by default to prevent Malware downloads?
 
 There is a high chance of false positives, one [popular example is Notepad++](https://www.bleepingcomputer.com/news/software/notepad-no-longer-code-signed-dev-wont-support-overpriced-cert-industry/) which is now maybe blocked. The operation system should also protect you already against known malware techniques (_needs more evidence_).
 
 
-
 ## Why does Skype-Web refuse to work in Firefox?
 
 You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) (or manually edit the User-Agent string) and choose "Google Chrome” or “Microsoft Edge” as User-Agent. Currently Firefox 65 doesn’t support [NPAPI](https://en.wikipedia.org/wiki/NPAPI) which is required for the web version.
-
 
 
 ## How to workaround Google’s CAPTCHA problem
