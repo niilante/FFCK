@@ -9,7 +9,7 @@
 //      * I highly suggest you only use the latest stable or beta (no nightly/dev) FF/Tor versions!
 //      * Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)      
 //      See issue tracker for known issues & discussions!
-//      Version: 70.0.0
+//      Version: 72.0.0
 //
 // user_pref("accessibility.tabfocus", 1);
 // user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
@@ -1045,6 +1045,7 @@ user_pref("javascript.options.wasm_ionjit", true);
 user_pref("javascript.options.wasm_verbose", false);
 user_pref("javascript.options.wasm", false);
 user_pref("javascript.use_us_english_locale", true);
+user_pref("javascript.options.bigint", false);
 user_pref("jsloader.shareGlobal", true);
 user_pref("keyword.enabled", false);
 user_pref("layers.acceleration.draw-fps", false);
