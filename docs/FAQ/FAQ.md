@@ -33,6 +33,8 @@
 - [Why is `content process limit` not set to 1?](#why-is-content-process-limit-not-set-to-1)
 - [Working with a second profile](#second-profile)
 - [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacy.trackingprotection.enabled-and-privacy.resistfingerprinting)
+- [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-.txt-file) 
+
 
 ## Which Referrer extensions do I need?
 
@@ -148,6 +150,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [Authenticator - Generate 2-Step Verification codes in your browser](https://authenticator.cc/)  & [source code](https://github.com/Authenticator-Extension/Authenticator)
 * [Terms of Service; Didn't Read](https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/)
 * [Media Reaper - Privacy 1st, Audio & Video Download](https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
+* [Make Omnibox Great Again](https://addons.mozilla.org/ko/firefox/addon/moga-make-omnibox-great-again/) & ([source code](https://github.com/phu54321/MOGA))
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
@@ -306,7 +309,7 @@ You can get the latest Firefox / ESR templates from [here](https://github.com/mo
 
 We [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
 
-Here are addons you don't need:
+Here are **addons you don't need**:
 * [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode). If you want to use a cookie control addon, go with [CookieMaster](https://addons.mozilla.org/en-US/firefox/addon/cookiemaster/) instead because it (by default) block all cookies and only allow authorized sites, on a per-domain basis. You also can use [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) in combination with uBlock.
 * [TrackMeNot](http://trackmenot.io/) - covered by uBlock/uMatrix
 * [AdNauseam](https://adnauseam.io/) - covered by uBlock/uMatrix
@@ -347,3 +350,9 @@ firefox -P 2profil_name --no-remote --safe-mode --private | ""  ""  ""  "" "" in
 ## Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?
 
 One [blocks scripts](https://support.mozilla.org/en-US/kb/trackers-and-scripts-firefox-blocks-enhanced-track), based on a Disconnect.me blocking list) and the other one actually tries to [resist fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting) to such an extent that script blocking is unnecessary (while breaking a lot of things in the process, see above).
+
+
+## Can I export a bookmark folder as a .txt file?
+
+Right-click on a folder and select "copy". Then go into e.g. Notepad and paste. It will paste the folder name and all the bookmark urls. A alternative is [copy-tab-urls-webex](https://addons.mozilla.org/firefox/addon/copy-tab-urls-webex/)
+
