@@ -235,7 +235,8 @@
 
 
 ### Other criticism
-* Aesthetic criticisms (_design,..._)
+* _Aesthetic criticisms_ (_design,..._)
+* [Some Clarifications Regarding about:mozilla](https://blog.gerv.net/2005/01/some_clarificat_1/)
 * [Mozilla DoH plan receives criticism from OpenBSD maintainers (bleepingcomputer.com)](https://www.bleepingcomputer.com/news/technology/google-unveils-dns-over-https-doh-plan-mozillas-faces-criticism/)
 * [Criticism of Firefox on Android by the GrapheneOS project (grapheneos.org)](https://grapheneos.org/usage#web-browsing) - ([discussion](https://old.reddit.com/r/firefox/comments/d2lq23/criticism_of_firefox_on_android_by_the_grapheneos/))
 * [Mozilla and Creative Commons want to reimagine the internet without ads, and they have $100M to do (fastcompany.com)](https://www.fastcompany.com/90403645/mozilla-and-creative-commons-want-to-reimagine-the-internet-without-ads-and-they-have-100m-to-do-it) [(via reddit.com)](https://old.reddit.com/r/firefox/comments/d52fpp/mozilla_and_creative_commons_want_to_reimagine/)
