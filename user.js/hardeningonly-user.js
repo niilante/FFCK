@@ -217,7 +217,7 @@ user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("general.buildID.override", "20100101");
 user_pref("intl.locale.matchOS", false);
 user_pref("javascript.options.asmjs", false);
-user_pref("javascript.options.wasm", false);
+//user_pref("javascript.options.wasm", false);
 user_pref("layout.css.visited_links_enabled", false);
 user_pref("lightweightThemes.update.enabled", false);
 user_pref("loop.enabled", false);
