@@ -212,6 +212,7 @@
 ### Bug Reporting
 * [Report a Firefox Preview bug (bughunterissues.mozilla.community)](https://bughunterissues.mozilla.community/)
 * [mozregression (mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
+* [Report a Firefox Voice Bug or Feature Request](https://firefox-voice-feedback.herokuapp.com/)
 
 
 ### (Past) privacy incidents
