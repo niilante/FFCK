@@ -307,10 +307,10 @@ You can get the latest Firefox / ESR templates from [here](https://github.com/mo
 
 ## Against obfuscation as a "privacy tool"
 
-We [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
+I [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
 
 Here are **addons you don't need**:
-* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode). If you want to use a cookie control addon, go with [CookieMaster](https://addons.mozilla.org/en-US/firefox/addon/cookiemaster/) instead because it (by default) block all cookies and only allow authorized sites, on a per-domain basis. You also can use [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) in combination with uBlock.
+* [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode). If you want to use a cookie control addon, go with [CookieMaster](https://addons.mozilla.org/en-US/firefox/addon/cookiemaster/) instead because it (by default) block all cookies and only allow authorized sites, on a per-domain basis. You also can use [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) or [forget-me-not](https://github.com/Lusito/forget-me-not) in combination with uBlock, which would make more sense.
 * [TrackMeNot](http://trackmenot.io/) - covered by uBlock/uMatrix
 * [AdNauseam](https://adnauseam.io/) - covered by uBlock/uMatrix
 * [Go Rando](https://bengrosser.com/projects/go-rando/) - _questionable_
