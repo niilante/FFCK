@@ -253,6 +253,7 @@
 * [Metrics Mozilla collects](https://web.archive.org/web/20180530091900/https://github.com/mozilla/activity-stream/blob/master/docs/v2-system-addon/data_events.md)
 * [Captive portal](https://archive.li/57xdG)
 * [How can I stop firefox from constantly connecting to self-repair.mozillia.org](https://archive.li/a17cN)
+* [Cloudflare possible interercept or even decrypt TLS (codeberg.org)](https://codeberg.org/crimeflare/cloudflare-tor/src/branch/master/README.md), [Cloudflare is a Mozilla partner](https://i.imgur.com/bAnPuGb.jpg)
 
 
 ### No longer maintained
