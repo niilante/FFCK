@@ -220,7 +220,7 @@ That’s a difficult question because every user has other needs, so I’ll only
 
 * [Temporary Containers Firefox Add-on (github.com)](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
 * [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) (_optional_ and more a workaround for some known bugs)
-* [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/)
+* [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/), read [Bug 1531601](https://bugzilla.mozilla.org/show_bug.cgi?id=1531601) & [csswg-drafts](https://github.com/w3c/csswg-drafts/issues/2339) for the current progress
 * [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a “gimmick”, we enforce this already via user.js_)
 * [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
