@@ -5,6 +5,7 @@
 * [Source Code Indexing Tools](#source-code-indexing-tools)
 * [Shield Studies](#shield-studies)
 * [Mozilla Autoconfig](#mozilla-autoconfig)
+* [Bookmarks](#bookmarks)
 * [Extensions](#extensions)
 * [Developer Tools & Resources](#developer-tools---resources)
 * [Templates](#templates)
@@ -80,6 +81,10 @@
 * [Deploying Thunderbird in the Enterprise (developer.mozilla.or)](https://developer.mozilla.org/docs/Mozilla/Thunderbird/Deploying_Thunderbird_in_the_Enterprise)
 * [Mozilla - /extensions/pref/autoconfig (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/extensions/pref/autoconfig/)
 * [Mozilla - /modules/libpref (dxr.mozilla.org)](https://dxr.mozilla.org/mozilla-central/source/modules/libpref/)
+
+
+### Bookmarks
+* [Firefox Bookmark Backup Reader/Decompressor (jeffersonscher.com)](https://www.jeffersonscher.com/ffu/bookbackreader.html)
 
 
 ### Extensions
@@ -212,7 +217,7 @@
 ### Bug Reporting
 * [Report a Firefox Preview bug (bughunterissues.mozilla.community)](https://bughunterissues.mozilla.community/)
 * [mozregression (mozilla.github.io)](https://mozilla.github.io/mozregression/) ([source code](https://github.com/mozilla/mozregression))
-* [Report a Firefox Voice Bug or Feature Request](https://firefox-voice-feedback.herokuapp.com/)
+* [Report a Firefox Voice Bug or Feature Request (firefox-voice-feedback)](https://firefox-voice-feedback.herokuapp.com/)
 
 
 ### (Past) privacy incidents
