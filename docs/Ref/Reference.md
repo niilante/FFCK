@@ -130,6 +130,7 @@
 
 ### userChrome.css related
 * [userChrome.org (userchrome.org)](https://www.userchrome.org/find-user-style-recipes.html) 
+* [firefox-scripts (github.com)](https://github.com/xiaoxiaoflood/firefox-scripts)
 
 
 ### Where have we (platform features overview)
