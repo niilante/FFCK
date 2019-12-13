@@ -161,6 +161,7 @@
 ### Performance
 * [Reporting a Performance Problem (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Mozilla/Performance/Reporting_a_Performance_Problem)
 * [Firefox uses too much memory or CPU resources (support.mozilla.org)](https://support.mozilla.org/en-US/kb/firefox-uses-too-much-memory-or-cpu-resources)
+* [Benchmarking Mozilla's Firefox Performance Over The Past Two Years (Firefox 57 To 73 Alpha) (phoronix.com)](https://www.phoronix.com/scan.php?page=article&item=mozilla-firefox-2019&num=1)
 
 
 ### Mozilla Privacy
