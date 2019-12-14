@@ -10,7 +10,7 @@
 # About Firefox Startup connections
 # http://kb.mozillazine.org/Connections_established_on_startup_-_Firefox
 #
-# Version:  1.9.1
+# Version:  1.9.2
 # ASN:      AS36856
 # IP:       63.245.208.0/23
 # IPV6:     2620:101:8030::/47
@@ -27,6 +27,9 @@
 
 # Fennec
 0.0.0.0 fennec-catalog.cdn.mozilla.net
+
+# VR
+0.0.0.0 blog.mozvr.com
 
 # Addons
 #0.0.0.0 add-ons.mozilla.com
