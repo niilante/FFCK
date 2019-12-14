@@ -149,6 +149,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [Snowflake](https://addons.mozilla.org/de/firefox/addon/torproject-snowflake/) (_needs WEBRTC enabled!_)
 * [Authenticator - Generate 2-Step Verification codes in your browser](https://authenticator.cc/)  & [source code](https://github.com/Authenticator-Extension/Authenticator)
 * [Terms of Service; Didn't Read](https://addons.mozilla.org/en-US/firefox/addon/terms-of-service-didnt-read/)
+* [PrivacySpy](https://addons.mozilla.org/en-US/firefox/addon/privacyspy/)
 * [Media Reaper - Privacy 1st, Audio & Video Download](https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
 * [Make Omnibox Great Again](https://addons.mozilla.org/ko/firefox/addon/moga-make-omnibox-great-again/) & ([source code](https://github.com/phu54321/MOGA))
 
