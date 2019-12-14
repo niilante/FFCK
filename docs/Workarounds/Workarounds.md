@@ -89,3 +89,14 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 ## Old about:config interface
 Since Firefox 71+ the new about:config interface is enabled by default, in order to revert it you can use `chrome://global/content/config.xul`. It's unclear when Mozilla removed the fallback method.
 
+## I can't disable the "new tab" features on mobile, what can I do?
+You could work with `policies.json`, it's fully excplained over [here](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson). Create `policies.json` under `distribution/policies.json` and then you can add your own policies.
+
+```json
+{
+  "policies": {
+    "OverrideFirstRunPage": "",
+    "OverridePostUpdatePage": ""
+  }
+}
+```
