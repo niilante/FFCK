@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 72.0.4
+//      Version 72.0.5
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -192,6 +192,8 @@ user_pref("browser.xul.error_pages.expert_bad_cert", true);
 user_pref("browser.startup.homepage_override.buildID", "20100101");
 user_pref("browser.startup.homepage_override.mstone", "ignore");
 user_pref("browser.startup.homepage", "about:blank");
+user_pref("general.useragent.vendor", "");
+user_pref("general.useragent.vendorSub", "");
 user_pref("browser.startup.page", 0);
 user_pref("browser.tabs.crashReporting.sendReport", false);
 user_pref("browser.uitour.enabled", false);
@@ -215,6 +217,12 @@ user_pref("extensions.screenshots.disabled", true);
 user_pref("extensions.screenshots.upload-disabled", true);
 user_pref("extensions.ui.lastCategory", "addons://list/extension");
 user_pref("general.buildID.override", "20100101");
+user_pref("general.appname.override", "Netscape");
+user_pref("general.appversion.override", "5.0 (Windows)");
+user_pref("general.oscpu.override", "Windows NT 6.1");
+user_pref("general.platform.override", "Win32");
+user_pref("general.useragent.override", "Mozilla/5.0 (Windows NT 6.1; WOW64; rv:60.0) Gecko/20100101 Firefox/60.0");
+user_pref("general.productSub.override", "20100101");
 user_pref("intl.locale.matchOS", false);
 user_pref("javascript.options.asmjs", false);
 //user_pref("javascript.options.wasm", false);
