@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 72.0.3
+//      Version 72.0.4
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -637,6 +637,9 @@ user_pref("network.dnsCacheExpiration", 50);
 user_pref("network.dnsCacheExpirationGracePeriod", 50);
 user_pref("network.proxy.socks_remote_dns", true);
 
+// proxy
+user_pref("network.proxy.no_proxies_on", "");
+
 
 // Safe-Browsing
 user_pref("browser.safebrowsing.appRepURL", "");
@@ -700,17 +703,27 @@ user_pref("media.hardwaremediakeys.enabled", true);
 user_pref("browser.tabs.insertAfterCurrent", true);
 
 
-// Font
+// Fonts
 //user_pref("ayout.css.prefixes.font-features", false);
 //user_pref("font.blacklist.underline_offset", "");
 //user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("layout.css.font-loading-api.enabled", false); // Better block fonts manually via uBO e.g. ||fonts.googleapi.com$important,third-party or Toggle Fonts addon
-user_pref("browser.display.use_document_fonts", 0); //1
+user_pref("browser.display.use_document_fonts", 1);
 user_pref("gfx.downloadable_fonts.disable_cache", true);
-//user_pref("gfx.font_rendering.graphite.enabled", false);
-//user_pref("gfx.font_rendering.opentype_svg.enabled", false);
-user_pref("font.system.whitelist", "");
+user_pref("gfx.font_rendering.graphite.enabled", true); // Bug 21726
+user_pref("gfx.font_rendering.opentype_svg.enabled", true);
+user_pref("font.system.whitelist", "AppleGothic, Apple Color Emoji, Arial, Courier, Geneva, Georgia, Heiti TC, Helvetica, Helvetica Neue, .Helvetica Neue DeskInterface, Hiragino Kaku Gothic ProN, Lucida Grande, Monaco, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi, STHeiti, STIX Math, Tahoma, Thonburi, Times, Times New Roman, Verdana");
 user_pref("gfx.downloadable_fonts.enabled", true);
+user_pref("gfx.downloadable_fonts.otl_validation", true);
+user_pref("font.name-list.cursive.x-unicode", "Apple Chancery, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi");
+user_pref("font.name-list.fantasy.x-unicode", "Papyrus, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi");
+user_pref("font.name-list.monospace.x-unicode", "Courier, Arial, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi");
+user_pref("font.name-list.sans-serif.x-unicode", "Helvetica, Tahoma, Arial, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi");
+user_pref("font.name-list.serif.x-unicode", "Times, Arial, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi");
+user_pref("font.name.cursive.ar", "Arial");
+user_pref("font.name.fantasy.ar", "Arial");
+user_pref("font.name.monospace.ar", "Arial");
+user_pref("font.name.sans-serif.ar", "Arial");
 
 
 // Abuse Report
@@ -754,8 +767,10 @@ user_pref("network.protocol-handler.expose.moz-extension", true);
 user_pref("network.protocol-handler.external.about", false);
 user_pref("network.protocol-handler.external.blob", false);
 user_pref("network.protocol-handler.external.chrome", false);
+user_pref("network.protocol-handler.external.news", false);
 user_pref("network.protocol-handler.external.data", false);
 user_pref("network.protocol-handler.external.file", false);
+user_pref("network.protocol-handler.external.nntp", false);
 user_pref("network.protocol-handler.external.ftp", false);
 user_pref("network.protocol-handler.external.http", false);
 user_pref("network.protocol-handler.external.https", false);
@@ -780,7 +795,9 @@ user_pref("dom.vr.osvr.enabled", false);
 user_pref("network.http.referer.hideOnionSource", true);
 
 
-// Outdated (FF 72+), not privacy/security related - or already set to false (by default)
+// Outdated (FF 73+), not privacy/security related - or already set to false (by default)
+user_pref("dom.audiochannel.audioCompeting", false);  //default
+user_pref("dom.audiochannel.mediaControl", false);    // removed
 user_pref("dom.mozTCPSocket.enabled", false);
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
 //user_pref("alerts.showFavicons", false);
