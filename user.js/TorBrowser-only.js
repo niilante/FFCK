@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      This is for Tor Browser Bundle only, do not use it on a normal Firefox version.
 //
-//      Version 0.05
+//      Version 0.06
 //
 //      TODO: Fix & optimize.
 //      TODO: MacOS, Linux & other quirks like backward compatibility.
@@ -780,4 +780,8 @@ user_pref("browser.tabs.drawInTitlebar", true); //default
 //||fritz.box^$important,third-party
 //||giga.cube^$important,third-party
 //||speedport.ip^$important,third-party
+
+// Debug
+user_pref("extensions.torbutton.loglevel",4);
+user_pref("extensions.torbutton.logmethod",1);
 
