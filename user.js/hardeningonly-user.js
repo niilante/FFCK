@@ -61,6 +61,10 @@ user_pref("browser.startup.blankWindow", false);
 //user_pref("browser.privatebrowsing.autostart", true);
 
 
+// Cross-Origin-Opener-Policy
+user_pref("browser.tabs.remote.useCrossOriginOpenerPolicy", true); // false is default
+
+
 // DnT (practical no website uses it and it's pointless)
 user_pref("privacy.donottrackheader.enabled", false);
 
