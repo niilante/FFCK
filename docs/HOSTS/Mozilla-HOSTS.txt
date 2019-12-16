@@ -10,8 +10,8 @@
 # About Firefox Startup connections
 # http://kb.mozillazine.org/Connections_established_on_startup_-_Firefox
 #
-# Version:  1.9.2
-# ASN:      AS36856
+# Version:  1.9.3
+# ASN:      AS36856, 42037, 53371, 202751, 205418, 395602, 395606, 395622, 395639, 395642
 # IP:       63.245.208.0/23
 # IPV6:     2620:101:8030::/47
 
@@ -19,7 +19,7 @@
 #0.0.0.0 ocsp.digicert.com
 #0.0.0.0 crl3.digicert.com
 
-# FTP (we still want to DL the builds)
+# FTP (we still want to DL the FF builds)
 #0.0.0.0 ftp.mozilla.org
 
 # Icecat
@@ -128,6 +128,7 @@
 0.0.0.0 aus6.mozilla.org
 0.0.0.0 auth.services.mozilla.com
 0.0.0.0 authstage.mozilla.com
+0.0.0.0 autopush.prod.mozaws.net
 0.0.0.0 aviary.pl
 0.0.0.0 badges.mozilla.org
 0.0.0.0 banners.mozilla-europe.org
@@ -236,6 +237,7 @@
 0.0.0.0 cs.start3.mozilla.com
 0.0.0.0 cs.www.mozilla.com
 0.0.0.0 czilla.cz
+0.0.0.0 d80i88epwmv41.cloudfront.net
 0.0.0.0 da.add-ons.mozilla.com
 0.0.0.0 da.trunk.mozillamessaging.com
 0.0.0.0 da.www.mozilla.com
@@ -367,6 +369,7 @@
 0.0.0.0 filer.mozilladanmark.dk
 0.0.0.0 firefox-academic-center.com
 0.0.0.0 firefox-downloaden.de
+0.0.0.0 firefox-replay.com
 0.0.0.0 firefox-settings-attachments.cdn.mozilla.net
 0.0.0.0 firefox-storage-test.glitch.me
 0.0.0.0 firefox.be
@@ -391,7 +394,6 @@
 0.0.0.0 firefoxparty.authstage.mozilla.com
 0.0.0.0 firefoxtshirt.mozilla.org
 0.0.0.0 firefoxtweetmachine.com
-0.0.0.0 firefox-replay.com
 0.0.0.0 firefoxusercontent.com
 0.0.0.0 fortunes.frenchmozilla.fr
 0.0.0.0 fortunes.frenchmozilla.org
@@ -408,13 +410,13 @@
 0.0.0.0 foxkeh.jp
 0.0.0.0 foxkeh.net
 0.0.0.0 foxkeh.org
+0.0.0.0 fpn.firefox.com
 0.0.0.0 fr.add-ons.mozilla.com
 0.0.0.0 fr.fxfeeds.mozilla.com
 0.0.0.0 fr.start2.mozilla.com
 0.0.0.0 fr.start3.mozilla.com
 0.0.0.0 fr.www.mozilla.com
 0.0.0.0 fr.www.mozillamessaging.com
-0.0.0.0 fpn.firefox.com
 0.0.0.0 frenchmozilla.fr
 0.0.0.0 frenchmozilla.net
 0.0.0.0 frenchmozilla.org
@@ -765,6 +767,7 @@
 0.0.0.0 phish-error.mozilla.com
 0.0.0.0 phish-report.mozilla.com
 0.0.0.0 phonebook.mozilla.org
+0.0.0.0 pipeline-incoming-prod-elb-149169523.us-west-2.elb.amazonaws.com
 0.0.0.0 pj-mirror01.mozilla.org
 0.0.0.0 pl.start2.mozilla.com
 0.0.0.0 pl.start3.mozilla.com
