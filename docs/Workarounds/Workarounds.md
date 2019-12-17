@@ -100,3 +100,12 @@ You could work with `policies.json`, it's fully excplained over [here](https://s
   }
 }
 ```
+
+## Workaround for Autofill to avoid "From this website"
+
+Both flags need to set to `false` to avoid seend additional login information e.g. on Google Login ["From this website"](https://s19.directupload.net/images/191217/ph3zwi6x.jpg).
+
+```JavaScript
+signon.includeOtherSubdomainsInLookup
+signon.showAutoCompleteOrigins
+```
