@@ -101,7 +101,7 @@ You could work with `policies.json`, it's fully excplained over [here](https://s
 }
 ```
 
-## Workaround for Autofill to avoid "From this website"
+## Avoid "From this website" for login fields
 
 Both flags need to set to `false` to avoid seend additional login information e.g. on Google Login ["From this website"](https://s19.directupload.net/images/191217/ph3zwi6x.jpg).
 
@@ -109,3 +109,10 @@ Both flags need to set to `false` to avoid seend additional login information e.
 signon.includeOtherSubdomainsInLookup
 signon.showAutoCompleteOrigins
 ```
+
+## Temporary Containers creates thousands of user IDs and folders which waste my space, what can I do?
+
+As [mentioned here](https://www.reddit.com/r/firefox/comments/ebiapo/temporary_containers_extension_created_1600/) TC might "spam" your SSD/HDD with folders, ID's and _useless_ content, this is "by design" and depending on your TC settings. A workaround is to enable this:
+
+
+![TC](https://user-images.githubusercontent.com/727123/71289269-a9299d80-2364-11ea-89ac-f71137574a11.png "TC options to prevent storage spam 1")
