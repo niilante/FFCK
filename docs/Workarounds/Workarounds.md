@@ -116,3 +116,8 @@ As [mentioned here](https://www.reddit.com/r/firefox/comments/ebiapo/temporary_c
 
 
 ![TC](https://user-images.githubusercontent.com/727123/71289269-a9299d80-2364-11ea-89ac-f71137574a11.png "TC options to prevent storage spam 1")
+
+
+## Mozilla removed (since FF 71+) the site specific user-agent override option
+
+[User-Agent Switcher revived](https://addons.mozilla.org/en-US/firefox/addon/custom-user-agent-revived/) might be an option (_per-site/domain basis_).
