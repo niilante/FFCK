@@ -28,6 +28,8 @@
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
 //user_pref("privacy.resistFingerprinting.letterboxing", false);
 //user_pref("ui.use_standins_for_native_colors", true)
+user_pref("browser.download.lastDir.savePerSite", false);
+user_pref("apz.frame_delay.enabled", false);
 user_pref("accessibility.accesskeycausesactivation", true);
 user_pref("accessibility.AOM.enabled", false);
 user_pref("accessibility.browsewithcaret_shortcut.enabled", true);
@@ -179,7 +181,7 @@ user_pref("browser.library.activity-stream.enabled", false);
 user_pref("browser.link.open_newwindow.restriction", 0);
 user_pref("browser.link.open_newwindow", 3);
 user_pref("browser.messaging-system.fxatoolbarbadge.enabled", true);
-user_pref("browser.messaging-system.whatsNewPanel.enabled", true);
+user_pref("browser.messaging-system.whatsNewPanel.enabled", false);
 user_pref("browser.meta_refresh_when_inactive.disabled", false);
 user_pref("browser.newtab.preload", false);
 user_pref("browser.newtab.url", "about:blank");
