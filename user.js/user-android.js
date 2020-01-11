@@ -7,7 +7,6 @@
 // user_pref("browser.urlbar.clickSelectsAll", false);
 // user_pref("clipboard.autocopy", false);
 // user_pref("dom.disable_beforeunload", true);
-user_pref("dom.event.clipboardevents.enabled", false);
 // user_pref("dom.indexedDB.enabled", false);
 // user_pref("dom.storage.enabled", false);
 // user_pref("font.name-list.emoji", "Noto Color Emoji");
