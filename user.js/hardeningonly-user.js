@@ -3,12 +3,13 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 72.0.5
+//      Version 74.0.0
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
 //      https://greasyfork.org/en/scripts/390992-hide-hdr-support-from-youtube
 //      https://addons.mozilla.org/en-US/firefox/addon/enhanced-h264ify/
+//
 //      Requirements: Firefox x64
 //                    uBlock/uMatrix
 
@@ -49,6 +50,7 @@ user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
+user_pref("browser.urlbar.timesBeforeHidingSuggestionsHint", 0);
 
 
 // IDN Punycode
@@ -347,6 +349,7 @@ user_pref("network.prefetch-next", false);
 
 // Plugins
 user_pref("plugin.default.state", 0);
+user_pref("plugin.defaultXpi.state", 0);
 user_pref("plugin.scan.plid.all", false);
 user_pref("plugin.state.flash", 0); // Flash is CtP except on ARM (off)
 user_pref("plugin.state.java", 0);
@@ -390,6 +393,8 @@ user_pref("signon.management.page.breachAlertUrl", "");
 user_pref("signon.management.page.enabled", false);
 user_pref("signon.rememberSignons", false);
 user_pref("signon.showAutoCompleteOrigins", false);
+user_pref("signon.management.page.showPasswordSyncNotification", false);
+user_pref("signon.storeSignons", true);
 
 
 // WebRender
@@ -499,6 +504,7 @@ user_pref("webgl.dxgl.enabled", false);
 user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.min_capability_mode", true);
+user_pref("webgl.cgl.multithreaded", false);
 
 
 // Health
@@ -538,14 +544,14 @@ user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket",
 user_pref("browser.newtabpage.activity-stream.sectionOrder", ""); //topsites
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
-user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
+user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 0);
 
 
 // DOM
-//user_pref("dom.event.clipboardevents.enabled", false);
+user_pref("dom.event.clipboardevents.enabled", false);
 //user_pref("dom.script_loader.bytecode_cache.enabled", false);
 user_pref("dom.allow_cut_copy", false);
 user_pref("dom.archivereader.enabled", false);
@@ -602,6 +608,10 @@ user_pref("permissions.default.desktop-notification", 2);
 user_pref("permissions.default.camera", false);
 
 
+// IndexDB
+user_pref("dom.indexedDB.enabled", false);
+
+
 //Search
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.geoSpecificDefaults", false);
@@ -622,9 +632,10 @@ user_pref("extensions.webextensions.default-content-security-policy", "");
 user_pref("extensions.webextensions.restrictedDomains", "");
 
 
-//Extensions
+//Extensions, Blocklists etc
 user_pref("extensions.blocklist.enabled", false);
 user_pref("extensions.blocklist.url", "");
+user_pref("extensions.blocklist.useXML", false);
 user_pref("extensions.cookiesBehavior.overrideOnTopLevel", false);
 user_pref("extensions.enabledScopes", 5);
 user_pref("extensions.getAddons.cache.enabled", false);
@@ -682,10 +693,13 @@ user_pref("browser.safebrowsing.provider.mozilla.updateURL", "");
 //user_pref("network.connectivity-service.IPv4.url", "");
 //user_pref("network.connectivity-service.IPv6.url", "");
 user_pref("network.notify.IPv6", false); //bug 1245059
+user_pref("network.netlink.route.check.IPv4", "");
+user_pref("network.netlink.route.check.IPv6", "");
 
 
 //Webshare
 user_pref("dom.webshare.enabled", false);
+
 
 //Dimming
 user_pref("findbar.highlightAll", true);
@@ -722,7 +736,7 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("layout.css.font-loading-api.enabled", false); // Better block fonts manually via uBO e.g. ||fonts.googleapi.com$important,third-party or Toggle Fonts addon
 user_pref("browser.display.use_document_fonts", 1);
 user_pref("gfx.downloadable_fonts.disable_cache", true);
-user_pref("gfx.font_rendering.graphite.enabled", true); // Bug 21726
+user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", true);
 user_pref("font.system.whitelist", "AppleGothic, Apple Color Emoji, Arial, Courier, Geneva, Georgia, Heiti TC, Helvetica, Helvetica Neue, .Helvetica Neue DeskInterface, Hiragino Kaku Gothic ProN, Lucida Grande, Monaco, Noto Sans Armenian, Noto Sans Bengali, Noto Sans Canadian Aboriginal, Noto Sans Cherokee, Noto Sans Devanagari, Noto Sans Ethiopic, Noto Sans Gujarati, Noto Sans Gurmukhi, Noto Sans Kannada, Noto Sans Khmer, Noto Sans Lao, Noto Sans Malayalam, Noto Sans Mongolian, Noto Sans Myanmar, Noto Sans Oriya, Noto Sans Sinhala, Noto Sans Tamil, Noto Sans Telugu, Noto Sans Thaana, Noto Sans Tibetan, Noto Sans Yi, STHeiti, STIX Math, Tahoma, Thonburi, Times, Times New Roman, Verdana");
 user_pref("gfx.downloadable_fonts.enabled", true);
@@ -801,6 +815,10 @@ user_pref("network.connectivity-service.enabled", false);
 user_pref("dom.vr.openvr.enabled", false);
 user_pref("dom.vr.openvr.action_input", false);
 user_pref("dom.vr.osvr.enabled", false);
+user_pref("dom.vr.webxr.enabled", false);
+user_pref("dom.vr.process.enabled", false);
+user_pref("gfx.vr.osvr.utilLibPath", "");
+user_pref("gfx.vr.osvr.commonLibPath", "");
 
 
 // Onion
@@ -808,10 +826,11 @@ user_pref("network.http.referer.hideOnionSource", true);
 
 
 // Outdated (FF 73+), not privacy/security related - or already set to false (by default)
-user_pref("dom.audiochannel.audioCompeting", false);  //default
-user_pref("dom.audiochannel.mediaControl", false);    // removed
+user_pref("dom.audiochannel.audioCompeting", false);
+user_pref("dom.audiochannel.mediaControl", false);
 user_pref("dom.mozTCPSocket.enabled", false);
 user_pref("network.cookie.thirdparty.nonsecureSessionOnly", true);
+user_pref("network.cookie.lifetime.days", 1);
 //user_pref("alerts.showFavicons", false);
 user_pref("browser.chrome.site_icons", true);
 //user_pref("browser.crashReports.unsubmittedCheck.autoSubmit", false);
