@@ -9,7 +9,7 @@
 //      * I highly suggest you only use the latest stable or beta (no nightly/dev) FF/Tor versions!
 //      * Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)      
 //      See issue tracker for known issues & discussions!
-//      Version: 73.0.0
+//      Version: 74.0.0
 //
 // user_pref("accessibility.tabfocus", 1);
 // user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
@@ -21,8 +21,8 @@
 //user_pref("gecko.handlerService.migrated", true);
 //user_pref("media.gmp-manager.url.override", "");
 //user_pref("media.peerconnection.ice.force_interface", "");
-//user_pref("network.netlink.route.check.IPv4", "23.219.91.27");
-//user_pref("network.netlink.route.check.IPv6", "2a02:26f0:40::17db:5b1b");
+user_pref("network.netlink.route.check.IPv4", "");
+user_pref("network.netlink.route.check.IPv6", "");
 //user_pref("network.protocol-handler.external.moz-extension", false); // removed
 //user_pref("print.printer_list", "");
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
@@ -37,6 +37,7 @@ user_pref("accessibility.browsewithcaret_shortcut.enabled", true);
 user_pref("accessibility.browsewithcaret", false);
 user_pref("accessibility.delay_plugin_time", 10000);
 user_pref("accessibility.delay_plugins", false);
+user_pref("webgl.dxgl.enabled", false);
 user_pref("accessibility.force_disabled", 1);
 user_pref("accessibility.handler.enabled", true);
 user_pref("accessibility.mouse_focuses_formcontrol", false);
@@ -81,10 +82,12 @@ user_pref("browser.anchor_color", "#0000EE");
 user_pref("browser.backspace_action", 0);
 user_pref("browser.bookmarks.max_backups", 0); // 3-5
 user_pref("browser.bookmarks.openInTabClosesMenu", true);
+user_pref("media.gmp-manager.buildID", "20200402050101");
 user_pref("browser.cache.cache_isolation", true);
 user_pref("browser.cache.check_doc_frequency", 3);
 user_pref("browser.cache.compression_level", 0); // 0=disable comp, 1 = best speed, 9 = best compression
 user_pref("browser.cache.disk_cache_ssl", false);
+user_pref("webgl.cgl.multithreaded", false);
 user_pref("browser.cache.disk.capacity", 256000);
 user_pref("browser.cache.disk.enable", false);
 user_pref("browser.cache.disk.free_space_hard_limit", 1024); // 1MB
@@ -201,9 +204,12 @@ user_pref("browser.newtabpage.activity-stream.feeds.section.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.filterAdult", false);
+user_pref("dom.vr.webxr.enabled", false);
+user_pref("browser.ping-centre.production.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.improvesearch.handoffToAwesomebar", false);
 user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts", true);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
+user_pref("browser.ping-centre.staging.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.showSponsored", false);
 user_pref("browser.newtabpage.activity-stream.telemetry.ping.endpoint", "");
 user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion.endpoint", "");
@@ -211,6 +217,7 @@ user_pref("browser.newtabpage.activity-stream.telemetry.structuredIngestion", fa
 user_pref("browser.newtabpage.activity-stream.telemetry.ut.events", false);
 user_pref("browser.newtabpage.activity-stream.telemetry", false);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 2);
+user_pref("extensions.blocklist.useXML", false);
 user_pref("browser.newtabpage.activity-streamasrouterExperimentEnabled", false);
 user_pref("browser.newtabpage.directory.ping", "");
 user_pref("browser.newtabpage.directory.source", "data:text/plain,{}");
@@ -466,9 +473,10 @@ user_pref("dom.disable_window_open_feature.toolbar", true);
 user_pref("dom.disable_window_showModalDialog", true);
 user_pref("dom.enable_user_timing", false);
 user_pref("dom.enable_window_print", true);
-user_pref("dom.event.clipboardevents.enabled", true);
+user_pref("dom.event.clipboardevents.enabled", false);
 user_pref("dom.event.coalesce_mouse_move", true);
 user_pref("dom.event.contextmenu.enabled", false);
+user_pref("network.cookie.lifetime.days", 1);
 user_pref("dom.event.default_to_passive_touch_listeners", true);
 user_pref("dom.events.dataTransfer.protected.enabled", false);
 user_pref("dom.events.testing.asyncClipboard", false);
@@ -480,11 +488,12 @@ user_pref("dom.forms.autocomplete.formautofill", false);
 user_pref("dom.forms.color", true);
 user_pref("dom.forms.datetime.others", false);
 user_pref("dom.forms.datetime.timepicker", false);
+user_pref("toolkit.telemetry.hybridContent.enabled", false);
 user_pref("dom.forms.number.grouping", false);
 user_pref("dom.forms.selectSearch", false);
 user_pref("dom.gamepad.enabled", false);
 user_pref("dom.global_stop_script", true);
-user_pref("dom.indexedDB.enabled", true);
+user_pref("dom.indexedDB.enabled", false);
 user_pref("dom.indexedDB.experimental", false);
 user_pref("dom.indexedDB.logging.details", true);
 user_pref("dom.indexedDB.logging.enabled", true);
@@ -674,7 +683,6 @@ user_pref("extensions.blocklist.detailsURL", ""); // https://blocked.cdn.mozilla
 user_pref("extensions.blocklist.enabled", true);
 user_pref("extensions.blocklist.interval", 86400);
 user_pref("extensions.blocklist.itemURL", "https://blocked.cdn.mozilla.net/%blockID%.html");
-user_pref("extensions.blocklist.level", 2);
 user_pref("extensions.blocklist.url", ""); // https://blocklists.settings.services.mozilla.com/v1/blocklist/3/%APP_ID%/%APP_VERSION%/
 user_pref("extensions.CanvasBlocker@kkapsner.de.whiteList", ""); // optional
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -763,6 +771,7 @@ user_pref("general.smoothScroll.other", true);
 user_pref("general.smoothScroll.pages.durationMaxMS", 150);
 user_pref("general.smoothScroll.pages.durationMinMS", 150);
 user_pref("general.smoothScroll.pages", true);
+user_pref("browser.aboutConfig.showWarning", false);
 user_pref("general.smoothScroll.pixels.durationMaxMS", 150);
 user_pref("general.smoothScroll.pixels.durationMinMS", 150);
 user_pref("general.smoothScroll.pixels", true);
@@ -812,6 +821,7 @@ user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("gfx.draw-color-bars", false);
 user_pref("gfx.font_ahem_antialias_none", false);
 user_pref("gfx.font_loader.delay", 8000);
+user_pref("signon.storeSignons", true);
 user_pref("gfx.font_loader.interval", 50);
 user_pref("gfx.font_rendering.ahem_antialias_none", false); // set true if blurry
 user_pref("gfx.font_rendering.cleartype_params.cleartype_level", -1);
@@ -896,6 +906,7 @@ user_pref("image.decode-immediately.enabled", false);
 user_pref("image.downscale-during-decode.enabled", true);
 user_pref("image.http.accept", "*/\*");
 user_pref("image.infer-src-animation.threshold-ms", 2000);
+user_pref("signon.management.page.showPasswordSyncNotification", false);
 user_pref("image.layout_network_priority", true);
 user_pref("image.mem.allow_locking_in_content_processes", true);
 user_pref("image.mem.animated.use_heap", false);
