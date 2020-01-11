@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: CHEF-KOCH
+    url: https://github.com/CHEF-KOCH
+    about: Official contact possibilities.
+  - name: Project specific OT.
+    url: https://github.com/CHEF-KOCH/FFCK/issues/3
+    about: Please report your project findings here before you open a new ticket (if it's not urgent or reproducible).
