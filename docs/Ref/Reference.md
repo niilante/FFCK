@@ -64,6 +64,7 @@
 
 ### Shield Studies
 * [Detect (show) Shield Studies (Beta) (jeffersonscher.com)](https://www.jeffersonscher.com/sumo/shield.php)
+* [Firefox Voice Campaign (events.mozilla.org)](https://events.mozilla.org/firefoxvoicecampaign)
 
 
 ### Mozilla Autoconfig 
