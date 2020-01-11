@@ -121,3 +121,8 @@ As [mentioned here](https://www.reddit.com/r/firefox/comments/ebiapo/temporary_c
 ## Mozilla removed (since FF 71+) the site specific user-agent override option
 
 [User-Agent Switcher revived](https://addons.mozilla.org/en-US/firefox/addon/custom-user-agent-revived/) might be an option (_per-site/domain basis_).
+
+
+## Stutters in fullscreen occur, especially on higher resolutions (1080p+)
+
+Try to toggle `gfx.direct3d11.use-double-buffering` (default true) and see if it helps.
