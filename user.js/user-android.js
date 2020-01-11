@@ -131,6 +131,7 @@
 // user_pref("security.tls.version.min", 3);
 // user_pref("toolkit.cosmeticAnimations.enabled", false);
 // user_pref("view_source.wrap_long_lines", true);
+user_pref("layout.frame_rate", 90);
 user_pref("browser.newtabpage.activity-stream.topSitesRows", 4);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
 user_pref("browser.newtabpage.activity-stream.feeds.aboutpreferences", false);
