@@ -28,6 +28,7 @@
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
 //user_pref("privacy.resistFingerprinting.letterboxing", false);
 //user_pref("ui.use_standins_for_native_colors", true)
+user_pref("security.pki.crlite_mode", 2);
 user_pref("browser.download.lastDir.savePerSite", false);
 user_pref("apz.frame_delay.enabled", false);
 user_pref("accessibility.accesskeycausesactivation", true);
