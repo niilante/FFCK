@@ -206,9 +206,9 @@ Firefox 66 changed the storage back-end from .json blobs to IndexedDB files, in 
 
 ## CanvasBlocker extension Vs. the Firefox integrated solution
 
-The integrated fingerprinting method is (for now) disabled in the configuration due to several reasons but let me explain the basics first.
+The [integrated fingerprinting methods](https://blog.mozilla.org/security/2020/01/07/firefox-72-fingerprinting/) are (for now) disabled in the configuration due to several reasons but let me explain the basics first.
 
-Mozilla Firefox uses the same technique as the Tor Browser (_which is not really a surprise_), the technique will always returns a “white” canvas fingerprint to the website, this means a website can detect that the current browser is blocking canvas fingerprinting methods. The difference here between CanvasBlocker is that (by default) it will return a “random” generated canvas ID with each new request. In theory this could make it harder for the website to detect if you faked your ID or not. The downside is that it will make your Browser slower (we are talking about some milliseconds). Personally I would go with the addon and that’s the reason why the integrated method is disabled in my configuration.
+Mozilla Firefox uses the similar technique as the Tor Browser (_which is not really a surprise_), the technique will always returns a “white” canvas fingerprint to the website, this means a website can detect that the current browser is blocking canvas fingerprinting methods. The difference here between CanvasBlocker is that (by default) it will return a “random” generated canvas ID with each new request. In theory this could make it harder for the website to detect if you faked your ID or not. The downside is that it will make your Browser slower (we are talking about some milliseconds). Personally I would go with the addon and that’s the reason why the integrated method is disabled in my configuration.
 
 
 ## Disabling locked toolkit.telemetry.enabled (and others)
@@ -226,7 +226,7 @@ That’s a difficult question because every user has other needs, so I’ll only
 * [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
 * ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
-* [CanvasBlocker](https://addons.mozilla.org/firefox/addon/canvasblocker/)
+* [CanvasBlocker](https://addons.mozilla.org/firefox/addon/canvasblocker/) alternative is [Luminous](https://gbaptista.github.io/luminous/doc/en-US/)
 * ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
 * [Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)
 * ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~
