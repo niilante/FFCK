@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      This is for Tor Browser Bundle only, do not use it on a normal Firefox version.
 //
-//      Version 0.06
+//      Version 0.07
 //
 //      TODO: Fix & optimize.
 //      TODO: MacOS, Linux & other quirks like backward compatibility.
@@ -94,6 +94,10 @@ user_pref("media.autoplay.enabled", false); // default true
 user_pref("media.autoplay.default", 1); // default
 user_pref("media.autoplay.allow-muted", false); // default true
 user_pref("media.autoplay.enabled.user-gestures-needed", false); // default true
+
+
+// VR
+user_pref("dom.vr.webxr.enabled", false); // default false
 
 
 // GPU
@@ -428,7 +432,7 @@ user_pref("gfx.crash-guard.wmfvpxvideo.appVersion", "68.2.0");
 user_pref("gfx.crash-guard.wmfvpxvideo.deviceID", "0x1c03");
 user_pref("gfx.crash-guard.wmfvpxvideo.driverVersion", "26.21.14.4120");
 user_pref("browser.startup.lastColdStartupCheck", 1573836431);
-user_pref("media.gmp-manager.buildID", "20190402020101");
+user_pref("media.gmp-manager.buildID", "20200402050101");
 user_pref("places.history.expiration.transient_current_max_pages", 112348);
 user_pref("sanity-test.driver-version", "26.21.14.4120");
 user_pref("sanity-test.version", 20190402020101);
@@ -506,6 +510,8 @@ user_pref("webgl.disable-fail-if-major-performance-caveae", true); // default
 user_pref("webgl.enable-debug-renderer-info", true); // default false
 user_pref("webgl.disabled", true); // default false
 user_pref("webgl.enable-webgl2", true); // default false
+user_pref("webgl.cgl.multithreaded", false); // default false
+user_pref("webgl.dxgl.enabled", false); // default false
 
 
 // DOM + Timing
@@ -643,6 +649,7 @@ user_pref("layers.mlgpu.sanity-test-failed", false);
 user_pref("mathml.disabled", true); // FIXME:
 user_pref("network.cookie.cookieBehavior", 1);
 user_pref("network.cookie.lifetimePolicy", 2);
+user_pref("network.cookie.lifetime.days", 1);
 user_pref("network.dns.disablePrefetch", true);
 user_pref("network.gio.supported-protocols", "");
 user_pref("network.http.altsvc.enabled", false);
