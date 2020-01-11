@@ -9,7 +9,7 @@
 //      * I highly suggest you only use the latest stable or beta (no nightly/dev) FF/Tor versions!
 //      * Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)      
 //      See issue tracker for known issues & discussions!
-//      Version: 72.0.0
+//      Version: 73.0.0
 //
 // user_pref("accessibility.tabfocus", 1);
 // user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
@@ -1982,13 +1982,10 @@ user_pref("security.ssl3.rsa_rc4_128_md5", false);
 user_pref("security.ssl3.rsa_rc4_128_sha", false);
 user_pref("security.ssl3.rsa_rc4_40_md5", false);
 user_pref("security.ssl3.rsa_seed_sha", false);
-user_pref("security.tls.enable_0rtt_data", false);
 user_pref("security.tls.enable_0rtt_data", true);
 user_pref("security.tls.enable_delegated_credentials", false);
 user_pref("security.tls.unrestricted_rc4_fallback", false);
 user_pref("security.tls.version.fallback-limit", 4);
-user_pref("security.tls.version.max", 4);
-user_pref("security.tls.version.min", 3);
 user_pref("security.view-source.reachable-from-inner-protocol", false);
 user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("services.blocklist.addons.checked", 0);
