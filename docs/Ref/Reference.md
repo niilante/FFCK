@@ -265,3 +265,9 @@
 
 ### AI based tool to check privacy policies to flag risky apps
 - [Guard](https://useguard.com/)
+
+
+### Beta (test) browser
+- [Mozilla reference browser](https://github.com/mozilla-mobile/reference-browser/blob/master/README.md)
+
+
