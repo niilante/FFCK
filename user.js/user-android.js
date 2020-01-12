@@ -9,7 +9,7 @@
 // Importing .p12 user certificates on Fennec
 // https://www.reddit.com/r/firefox/comments/c02jpn/howto_importing_p12_user_certificates_on_fennec/
 
-
+user_pref("browser.aboutConfig.showWarning", false);
 user_pref("general.aboutConfig.enable", true);
 // user_pref("accessibility.typeaheadfind", false);
 // user_pref("browser.download.folderList", 2);
