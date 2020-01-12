@@ -1,8 +1,9 @@
 ## Workarounds 
 
-The list, is a small overview in case you suffered from an "config problem". 
+This list is a small overview in case you suffered from any "config problem". 
 
-I do not use these workarounds myself that's why they are not included in the user.js file, but they are worth to be mentioned, because some people might find them useful or they are affected by bug x.
+I do not use these workarounds myself because security reasons and while I'm often not affected, that's why they are not included in the user.js file, but they are worth to be mentioned, because some people might find them useful or they are affected by bug/problem x.
+
 
 ### Single monitor users only
 See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-chrome/) for more details.
@@ -102,7 +103,6 @@ You could work with `policies.json`, it's fully excplained over [here](https://s
 ```
 
 ## Avoid "From this website" for login fields
-
 Both flags need to set to `false` to avoid seend additional login information e.g. on Google Login ["From this website"](https://s19.directupload.net/images/191217/ph3zwi6x.jpg).
 
 ```JavaScript
@@ -111,7 +111,6 @@ signon.showAutoCompleteOrigins
 ```
 
 ## Temporary Containers creates thousands of user IDs and folders which waste my space, what can I do?
-
 As [mentioned here](https://www.reddit.com/r/firefox/comments/ebiapo/temporary_containers_extension_created_1600/) TC might "spam" your SSD/HDD with folders, ID's and _useless_ content, this is "by design" and depending on your TC settings. A workaround is to enable this:
 
 
@@ -119,10 +118,20 @@ As [mentioned here](https://www.reddit.com/r/firefox/comments/ebiapo/temporary_c
 
 
 ## Mozilla removed (since FF 71+) the site specific user-agent override option
-
 [User-Agent Switcher revived](https://addons.mozilla.org/en-US/firefox/addon/custom-user-agent-revived/) might be an option (_per-site/domain basis_).
 
 
 ## Stutters in fullscreen occur, especially on higher resolutions (1080p+)
-
 Try to toggle `gfx.direct3d11.use-double-buffering` (default true) and see if it helps.
+
+
+## Copy & Paste in Google Docs or Sheets does not work
+Set `dom.event.clipboardevents.enabled` back to true.
+
+
+## How do I disable the black scrollbar and it's background
+You can [adjust](https://github.com/endeavoursc/firefox-overlay-scrollbars-win10) the [scrollbar color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color). The easiest method might be using yet another addon like e.g. [Scrollantana](https://addons.mozilla.org/fr/firefox/addon/scrolantana/) if you don't like touse userChrome.css.
+
+* `widget.disable-dark-scrollbar` true
+* `layout.css.scrollbar-color.enabled` false
+
