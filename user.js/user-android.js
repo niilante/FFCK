@@ -1,6 +1,8 @@
 // Fennec only!
 // Why? Answer: IceCat is less maintained and comes with LibreJS and related addons preinstalled.
-// v0.8
+//
+// v0.9
+//
 // Rename the user-android.js file to user.js!
 // Put the file under: /data/data/org.mozilla.fennec_fdroid/files/mozilla/xxxxxx.default/ (make sure xxxxxx is your profile ID and correct profile folder!)
 //
@@ -16,6 +18,8 @@ user_pref("general.aboutConfig.enable", true);
 // user_pref("dom.disable_beforeunload", true);
 user_pref("dom.indexedDB.enabled", false);
 // user_pref("dom.storage.enabled", false);
+user_pref("gfx.color_management.mode", 1);
+user_pref("gfx.color_management.enablev4", true);
 // user_pref("font.name-list.emoji", "Noto Color Emoji");
 // user_pref("font.name.monospace.ar", "Noto Naskh Arabic");
 // user_pref("font.name.monospace.el", "Noto Sans Mono");
