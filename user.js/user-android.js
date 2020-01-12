@@ -199,7 +199,7 @@ user_pref("apz.fixed-margin-override.bottom", 0);
 user_pref("apz.fixed-margin-override.enabled", false);
 user_pref("apz.fixed-margin-override.top", 0);
 user_pref("apz.fling_accel_base_mult", "1.0");
-user_pref("apz.fling_accel_interval_ms", 500);
+user_pref("apz.fling_accel_interval_ms", 299);
 user_pref("apz.fling_accel_min_velocity", "1.5");
 user_pref("apz.fling_accel_supplemental_mult", "1.0");
 user_pref("apz.fling_curve_threshold_inches_per_ms", "-1.0");
