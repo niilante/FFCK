@@ -4,7 +4,7 @@
 //      Don't use Firefox forks, except the Tor Browser!
 //      This is for Tor Browser Bundle only, do not use it on a normal Firefox version.
 //
-//      Version 0.07
+//      Version 0.08
 //
 //      TODO: Fix & optimize.
 //      TODO: MacOS, Linux & other quirks like backward compatibility.
@@ -414,30 +414,31 @@ user_pref("font.name.serif.zh-TW", "Noto Sans TC Regular");
 
 // Default overwrites
 // Pretending to use an older (vulnerable) Tor Browser might helps to fool websites?!
-user_pref("browser.startup.homepage_override.buildID", 20190402020101);
+user_pref("browser.startup.homepage_override.buildID", "20190402020101");
 user_pref("browser.startup.homepage_override.mstone", "68.2.0"); //ignore
 user_pref("browser.startup.homepage_override.torbrowser.version", "9.0.1");
 user_pref("distribution.iniFile.exists.appversion", "68.2.0");
 user_pref("extensions.activeThemeID", "default-theme@mozilla.org");
 user_pref("extensions.blocklist.lastModified", "Fri, 15 Nov 2019 07:50:24 GMT");
-user_pref("extensions.blocklist.pingCountTotal", 2);
-user_pref("extensions.blocklist.pingCountVersion", 2);
-user_pref("extensions.lastAppBuildId", 20190402020101);
+user_pref("extensions.blocklist.pingCountTotal", 0);
+user_pref("extensions.blocklist.pingCountVersion", 0);
+user_pref("extensions.lastAppBuildId", "20200402050101");
 user_pref("extensions.lastAppVersion", "68.2.0");
 user_pref("extensions.lastPlatformVersion", "68.2.0");
-user_pref("extensions.lastTorBrowserVersion", "9.0.1");
-user_pref("extensions.torbutton.lastBrowserVersion", "9.0.1");
-user_pref("extensions.torbutton.lastUpdateCheck", 1573836430.555);
+user_pref("extensions.lastTorBrowserVersion", "9.0.4");
+user_pref("extensions.torbutton.lastBrowserVersion", "9.0.4");
+user_pref("extensions.torbutton.lastUpdateCheck", "1573836430.555");
+//user_pref("extensions.torbutton.use_nontor_proxy", false);
 user_pref("gfx.crash-guard.wmfvpxvideo.appVersion", "68.2.0");
 user_pref("gfx.crash-guard.wmfvpxvideo.deviceID", "0x1c03");
 user_pref("gfx.crash-guard.wmfvpxvideo.driverVersion", "26.21.14.4120");
-user_pref("browser.startup.lastColdStartupCheck", 1573836431);
+user_pref("browser.startup.lastColdStartupCheck", "1573836431");
 user_pref("media.gmp-manager.buildID", "20200402050101");
-user_pref("places.history.expiration.transient_current_max_pages", 112348);
+user_pref("places.history.expiration.transient_current_max_pages", "112348");
 user_pref("sanity-test.driver-version", "26.21.14.4120");
-user_pref("sanity-test.version", 20190402020101);
-user_pref("security.sandbox.content.tempDirSuffix", "{7ca12269-9ebb-4dc5-8d32-2e274262e2eb}"); // FIXME:
-user_pref("security.sandbox.plugin.tempDirSuffix", "{b8450ff5-4717-4aaa-b59b-a55890c634de}"); // FIXME:
+//user_pref("sanity-test.version", "20190402020101");
+user_pref("security.sandbox.content.tempDirSuffix", "{7ca12269-9ebb-4dc5-8d32-2e274262e2eb}"); // FIXME: linux prob!
+user_pref("security.sandbox.plugin.tempDirSuffix", "{b8450ff5-4717-4aaa-b59b-a55890c634de}"); // FIXME: borked?
 user_pref("services.settings.last_etag", """1573804224556"");
 user_pref("toolkit.telemetry.cachedClientID", "f9e80444-363a-4eac-a7c2-d34aff3c4eae");
 
