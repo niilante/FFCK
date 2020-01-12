@@ -11,6 +11,7 @@
 //      See issue tracker for known issues & discussions!
 //      Version: 74.0.0
 //
+user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
 // user_pref("accessibility.tabfocus", 1);
 // user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
 // user_pref("network.http.version", "1.0"); // uncomment, in case of problems!
