@@ -1017,7 +1017,7 @@ user_pref("javascript.options.ion.frequent_bailout_threshold", 10);
 user_pref("javascript.options.ion.full.threshold", 100000);
 user_pref("javascript.options.ion.offthread_compilation", true);
 user_pref("javascript.options.ion.threshold", 1000);
-user_pref("javascript.options.ion", true);
+user_pref("javascript.options.ion", false);
 user_pref("javascript.options.jit.full_debug_checks", false);
 user_pref("javascript.options.mem.gc_allocation_threshold_factor_avoid_interrupt", 90);
 user_pref("javascript.options.mem.gc_allocation_threshold_factor", 90);
