@@ -23,6 +23,7 @@
 //user_pref("media.peerconnection.ice.force_interface", "");
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("network.netlink.route.check.IPv6", "");
+user_pref("widget.wayland_vsync.enabled", true);
 //user_pref("network.protocol-handler.external.moz-extension", false); // removed
 //user_pref("print.printer_list", "");
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
