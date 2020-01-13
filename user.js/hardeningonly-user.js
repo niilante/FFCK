@@ -17,6 +17,9 @@
 // Bypass: chrome://global/content/config.xul?filter=
 user_pref("browser.aboutConfig.showWarning", false);
 
+// Hide "What's New" Gift icon
+user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
+
 // DOH
 // https://github.com/StevenBlack/hosts/issues/968
 user_pref("network.trr.allow-rfc1918", true);
