@@ -74,6 +74,12 @@ user_pref("browser.startup.blankWindow", false);
 user_pref("browser.tabs.remote.useCrossOriginOpenerPolicy", true); // false is default
 
 
+// Do not tell Firefox to override color specified by a website
+user_pref("browser.display.document_color_use", 2); // 0 default
+user_pref("browser.display.background_color", "#000000"); // #FFFFFF
+user_pref("browser.display.foreground_color", "#000000"); // #000000
+
+
 // DnT (practical no website uses it and it's pointless)
 user_pref("privacy.donottrackheader.enabled", false);
 
