@@ -1,7 +1,7 @@
 // Fennec only!
 // Why? Answer: IceCat is less maintained and comes with LibreJS and related addons preinstalled.
 //
-// v0.9
+// v0.9.1
 //
 // Rename the user-android.js file to user.js!
 // Put the file under: /data/data/org.mozilla.fennec_fdroid/files/mozilla/xxxxxx.default/ (make sure xxxxxx is your profile ID and correct profile folder!)
@@ -9,6 +9,8 @@
 // Importing .p12 user certificates on Fennec
 // https://www.reddit.com/r/firefox/comments/c02jpn/howto_importing_p12_user_certificates_on_fennec/
 
+//user_pref("xpinstall.signatures.required", false); // only enable it up to 66.0.4 -> bug 1548973
+//user_pref("browser.altClickSave", true); // only enable i to save addons to disk (give Firefox storage permissions! which is a workaround in case AMO doesn not allow you to install the addons!
 user_pref("browser.aboutConfig.showWarning", false);
 user_pref("general.aboutConfig.enable", true);
 // user_pref("accessibility.typeaheadfind", false);
