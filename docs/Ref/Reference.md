@@ -247,6 +247,7 @@
 * [Switch to WebExtensions (blog.mozilla.org)](https://blog.mozilla.org/addons/2015/08/21/the-future-of-developing-firefox-add-ons/)
 * [Mozilla - Devil Incarnate (digdeeper.neocities.org)](https://digdeeper.neocities.org/ghost/mozilla.html)
 * [Some users cannot install extensions from Mozilla's official Add-ons repository (github.com)](https://github.com/mozilla/addons/issues/978) + [Bug ID](https://bugzilla.mozilla.org/show_bug.cgi?id=1548973) + [Same issue happened years ago](https://bugzilla.mozilla.org/show_bug.cgi?id=1267318)
+* [Firefox is promoting ad-embedded browsers in some countries!!](https://old.reddit.com/r/firefox/comments/em58ji/is_firefox_compromised/?st=k5ffu4zi&sh=6ba2d733)
 
 
 ### Other criticism
@@ -273,7 +274,7 @@
 - [Guard](https://useguard.com/)
 
 
-### Beta (test) browser
+### Mozilla's Beta (test) mobile browser
 - [Mozilla reference browser](https://github.com/mozilla-mobile/reference-browser/blob/master/README.md)
 
 
