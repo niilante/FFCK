@@ -100,6 +100,12 @@
 * [Debugger for Firefox extension (VSCode) (marketplace.visualstudio.com)](https://marketplace.visualstudio.com/items?itemName=firefox-devtools.vscode-firefox-debug)
 
 
+### Localization System
+* [The New Localization System for Firefox is in! (diary.braniecki.net)](https://diary.braniecki.net/2020/01/14/the-new-localization-system-for-firefox-is-in/)
+* [Fluent 1.0: a localization system for natural-sounding translations (hacks.mozilla.org)](https://hacks.mozilla.org/2019/04/fluent-1-0-a-localization-system-for-natural-sounding-translations/)
+* [If you want to help to translate something use pontoon.mozilla.org](https://pontoon.mozilla.org/)
+
+
 ### Templates
 * [Policy Templates for Firefox (github.com)](https://github.com/mozilla/policy-templates)
 * [FrontMotion Firefox Community Edition (getadmx.com)](https://getadmx.com/?Category=FrontMotion)
