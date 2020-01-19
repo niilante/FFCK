@@ -1,4 +1,4 @@
-// Fennec only!
+// Fenix/Fennec only!
 // Why? Answer: IceCat is less maintained and comes with LibreJS and related addons preinstalled.
 //
 // v0.9.1
@@ -481,11 +481,11 @@ user_pref("layout.display-list.retain", true);
 user_pref("layout.spellcheckDefault", 2);
 user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.ask-permission", true);
-user_pref("media.autoplay.enabled.user-gestures-needed", true);
+user_pref("media.autoplay.enabled.user-gestures-needed", false);
 user_pref("media.autoplay.allow-extension-background-pages", false);
 user_pref("media.autoplay.block-event.enabled", true);
 user_pref("media.autoplay.block-webaudio", true);
-user_pref("media.autoplay.default", 1);
+user_pref("media.autoplay.default", 5);
 user_pref("media.av1.enabled", true);
 user_pref("media.av1.use-dav1d", false);
 user_pref("media.block-autoplay-until-in-foreground", true);
