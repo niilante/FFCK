@@ -1,12 +1,13 @@
-///////////////////////////////////
-//// === PaleMoon SPECIFIC === ////
-/// === Author: Moonchild === ////
-//////////////////////////////////
+/////////////////////////////////////////////
+//// === PaleMoon SPECIFIC ===           ////
+/// === Author: Moonchild, CHEF-KOCH === ////
+/////////////////////////////////////////////
 
 /*
     Full list maintained by Moonchild: https://forum.palemoon.org/viewtopic.php?f=24&t=3357
-    If you have issues or questions about any of these, please use the PaleMoon forums !!
-    See also: https://www.palemoon.org/commander.shtml
+    If you have issues or questions about any of these, please use the official PaleMoon forums !!
+    See also: 
+    https://www.palemoon.org/commander.shtml
 */
 
 
@@ -19,6 +20,7 @@
 */
 
 
+user_pref("network.http.accept.default", "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0."); //prevent downloading images as webp
 // 3201: (v25.6+) disable canvas fingerprinting
    // user_pref("canvas.poisondata", true);
 // 3202: (v25.2+) control HSTS
