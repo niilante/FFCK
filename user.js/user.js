@@ -1395,7 +1395,7 @@ user_pref("network.connectivity-service.DNSv6.domain", ""); // ^^
 user_pref("network.connectivity-service.enabled", false);
 user_pref("network.connectivity-service.IPv4.url", "http://0.0.0.0"); // http://detectportal.firefox.com/success.txt?ipv4
 user_pref("network.connectivity-service.IPv6.url", "http://0.0.0.0"); // http://detectportal.firefox.com/success.txt?ipv6
-user_pref("network.cookie.cookieBehavior", 1);
+user_pref("network.cookie.cookieBehavior", 2);
 user_pref("network.cookie.lifetimePolicy", 2);
 user_pref("network.cookie.maxNumber", 3000);
 user_pref("network.cookie.maxPerHost", 180);
