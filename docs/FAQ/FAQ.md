@@ -152,6 +152,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [PrivacySpy](https://addons.mozilla.org/en-US/firefox/addon/privacyspy/)
 * [Media Reaper - Privacy 1st, Audio & Video Download](https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
 * [Make Omnibox Great Again](https://addons.mozilla.org/ko/firefox/addon/moga-make-omnibox-great-again/) & ([source code](https://github.com/phu54321/MOGA))
+* [RSSPreview](https://addons.mozilla.org/en-US/firefox/addon/rsspreview/) 
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
