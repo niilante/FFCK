@@ -1,5 +1,6 @@
 // Fenix/Fennec only!
 // Why? Answer: IceCat is less maintained and comes with LibreJS and related addons preinstalled.
+// Tor integration is planned for Q3: https://wiki.mozilla.org/Release_Management/Calendar#Future_branch_dates.
 //
 // v0.9.1
 //
