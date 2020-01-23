@@ -215,6 +215,10 @@
 * [How Safe Browsing works in Firefox (feeding.cloud.geek.nz)](https://feeding.cloud.geek.nz/posts/how-safe-browsing-works-in-firefox/)
 
 
+### Mozilla on ethical issues
+* [Mozilla Wants Young People to Consider ‘Ethical Issues’ Before Taking Tech Jobs (vice.com)](https://www.vice.com/en_us/article/wxenxx/mozilla-wants-young-people-to-consider-ethical-issues-before-taking-jobs-in-tech) + [paper](https://foundation.mozilla.org/documents/58/Mozilla_Zine.pdf)
+
+
 ### Test Pages & Resources
 * [Mozilla Plugin Privacy Test Database (nullsweep.com)](https://nullsweep.com/launching-the-mozilla-plugin-privacy-test-database/)
 * [Google's Safe Browsing Testing Links (testsafebrowsing.appspot.com)](https://testsafebrowsing.appspot.com/)
