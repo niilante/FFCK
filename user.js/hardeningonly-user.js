@@ -58,6 +58,8 @@ user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
 user_pref("browser.urlbar.timesBeforeHidingSuggestionsHint", 0);
+// master toggle for "search providers"//"search this time with?"
+user_pref("browser.urlbar.oneOffSearches", false);
 
 
 // IDN Punycode
