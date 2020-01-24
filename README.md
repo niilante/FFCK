@@ -58,7 +58,7 @@ Archiving more security is way harder than trying to build defenses against priv
 
 ### What does Firefox (by default) submits?
 
-Firefox (by default) sends more/same stuff back than Chrome does, I believe this is not needed in an stable environment, that's why all of this was disabled.
+[Firefox sends more/same stuff back than Chrome does](https://www.privateinternetaccess.com/blog/2020/01/the-firefox-browser-is-a-privacy-nightmare-on-desktop-and-mobile/), I believe this is not needed in an stable environment, that's why all of this was disabled via configuration.
 
 * [Blacklist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#1225) & [Whitelist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#974) specific stuff
 * [Tracker matchlist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#1011)
