@@ -1,20 +1,21 @@
 //
 //      All-in-One Hardening user.js project by CHEF-KOCH
-//  See: Workarounds.md for known problems & possible workarounds!
+//
 //  Warning: 
 //      * Chinese & Taiwanese systems are not supported (font issues & more)!
 //      * XP, iOS & MacOS are not (fully) supported nor tested!
 //      * Android users MUST use the Android-user.js configuration!
-//      * Supports Firefox versions: ESR (stable) & beta (focus is beta!)
-//      * I highly suggest you only use the latest stable or beta (no nightly/dev) FF/Tor versions!
 //      * Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)      
 //      See issue tracker for known issues & discussions!
+//      See: Workarounds.md for known problems & possible workarounds!
+//
 //      Version: 74.0.0
 //
 // Twitch/YouTube buffering workaround
 // Disable IPv6 or usw following:
 //user_pref("media.cache_readahead_limit", 7500);
 //user_pref("media.cache_resume_treshold", 7500);
+user_pref("network.http.throttle.enable", false);
 //
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
 user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
@@ -1520,7 +1521,6 @@ user_pref("network.http.tcp_keepalive.long_lived_idle_time", 600);
 user_pref("network.http.tcp_keepalive.short_lived_connections", true);
 user_pref("network.http.tcp_keepalive.short_lived_idle_time", 10);
 user_pref("network.http.tcp_keepalive.short_lived_time", 60);
-user_pref("network.http.throttle.enable", false);
 user_pref("network.http.throttle.hold-time-ms", 800);
 user_pref("network.http.throttle.max-time-ms", 500);
 user_pref("network.http.throttle.resume-for", 100);
@@ -1705,7 +1705,7 @@ user_pref("network.security.esni.enabled", true);
 user_pref("network.security.ports.banned", "1,2,3,4,5");
 user_pref("network.ssl_tokens_cache_capacity", 2048);
 user_pref("network.ssl_tokens_cache_enabled", false);
-user_pref("network.standard-url.max-length", 1048576);
+user_pref("network.standard-url.max-length", 2047);
 user_pref("network.standard-url.punycode-host", true);
 user_pref("network.stricttransportsecurity.preloadlist", true);
 user_pref("network.sts.max_time_for_events_between_two_polls", 100);
