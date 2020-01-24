@@ -11,6 +11,11 @@
 //      See issue tracker for known issues & discussions!
 //      Version: 74.0.0
 //
+// Twitch/YouTube buffering workaround
+// Disable IPv6 or usw following:
+//user_pref("media.cache_readahead_limit", 7500);
+//user_pref("media.cache_resume_treshold", 7500);
+//
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
 user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
 // user_pref("accessibility.tabfocus", 1);
