@@ -145,7 +145,7 @@ user_pref("browser.display.document_color_use", 0);
 user_pref("browser.display.focus_background_color", "#117722");
 user_pref("browser.display.focus_ring_on_anything", false);
 user_pref("browser.display.focus_ring_style", 1);
-user_pref("browser.display.focus_ring_width", 1);
+user_pref("browser.display.focus_ring_width", 0);
 user_pref("browser.display.focus_text_color",   "#ffffff");
 user_pref("browser.display.force_inline_alttext", false);
 user_pref("browser.display.foreground_color", "#000000");
