@@ -16,6 +16,7 @@
 //user_pref("media.cache_readahead_limit", 7500);
 //user_pref("media.cache_resume_treshold", 7500);
 user_pref("network.http.throttle.enable", false);
+//user_pref("browser.fullscreen.autohide", false); // Replaces: https://addons.mozilla.org/en-US/firefox/addon/youtube-full-windowed/
 //
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
 user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
