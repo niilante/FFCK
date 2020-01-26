@@ -67,6 +67,7 @@ Archiving more security is way harder than trying to build defenses against priv
 * [Shavar checks](https://wiki.mozilla.org/Services/TrackingProtection/Shavar_Server_-_Testing)
 * Session based telemetry when [TP was enabled](https://feeding.cloud.geek.nz/posts/how-tracking-protection-works-in-firefox/)
 * [Ads](https://mozilla.github.io/tracking-test/ads.html), [Analytic](https://mozilla.github.io/tracking-test/analytics.html), [Social](https://mozilla.github.io/tracking-test/social.html), [Content](https://mozilla.github.io/tracking-test/full.html) & [filter list](https://mozilla.github.io/tracking-test/disconnect.html) specific checks/report/updates...
+* [Data Sharing](https://support.mozilla.org/en-US/products/privacy-and-security/no-surprises) for e.g. Firefox ~~Rocket~~ Lite and Firefox ScreenshotGo (Firefox Preview)
 
 
 ### Why I'm still fingerprintable?
