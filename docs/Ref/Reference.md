@@ -282,3 +282,6 @@
 - [Mozilla reference browser](https://github.com/mozilla-mobile/reference-browser/blob/master/README.md)
 
 
+### Third-Party Tools
+- [Simple Firefox Backup (Windows)](https://www.sordum.org/12298/simple-firefox-backup-v1-1/)
+
