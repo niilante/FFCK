@@ -29,6 +29,7 @@ user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/c
 //user_pref("gecko.handlerService.migrated", true);
 //user_pref("media.gmp-manager.url.override", "");
 //user_pref("media.peerconnection.ice.force_interface", "");
+user_pref("dom.webgpu.enabled", false);
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("network.netlink.route.check.IPv6", "");
 user_pref("browser.urlbar.ctrlCanonizesURLs", false);
