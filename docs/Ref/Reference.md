@@ -92,6 +92,9 @@
 * [Catalog of classic Firefox add-ons created before WebExtensions apocalypse (github.com)](https://github.com/JustOff/ca-archive)
 
 
+### Containers
+* [Contextual Identities on the Web (blog.mozilla.org)](https://blog.mozilla.org/tanvi/2016/06/16/contextual-identities-on-the-web/)
+
 ### Developer Tools & Resources
 * [Mozilla Developers (mozilla.org)](https://www.mozilla.org/en-US/developer/)
 * [Learn web development (developer.mozilla.org)](https://developer.mozilla.org/en-US/docs/Learn)
