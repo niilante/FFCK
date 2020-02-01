@@ -58,7 +58,7 @@ Archiving more security is way harder than trying to build defenses against priv
 
 ### What does Firefox (by default) submits?
 
-[Firefox sends more/same stuff back than Chrome does](https://www.privateinternetaccess.com/blog/2020/01/the-firefox-browser-is-a-privacy-nightmare-on-desktop-and-mobile/), I believe this is not needed in an stable environment, that's why all of this was disabled via configuration.
+[Firefox sends more/same stuff back than Chrome does](https://www.privateinternetaccess.com/blog/2020/01/the-firefox-browser-is-a-privacy-nightmare-on-desktop-and-mobile/), I believe this is not needed in an stable environment, that's why all of this was disabled via configuration. You can [review you telemetry data](https://www.zdnet.com/article/firefox-now-shows-what-telemetry-data-its-collecting-about-you/) via `about:preferences#privacy` (`about:telemetry) in the "Firefox Data Collection and Use" section
 
 * [Blacklist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#1225) & [Whitelist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#974) specific stuff
 * [Tracker matchlist](https://searchfox.org/mozilla-central/rev/8affe6e83188787eb61fe0528eeb6eef6081ba06/netwerk/base/nsChannelClassifier.cpp#1011)
@@ -154,5 +154,3 @@ There are several pages you can read to make your switch easier:
 * [Switching to Firefox (reddit.com)](https://old.reddit.com/r/firefox/wiki/switching-to-firefox)
 * [Join Firefox (blog.mozilla.org)](https://blog.mozilla.org/firefox/join-firefox/)
 * [Switching to Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/switching-chrome-firefox)
-
-
