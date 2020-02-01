@@ -834,8 +834,9 @@ user_pref("gfx.draw-color-bars", false);
 user_pref("gfx.font_ahem_antialias_none", false);
 user_pref("gfx.font_loader.delay", 8000);
 user_pref("signon.storeSignons", true);
+user_pref("signon.include.OtherSubdomainsInLookup", false);
 user_pref("gfx.font_loader.interval", 50);
-user_pref("gfx.font_rendering.ahem_antialias_none", false); // set true if blurry
+user_pref("gfx.font_rendering.ahem_antialias_none", false); // set to true if blurry
 user_pref("gfx.font_rendering.cleartype_params.cleartype_level", -1);
 user_pref("gfx.font_rendering.cleartype_params.enhanced_contrast", -1);
 user_pref("gfx.font_rendering.cleartype_params.force_gdi_classic_for_families", "Arial,Consolas,Courier New,Microsoft Sans Serif,Segoe UI,Tahoma,Trebuchet MS,Verdana");
@@ -887,10 +888,10 @@ user_pref("gfx.webrender.debug.texture-cache.clear-evicted", true);
 user_pref("gfx.webrender.debug.texture-cache", false);
 user_pref("gfx.webrender.dl.dump-content", false);
 user_pref("gfx.webrender.dl.dump-parent", false);
-user_pref("gfx.webrender.enabled", true); // bugs!
+user_pref("gfx.webrender.enabled", true);
 user_pref("gfx.webrender.flip-sequential", false);
 user_pref("gfx.webrender.force-angle", true);
-user_pref("gfx.webrender.force-disabled", true); //Workaround for FF69 stutter + responsive issue
+user_pref("gfx.webrender.force-disabled", true); // Workaround for FF69 stutter + responsive issue
 user_pref("gfx.webrender.highlight-painted-layers", false);
 user_pref("gfx.webrender.picture-caching", true);
 user_pref("gfx.webrender.program-binary-disk", true);
