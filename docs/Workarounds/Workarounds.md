@@ -16,7 +16,7 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 * `user_pref("ui.key.menuAccessKeyFocuses", false);`
 
 
-### Linux only
+### Linux only (_some tweaks_)
 * `user_pref("widget.content.gtk-theme-override", "Breeze");`
 * `user_pref("gfx.downloadable_fonts.keep_color_bitmaps", false);`
 * `user_pref("layout.selection.caret_style", 0);`
@@ -26,7 +26,7 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 * `user_pref("network.tcp.keepalive.retry_interval", 1);`
 
 
-### GreasyMonkey (telemetry)
+### Disable GreasyMonkey telemetry
 * `user_pref("extensions.greasemonkey.stats.optedin", false);`
 * `user_pref("extensions.greasemonkey.stats.url", "");`
 
@@ -134,4 +134,9 @@ You can [adjust](https://github.com/endeavoursc/firefox-overlay-scrollbars-win10
 
 * `widget.disable-dark-scrollbar` true
 * `layout.css.scrollbar-color.enabled` false
+
+
+## Tearing when WebRender is enabled
+
+When you use G-Sync and WebRender you might get [tearing](https://www.testufo.com/chase#background=404040&leading=ffffff&trailing=00ffff&distance=32&pps=960&height=-1), this was fixed in the latest Nightly (will be fixed in 74.0 stable). As workaround you can disable G-Sync or use `gfx.webrender.force-disabled` `true`.
 
