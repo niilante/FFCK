@@ -83,12 +83,15 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 * `user_pref("intl.allow-insecure-text-input", false);`
 * `user_pref("layers.omtp.enabled", false);`
 
+
 ## Compressing the profile database to "gain some speed"
 * This tip is basically what [speedyfox](https://www.crystalidea.com/speedyfox) does by default, it will vacuum the database, however other tools like CCleaner or Firefox itself does do similar thing except that they don't vacuum all database files, they basically only vacuum selected database files. Firefox vacuums every 30 days your database (by default). However, you can get an "boost" by optimizing all files via:
 * `for f in `find . -name '*.sqlite'`; do echo Vacuuming $f; sqlite3 "$f" vacuum; done`
 
+
 ## Old about:config interface
 Since Firefox 71+ the new about:config interface is enabled by default, in order to revert it you can use `chrome://global/content/config.xul`. It's unclear when Mozilla removed the fallback method.
+
 
 ## I can't disable the "new tab" features on mobile, what can I do?
 You could work with `policies.json`, it's fully excplained over [here](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson). Create `policies.json` under `distribution/policies.json` and then you can add your own policies.
@@ -102,7 +105,7 @@ You could work with `policies.json`, it's fully excplained over [here](https://s
 }
 ```
 
-## Avoid "From this website" for login fields
+## Avoid getting "From this website" suggestions for login fields
 Both flags need to set to `false` to avoid seend additional login information e.g. on Google Login ["From this website"](https://s19.directupload.net/images/191217/ph3zwi6x.jpg).
 
 ```JavaScript
@@ -122,11 +125,11 @@ As [mentioned here](https://www.reddit.com/r/firefox/comments/ebiapo/temporary_c
 
 
 ## Stutters in fullscreen occur, especially on higher resolutions (1080p+)
-Try to toggle `gfx.direct3d11.use-double-buffering` (default true) and see if it helps.
+Try to toggle `gfx.direct3d11.use-double-buffering` to `false` (default true) and see if that helps.
 
 
 ## Copy & Paste in Google Docs or Sheets does not work
-Set `dom.event.clipboardevents.enabled` back to true.
+Set `dom.event.clipboardevents.enabled` back to `true`.
 
 
 ## How do I disable the black scrollbar and it's background
@@ -137,6 +140,5 @@ You can [adjust](https://github.com/endeavoursc/firefox-overlay-scrollbars-win10
 
 
 ## Tearing when WebRender is enabled
-
 When you use G-Sync and WebRender you might get [tearing](https://www.testufo.com/chase#background=404040&leading=ffffff&trailing=00ffff&distance=32&pps=960&height=-1), this was fixed in the latest Nightly (will be fixed in 74.0 stable). As workaround you can disable G-Sync or use `gfx.webrender.force-disabled` `true`.
 
