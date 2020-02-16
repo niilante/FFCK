@@ -9,7 +9,7 @@
 //      See issue tracker for known issues & discussions!
 //      See: Workarounds.md for known problems & possible workarounds!
 //
-//      Version: 74.0.0
+//      Version: 75.0.0
 //
 // Twitch/YouTube buffering workaround
 // Disable IPv6 or usw following:
@@ -34,6 +34,7 @@ user_pref("dom.webgpu.enabled", false);
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("network.netlink.route.check.IPv6", "");
 user_pref("browser.urlbar.ctrlCanonizesURLs", false);
+user_pref("dom.image-lazy-loading.enabled", true);
 user_pref("widget.wayland_vsync.enabled", true);
 //user_pref("network.protocol-handler.external.moz-extension", false); // removed
 //user_pref("print.printer_list", "");
