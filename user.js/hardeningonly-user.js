@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 74.0.0
+//      Version 75.0.0
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -41,6 +41,10 @@ user_pref("network.trr.wait-for-portal", false);
 
 // BigInt 
 user_pref("javascript.options.bigint", false);
+
+
+// Web Apps
+user_pref("browser.ssb.enabled", false); // Hidden
 
 
 // URL bar
