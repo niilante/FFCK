@@ -1,5 +1,5 @@
 ## [FFCK Project FAQ](#ffck-project-faq)
-- [Which Referrer extensions do I need?](#which-referrer-extensions-do-i-need)
+- [Which Referrer extensions do I really need?](#which-referrer-extensions-do-i-need)
 - [My Firefox update X broke something, is that because of your config?](#my-firefox-update-x-broke-something-is-that-because-of-your-config)
 - [Cookies in Private Mode (PBM) vs. “Delete cookies when Firefox closes”](#cookies-in-private-mode-pbm-vs-%22delete-cookies-when-firefox-closes%22)
 - [Anti-Private Browser mode detection](#anti-private-browser-mode-detection)
@@ -153,6 +153,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [Media Reaper - Privacy 1st, Audio & Video Download](https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
 * [Make Omnibox Great Again](https://addons.mozilla.org/ko/firefox/addon/moga-make-omnibox-great-again/) & ([source code](https://github.com/phu54321/MOGA))
 * [RSSPreview](https://addons.mozilla.org/en-US/firefox/addon/rsspreview/) 
+* [Select After Closing Current](https://addons.mozilla.org/en-US/firefox/addon/select-after-closing-current/)
 
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
