@@ -1,4 +1,5 @@
 ## [FFCK Project FAQ](#ffck-project-faq)
+- [What is the difference between user.js and prefs.js?](#what-is-the-difference-between-user.js-and-pref.js-)
 - [Which Referrer extensions do I really need?](#which-referrer-extensions-do-i-need)
 - [My Firefox update X broke something, is that because of your config?](#my-firefox-update-x-broke-something-is-that-because-of-your-config)
 - [Cookies in Private Mode (PBM) vs. “Delete cookies when Firefox closes”](#cookies-in-private-mode-pbm-vs-%22delete-cookies-when-firefox-closes%22)
@@ -34,6 +35,18 @@
 - [Working with a second profile](#second-profile)
 - [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacy.trackingprotection.enabled-and-privacy.resistfingerprinting)
 - [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-.txt-file) 
+
+
+## What is the difference between user.js and prefs.js?
+
+* refs.js contains all the changes you have made via options or about:config.
+* user.js is used to override preferences in prefs.js, it does so by (over)writing the preference to prefs.js.
+
+**What does it mean?**
+
+If user.js contains user_pref("browser.xxxxx", "false"), so will prefs.js after a startup of Firefox.
+
+Some preferences can't be set via user.js, as Firefox sets some preferences after prefs.js is read. Some preferences might also be modified during startup [after prefs.js] .
 
 
 ## Which Referrer extensions do I need?
