@@ -21,6 +21,8 @@ user_pref("network.http.throttle.enable", false);
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
 user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
 // user_pref("accessibility.tabfocus", 1);
+// user_pref("mousebutton.4th.enabled", true);
+// user_pref("mousebutton.5th.enabled", true);
 // user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
 // user_pref("network.http.version", "1.0"); // uncomment, in case of problems!
 // user_pref("network.tcp.sendbuffer", 0);
