@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 75.0.0
+//      Version 75.0.1
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -16,6 +16,12 @@
 // Supress warnings ala "Changing these preferences can impact Firefox performance or security"
 // Bypass: chrome://global/content/config.xul?filter=
 user_pref("browser.aboutConfig.showWarning", false);
+
+// Purge site data if associated with tracking cookies
+// Typically not needed if uBlock set to higher blocking levels
+user_pref("privacy.purge_trackers.enabled", true);
+user_pref("privacy.purge_trackers.logging.enabled", false); // true for debug logs
+user_pref("privacy.purge_trackers.max_purge_count", 80); // default 100
 
 // Hide "What's New" Gift icon
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
