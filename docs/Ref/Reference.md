@@ -275,6 +275,7 @@
 
 ### No longer maintained
 - [mozillazine.org](http://forums.mozillazine.org/viewtopic.php?f=38&t=3055133)
+- [Moznet IRC](https://matrix.org/blog/2020/03/03/moznet-irc-is-dead-long-live-mozilla-matrix/)
 
 
 ### AI based tool to check privacy policies to flag risky apps
