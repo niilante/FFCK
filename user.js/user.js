@@ -11,6 +11,7 @@
 //
 //      Version: 75.0.0
 //
+user_pref("dom.media.mediasession.enabled", true);
 // Twitch/YouTube buffering workaround
 // Disable IPv6 or usw following:
 //user_pref("media.cache_readahead_limit", 7500);
