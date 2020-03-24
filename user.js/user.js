@@ -9,9 +9,10 @@
 //      See issue tracker for known issues & discussions!
 //      See: Workarounds.md for known problems & possible workarounds!
 //
-//      Version: 75.0.0
+//      Version: 76.0.0
 //
 user_pref("dom.media.mediasession.enabled", true);
+user_pref("dom.security.https_only_mode", true);
 // Twitch/YouTube buffering workaround
 // Disable IPv6 or usw following:
 //user_pref("media.cache_readahead_limit", 7500);
