@@ -11,6 +11,12 @@
 //
 //      Version: 76.0.0
 //
+//Disable New Address Search Bar (75+)
+user_pref("browser.urlbar.openViewOnFocus", false);
+user_pref("browser.urlbar.update1", false);
+user_pref("browser.urlbar.update1.interventions", false);
+user_oref("browser.urlbar.update1.searchTips", false);   
+//
 user_pref("dom.media.mediasession.enabled", true);
 user_pref("dom.security.https_only_mode", true);
 // Twitch/YouTube buffering workaround
@@ -36,7 +42,6 @@ user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/c
 //user_pref("media.peerconnection.ice.force_interface", "");
 user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("widget.wayland-dmabuf-webgl.enabled", true); 
-user_pref("browser.urlbar.update1", false); // will be removed
 user_pref("dom.webgpu.enabled", false);
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("network.netlink.route.check.IPv6", "");
