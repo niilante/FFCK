@@ -15,7 +15,7 @@
 user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("browser.urlbar.update1", false);
 user_pref("browser.urlbar.update1.interventions", false);
-user_oref("browser.urlbar.update1.searchTips", false);   
+user_pref("browser.urlbar.update1.searchTips", false);
 //
 user_pref("dom.media.mediasession.enabled", true);
 user_pref("dom.security.https_only_mode", true);
@@ -60,7 +60,7 @@ user_pref("accessibility.accesskeycausesactivation", true);
 user_pref("accessibility.AOM.enabled", false);
 user_pref("accessibility.browsewithcaret_shortcut.enabled", true);
 user_pref("accessibility.browsewithcaret", false);
-user_pref("accessibility.delay_plugin_time", 10000);
+user_pref("accessibility.delay_plugin_time", 20000);
 user_pref("accessibility.delay_plugins", false);
 user_pref("webgl.dxgl.enabled", false);
 user_pref("accessibility.force_disabled", 1);
