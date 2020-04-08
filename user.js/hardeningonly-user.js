@@ -17,6 +17,9 @@
 // Bypass: chrome://global/content/config.xul?filter=
 user_pref("browser.aboutConfig.showWarning", false);
 
+// Disable User Agent in FF 75+
+user_pref("default-browser-agent.enabled", false);
+
 // Purge site data if associated with tracking cookies
 // Typically not needed if uBlock set to higher blocking levels
 user_pref("privacy.purge_trackers.enabled", true);
