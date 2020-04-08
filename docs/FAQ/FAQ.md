@@ -34,7 +34,8 @@
 - [Why is `content process limit` not set to 1?](#why-is-content-process-limit-not-set-to-1)
 - [Working with a second profile](#second-profile)
 - [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacy.trackingprotection.enabled-and-privacy.resistfingerprinting)
-- [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-.txt-file) 
+- [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-.txt-file)
+- [How to disable the default user Agent?]#how-to-disable-the-default-user-agent)
 
 
 ## What is the difference between user.js and prefs.js?
@@ -372,3 +373,11 @@ One [blocks scripts](https://support.mozilla.org/en-US/kb/trackers-and-scripts-f
 
 Right-click on a folder and select "copy". Then go into e.g. Notepad and paste. It will paste the folder name and all the bookmark urls. A alternative is [copy-tab-urls-webex](https://addons.mozilla.org/firefox/addon/copy-tab-urls-webex/)
 
+
+## How to disable the default user Agent?
+
+Since [Firefox 75](https://blog.mozilla.org/data/2020/03/16/understanding-default-browser-trends/) the default user agent is harder to disable, it's now [part of the telemetry](https://github.com/mozilla-services/mozilla-pipeline-schemas/pull/495/files#diff-48f14d6bdea5bf803f8b8cff5f018172) which is been collected for e.g. [client ID](https://support.mozilla.org/en-US/kb/telemetry-clientid).
+
+> Set `default-browser-agent.enabled` to `false`
+> Make sure that under "Privacy & Secruity Settings" "Allow Firefox to install and run studies" is disabled (unchecked).
+> (optional) Open Task Scheduler, `Task Scheduler Library > Mozilla` and disable "Firefox Default Browser Agent <random-ID>` task, which points to `C:\Program Files\Mozilla Firefox\default-browser-agent.exe`. The flag and/or the task might get re-enabled each time you update Firefox, so ensure you recheck it after each new update.
