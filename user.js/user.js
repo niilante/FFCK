@@ -11,6 +11,8 @@
 //
 //      Version: 76.0.0
 //
+// Disable default user agent
+user_pref("default-browser-agent.enabled", false);
 //Disable New Address Search Bar (75+)
 user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("browser.urlbar.update1", false);
