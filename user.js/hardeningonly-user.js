@@ -186,6 +186,7 @@ user_pref("browser.link.open_newwindow.restriction", 0);
 user_pref("dom.disable_beforeunload", true);
 //user_pref("dom.event.contextmenu.enabled", false);
 //user_pref("dom.push.connection.enabled", false);
+user_pref("dom.push.serverURL", "wss://push.services.mozilla.com/") // https://support.mozilla.org/en-US/kb/push-notifications-firefox#w_how-does-it-work
 //user_pref("dom.storage.enabled", false);
 user_pref("media.gmp-provider.enabled", false);
 user_pref("network.http.referer.XOriginPolicy", 1);
