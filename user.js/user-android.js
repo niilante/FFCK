@@ -728,6 +728,7 @@ user_pref("webgl.force-enabled", false);
 user_pref("webgl.min_capability_mode", true);
 user_pref("webgl.msaa-force", false);
 user_pref("xpinstall.whitelist.required", true);
+user_pref("browser.urlbar.suggest.openpage", false);
 // MIPS 32 - Spectre security vulnerability mitigations
 //user_pref("javascript.options.spectre.index_masking", false);
 //user_pref("javascript.options.spectre.object_mitigations.barriers", false);
