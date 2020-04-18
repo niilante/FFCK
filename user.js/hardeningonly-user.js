@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 75.0.1
+//      Version 76.0.0
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -17,11 +17,17 @@
 // Bypass: chrome://global/content/config.xul?filter=
 user_pref("browser.aboutConfig.showWarning", false);
 
+// Disable User Agent in FF 75+
+user_pref("default-browser-agent.enabled", false);
+
 // Purge site data if associated with tracking cookies
 // Typically not needed if uBlock set to higher blocking levels
 user_pref("privacy.purge_trackers.enabled", true);
 user_pref("privacy.purge_trackers.logging.enabled", false); // true for debug logs
 user_pref("privacy.purge_trackers.max_purge_count", 80); // default 100
+
+// HTTPS only
+user_pref("dom.security.https_only_mode", true);
 
 // Hide "What's New" Gift icon
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
@@ -211,6 +217,7 @@ user_pref("browser.pagethumbnails.capturing_disabled", true);
 user_pref("browser.pocket.enabled", false);
 user_pref("browser.safebrowsing.reportPhishURL", false);
 user_pref("browser.search.countryCode", "US");
+user_pref("browser.urlbar.update1", false);
 user_pref("browser.selfsupport.url", "");
 user_pref("browser.send_pings.require_same_host", true);
 user_pref("browser.sessionstore.max_windows_undo", 0);
@@ -355,6 +362,7 @@ user_pref("security.password_lifetime", 2);
 user_pref("security.pki.sha1_enforcement_level", 1);
 user_pref("security.secure_connection_icon_color_gray", false);
 user_pref("security.sri.enable", true);
+user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("security.xpconnect.plugin.unrestricted", false);
 user_pref("services.blocklist.update_enabled", true);
 user_pref("shield.savant.enabled", false);
