@@ -78,7 +78,7 @@ user_pref("security.ssl.treat_unsafe_negotiation_as_broken", false); // default
 user_pref("security.cert_pinning.enforcement_leve", 2); // default
 
 
-// Display fonts 
+// Display fonts
 user_pref("browser.display.use_document_fonts", 1); // default
 user_pref("layout.css.font-loading-api.enabled", true); // default
 user_pref("font.blacklist.underline_offset", "FangSong,Gulim,GulimChe,MingLiU,MingLiU-ExtB,MingLiU_HKSCS,MingLiU-HKSCS-ExtB,MS Gothic,MS Mincho,MS PGothic,MS PMincho,MS UI Gothic,PMingLiU,PMingLiU-ExtB,SimHei,SimSun,SimSun-ExtB,Hei,Kai,Apple LiGothic,Apple LiSung,Osaka"); // default
@@ -106,7 +106,7 @@ user_pref("layers.acceleration.disabled", true); // default false
 user_pref("media.hardware-video-decoding.enabled", false); // default true
 
 
-// Health 
+// Health
 user_pref("datareporting.healthreport.about.reportUrl", "data:text/plain,");
 user_pref("datareporting.healthreport.about.reportUrlUnified", "data:text/plain,");
 user_pref("datareporting.healthreport.service.enabled", false);
@@ -120,7 +120,7 @@ user_pref("browser.ping-centre.production.endpoint", ""); // default "https://ti
 user_pref("browser.ping-centre.staging.endpoint", ""); // default "https://onyx_tiles.stage.mozaws.net/v3/links/ping-centre"
 
 
-// ToolK 
+// ToolK
 user_pref("toolkit.coverage.endpoint.base", ""); // default "https://coverage.mozilla.org"
 
 
@@ -154,7 +154,7 @@ user_pref("privacy.resistFingerprinting.reduceTimerPrecision.jitter", true);
 user_pref("privacy.resistFingerprinting.reduceTimerPrecision.microseconds", 750); // 1000
 
 
-// Dev tools 
+// Dev tools
 user_pref("devtools.appmanager.enabled", false);
 user_pref("devtools.debugger.chrome-debugging-host", "127.0.0.1");
 user_pref("devtools.onboarding.telemetry.logged", true);
@@ -174,11 +174,11 @@ user_pref("app.update.lastUpdateTime.services-settings-poll-changes", 1573836820
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1573837180);
 
 
-// Clipboard Events 
+// Clipboard Events
 user_pref("dom.event.clipboardevents.enabled", false); // default true
 
 
-// Spec. loading 
+// Spec. loading
 user_pref("network.http.speculative-parallel-limi", 4); // default 6 (Onion workaround)
 
 
@@ -217,7 +217,7 @@ user_pref("pdfjs.disableRange", false); // default
 user_pref("pdfjs.disableStream", false); // default
 
 
-// Default fonts 
+// Default fonts
 user_pref("font.default.lo", "Noto Sans Lao");
 user_pref("font.default.my", "Noto Sans Myanmar");
 user_pref("font.default.x-western", "sans-serif");
@@ -439,7 +439,7 @@ user_pref("sanity-test.driver-version", "26.21.14.4120");
 //user_pref("sanity-test.version", "20190402020101");
 user_pref("security.sandbox.content.tempDirSuffix", "{7ca12269-9ebb-4dc5-8d32-2e274262e2eb}"); // FIXME: linux prob!
 user_pref("security.sandbox.plugin.tempDirSuffix", "{b8450ff5-4717-4aaa-b59b-a55890c634de}"); // FIXME: borked?
-user_pref("services.settings.last_etag", """1573804224556"");
+user_pref("services.settings.last_etag", "1573804224556");
 user_pref("toolkit.telemetry.cachedClientID", "f9e80444-363a-4eac-a7c2-d34aff3c4eae");
 
 
@@ -480,7 +480,7 @@ user_pref("network.trr.uri", "https://mozilla.cloudflare-dns.com/dns-query");
 user_pref("network.trr.bootstrapAddress", "");
 
 
-// Wifi 
+// Wifi
 user_pref("network.trr.wait-for-portal", false);
 user_pref("network.captive-portal-service.enabled", false);
 
@@ -491,7 +491,7 @@ user_pref("extensions.screenshots.upload-disabled", false); // default
 user_pref("extensions.screenshots.disabled", true); // default false
 
 
-// Auto formfill 
+// Auto formfill
 user_pref("browser.formfill.enable", false); // default
 user_pref("extensions.formautofill.addresses.enabled", false); // default true
 user_pref("extensions.formautofill.creditCards.enabled", false); // default true
@@ -500,11 +500,11 @@ user_pref("signon.autofillForms", false);
 user_pref("signon.importedFromSqlite", true);
 user_pref("signon.rememberSignons", false);
 
-// Geo 
+// Geo
 user_pref("permissions.default.geo", 2); // default 0
 
 
-// WebGL 
+// WebGL
 user_pref("webgl.disable-extensions", true); // default
 user_pref("webgl.min_capability_mode", true); // default false
 user_pref("webgl.disable-fail-if-major-performance-caveae", true); // default
@@ -541,7 +541,7 @@ user_pref("security.webauth.u2f", true); // default
 user_pref("network.dns.disableIPv6", false); // default
 
 
-// Safe-Browsing 
+// Safe-Browsing
 user_pref("browser.safebrowsing.blockedURIs.enabled", false);
 user_pref("browser.safebrowsing.downloads.enabled", false);
 user_pref("browser.safebrowsing.downloads.remote.enabled", false);
@@ -775,14 +775,14 @@ user_pref("browser.tabs.drawInTitlebar", true); //default
 
 
 // uBO rules
-// Block local access 
+// Block local access
 //||10.^$important,third-party
 //||127.0.^$important,third-party
 //||172.26.^$important,third-party
 //||192.168.^$important,third-party
 //||localhost^$important,third-party
 // uBO
-// Block router GUI 
+// Block router GUI
 //||asus.box^$important,third-party
 //||easy.box^$important,third-party
 //||fritz.box^$important,third-party

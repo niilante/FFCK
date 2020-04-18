@@ -94,8 +94,8 @@ user_pref("browser.tabs.remote.useCrossOriginOpenerPolicy", true); // false is d
 
 
 // Do not tell Firefox to override color specified by a website
-user_pref("browser.display.document_color_use", 2); // 0 default
 user_pref("browser.display.background_color", "#000000"); // #FFFFFF
+user_pref("browser.display.document_color_use", 2); // 0 default
 user_pref("browser.display.foreground_color", "#000000"); // #000000
 
 
@@ -111,11 +111,16 @@ user_pref("privacy.donottrackheader.enabled", false);
 // https://github.com/mozfreddyb/test-firstpartyisolation
 //user_pref("privacy.firstparty.isolate.block_post_message", true);
 //user_pref("privacy.firstparty.isolate.restrict_opener_access", false);
+user_pref("browser.cache.cache_isolation", true);
 user_pref("intl.accept_languages", "en-US, en");
 user_pref("intl.charset.fallback.override", "windows-1252");
 user_pref("javascript.use_us_english_locale", true); //https://hg.mozilla.org/mozilla-central/rev/52d635f2b33d
 user_pref("privacy.firstparty.isolate", false); // Remember we use Temporary Containers
 user_pref("privacy.spoof_english", 2);
+
+
+// Dynamic FPI
+user_pref("browser.contentblocking.reject-and-isolate-cookies.preferences.ui.enabled", true);
 
 
 // RFP
@@ -378,6 +383,8 @@ user_pref("services.settings.server", "");
 user_pref("network.IDN.whitelist.museum", false);
 user_pref("network.websocket.max-connections", 150);
 user_pref("image.mem.surfacecache.min_expiration_ms", 50000);
+//user_pref("dom.IntersectionObserver.enabled", false);
+
 
 // Prefetch
 user_pref("network.dns.disablePrefetchFromHTTPS", true);
@@ -453,16 +460,16 @@ user_pref("security.ssl3.dhe_rsa_aes_256_sha", false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_gcm_sha256", true);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_128_sha", false);
 user_pref("security.ssl3.ecdhe_ecdsa_aes_256_gcm_sha384", true);
-user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha", true);
 user_pref("security.ssl3.ecdhe_ecdsa_chacha20_poly1305_sha256", false);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_gcm_sha256", true);
 user_pref("security.ssl3.ecdhe_rsa_aes_128_sha", false);
 user_pref("security.ssl3.ecdhe_rsa_aes_256_gcm_sha384", true);
-user_pref("security.ssl3.ecdhe_rsa_aes_256_sha", true);
 user_pref("security.ssl3.ecdhe_rsa_chacha20_poly1305_sha256", false);
-user_pref("security.ssl3.rsa_aes_128_sha", false);
-user_pref("security.ssl3.rsa_aes_256_sha", true);
 user_pref("security.ssl3.rsa_des_ede3_sha", false);
+
+
+// UNC
+//user_pref("network.file.disable_unc_paths", false);
 
 
 // Lockwise
