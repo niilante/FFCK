@@ -649,7 +649,7 @@ user_pref("extensions.content_script_csp.enabled", false);
 
 //Service Workers
 //Better - Control via uBO/uM
-user_pref("dom.push.enabled", false);
+//user_pref("dom.push.enabled", true);
 user_pref("dom.serviceWorkers.enabled", true);
 user_pref("permissions.default.desktop-notification", 2);
 
