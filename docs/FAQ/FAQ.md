@@ -1,40 +1,40 @@
-## [FFCK Project FAQ](#ffck-project-faq)
-- [What is the difference between user.js and prefs.js?](#what-is-the-difference-between-user.js-and-pref.js-)
-- [Which Referrer extensions do I really need?](#which-referrer-extensions-do-i-need)
-- [My Firefox update X broke something, is that because of your config?](#my-firefox-update-x-broke-something-is-that-because-of-your-config)
-- [Cookies in Private Mode (PBM) vs. “Delete cookies when Firefox closes”](#cookies-in-private-mode-pbm-vs-%22delete-cookies-when-firefox-closes%22)
-- [Anti-Private Browser mode detection](#anti-private-browser-mode-detection)
-- [Why is `resistFingerprinting` disabled?](#why-is-resistfingerprinting-disabled)
-- [Why are some flags disabled when I can control them via FF “Settings”?](#why-are-some-flags-disabled-when-i-can-control-them-via-ff-%22settings%22)
-- [Wont-fix stuff](#wont-fix-stuff)
-- [Why are studies & telemetry disabled?](#why-are-studies--telemetry-disabled)
-- [Does any of these tweaks really increase my security and how can I check it?](#does-any-of-these-tweaks-really-increase-my-security-and-how-can-i-check-it)
-- [Which Telemetry is disabled via user.js?](#which-telemetry-is-disabled-via-userjs)
-- [Optional addons to enhance some Firefox integrated functions](#optional-addons-to-enhance-some-firefox-integrated-functions)
-- [Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?](#why-is-%22safe-browsing%22-etc-disabled-shouldnt-that-protect-me-against-malware)
-- [Why aren’t digital Signatures enforced by default to prevent Malware downloads?](#why-arent-digital-signatures-enforced-by-default-to-prevent-malware-downloads)
-- [Why does Skype-Web refuse to work in Firefox?](#why-does-skype-web-refuse-to-work-in-firefox)
-- [How to workaround Google’s CAPTCHA problem](#how-to-workaround-googles-captcha-problem)
-- [Do I still need Tor Browser even after using a hardened user.js configuration?](#do-i-still-need-tor-browser-even-after-using-a-hardened-userjs-configuration)
-- [Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?](#why-are-several-scripts-or-filter-lists-gone-after-i-updated-to-firefox-660)
-- [CanvasBlocker extension Vs. the Firefox integrated solution](#canvasblocker-extension-vs-the-firefox-integrated-solution)
-- [Disabling locked toolkit.telemetry.enabled (and others)](#disabling-locked-toolkittelemetryenabled-and-others)
-- [Which extensions could I use to reduce the tracking behavior?](#which-extensions-could-i-use-to-reduce-the-tracking-behavior)
-- [Where does Firefox Multi-Account Containers Extension store its settings?](#where-does-firefox-multi-account-containers-extension-store-its-settings)
-- [Is there a master list of all about:config flags (incl. the hidden ones)?](#is-there-a-master-list-of-all-aboutconfig-flags-incl-the-hidden-ones)
-- [How to install addons in Mozilla Fenix?](#how-to-install-addons-in-mozilla-fenix)
-- [I can’t see any pictures after I used "save image as" option, what can I do?](#i-cant-see-any-pictures-after-i-used-%22save-image-as%22-option-what-can-i-do)
-- [About:config filtering with Nightly Builds](#aboutconfig-filtering-with-nightly-builds)
-- [I’m looking for a specific CSS tweak e.g. to make the context menu dark](#im-looking-for-a-specific-css-tweak-eg-to-make-the-context-menu-dark)
-- [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
-- [GDrive, GMail, YouTube are slow in Firefox — What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox---what-can-i-do)
-- [What are StaticPrefs?](#what-are-staticprefs)
-- [Against obfuscation as a "privacy tool"](#against-obfuscation-as-a-%22privacy-tool-%22)
-- [Enabling DoH breaks my VPN connection](#enabling-doh-breaks-my-vpn-connection)
-- [Why is `content process limit` not set to 1?](#why-is-content-process-limit-not-set-to-1)
-- [Working with a second profile](#second-profile)
-- [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacy.trackingprotection.enabled-and-privacy.resistfingerprinting)
-- [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-.txt-file) 
+* [What is the difference between user.js and prefs.js?](#what-is-the-difference-between-userjs-and-prefsjs)
+* [Which Referrer extensions do I need?](#which-referrer-extensions-do-i-need)
+* [My Firefox update X broke something, is that because of your config?](#my-firefox-update-x-broke-something-is-that-because-of-your-config)
+* [Cookies in Private Mode (PBM) vs. “Delete cookies when Firefox closes”](#cookies-in-private-mode-pbm-vs-delete-cookies-when-firefox-closes)
+* [Anti-Private Browser mode detection](#anti-private-browser-mode-detection)
+* [Why is `resistFingerprinting` disabled?](#why-is-resistfingerprinting-disabled)
+* [Why are some flags disabled when I can control them via FF "Settings"?](#why-are-some-flags-disabled-when-i-can-control-them-via-ff-settings)
+* [Wont-fix stuff](#wont-fix-stuff)
+* [Why are studies & telemetry disabled?](#why-are-studies--telemetry-disabled)
+* [Does any of these tweaks really increase my security and how can I check it?](#does-any-of-these-tweaks-really-increase-my-security-and-how-can-i-check-it)
+* [Which Telemetry is disabled via user.js?](#which-telemetry-is-disabled-via-userjs)
+* [Optional addons to enhance some Firefox functions](#optional-addons-to-enhance-some-firefox-functions)
+* [Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?](#why-is-safe-browsing-etc-disabled-shouldnt-that-protect-me-against-malware)
+* [Why aren’t digital Signatures enforced by default to prevent Malware downloads?](#why-arent-digital-signatures-enforced-by-default-to-prevent-malware-downloads)
+* [Why does Skype-Web refuse to work in Firefox?](#why-does-skype-web-refuse-to-work-in-firefox)
+* [How to workaround Google’s CAPTCHA problem](#how-to-workaround-googles-captcha-problem)
+* [Do I still need Tor Browser even after using a hardened user.js configuration?](#do-i-still-need-tor-browser-even-after-using-a-hardened-userjs-configuration)
+* [Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?](#why-are-several-scripts-or-filter-lists-gone-after-i-updated-to-firefox-660)
+* [CanvasBlocker extension Vs. the Firefox integrated solution](#canvasblocker-extension-vs-the-firefox-integrated-solution)
+* [Disabling locked toolkit.telemetry.enabled (and others)](#disabling-locked-toolkittelemetryenabled-and-others)
+* [Which extensions could I use to reduce the overall tracking behavior?](#which-extensions-could-i-use-to-reduce-the-overall-tracking-behavior)
+* [Where does Firefox Multi-Account Containers Extension store its settings?](#where-does-firefox-multi-account-containers-extension-store-its-settings)
+* [Is there a master list of all about:config flags (incl. the hidden ones)?](#is-there-a-master-list-of-all-aboutconfig-flags-incl-the-hidden-ones)
+* [How to install addons in Mozilla Fenix?](#how-to-install-addons-in-mozilla-fenix)
+* [I can’t see any pictures after I used “save image as” option, what can I do?](#i-cant-see-any-pictures-after-i-used-save-image-as-option-what-can-i-do)
+* [About:config filtering with Nightly Builds](#aboutconfig-filtering-with-nightly-builds)
+* [I’m looking for a specific CSS tweak e.g. to make the context menu dark](#im-looking-for-a-specific-css-tweak-eg-to-make-the-context-menu-dark)
+* [Is it possible to downgrade my FF profile?](#is-it-possible-to-downgrade-my-ff-profile)
+* [GDrive, GMail, YouTube are slow in Firefox — What can I do?!](#gdrive-gmail-youtube-are-slow-in-firefox--what-can-i-do)
+* [Policy Templates](#policy-templates)
+* [What are StaticPrefs?](#what-are-staticprefs)
+* [Against obfuscation as a "privacy tool"](#against-obfuscation-as-a-privacy-tool)
+* [Enabling DoH breaks my VPN connection](#enabling-doh-breaks-my-vpn-connection)
+* [Why is `content process limit` not set to 1?](#why-is-content-process-limit-not-set-to-1)
+* [Second Profile](#second-profile)
+* [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacytrackingprotectionenabled-and-privacyresistfingerprinting)
+* [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-txt-file)
 
 
 ## What is the difference between user.js and prefs.js?
@@ -51,7 +51,7 @@ Some preferences can't be set via user.js, as Firefox sets some preferences afte
 
 ## Which Referrer extensions do I need?
 
-A list of active maintained referer extension is available over [here](https://gitlab.com/KevinRoebert/ClearUrls/wikis/Similar-Addons). However this is normally up to you, my suggestion is that you combine both Smart Referer and Neat URL because both working different from each another. 
+A list of active maintained referer extension is available over [here](https://gitlab.com/KevinRoebert/ClearUrls/wikis/Similar-Addons). However this is normally up to you, my suggestion is that you combine both Smart Referer and Neat URL because both working different from each another.
 
 * **Neat URL**: This extensions tries to remove various tracking parameters from the URL itself. For example it removes the UTM parameter `example.com/?utm_source=github` - Everything after `?` will be automatically removed because this could sent back to the origin server.
 * **Smart Referer**: Smart Referer basically omits the Referer header from HTTP(S) requests unless the request is to the same domain as the page you’re already on. This means that the Referer header normally includes the address of the page you were on before navigating to the current page (_there are some exceptions_). This e.g. protects your from websites which trying to get your browsing habits (history).
@@ -91,7 +91,7 @@ Multiple reasons, some are bug related, others might [break](https://wiki.mozill
 * `Mozilla/5.0 (Windows NT 6.1; rv:52.0) Gecko/20100101 Firefox/52.0` is used as user agent for the Tor Browser and is evry common, but be warned [changing the user agent without changing to a corresponding platform will make your browser nearly unique](https://wiki.archlinux.org/index.php/Firefox/Privacy).
 * Other important Addon [problems](https://bugzilla.mozilla.org/show_bug.cgi?id=1588916)
 
-What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (_in his current state_) not useful, we use other flags and protection mechanism in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s simply impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”. 
+What now? Well, since I don't think that "Resist [Fingerprinting](https://wiki.mozilla.org/Security/Fingerprinting)" (RFP) is (_in his current state_) not useful, we use other flags and protection mechanism in order to not fully lose our privacy. A (_good_) VPN and the user.js is in _most_ cases enough. It’s simply impossible to defeat all fingerprinting mechanism without destroying the normal “web surfing fun”.
 
 
 ## Why are some flags disabled when I can control them via FF "Settings"?
@@ -103,7 +103,7 @@ Some flags are preset in case you _accidently_ installed addon x e.g. Screenshot
 
 I don’t waste my lifetime and anyone’s else time trying to “fix” something which is protocol specific, this has to be fixed within the Browsers source code or the protocol specification. Disabling everything makes less sense because a) not every site/server might use it b) it might not directly compromise your security or privacy setup c) not every page is exploitable or abuse xyz hole. In most cases exploiting something needs additional steps to make it effective for an attacker to “gain something from it” d) I believe in layer security and not software ‘security’.
 
-* Basically **every connection is disabled**, except for getting **certificate updates** (blacklist). 
+* Basically **every connection is disabled**, except for getting **certificate updates** (blacklist).
 * **WebRTC** - I disabled it by default, you not need to disable it in uBlock.
 * **WebGL is enabled**, the attack surface is practical too low, (except for fingerprinting) and some pages might need it e.g. ShaderToys, Switching to HTML5 is not an option, it also has several fingerprinting problems. That been said, the fingerprint on test pages getting a higher score here, because it’s enabled but there are optional extensions to control it per-site basis.
 * **JavaScript will not be entirely disabled** - You can go ahead and do this per-site basis via uBlock or directly via Browser (whitelist).
@@ -111,15 +111,15 @@ I don’t waste my lifetime and anyone’s else time trying to “fix” somethi
 * **Stuff which breaks functionally** such as 'xyz' (e.g. VR, GamePad) based APIs, unless there is evidence that it can be abused in the real-world.
 * [Plugin](https://www.fxsitecompat.com/en-CA/docs/2015/plug-in-support-will-be-dropped-by-the-end-of-2016-except-flash/) related questions or things, this includes Java, Adobe Flash and other plugins. If a website needs Flash then stay away from it (however in e.g. China or Korea this is maybe not the best suggestions because the Gov. forces some pages to use e.g. Flash, it’s not a joke!).
 * **Reducing any network traffic and memory footprint** is the long term mission in this project. -  I don’t think that any resources should be wasted, if it’s only 1 kB in Memory or 1 kB as network traffic, create a plain text file, store your private address in it and check the file-size, it’s 1KB and this could already expose your true identity.
-* **Disabling X reduces attack surface** - Dunno, which dude started this crap (I guess it was me) when I first said this about Flash in a forum in the mid 90s. “Reducing the attack surface” can be misinterpreted, not everything which is loaded will be executed, so there is no attack scenario and some things need explicit permission e.g. if a website wants to gain access to your webcam. Stop saying e.g. disable x because it reduces the attack surface, no that’s not always true and in most cases in crippled the web-experience for all users. 
+* **Disabling X reduces attack surface** - Dunno, which dude started this crap (I guess it was me) when I first said this about Flash in a forum in the mid 90s. “Reducing the attack surface” can be misinterpreted, not everything which is loaded will be executed, so there is no attack scenario and some things need explicit permission e.g. if a website wants to gain access to your webcam. Stop saying e.g. disable x because it reduces the attack surface, no that’s not always true and in most cases in crippled the web-experience for all users.
 * **This project does not aim to filter the web** - I don’t think filtering the web is the answer, it leads us to more tracking, more restrictions and hurts the little ones (e.g. the ads topic). I see other configuration which disabling basically everything, this is not the mission here, it should make sense and should benefit everyone without been worried that protocol/ads/extension you might leak your data. If you worried that e.g. a CDN leaks your data, because it collects your IP (due to security reasons e.g. to prevent DOS attacks or other attacks/exfl.) then use a VPN and “obfuscate” (hide) your real IP if that is your main concern.
 * **Crypto-miners** - “workers” are disabled. - You see in the configuration that the workers-flag itself is enabled (debug reasons) but since we start Firefox in Private Browsing Mode (PBM) it automatically gets disabled (restricted) once you started the fox.
 
 
 ## Why are studies & telemetry disabled?
 
-> Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure. 
-Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser, it’s not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn’t help at all cause something is missing and it consumes overall more time. 
+> Telemetry is an automated communications process by which measurements and other data are collected at remote or inaccessible points and transmitted to receiving equipment for monitoring. The word is derived from Greek roots: tele = remote, and metron = measure.
+Please note and consider to leave telemetry enabled, this helps Mozilla to secure the browser, it’s not about tracking or spying the thing is that no one wants to send manually the needed information and at the end mostly such reports doesn’t help at all cause something is missing and it consumes overall more time.
 
 The biggest “pro” argument for telemetry is that some Mozilla Developers think that some old or new features aren’t used enough to justify maintenance (if you disable telemetry), this might helps them to focus on _more important_ things. This is overall not a bad argument, however I think telemetry & studies should be moved to nightly or beta (testing) builds only and do not belong into any stable Firefox builds.
 
@@ -144,7 +144,7 @@ There are [bunch of websites which testing specific API's](https://github.com/CH
 - [x] Do Not Track (DnT) is turned off due to fingerprint reasons, it also not makes sense to enable it cause this is handled by each page and totally an optional feature!
 - [x] Crash reports are disabled!
 - [x] All Heartbeat(s) are disabled!
- 
+
 **... or in other words, every single browser based telemetry element gets disabled — because in my point of view, this belongs into test/nightly builds and not into stable or ESR releases**
 
 
@@ -165,7 +165,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [PrivacySpy](https://addons.mozilla.org/en-US/firefox/addon/privacyspy/)
 * [Media Reaper - Privacy 1st, Audio & Video Download](https://sasrip.cf/) + ([addon](http://anonym.es/?https://addons.mozilla.org/en-US/firefox/addon/media-reaper/))
 * [Make Omnibox Great Again](https://addons.mozilla.org/ko/firefox/addon/moga-make-omnibox-great-again/) & ([source code](https://github.com/phu54321/MOGA))
-* [RSSPreview](https://addons.mozilla.org/en-US/firefox/addon/rsspreview/) 
+* [RSSPreview](https://addons.mozilla.org/en-US/firefox/addon/rsspreview/)
 * [Select After Closing Current](https://addons.mozilla.org/en-US/firefox/addon/select-after-closing-current/)
 
 
@@ -208,15 +208,15 @@ Because of certain problems with time/Google I decided to not enable several ant
 
 ## Do I still need Tor Browser even after using a hardened user.js configuration?
 
-The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicitly designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politician person etc. 
+The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicitly designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politician person etc.
 
 
-I highly recommend to use Tor Browser as your default and only Browser. 
+I highly recommend to use Tor Browser as your default and only Browser.
 
 
 ## Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?
 
-Firefox 66 changed the storage back-end from .json blobs to IndexedDB files, in other words during this migration process it’s very much likely that e.g. Tapermonkey or the internal database gets corrupted. The same can happen with your passwords whenever `logins.json` or/and `key3.DB` gets corrupted you might [lose all of your passwords](https://support.mozilla.org/en-US/questions/1181868). I highly suggest that you use KeePass or another password manager instead of Mozilla’s own password manager function. 
+Firefox 66 changed the storage back-end from .json blobs to IndexedDB files, in other words during this migration process it’s very much likely that e.g. Tapermonkey or the internal database gets corrupted. The same can happen with your passwords whenever `logins.json` or/and `key3.DB` gets corrupted you might [lose all of your passwords](https://support.mozilla.org/en-US/questions/1181868). I highly suggest that you use KeePass or another password manager instead of Mozilla’s own password manager function.
 
 
 ## CanvasBlocker extension Vs. the Firefox integrated solution
@@ -230,32 +230,32 @@ Mozilla Firefox uses the similar technique as the Tor Browser (_which is not rea
 
 Manually create (or download) the file `autoconfig.js` (_other names won’t work_) it belongs into the `/defaults/pref/autoconfig.js` dir. In my repo it’s [this file](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/autoconfig.js) and drop it together with the [mozilla.cfg](https://github.com/CHEF-KOCH/FFCK/blob/master/user.js/mozilla.cfg) into your Firefox profile.
 
-## Which extensions could I use to reduce the tracking behavior?
+## Which extensions could I use to reduce the overall tracking behavior?
 
-That’s a difficult question because every user has other needs, so I’ll only list the extension which I used in my daily Firefox times. 
+That’s a difficult question because every user has other needs, so I’ll only list the extension which I used in my daily Firefox times.
 
-* [Temporary Containers Firefox Add-on (github.com)](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
 * [Auto Tab Discard](https://addons.mozilla.org/en-US/firefox/addon/auto-tab-discard/) (_optional_ and more a workaround for some known bugs)
-* [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/), read [Bug 1531601](https://bugzilla.mozilla.org/show_bug.cgi?id=1531601) & [csswg-drafts](https://github.com/w3c/csswg-drafts/issues/2339) for the current progress
-* [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a “gimmick”, we enforce this already via user.js_)
-* [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
-* [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
-* ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
 * [CanvasBlocker](https://addons.mozilla.org/firefox/addon/canvasblocker/) alternative is [Luminous](https://gbaptista.github.io/luminous/doc/en-US/)
-* ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
-* [Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)
-* ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~
-* [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/)
-* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/)
+* [CSS Exfil Protection](https://addons.mozilla.org/firefox/addon/css-exfil-protection/), read [Bug 1531601](https://bugzilla.mozilla.org/show_bug.cgi?id=1531601) & [csswg-drafts](https://github.com/w3c/csswg-drafts/issues/2339) for the current progress
+* [Decentralyes (decentraleyes.org)](https://decentraleyes.org/)
 * [Firemonkey](https://addons.mozilla.org/en-US/firefox/addon/firemonkey/)
-* [Redirector](https://addons.mozilla.org/firefox/addon/redirector/)
-* [Request Control](https://addons.mozilla.org/en-US/firefox/addon/requestcontrol)
-* [Smart Referer](https://addons.mozilla.org/en-US/firefox/addon/smart-referer/)
-* [Temporary Containers](https://addons.mozilla.org/de/firefox/addon/temporary-containers/) ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
 * [First Party Isolation](https://addons.mozilla.org/en-US/firefox/addon/first-party-isolation/)
 * [inØsight — Zero Width Obfuscation](https://addons.mozilla.org/en-US/firefox/addon/in0sight/)
 * [Multi-Account Containers (github.com)](https://github.com/mozilla/multi-account-containers)
-* [Decentralyes (decentraleyes.org)](https://decentraleyes.org/)
+* [NeatURL](https://addons.mozilla.org/en-US/firefox/addon/neat-url/)
+* [Privacy Settings](https://add0n.com/privacy-settings.html) (_more a “gimmick”, we enforce this already via user.js_)
+* [Redirector](https://addons.mozilla.org/firefox/addon/redirector/)
+* [Request Control](https://addons.mozilla.org/en-US/firefox/addon/requestcontrol)
+* [Skip Redirect](https://addons.mozilla.org/firefox/addon/skip-redirect/)
+* [Smart Referer](https://addons.mozilla.org/en-US/firefox/addon/smart-referer/)
+* [Temporary Containers Firefox Add-on (github.com)](https://github.com/stoically/firefox-add-on-temporary-containers#readme)
+* [Temporary Containers](https://addons.mozilla.org/de/firefox/addon/temporary-containers/) ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
+* [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
+* [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
+* ~~[Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)~~ - CDN's locally doesn't make sense as they change over time and also you make a connection to the CDN's anyway. So you only increase your own attack surface.
+* ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~
+* ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
+* ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
 
 
 Keep in mind that I’m a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you to that “they are the best” is always a bad idea.
@@ -267,7 +267,7 @@ The localstorage is located under: `<your-profile-folder>\storage\default\moz-ex
 
 ## Is there a master list of all about:config flags (incl. the hidden ones)?
 
-All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features) or [here](http://kb.mozillazine.org/About:config_entries), this includes even the experimental ones. If you search only for the hidden prefs you will not find them easily in the source code or via search because there is no single master list. 
+All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozilla/Firefox/Experimental_features) or [here](http://kb.mozillazine.org/About:config_entries), this includes even the experimental ones. If you search only for the hidden prefs you will not find them easily in the source code or via search because there is no single master list.
 
 
 ## How to install addons in Mozilla Fenix?
@@ -284,7 +284,7 @@ All prefs are listed over [here](https://developer.mozilla.org/en-US/docs/Mozill
 Windows, Linux and MacOS (by default) does not support the format and that’s basically the reason why you can’t open .webp with the integrated tools to view webp images. This is not really a Firefox problem, the problem is that Adobe does not supports the [WebP](http://www.telegraphics.com.au/sw/product/WebPFormat) standard (most apps using the Adobe standards/implementations). However, you can open such formats with free programs e.g. GIMP. A solution for Photoshop users would be to add a filter for this format. In our configuration we enforced (by default) to save images only as .jpg, .jpeg etc. to workaround this.
 
 
-## About:config filtering with Nightly Builds 
+## About:config filtering with Nightly Builds
 
 The old syntax `about:config?filter=bookmarks` [does not work anymore](https://old.reddit.com/r/firefox/comments/d6alv2/aboutconfig_filter_in_nightly/), this is not a bug but was disabled due to several concerns, see [here](https://bugzilla.mozilla.org/show_bug.cgi?id=1501450). The new filtering syntax is `chrome://global/content/config.xul?filter=/abc|def/` (_yes, it’s "chrome" but it works in Firefox too_).
 
@@ -296,18 +296,18 @@ A collection of userstyle “tweaks”can be found under [this project (firefox-
 
 ## Is it possible to downgrade my FF profile?
 
-Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hard coded and an environment variable. You can add `--allow-downgrade` to the target field on your Firefox shortcut. Keep in mind that this parameter is unsupported and you do this at your own risk. 
+Yes, it is! But not via configuration, the `moz_allow_downgrade` option is hard coded and an environment variable. You can add `--allow-downgrade` to the target field on your Firefox shortcut. Keep in mind that this parameter is unsupported and you do this at your own risk.
 
 
 ## GDrive, GMail, YouTube are slow in Firefox — What can I do?!
 
 Google redesigned their own services e.g. GDrive, GMail, YouTube (_you name it_). These website using now non-standard JavaScript (a.k.a homebrew APIs) stuff. This is called "Polymer". Polymer is (by default) enabled on every Google website.
 
-> YouTube page load is 5x slower in Firefox and Edge than in Chrome because Youtube’s Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en). 
+> YouTube page load is 5x slower in Firefox and Edge than in Chrome because Youtube’s Polymer redesign relies on the deprecated Shadow DOM v0 API. - Source: [Mozilla Dev.](https://twitter.com/cpeterso/status/1021626510296285185?lang=en).
 
 There are three things you can do:
-* Manually disable the new design (polymer) over [https://www.youtube.com/?disable_polymer=true](https://www.youtube.com/?disable_polymer=true) 
-* [Install an addon](https://addons.mozilla.org/de/firefox/addon/disable-polymer-youtube/) ([Chrome](https://chrome.google.com/webstore/detail/restore-classic-for-youtu/dhnphdafbioamppmaiaebbdobfhbhnlm)). 
+* Manually disable the new design (polymer) over [https://www.youtube.com/?disable_polymer=true](https://www.youtube.com/?disable_polymer=true)
+* [Install an addon](https://addons.mozilla.org/de/firefox/addon/disable-polymer-youtube/) ([Chrome](https://chrome.google.com/webstore/detail/restore-classic-for-youtu/dhnphdafbioamppmaiaebbdobfhbhnlm)).
 * Or via "hacky" solution, fake the user agent e.g. set it to "Opera 12.14" which works via [User Agent switcher](https://chrome.google.com/webstore/detail/user-agent-switcher-for-c/djflhoibgkdhkhhcedjiklpkjnoahfmg) & or other addons/extensions/about:config.
 
 
@@ -318,12 +318,12 @@ You can get the latest Firefox / ESR templates from [here](https://github.com/mo
 
 ## What are StaticPrefs?
 
-[Static prefs](https://github.com/mozilla/gecko-dev/blob/master/modules/libpref/docs/index.md) are special entries which are listed and defined by `StaticPrefList.yaml`. Those prefs shouldn’t appear in both StaticPrefList.yaml and all.js! 
+[Static prefs](https://github.com/mozilla/gecko-dev/blob/master/modules/libpref/docs/index.md) are special entries which are listed and defined by `StaticPrefList.yaml`. Those prefs shouldn’t appear in both StaticPrefList.yaml and all.js!
 
 
 ## Against obfuscation as a "privacy tool"
 
-I [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]). 
+I [do not follow](https://thereader.mitpress.mit.edu/the-fantasy-of-opting-out/) "opting out of surveillance" practices, because they are more than questionable and often problematic. Sometimes they are also already "fixed" within the browser, because the next logical step is (or should) be to report and fix problems within the browser (so you do not need any tools [or only as temp workaround]).
 
 Here are **addons you don't need**:
 * [Cookie AutoDelete](https://addons.mozilla.org/firefox/addon/cookie-autodelete/) - Inefficent because it does not clean everything or is redundant by the integrated Browser cleaning mechanism (when in private browsing mode or "anti-Fingerprint" mode). If you want to use a cookie control addon, go with [CookieMaster](https://addons.mozilla.org/en-US/firefox/addon/cookiemaster/) instead because it (by default) block all cookies and only allow authorized sites, on a per-domain basis. You also can use [I don't care about cookies](https://www.i-dont-care-about-cookies.eu/abp/) or [forget-me-not](https://github.com/Lusito/forget-me-not) in combination with uBlock, which would make more sense.
@@ -346,9 +346,9 @@ It's by design, a VPN with _"DNS leak protection"_ should not allow DOH to work 
 
 ## Why is `content process limit` not set to 1?
 
-A lot of people complaining about the overal CPU and/or RAM usage in Firefox, settings the flag `dom.ipc.processCount` to 1 basically solves all performance and RAM related "problems". However, there is a cost to it. Setting it to 1 reduce the overall Browser security, because once this is done all tabs and windows will be running in a [single process](https://support.mozilla.org/en-US/kb/performance-settings). 
+A lot of people complaining about the overal CPU and/or RAM usage in Firefox, settings the flag `dom.ipc.processCount` to 1 basically solves all performance and RAM related "problems". However, there is a cost to it. Setting it to 1 reduce the overall Browser security, because once this is done all tabs and windows will be running in a [single process](https://support.mozilla.org/en-US/kb/performance-settings).
 
-That means if any website is able to compromise the browser's sandboxing _somehow_, it could more easily access content from every other tab. I you do not care about sandboxing/isolating related things, set it to 1 but **I do not recommend it**. 
+That means if any website is able to compromise the browser's sandboxing _somehow_, it could more easily access content from every other tab. I you do not care about sandboxing/isolating related things, set it to 1 but **I do not recommend it**.
 
 
 ## Second Profile

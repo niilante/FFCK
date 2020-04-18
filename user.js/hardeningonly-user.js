@@ -13,7 +13,7 @@
 //      Requirements: Firefox x64
 //                    uBlock/uMatrix
 
-// Supress warnings ala "Changing these preferences can impact Firefox performance or security"
+// Suppress warnings ala "Changing these preferences can impact Firefox performance or security"
 // Bypass: chrome://global/content/config.xul?filter=
 user_pref("browser.aboutConfig.showWarning", false);
 
@@ -45,7 +45,7 @@ user_pref("network.trr.useGET", true);
 user_pref("network.trr.wait-for-portal", false);
 
 
-// BigInt 
+// BigInt
 user_pref("javascript.options.bigint", false);
 
 
@@ -78,8 +78,9 @@ user_pref("network.IDN_show_punycode", true);
 user_pref("browser.startup.blankWindow", false);
 
 
-// PrivateBrowsing
+// Private Browsing
 //user_pref("browser.privatebrowsing.autostart", true);
+//user_pref("browser.privatebrowsing.forceMediaMemoryCache", true);
 
 
 // Cross-Origin-Opener-Policy
@@ -156,6 +157,10 @@ user_pref("device.sensors.motion.enabled", false);
 user_pref("device.sensors.orientation.enabled", false);
 user_pref("device.sensors.proximity.enabled", false);
 user_pref("device.sensors.test.events", false);
+
+
+// Memory Cache Size
+user_pref("media.memory_cache_max_size", 16384);
 
 
 // App updates, GMP etc
@@ -329,7 +334,6 @@ user_pref("privacy.trackingprotection.fingerprinting.enabled", false); // defaul
 user_pref("privacy.trackingprotection.origin_telemetry.enabled", false);
 user_pref("privacy.trackingprotection.pbmode.enabled", true);
 user_pref("privacy.userContext.enabled", true);
-user_pref("privacy.userContext.longPressBehavior", 2);
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("reader.parse-on-load.enabled", false);
 user_pref("security.ask_for_password", 2);
@@ -510,11 +514,16 @@ user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("browser.search.geoSpecificDefaults.url", "");
 user_pref("geo.enabled", false);
 user_pref("geo.provider.ms-windows-location", false);
+user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
 user_pref("geo.provider.use_corelocation", false);
 user_pref("geo.provider.use_gpsd", false);
 user_pref("geo.wifi.logging.enabled", false);
 user_pref("geo.wifi.uri", "");
 user_pref("permissions.default.geo", 2);
+
+
+// Perms
+user_pref("permissions.delegation.enabled", false);
 
 
 // MathML
@@ -523,14 +532,13 @@ user_pref("mathml.xlink.disabled", true);
 
 
 // WebGL
-user_pref("webgl.disable-extensions", true);
+user_pref("webgl.cgl.multithreaded", false);
 user_pref("webgl.disable-fail-if-major-performance-caveat", true);
 user_pref("webgl.disabled", true);
 user_pref("webgl.dxgl.enabled", false);
 user_pref("webgl.enable-debug-renderer-info", false);
 user_pref("webgl.enable-webgl2", false);
 user_pref("webgl.min_capability_mode", true);
-user_pref("webgl.cgl.multithreaded", false);
 
 
 // Health
@@ -541,7 +549,7 @@ user_pref("datareporting.healthreport.uploadEnabled", false);
 user_pref("datareporting.policy.dataSubmissionEnabled", false);
 
 
-// Microphone 
+// Microphone
 //user_pref("permissions.default.microphone", false);
 
 
@@ -563,7 +571,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("browser.newtabpage.activity-stream.feeds.snippets", false);
 user_pref("browser.newtabpage.activity-stream.feeds.systemtick", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+//user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.filterAdult", true);
 user_pref("browser.newtabpage.activity-stream.improvesearch.topSiteSearchShortcuts.searchEngines", "");
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
@@ -577,7 +585,7 @@ user_pref("browser.newtabpage.activity-stream.topSitesRows", 0);
 
 
 // DOM
-user_pref("dom.event.clipboardevents.enabled", false);
+//user_pref("dom.event.clipboardevents.enabled", false);
 //user_pref("dom.script_loader.bytecode_cache.enabled", false);
 user_pref("dom.allow_cut_copy", false);
 user_pref("dom.archivereader.enabled", false);
@@ -630,7 +638,7 @@ user_pref("dom.serviceWorkers.enabled", true);
 user_pref("permissions.default.desktop-notification", 2);
 
 
-// Camera permission 
+// Camera permission
 user_pref("permissions.default.camera", false);
 
 
@@ -642,7 +650,6 @@ user_pref("dom.indexedDB.enabled", false);
 user_pref("browser.search.geoip.url", "");
 user_pref("browser.search.geoSpecificDefaults", false);
 user_pref("browser.search.hiddenOneOffs", "Google,Bing,Amazon.com,eBay,Twitter,Wikipedia (en)");
-user_pref("browser.search.region", "US");
 user_pref("browser.search.reset.enabled", false);
 user_pref("browser.search.reset.status", "");
 user_pref("browser.search.reset.whitelist", "");
@@ -761,6 +768,7 @@ user_pref("browser.tabs.insertAfterCurrent", true);
 //user_pref("gfx.downloadable_fonts.woff2.enabled", false);
 user_pref("layout.css.font-loading-api.enabled", false); // Better block fonts manually via uBO e.g. ||fonts.googleapi.com$important,third-party or Toggle Fonts addon
 user_pref("browser.display.use_document_fonts", 1);
+user_pref("browser.display.use_system_colors", false);
 user_pref("gfx.downloadable_fonts.disable_cache", true);
 user_pref("gfx.font_rendering.graphite.enabled", false);
 user_pref("gfx.font_rendering.opentype_svg.enabled", true);
