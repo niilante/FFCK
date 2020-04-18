@@ -1,8 +1,30 @@
-## Workarounds 
+## Workarounds
 
-This list is a small overview in case you suffered from any "config problem". 
+This list is a small overview in case you suffered from any "config problem".
 
 I do not use these workarounds myself because security reasons and while I'm often not affected, that's why they are not included in the user.js file, but they are worth to be mentioned, because some people might find them useful or they are affected by bug/problem x.
+
+* [Workarounds](#workarounds)
+  * [Single monitor users only](#single-monitor-users-only)
+  * [Disable alt+key behaviour](#disable-altkey-behaviour)
+  * [Linux only (_some tweaks_)](#linux-only-some-tweaks)
+  * [Disable GreasyMonkey telemetry](#disable-greasymonkey-telemetry)
+  * [Sync + example how to configure it per-extension: services.sync.prefs.<SETTING>](#sync--example-how-to-configure-it-per-extension-servicessyncprefssetting)
+  * [Loopback Bug](#loopback-bug)
+  * [Wifi (Captive Portal) -> On Android, the captive portal is handled by the OS itself!](#wifi-captive-portal---on-android-the-captive-portal-is-handled-by-the-os-itself)
+  * [Persistent drop-down menu (in case you are affected)](#persistent-drop-down-menu-in-case-you-are-affected)
+  * [MaCOS (I don't support it because I can't test it)](#macos-i-dont-support-it-because-i-cant-test-it)
+* [Compressing the profile database to "gain some speed"](#compressing-the-profile-database-to-gain-some-speed)
+* [Old about:config interface](#old-aboutconfig-interface)
+* [I can't disable the "new tab" features on mobile, what can I do?](#i-cant-disable-the-new-tab-features-on-mobile-what-can-i-do)
+* [Avoid getting "From this website" suggestions for login fields](#avoid-getting-from-this-website-suggestions-for-login-fields)
+* [Temporary Containers creates thousands of user IDs and folders which waste my space, what can I do?](#temporary-containers-creates-thousands-of-user-ids-and-folders-which-waste-my-space-what-can-i-do)
+* [Mozilla removed (since FF 71+) the site specific user-agent override option](#mozilla-removed-since-ff-71-the-site-specific-user-agent-override-option)
+* [Stutters in fullscreen occur, especially on higher resolutions (1080p+)](#stutters-in-fullscreen-occur-especially-on-higher-resolutions-1080p)
+* [Copy & Paste in Google Docs or Sheets does not work](#copy--paste-in-google-docs-or-sheets-does-not-work)
+* [How do I disable the black scrollbar and it's background](#how-do-i-disable-the-black-scrollbar-and-its-background)
+* [Tearing when WebRender is enabled](#tearing-when-webrender-is-enabled)
+* [Multiple bookmark toolbar rows](#multiple-bookmark-toolbar-rows)
 
 
 ### Single monitor users only
@@ -12,7 +34,7 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 * `user_pref("gfx.color_management.mode", 1);`
 
 
-### Disable alt+key behavior
+### Disable alt+key behaviour
 * `user_pref("ui.key.menuAccessKeyFocuses", false);`
 
 
@@ -94,7 +116,7 @@ Since Firefox 71+ the new about:config interface is enabled by default, in order
 
 
 ## I can't disable the "new tab" features on mobile, what can I do?
-You could work with `policies.json`, it's fully excplained over [here](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson). Create `policies.json` under `distribution/policies.json` and then you can add your own policies.
+You could work with `policies.json`, it's fully explained over [here](https://support.mozilla.org/en-US/kb/customizing-firefox-using-policiesjson). Create `policies.json` under `distribution/policies.json` and then you can add your own policies.
 
 ```json
 {
@@ -106,7 +128,7 @@ You could work with `policies.json`, it's fully excplained over [here](https://s
 ```
 
 ## Avoid getting "From this website" suggestions for login fields
-Both flags need to set to `false` to avoid seend additional login information e.g. on Google Login ["From this website"](https://s19.directupload.net/images/191217/ph3zwi6x.jpg).
+Both flags need to set to `false` to avoid send additional login information e.g. on Google Login ["From this website"](https://s19.directupload.net/images/191217/ph3zwi6x.jpg).
 
 ```JavaScript
 signon.includeOtherSubdomainsInLookup
@@ -133,7 +155,7 @@ Set `dom.event.clipboardevents.enabled` back to `true`.
 
 
 ## How do I disable the black scrollbar and it's background
-You can [adjust](https://github.com/endeavoursc/firefox-overlay-scrollbars-win10) the [scrollbar color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color). The easiest method might be using yet another addon like e.g. [Scrollantana](https://addons.mozilla.org/fr/firefox/addon/scrolantana/) if you don't like touse userChrome.css.
+You can [adjust](https://github.com/endeavoursc/firefox-overlay-scrollbars-win10) the [scrollbar color](https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-color). The easiest method might be using yet another addon like e.g. [Scrollantana](https://addons.mozilla.org/fr/firefox/addon/scrolantana/) if you don't like it use userChrome.css.
 
 * `widget.disable-dark-scrollbar` true
 * `layout.css.scrollbar-color.enabled` false
@@ -142,3 +164,12 @@ You can [adjust](https://github.com/endeavoursc/firefox-overlay-scrollbars-win10
 ## Tearing when WebRender is enabled
 When you use G-Sync and WebRender you might get [tearing](https://www.testufo.com/chase#background=404040&leading=ffffff&trailing=00ffff&distance=32&pps=960&height=-1), this was fixed in the latest Nightly (will be fixed in 74.0 stable). As workaround you can disable G-Sync or use `gfx.webrender.force-disabled` `true`.
 
+
+## Multiple bookmark toolbar rows
+```bash
+#PersonalToolbar {max-height: unset !important}
+
+#PlacesToolbar > hbox:first-child {display: block}
+
+#PlacesToolbarItems {display: flex; flex-wrap: wrap}
+```
