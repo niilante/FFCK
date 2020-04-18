@@ -437,7 +437,7 @@ user_pref("media.gmp-manager.buildID", "20200402050101");
 user_pref("places.history.expiration.transient_current_max_pages", "112348");
 user_pref("sanity-test.driver-version", "26.21.14.4120");
 //user_pref("sanity-test.version", "20190402020101");
-user_pref("security.sandbox.content.tempDirSuffix", "{7ca12269-9ebb-4dc5-8d32-2e274262e2eb}"); // FIXME: linux prob!
+user_pref("security.sandbox.content.tempDirSuffix", "{7ca12269-9ebb-4dc5-8d32-2e274262e2eb}"); // FIXME: linux problem?!
 user_pref("security.sandbox.plugin.tempDirSuffix", "{b8450ff5-4717-4aaa-b59b-a55890c634de}"); // FIXME: borked?
 user_pref("services.settings.last_etag", "1573804224556");
 user_pref("toolkit.telemetry.cachedClientID", "f9e80444-363a-4eac-a7c2-d34aff3c4eae");

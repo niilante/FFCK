@@ -1,37 +1,43 @@
 # Table of Contents
-* [Official Mozilla documentation](#official-mozilla-documentation)
-* [Firefox's Enhanced Tracking Protection whitelist](#firefox-s-enhanced-tracking-protection-whitelist)
-* [Add-on signing Check](#add-on-signing-check)
-* [Source Code Indexing Tools](#source-code-indexing-tools)
-* [Shield Studies](#shield-studies)
-* [Mozilla Autoconfig](#mozilla-autoconfig)
-* [Bookmarks](#bookmarks)
-* [Extensions](#extensions)
-* [Developer Tools & Resources](#developer-tools---resources)
-* [Templates](#templates)
-* [Firefox VS. Chrome](#firefox-vs-chrome)
-* [Fingerprinting](#fingerprinting)
-* [Data Reports](#data-reports)
-* [Fan-made resources](#fan-made-resources)
-* [About:config related](#about-config-related)
-* [userChrome.css related](#userchromecss-related)
-* [Where have we (platform features overview)](#where-have-we--platform-features-overview-)
-* [Autoplay](#autoplay)
-* [Web Security](#web-security)
-* [Performance](#performance)
-* [Mozilla Privacy](#mozilla-privacy)
-* [Mozilla Themes](#mozilla-themes)
-* [Firefox Profile related](#firefox-profile-related)
-* [Firefox color management](#firefox-color-management)
-* [Tor Browser related](#tor-browser-related)
-* [TLS & SSL related](#tls---ssl-related)
-* [Google Safe-Browsing](#google-safe-browsing)
-* [Test Pages & Resources](#test-pages---resources)
-* [Bug Reporting](#bug-reporting)
-* [(Past) privacy incidents](#-past--privacy-incidents)
-* [Other criticism](#other-criticism)
-* [No longer maintained](#no-longer-maintained)
-* [AI based tool to check privacy policies to flag risky apps](#ai-based-tool-to-check-privacy-policies-to-flag-risky-apps)
+* [Table of Contents](#table-of-contents)
+  * [Official Mozilla documentation](#official-mozilla-documentation)
+    * [Firefox's Enhanced Tracking Protection whitelist](#firefoxs-enhanced-tracking-protection-whitelist)
+    * [Add-on signing Check](#add-on-signing-check)
+    * [Source Code Indexing Tools](#source-code-indexing-tools)
+    * [Shield Studies](#shield-studies)
+    * [Mozilla Autoconfig](#mozilla-autoconfig)
+    * [Bookmarks](#bookmarks)
+    * [Extensions](#extensions)
+    * [Containers](#containers)
+    * [Developer Tools & Resources](#developer-tools--resources)
+    * [Localization System](#localization-system)
+    * [Templates](#templates)
+    * [Firefox VS. Chrome](#firefox-vs-chrome)
+    * [Fingerprinting](#fingerprinting)
+    * [Data Reports](#data-reports)
+    * [Fan-made resources](#fan-made-resources)
+    * [About:config related](#aboutconfig-related)
+    * [userChrome.css related](#userchromecss-related)
+    * [Where have we (platform features overview)](#where-have-we-platform-features-overview)
+    * [Autoplay](#autoplay)
+    * [Web Security](#web-security)
+    * [Performance](#performance)
+    * [Mozilla Privacy](#mozilla-privacy)
+    * [Mozilla Themes](#mozilla-themes)
+    * [Firefox Profile related](#firefox-profile-related)
+    * [Firefox color management](#firefox-color-management)
+    * [Tor Browser related](#tor-browser-related)
+    * [TLS & SSL related](#tls--ssl-related)
+    * [Google Safe-Browsing](#google-safe-browsing)
+    * [Mozilla on ethical issues](#mozilla-on-ethical-issues)
+    * [Test Pages & Resources](#test-pages--resources)
+    * [Bug Reporting](#bug-reporting)
+    * [(Past) privacy incidents](#past-privacy-incidents)
+    * [Other criticism](#other-criticism)
+    * [No longer maintained](#no-longer-maintained)
+    * [AI based tool to check privacy policies to flag risky apps](#ai-based-tool-to-check-privacy-policies-to-flag-risky-apps)
+    * [Mozilla's Beta (test) mobile browser](#mozillas-beta-test-mobile-browser)
+    * [Third-Party Tools](#third-party-tools)
 
 
 ## Official Mozilla documentation
@@ -67,7 +73,7 @@
 * [Firefox Voice Campaign (events.mozilla.org)](https://events.mozilla.org/firefoxvoicecampaign)
 
 
-### Mozilla Autoconfig 
+### Mozilla Autoconfig
 * [Debugging Firefox Autoconfig Problems (mike.kaply.com)](https://mike.kaply.com/2016/09/08/debugging-firefox-autoconfig-problems/)
 * [Firefox Autoconfig Files (mike.kaply.com)](https://mike.kaply.com/2012/03/16/customizing-firefox-autoconfig-files)
 * [Firefox Autoconfig Files Continued (mike.kaply.com)](https://mike.kaply.com/2012/03/20/customizing-firefox-autoconfig-files-continued/)
@@ -139,7 +145,7 @@
 
 
 ### userChrome.css related
-* [userChrome.org (userchrome.org)](https://www.userchrome.org/find-user-style-recipes.html) 
+* [userChrome.org (userchrome.org)](https://www.userchrome.org/find-user-style-recipes.html)
 * [firefox-scripts (github.com)](https://github.com/xiaoxiaoflood/firefox-scripts)
 
 
@@ -288,4 +294,3 @@
 
 ### Third-Party Tools
 - [Simple Firefox Backup (Windows)](https://www.sordum.org/12298/simple-firefox-backup-v1-1/)
-
