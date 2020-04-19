@@ -47,7 +47,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("widget.wayland-dmabuf-webgl.enabled", true);
 user_pref("widget.wayland-dmabuf-textures.enable", true);
 user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
-user_pref("browser.urlbar.update1", false); // will be removed
+user_pref("browser.urlbar.update1", false); // will be removed in FF 77
 user_pref("dom.webgpu.enabled", false);
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("network.netlink.route.check.IPv6", "");
@@ -380,7 +380,7 @@ user_pref("browser.underline_anchors", true); // leak?
 user_pref("browser.urlbar.autocomplete.enabled", false);
 user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.autoFill", false);
-user_pref("browser.urlbar.clickSelectsAll", true);
+user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.filter.javascript", true);
 user_pref("browser.urlbar.matchBuckets", "suggestion:4,general:5");

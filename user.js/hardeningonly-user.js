@@ -34,6 +34,7 @@ user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel
 
 // DOH
 // https://github.com/StevenBlack/hosts/issues/968
+// https://www.helpnetsecurity.com/2019/12/09/dns-over-https/
 user_pref("network.trr.allow-rfc1918", true);
 user_pref("network.trr.blacklist-duration", 55);
 //user_pref("network.trr.bootstrapAddress", "1.1.1.1"); //Cloudflare
@@ -709,7 +710,7 @@ user_pref("network.dnsCacheExpiration", 50);
 user_pref("network.dnsCacheExpirationGracePeriod", 50);
 user_pref("network.proxy.socks_remote_dns", true);
 
-// proxy
+// Proxy
 user_pref("network.proxy.no_proxies_on", "");
 
 
