@@ -113,7 +113,7 @@ I don’t waste my lifetime and anyone’s else time trying to “fix” somethi
 * **Reducing any network traffic and memory footprint** is the long term mission in this project. -  I don’t think that any resources should be wasted, if it’s only 1 kB in Memory or 1 kB as network traffic, create a plain text file, store your private address in it and check the file-size, it’s 1KB and this could already expose your true identity.
 * **Disabling X reduces attack surface** - Dunno, which dude started this crap (I guess it was me) when I first said this about Flash in a forum in the mid 90s. “Reducing the attack surface” can be misinterpreted, not everything which is loaded will be executed, so there is no attack scenario and some things need explicit permission e.g. if a website wants to gain access to your webcam. Stop saying e.g. disable x because it reduces the attack surface, no that’s not always true and in most cases in crippled the web-experience for all users.
 * **This project does not aim to filter the web** - I don’t think filtering the web is the answer, it leads us to more tracking, more restrictions and hurts the little ones (e.g. the ads topic). I see other configuration which disabling basically everything, this is not the mission here, it should make sense and should benefit everyone without been worried that protocol/ads/extension you might leak your data. If you worried that e.g. a CDN leaks your data, because it collects your IP (due to security reasons e.g. to prevent DOS attacks or other attacks/exfl.) then use a VPN and “obfuscate” (hide) your real IP if that is your main concern.
-* **Crypto-miners** - “workers” are disabled. - You see in the configuration that the workers-flag itself is enabled (debug reasons) but since we start Firefox in Private Browsing Mode (PBM) it automatically gets disabled (restricted) once you started the fox.
+* **Crypto-miners** - “workers” are disabled. - You see in the configuration that the workers-flag itself is enabled (debug reasons) but since we start Firefox in Private Browsing Mode (PBM) it automatically gets disabled (restricted) once you started the Browser.
 
 
 ## Why are studies & telemetry disabled?
@@ -125,6 +125,12 @@ The biggest “pro” argument for telemetry is that some Mozilla Developers thi
 
 Telemetry itself is not a privacy problem, Mozilla made sure that its anonymized and doesn’t expose any “private” information such as your browsing behavior but I think the overall _benefit_ is not existent since most bugs are been manually submitted via bug tracker, Reddit & co and it causes a _lot of traffic_ (which we want to avoid).
 
+
+Since Firefox 75, the Browser comes with a new telemetry agent that sends information about your operating system and your default browser to Firefox every 24 hours. Mozilla has as a result of the change introduced a Windows group policy that prevents the default-browser-agent.exe executable from sending your default browser info.
+```ps
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Mozilla\Firefox" -Name DisableTelemetry -Value 1 -Force
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Mozilla\Firefox" -Name DisableDefaultBrowserAgent -Value 1 -Force
+````
 
 ## Does any of these tweaks really increase my security and how can I check it?
 

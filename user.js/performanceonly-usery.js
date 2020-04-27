@@ -19,6 +19,10 @@
 // https://browserbench.org/Speedometer2.0/
 
 
+
+// FF Performance Dashboard
+https://arewefastyet.com/
+
 // Discussion & explanation what "performance" really covers
 // https://github.com/CHEF-KOCH/FFCK/issues/34
 
@@ -42,6 +46,11 @@ user_pref("widget.wayland - dmabuf - vaapi.enabled", true);
 // https://codelab.wordpress.com/2017/12/11/firefox-drops-alsa-apulse-to-the-rescue
 user_pref("security.sandbox.content.syscall_whitelis", 16);
 user_pref("security.sandbox.content.read_path_whitelist", "/sys/"); // FIXME:
+
+// Hardware video acceleration
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1619523
+// https://bugzilla.mozilla.org/show_bug.cgi?id=1210726
+
 
 // GTK themes
 user_pref("browser.display.use_system_colors", false);
@@ -367,7 +376,6 @@ user_pref("toolkit.telemetry.updatePing.enabled", false);
 
 // Web Notification
 // FIXME:
-
 
 
 // Reports
