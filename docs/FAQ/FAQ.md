@@ -13,7 +13,7 @@
 * [Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?](#why-is-safe-browsing-etc-disabled-shouldnt-that-protect-me-against-malware)
 * [Why aren’t digital Signatures enforced by default to prevent Malware downloads?](#why-arent-digital-signatures-enforced-by-default-to-prevent-malware-downloads)
 * [Why does Skype-Web refuse to work in Firefox?](#why-does-skype-web-refuse-to-work-in-firefox)
-* [How to workaround Google’s CAPTCHA problem?](#how-to-workaround-googles-captcha-problem)
+* [How to workaround the Google’s CAPTCHA problem?](#how-to-workaround-the-googles-captcha-problem)
 * [Do I still need Tor Browser even after using a hardened user.js configuration?](#do-i-still-need-tor-browser-even-after-using-a-hardened-userjs-configuration)
 * [Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?](#why-are-several-scripts-or-filter-lists-gone-after-i-updated-to-firefox-660)
 * [CanvasBlocker extension Vs. the Firefox integrated solution](#canvasblocker-extension-vs-the-firefox-integrated-solution)
@@ -197,7 +197,7 @@ There is a high chance of false positives, one [popular example is Notepad++](ht
 You need to install [User-Agent Switcher](https://addons.mozilla.org/en-US/firefox/addon/user-agent-switcher-revived/) (or manually edit the User-Agent string) and choose "Google Chrome” or “Microsoft Edge” as User-Agent. Currently Firefox 65 doesn’t support [NPAPI](https://en.wikipedia.org/wiki/NPAPI) which is required for the web version.
 
 
-## How to workaround Google’s CAPTCHA problem?
+## How to workaround the Google’s CAPTCHA problem?
 
 In case you use uBlock copy the following rules under `Options > My Rules` and then hit `apply`.
 
@@ -211,13 +211,12 @@ The config related toggle is `privacy.resistFingerprint` + `privacy.firstparty.i
 Because of certain problems with time/Google I decided to not enable several anti-fingerprinting features. It’s also questionable if they really increase your privacy since there are other methods on the web which bypasses them.
 
 
-
 ## Do I still need Tor Browser even after using a hardened user.js configuration?
 
-The short answer is yes, Tor not only has additional anti-fingerprinting related changes it is explicitly designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politician person etc.
+The short answer is `yes`, Tor not only has additional anti-fingerprinting related changes it is explicitly designed to be _by design_ [more privacy friendly](https://www.torproject.org/projects/torbrowser/design/) since the user can use the Browser out of the box without changing anything. If you are a [target such as journalist](https://www.nbcsandiego.com/news/local/Source-Leaked-Documents-Show-the-US-Government-Tracking-Journalists-and-Advocates-Through-a-Secret-Database-506783231.html), politician person etc.
 
 
-I highly recommend to use Tor Browser as your default and only Browser.
+I highly recommend to use Tor Browser as your default and only Browser if you're privacy biased.
 
 
 ## Why are several Scripts or filter-lists gone after I updated to Firefox 66.0+?
@@ -261,6 +260,7 @@ That’s a difficult question because every user has other needs, so I’ll only
 * ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~
 * ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
 * ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
+* ~~[Ignore X-Frame-Options Header](https://addons.mozilla.org/en-US/firefox/addon/ignore-x-frame-options-header/)~~
 
 
 Keep in mind that I’m a _power user_ which means you might not need all the listed extensions. Blindly installing random extension just because someone told you to that “they are the best” is always a bad idea.
