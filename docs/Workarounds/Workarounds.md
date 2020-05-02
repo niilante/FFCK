@@ -25,6 +25,7 @@ I do not use these workarounds myself because security reasons and while I'm oft
 * [How do I disable the black scrollbar and it's background](#how-do-i-disable-the-black-scrollbar-and-its-background)
 * [Tearing when WebRender is enabled](#tearing-when-webrender-is-enabled)
 * [Multiple bookmark toolbar rows](#multiple-bookmark-toolbar-rows)
+* [Remove the tab bar in Firefox 75+ via CSS](#remove-the-tab-bar-in-firefox-75-via-css)
 
 
 ### Single monitor users only
@@ -74,36 +75,36 @@ See [here](https://hub.displaycal.net/forums/topic/any-idea-whats-wrong-with-my-
 
 
 ### MaCOS (I don't support it because I can't test it)
-* `user_pref("mousewheel.with_meta.action", 1);`
+* `user_pref("accessibility.tabfocus_applies_to_xul", false);`
+* `user_pref("accessibility.tabfocus", 7);`
+* `user_pref("accessibility.typeaheadfind.prefillwithselection", false);`
+* `user_pref("alerts.useSystemBackend", true);`
+* `user_pref("browser.drag_out_of_frame_style", 1);`
+* `user_pref("devtools.recordreplay.enabled", true);`
+* `user_pref("devtools.recordreplay.enableRewinding", true);`
+* `user_pref("dom.ipc.useNativeEventProcessing.content", false);`
+* `user_pref("dom.w3c_touch_events.enabled", 0);`
+* `user_pref("font.minimum-size.th", 10);`
+* `user_pref("gfx.canvas.azure.backends", "skia");`
+* `user_pref("gfx.compositor.glcontext.opaque", false);`
+* `user_pref("gfx.content.azure.backends", "skia");`
+* `user_pref("gfx.font_rendering.coretext.enabled", false);`
+* `user_pref("gfx.hidpi.enabled", 2);`
+* `user_pref("gl.multithreaded", true);`
+* `user_pref("intl.allow-insecure-text-input", false);`
+* `user_pref("layers.omtp.enabled", false);`
+* `user_pref("layout.css.devPixelsPerPx", "-1.20");`
+* `user_pref("mousewheel.enable_pixel_scrolling", true);`
 * `user_pref("mousewheel.with_meta.action.override_x", -1);`
+* `user_pref("mousewheel.with_meta.action", 1);`
 * `user_pref("mousewheel.with_meta.delta_multiplier_x", 100);`
 * `user_pref("mousewheel.with_meta.delta_multiplier_y", 100);`
 * `user_pref("mousewheel.with_meta.delta_multiplier_z", 100);`
-* `user_pref("gfx.hidpi.enabled", 2);`
-* `user_pref("gfx.font_rendering.coretext.enabled", false);`
-* `user_pref("gfx.content.azure.backends", "skia");`
-* `user_pref("gfx.canvas.azure.backends", "skia");`
-* `user_pref("gfx.compositor.glcontext.opaque", false);`
-* `user_pref("accessibility.tabfocus", 7);`
-* `user_pref("accessibility.tabfocus_applies_to_xul", false);`
-* `user_pref("ui.scrollToClick", 0);`
-* `user_pref("accessibility.typeaheadfind.prefillwithselection", false);`
-* `user_pref("devtools.recordreplay.enabled", true);`
-* `user_pref("devtools.recordreplay.enableRewinding", true);`
 * `user_pref("network.protocol-handler.external.help", false);`
-* `user_pref("layout.css.devPixelsPerPx", "-1.20");`
-* `user_pref("dom.ipc.useNativeEventProcessing.content", false);`
-* `user_pref("browser.drag_out_of_frame_style", 1);`
 * `user_pref("ui.key.saveLink.shift", false);`
-* `user_pref("font.minimum-size.th", 10);`
 * `user_pref("ui.panel.default_level_parent", false);`
-* `user_pref("mousewheel.enable_pixel_scrolling", true);`
-* `user_pref("gl.multithreaded", true);`
+* `user_pref("ui.scrollToClick", 0);`
 * `user_pref("webgl.1.allow-core-profiles", false);`
-* `user_pref("alerts.useSystemBackend", true);`
-* `user_pref("dom.w3c_touch_events.enabled", 0);`
-* `user_pref("intl.allow-insecure-text-input", false);`
-* `user_pref("layers.omtp.enabled", false);`
 
 
 ## Compressing the profile database to "gain some speed"
@@ -177,3 +178,6 @@ When you use G-Sync and WebRender you might get [tearing](https://www.testufo.co
 
 #PlacesToolbarItems {display: flex; flex-wrap: wrap}
 ```
+
+## Remove the tab bar in Firefox 75+ via CSS
+`#tabbrowser-tabs { visibility: collapse !important; }`
