@@ -7,7 +7,7 @@
 //      * Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)
 //      See issue tracker for known issues & discussions!
 //      See: Workarounds.md for known problems & possible workarounds!
-//      Version: 77.0.0
+//      Version: 78.0.0
 
 // Twitch/YouTube buffering workaround
 // Disable IPv6 or usw following:
@@ -1977,7 +1977,7 @@ user_pref("security.ssl.enable_ocsp_stapling", true);
 user_pref("security.ssl.errorReporting.automatic", false);
 user_pref("security.ssl.errorReporting.enabled", false);
 user_pref("security.ssl.errorReporting.url", "");
-user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.ssl.require_safe_negotiation", false); // needed for Netflix, Hulu etc.
 user_pref("security.ssl.treat_unsafe_negotiation_as_broken", true);
 user_pref("security.ssl3.dhe_dss_aes_128_sha", false);
 user_pref("security.ssl3.dhe_dss_aes_256_sha", false);
