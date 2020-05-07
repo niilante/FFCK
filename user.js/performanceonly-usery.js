@@ -172,6 +172,7 @@ user_pref("browser.sessionstore.resume_from_crash", false);
 // FIXME:
 // user_pref("ui.context_menus.after_mouseup", true);
 user_pref("mousewheel.acceleration.start", -1);
+user_pref("mousewheel.default.delta_multiplier", 175);
 // Default Mouse click on URL bar's behavior
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
