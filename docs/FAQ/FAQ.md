@@ -256,8 +256,8 @@ That’s a difficult question because every user has other needs, so I’ll only
 * [Temporary Containers](https://addons.mozilla.org/de/firefox/addon/temporary-containers/) ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
 * [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
-* ~~[Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)~~ - CDN's locally doesn't make sense as they change over time and also you make a connection to the CDN's anyway. So you only increase your own attack surface.
-* ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~
+* ~~[Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)~~ - CDN's locally doesn't make sense as they change over time and also you make a connection to the CDN's anyway. So you only increase your own attack surface by using outdated and possible vulnerable files (they come integrated within the addon/extension).
+* ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~ ClearURLs integrated the function](https://gitlab.com/KevinRoebert/ClearUrls/-/issues/440)
 * ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
 * ~~HTTPS Everywhere~~ [Force HTTPS](https://addons.mozilla.org/nl/firefox/addon/force-https/?src=search)
 * ~~[Ignore X-Frame-Options Header](https://addons.mozilla.org/en-US/firefox/addon/ignore-x-frame-options-header/)~~
