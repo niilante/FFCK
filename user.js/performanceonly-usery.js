@@ -67,6 +67,11 @@ user_pref("widget.content.gtk-theme-override", "Breeze: light");
 user_pref("gfx.webrender.all", true);
 
 
+// AVIF (the AV1 Image File Format)
+// https://github.com/AOMediaCodec/av1-avif/tree/master/testFiles
+user_pref("image.avif.enabled", true);
+
+
 // Networking
 user_pref("network.connectivity-service.enabled", false);
 
