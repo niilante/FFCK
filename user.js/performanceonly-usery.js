@@ -72,6 +72,10 @@ user_pref("gfx.webrender.all", true);
 user_pref("image.avif.enabled", true);
 
 
+// Allow userChrome.css to load
+user_pref("legacyUserProfileCustomizations.stylesheets", true);
+
+
 // Networking
 user_pref("network.connectivity-service.enabled", false);
 
