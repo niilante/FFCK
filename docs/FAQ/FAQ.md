@@ -173,7 +173,7 @@ The following extensions are not there to ‘harden’ Mozilla Firefox, it's mor
 * [uMatrix (github.com)](https://github.com/gorhill/uMatrix)
 * [Violentmonkey (github.com)](https://github.com/violentmonkey/violentmonkey) (_with scripts_)
 * ~~[NoScript (noscript.net)](https://noscript.net/)~~ (already integrated into Tor Browser)
-
+* [Automatic Spell Checking Language Selection Extension for Firefox](https://github.com/kimsey0/FirefoxAutoDict)
 
 ## Why is “Safe-browsing” etc disabled, shouldn't that protect me against malware?
 
