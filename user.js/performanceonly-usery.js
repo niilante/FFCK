@@ -2,7 +2,7 @@
 //  ==============================
 //  Performanceonly-user.js by CHEF-KOCH
 //  ==============================
-//      Version 76.0.0
+//      Version 76.0.1
 //      FIXME: Please see FIXME entries
 //      Linux users MUST set `MOZ_ENABLE_WAYLAND=1` in the environment path.
 //
@@ -21,7 +21,7 @@
 
 
 // FF Performance Dashboard
-https://arewefastyet.com/
+// https://arewefastyet.com/
 
 // Discussion & explanation what "performance" really covers
 // https://github.com/CHEF-KOCH/FFCK/issues/34
@@ -85,7 +85,12 @@ user_pref("network.connectivity-service.enabled", false);
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1580595
 
 
-// Unlock 120 instead of 60
+// Disable all (gif) animations (requires html video autoplay to be disabled)
+// https://support.mozilla.org/en-US/kb/block-autoplay
+user_pref("image.animation_mode", "none");
+
+
+// Unlock 120 instead of 60 FPS
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1614212
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1560090
 user_pref("layout.frame_rate", 120);
@@ -171,17 +176,26 @@ user_pref("browser.sessionstore.resume_from_crash", false);
 // Mouse (lag)
 // FIXME:
 // user_pref("ui.context_menus.after_mouseup", true);
-user_pref("mousewheel.acceleration.start", -1);
+user_pref("general.smoothScroll.lines.durationMaxMS", 400);
+user_pref("general.smoothScroll.lines.durationMinMS", 210);
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 400);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 400);
+user_pref("general.smoothScroll.other.durationMaxMS", 400);
+user_pref("general.smoothScroll.other.durationMinMS", 200);
+user_pref("general.smoothScroll.pages.durationMaxMS", 400);
+user_pref("general.smoothScroll.pages.durationMinMS", 200);
+user_pref("mousewheel.acceleration.start", 0); //-1
 user_pref("mousewheel.default.delta_multiplier", 175);
 // Default Mouse click on URL bar's behavior
 user_pref("browser.urlbar.clickSelectsAll", true);
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 //user_pref("layout.word_select.stop_at_punctuation", true);
 // Disable smooth scrolling
-user_pref("mousewheel.min_line_scroll_amount", 45);
+user_pref("mousewheel.min_line_scroll_amount", 50);
 user_pref("general.smoothScroll", false);
 user_pref("general.smoothScroll.page", false);
 user_pref("image.mem.min_discard_timeout_ms", 2200000000);
+user_pref("toolkit.scrollbox.smoothScroll", false);
 
 
 // Hardware acceleration
