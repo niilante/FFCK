@@ -85,7 +85,12 @@ user_pref("network.connectivity-service.enabled", false);
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1580595
 
 
-// Unlock 120 instead of 60
+// Disable all (gif) animations (requires html video autoplay to be disabled)
+// https://support.mozilla.org/en-US/kb/block-autoplay
+user_pref("image.animation_mode", "none");
+
+
+// Unlock 120 instead of 60 FPS
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1614212
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1560090
 user_pref("layout.frame_rate", 120);
