@@ -78,7 +78,16 @@ user_pref("legacyUserProfileCustomizations.stylesheets", true);
 
 // Networking
 user_pref("network.connectivity-service.enabled", false);
-
+user_pref("browser.tabs.showSingleWindowModePrefs", true);
+user_pref("network.http.max-connections", 48);
+user_pref("network.http.max-connections-per-server", 16);
+user_pref("network.http.max-persistent-connections-per-proxy", 8);
+user_pref("network.http.max-persistent-connections-per-server", 4);
+user_pref("network.http.pipelining", true);
+user_pref("network.http.pipelining.maxrequests", 100);
+user_pref("network.http.proxy.pipelining", true);
+user_pref("network.http.request.timeout", 300;
+user_pref("nglayout.initialpaint.delay", 0); //Amount of time the browser waits before it acts on information it receives.
 
 // WebRenderer
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1010527#c29
