@@ -171,7 +171,7 @@ When you use G-Sync and WebRender you might get [tearing](https://www.testufo.co
 
 
 ## Multiple bookmark toolbar rows
-```bash
+```css
 #PersonalToolbar {max-height: unset !important}
 
 #PlacesToolbar > hbox:first-child {display: block}
@@ -179,5 +179,14 @@ When you use G-Sync and WebRender you might get [tearing](https://www.testufo.co
 #PlacesToolbarItems {display: flex; flex-wrap: wrap}
 ```
 
-## Remove the tab bar in Firefox 75+ via CSS
-`#tabbrowser-tabs { visibility: collapse !important; }`
+## Remove the tab bar in Firefox 75+
+```css
+#tabbrowser-tabs { visibility: collapse !important; }
+```
+
+## Remove the Mic Icon in Firefox 75+
+```css
+#webrtcIndicator {
+  display: none;
+}
+```
