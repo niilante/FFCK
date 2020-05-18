@@ -57,6 +57,8 @@ user_pref("network.netlink.route.check.IPv6", "");
 user_pref("browser.urlbar.ctrlCanonizesURLs", false);
 user_pref("dom.image-lazy-loading.enabled", true);
 user_pref("widget.wayland_vsync.enabled", true);
+user_pref("browser.display.show_focus_rings", true);
+user_pref("widget.disable-native-theme-for-content", true);
 //user_pref("network.protocol-handler.external.moz-extension", false); // removed
 //user_pref("print.printer_list", "");
 //user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
