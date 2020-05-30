@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 76.0.0
+//      Version 76.0.1
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -28,6 +28,7 @@ user_pref("privacy.purge_trackers.max_purge_count", 80); // default 100
 
 // HTTPS only
 user_pref("dom.security.https_only_mode", true);
+user_pref("dom.security.https_only_mode.upgrade_loca", true);
 
 // Hide "What's New" Gift icon
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
@@ -76,7 +77,6 @@ user_pref("browser.urlbar.trimURLs", false);
 user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
 user_pref("browser.urlbar.timesBeforeHidingSuggestionsHint", 0);
 // master toggle for "search providers"//"search this time with?"
-user_pref("browser.urlbar.oneOffSearches", false);
 
 
 // IDN Punycode
@@ -254,7 +254,7 @@ user_pref("clipboard.autocopy", false);
 user_pref("browser.zoom.siteSpecific", false);
 user_pref("devtools.chrome.enabled", false);
 user_pref("devtools.debugger.force-local", true);
-user_pref("devtools.debugger.remote-enabled", false);
+//user_pref("devtools.debugger.remote-enabled", false);
 user_pref("devtools.webide.autoinstallADBHelper", false);
 user_pref("devtools.webide.autoinstallFxdtAdapters", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
@@ -350,6 +350,7 @@ user_pref("privacy.trackingprotection.pbmode.enabled", true);
 user_pref("privacy.userContext.enabled", true);
 user_pref("privacy.userContext.ui.enabled", true);
 user_pref("reader.parse-on-load.enabled", false);
+user_pref("layout.css.notify-of-unvisited", true);
 user_pref("security.ask_for_password", 2);
 //user_pref("security.block_script_with_wrong_mime", false);
 user_pref("security.block_importScripts_with_wrong_mime", true);
@@ -380,12 +381,14 @@ user_pref("trailhead.firstrun.branches", "");
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("accessibility.force_disabled", 1);
 user_pref("network.protocol-handler.external.ms-windows-store", false);
-user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
+//user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", false);
 user_pref("services.settings.server", "");
 user_pref("network.IDN.whitelist.museum", false);
 user_pref("network.websocket.max-connections", 150);
 user_pref("image.mem.surfacecache.min_expiration_ms", 50000);
 //user_pref("dom.IntersectionObserver.enabled", false);
+user_pref("layout.css.always-repaint-on-unvisited", true);
+//user_pref(dom.security.https_only_mode_ever_enabled", false);
 
 
 // Prefetch
