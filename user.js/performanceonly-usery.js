@@ -2,7 +2,7 @@
 //  ==============================
 //  Performanceonly-user.js by CHEF-KOCH
 //  ==============================
-//      Version 76.0.1
+//      Version 77.0.0
 //      FIXME: Please see FIXME entries
 //      Linux users MUST set `MOZ_ENABLE_WAYLAND=1` in the environment path.
 //
@@ -26,14 +26,14 @@
 // Discussion & explanation what "performance" really covers
 // https://github.com/CHEF-KOCH/FFCK/issues/34
 
-// Tab Animations
-user_pref("toolkit.cosmeticAnimations.enabled", false);
-user_pref("ui.prefersReducedMotion", 1); //hidden
-
-
 // Disable welcome warnings
 user_pref("general.warnOnAboutConfig", false);
 user_pref("browser.aboutConfig.showWarning", false);
+
+
+// Tab Animations
+user_pref("toolkit.cosmeticAnimations.enabled", false);
+user_pref("ui.prefersReducedMotion", 1); //hidden
 
 
 // Disable default Browser Check on Startup
