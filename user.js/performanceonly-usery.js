@@ -26,6 +26,10 @@
 // Discussion & explanation what "performance" really covers
 // https://github.com/CHEF-KOCH/FFCK/issues/34
 
+// Tab Animations
+user_pref("toolkit.cosmeticAnimations.enabled", false);
+user_pref("ui.prefersReducedMotion", 1); //hidden
+
 
 // Disable welcome warnings
 user_pref("general.warnOnAboutConfig", false);
