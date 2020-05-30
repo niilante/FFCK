@@ -35,6 +35,7 @@
 * [Second Profile](#second-profile)
 * [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacytrackingprotectionenabled-and-privacyresistfingerprinting)
 * [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-txt-file)
+* [How do I enable tracking content?](#how-do-i-enable-tracking-content)
 
 
 ## What is the difference between user.js and prefs.js?
@@ -376,3 +377,16 @@ One [blocks scripts](https://support.mozilla.org/en-US/kb/trackers-and-scripts-f
 ## Can I export a bookmark folder as a .txt file?
 
 Right-click on a folder and select "copy". Then go into e.g. Notepad and paste. It will paste the folder name and all the bookmark urls. A alternative is [copy-tab-urls-webex](https://addons.mozilla.org/firefox/addon/copy-tab-urls-webex/)
+
+
+## How do I enable tracking protection?
+
+[Tracking Protection](https://wiki.mozilla.org/Security/Tracking_protection) is disabled, so you need to manually switch the flags if you want to use it.
+
+```
+user_pref("browser.contentblocking.category", "custom");
+user_pref("network.cookie.cookieBehavior", 1);
+user_pref("privacy.trackingprotection.enabled", true);
+user_pref("privacy.trackingprotection.cryptomining.enabled", true);
+user_pref("privacy.trackingprotection.fingerprinting.enabled", true)
+```
