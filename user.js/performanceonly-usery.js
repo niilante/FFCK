@@ -19,7 +19,6 @@
 // https://browserbench.org/Speedometer2.0/
 
 
-
 // FF Performance Dashboard
 // https://arewefastyet.com/
 
@@ -61,7 +60,9 @@ user_pref("browser.display.use_system_colors", false);
 user_pref("widget.content.gtk-theme-override", "Breeze: light");
 
 
-
+// Wayland PWC
+user_pref("gfx.webrender.max-partial-present-rects", 64);
+//user_pref("gfx.webrender.debug.profiler" true);
 
 // Windows
 // YouTube performance
