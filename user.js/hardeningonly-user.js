@@ -356,7 +356,7 @@ user_pref("security.ask_for_password", 2);
 user_pref("security.block_importScripts_with_wrong_mime", true);
 user_pref("security.block_Worker_with_wrong_mime", true);
 user_pref("security.cert_pinning.enforcement_level", 2);
-user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", true);
+user_pref("security.certerrors.mitm.auto_enable_enterprise_roots", false);
 user_pref("security.dialog_enable_delay", 350);
 user_pref("security.family_safety.mode", 0);
 user_pref("security.fileuri.strict_origin_policy", true);
