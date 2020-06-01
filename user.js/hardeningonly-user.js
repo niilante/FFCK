@@ -987,6 +987,16 @@ user_pref("general.warnOnAboutConfig", false);
 user_pref("browser.aboutConfig.showWarning", false);
 
 
+// Sandboxing
+// https://wiki.mozilla.org/Security/Sandbox
+user_pref("security.sandbox.windows.log.stackTraceDepth", 216);
+user_pref("security.sandbox.logging.enabled", true);
+user_pref("security.sandbox.content.level", 6);
+user_pref("dom.ipc.plugins.sandbox-level.default", 6);
+//user_pref("dom.ipc.plugins.sandbox-level.default", 3);
+//user_pref("security.sandbox.gpu.level", 3);
+
+
 // Optional params (as per own needs, min uBO + uM + TC)
 //user_pref("browser.uiCustomization.state", "{\"ublock0_raymondhill_net-browser-action\",\"umatrix_raymondhill_net-browser-action\",}");
 //user_pref("extensions.webextensions.uuids", "{\"uBlock0@raymondhill.net\":\"13edaf3e-19f0-4b6c-831c-ee74c95d5491\",\"uMatrix@raymondhill.net\":\"947aea7b-f0ab-4dbe-b40a-6506eed23f3f\"}");
