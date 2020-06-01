@@ -48,7 +48,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("widget.wayland-dmabuf-webgl.enabled", true);
 user_pref("widget.wayland-dmabuf-textures.enable", true);
 user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
-user_pref("browser.urlbar.update1", false); // will be removed in FF 77
+//user_pref("browser.urlbar.update1", false);
 user_pref("dom.webgpu.enabled", false);
 user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("network.netlink.route.check.IPv4", "");
