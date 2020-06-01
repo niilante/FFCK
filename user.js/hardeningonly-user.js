@@ -128,7 +128,7 @@ user_pref("browser.contentblocking.reject-and-isolate-cookies.preferences.ui.ena
 user_pref("privacy.resistFingerprinting.reduceTimerPrecision.microseconds", 1000);
 //user_pref("privacy.resistFingerprinting", false); // Master button for FP
 //user_pref("privacy.resistFingerprinting.letterboxing", true);
-user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled, false);
+user_pref("browser.contentblocking.fingerprinting.preferences.ui.enabled", false);
 
 
 // U2F (FF67+)
