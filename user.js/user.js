@@ -43,6 +43,7 @@ user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/c
 //user_pref("media.gmp-manager.url.override", "");
 //user_pref("media.peerconnection.ice.force_interface", "");
 user_pref("image.avif.enabled", true);
+user_pref("layout.css.emulate-moz-box-with-flex", false); // https://bugzilla.mozilla.org/show_bug.cgi?id=1539895
 user_pref("gfx.color_management.enablev4", true);
 user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("widget.wayland-dmabuf-webgl.enabled", true);
