@@ -382,7 +382,7 @@ user_pref("browser.triple_click_selects_paragraph", true);
 user_pref("browser.uiCustomization.debug", false); // set true, in case your extensions are hidden from toolbar
 user_pref("browser.uitour.enabled", false);
 user_pref("browser.uitour.url", "");
-user_pref("browser.underline_anchors", true); // leak?
+user_pref("browser.underline_anchors", true);
 user_pref("browser.urlbar.autocomplete.enabled", false);
 user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.autoFill", false);
@@ -914,6 +914,7 @@ user_pref("gfx.webrender.debug.texture-cache", false);
 user_pref("gfx.webrender.dl.dump-content", false);
 user_pref("gfx.webrender.dl.dump-parent", false);
 user_pref("gfx.webrender.enabled", true);
+user_pref("widget.wayland-dmabuf-vaapi.enabled", true); // https://mastransky.wordpress.com/2020/06/03/firefox-on-fedora-finally-gets-va-api-on-wayland/
 user_pref("gfx.webrender.flip-sequential", false);
 user_pref("gfx.webrender.force-angle", true);
 user_pref("gfx.webrender.force-disabled", true); // Workaround for FF69 stutter + responsive issue

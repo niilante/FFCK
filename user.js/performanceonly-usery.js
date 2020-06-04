@@ -41,13 +41,13 @@ user_pref("browser.shell.checkDefaultBrowser", false);
 
 // Linux
 // Enable dmabuf
-user_pref("widget.wayland-dmabuf-webgl.enabled", true);
-user_pref("widget.wayland-dmabuf-webgl.enabled true widget.wayland-dmabuf-textures.enabled", true);
+user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
 // Enable hardware video decoding
-user_pref("widget.wayland - dmabuf - vaapi.enabled", true);
+// https://mastransky.wordpress.com/2020/06/03/firefox-on-fedora-finally-gets-va-api-on-wayland/
+user_pref("gfx.webrender.enabled", true);
 // https://www.bleepingcomputer.com/news/security/firefox-57-brings-better-sandboxing-on-linux
 // https://codelab.wordpress.com/2017/12/11/firefox-drops-alsa-apulse-to-the-rescue
-user_pref("security.sandbox.content.syscall_whitelis", 16);
+user_pref("security.sandbox.content.syscall_whitelist", 16);
 user_pref("security.sandbox.content.read_path_whitelist", "/sys/"); // FIXME:
 
 // Hardware video acceleration
