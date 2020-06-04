@@ -56,6 +56,7 @@ user_pref("network.netlink.route.check.IPv4", "");
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 user_pref("network.netlink.route.check.IPv6", "");
 user_pref("browser.urlbar.ctrlCanonizesURLs", false);
+//user_pref("browser.urlbar.oneOffSearches", true);
 user_pref("dom.image-lazy-loading.enabled", true);
 user_pref("widget.wayland_vsync.enabled", true);
 user_pref("browser.display.show_focus_rings", true);
@@ -887,7 +888,7 @@ user_pref("gfx.vr.osvr.clientKitLibPath", "");
 user_pref("gfx.vr.osvr.clientLibPath", "");
 user_pref("gfx.vr.osvr.commonLibPath", "");
 user_pref("gfx.vr.osvr.utilLibPath", "");
-user_pref("gfx.webrender.all", true);
+user_pref("gfx.webrender.all", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1641510 & https://bugzilla.mozilla.org/show_bug.cgi?id=1638011
 user_pref("gfx.webrender.blob-images", true);
 user_pref("gfx.webrender.blob.paint-flashing", false);
 user_pref("gfx.webrender.dcomp-win-triple-buffering.enabled", true);
