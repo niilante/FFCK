@@ -56,7 +56,7 @@ user_pref("network.netlink.route.check.IPv4", "");
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 user_pref("network.netlink.route.check.IPv6", "");
 user_pref("browser.urlbar.ctrlCanonizesURLs", false);
-//user_pref("browser.urlbar.oneOffSearches", true);
+//user_pref("browser.urlbar.oneOffSearches", true); //https://bugzilla.mozilla.org/show_bug.cgi?id=1643185
 user_pref("dom.image-lazy-loading.enabled", true);
 user_pref("widget.wayland_vsync.enabled", true);
 user_pref("browser.display.show_focus_rings", true);
