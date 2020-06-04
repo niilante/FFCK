@@ -25,7 +25,8 @@
     * [Mozilla Privacy](#mozilla-privacy)
     * [Mozilla Themes](#mozilla-themes)
     * [Firefox Profile related](#firefox-profile-related)
-    * [Firefox color management](#firefox-color-management)
+    * [Firefox user agent](#firefox-user-agent)
+    * [Firefox colour management](#firefox-colour-management)
     * [Tor Browser related](#tor-browser-related)
     * [TLS & SSL related](#tls--ssl-related)
     * [Google Safe-Browsing](#google-safe-browsing)
@@ -200,7 +201,11 @@
 * [Firefox Profilemaker (ffprofile.com)](https://ffprofile.com/)
 
 
-### Firefox color management
+### Firefox user agent
+* [How to reset the default user agent on Firefox](https://support.mozilla.org/en-US/kb/how-reset-default-user-agent-firefox#w_reset-the-default-firefox-user-agent)
+
+
+### Firefox colour management
 * [How to configure Firefox color management (cameratico.com)](https://cameratico.com/guides/firefox-color-management/)
 
 
@@ -277,6 +282,7 @@
 * [Captive portal](https://archive.li/57xdG)
 * [How can I stop firefox from constantly connecting to self-repair.mozillia.org](https://archive.li/a17cN)
 * [Cloudflare possible interercept or even decrypt TLS (codeberg.org)](https://codeberg.org/crimeflare/cloudflare-tor/src/branch/master/README.md), [Cloudflare is a Mozilla partner](https://i.imgur.com/bAnPuGb.jpg)
+
 
 
 ### No longer maintained
