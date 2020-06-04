@@ -202,11 +202,13 @@
 
 
 ### Firefox user agent
-* [How to reset the default user agent on Firefox](https://support.mozilla.org/en-US/kb/how-reset-default-user-agent-firefox#w_reset-the-default-firefox-user-agent)
+* [How to reset the default user agent on Firefox (support.mozilla.org)](https://support.mozilla.org/en-US/kb/how-reset-default-user-agent-firefox#w_reset-the-default-firefox-user-agent)
 
 
 ### Firefox colour management
 * [How to configure Firefox color management (cameratico.com)](https://cameratico.com/guides/firefox-color-management/)
+* [Test Page (gballard.net)](http://www.gballard.net/firefox/)
+* [Test Page 2 (cameratico.com)](https://cameratico.com/tools/web-browser-color-management-test/)
 
 
 ### Tor Browser related
