@@ -2,7 +2,7 @@
 //  ==============================
 //  Performanceonly-user.js by CHEF-KOCH
 //  ==============================
-//      Version 76.0.1
+//      Version 77.0.0
 //      FIXME: Please see FIXME entries
 //      Linux users MUST set `MOZ_ENABLE_WAYLAND=1` in the environment path.
 //
@@ -19,17 +19,20 @@
 // https://browserbench.org/Speedometer2.0/
 
 
-
 // FF Performance Dashboard
 // https://arewefastyet.com/
 
 // Discussion & explanation what "performance" really covers
 // https://github.com/CHEF-KOCH/FFCK/issues/34
 
-
 // Disable welcome warnings
 user_pref("general.warnOnAboutConfig", false);
 user_pref("browser.aboutConfig.showWarning", false);
+
+
+// Tab Animations
+user_pref("toolkit.cosmeticAnimations.enabled", false);
+user_pref("ui.prefersReducedMotion", 1); //hidden
 
 
 // Disable default Browser Check on Startup
@@ -57,7 +60,9 @@ user_pref("browser.display.use_system_colors", false);
 user_pref("widget.content.gtk-theme-override", "Breeze: light");
 
 
-
+// Wayland PWC
+user_pref("gfx.webrender.max-partial-present-rects", 64);
+//user_pref("gfx.webrender.debug.profiler" true);
 
 // Windows
 // YouTube performance
