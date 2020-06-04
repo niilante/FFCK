@@ -1770,6 +1770,7 @@ user_pref("network.trr.request-timeout", 1400); // removed
 user_pref("network.trr.resolvers", "[{ \"name\": \"Cloudflare\", \"url\": \"https://mozilla.cloudflare-dns.com/dns-query\" }]"); // Full list here: https://github.com/curl/curl/wiki/DNS-over-HTTPS
 user_pref("network.trr.skip-AAAA-when-not-supported", true);
 user_pref("network.trr.uri", "https://doh.securedns.eu/dns-query");  // https://mozilla.cloudflare-dns.com/dns-query
+user_pref("doh-rollout.balrog-migration-done", true);
 user_pref("network.trr.useGET", false);
 user_pref("network.trr.wait-for-A-and-AAAA", true);
 user_pref("network.trr.wait-for-portal", false);
