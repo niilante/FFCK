@@ -36,6 +36,7 @@
 * [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacytrackingprotectionenabled-and-privacyresistfingerprinting)
 * [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-txt-file)
 * [How do I enable tracking content?](#how-do-i-enable-tracking-content)
+* [Address bar design update in FF 77](#address-bar-design in ff-77)
 
 
 ## What is the difference between user.js and prefs.js?
@@ -390,3 +391,15 @@ user_pref("privacy.trackingprotection.enabled", true);
 user_pref("privacy.trackingprotection.cryptomining.enabled", true);
 user_pref("privacy.trackingprotection.fingerprinting.enabled", true)
 ```
+
+
+## Address bar design update in FF 77
+
+In [Firefox 75](https://mozilla.invisionapp.com/share/MCUOETHBR4F#/screens/391775121), the [address bar was updated with a visual refresh a new "Top Sites" feature](https://blog.mozilla.org/blog/2020/04/07/latest-firefox-updates-address-bar-making-search-easier-than-ever/), along with some feature removals and changes, like the [Linux behavior of the address bar](https://bugzilla.mozilla.org/show_bug.cgi?id=1621570#c92) changing to be more like Windows and macOS, along with the deprecation of the old history drop marker in the address bar.
+
+Since 77 possible flags to revert the changed as well as the underlying code got removed. You can use the following workarounds.
+
+* [Megabar – Configuring and Styling the Firefox 75+ Address Bar](https://www.userchrome.org/megabar-styling-firefox-address-bar.html)
+* [Disable the new address bar features in Firefox 77](https://support.mozilla.org/en-US/questions/1289351#answer-1318441)
+* [Step-by-step guide to (sort-of) revert MegaBar in FF 77.0](https://old.reddit.com/r/firefox/comments/gvoaxj/stepbystep_guide_to_sortof_revert_megabar_in_ff/)
+
