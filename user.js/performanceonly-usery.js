@@ -273,8 +273,9 @@ user_pref("gfx.canvas.azure.accelerated", true);
 
 // Disk cache
 // http://kb.mozillazine.org/Browser.cache.memory.enable
-user_perf("browser.cache.disk.enable", false);
-user_pref("browser.cache.memory.enable", true);
+user_perf("browser.cache.disk.enable", false); //default
+user_pref("browser.cache.memory.enable", true); //default
+user_pref("browser.cache.memory.capacity", 750000);
 //user_pref("browser.cache.memory.capacity", -1); // FIXME: Math: 41297 - (41606 / (1 + ((RAM / 1.16) ^ 0.75))
 
 
