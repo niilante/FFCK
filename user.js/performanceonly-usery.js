@@ -201,7 +201,7 @@ user_pref("general.smoothScroll.pages.durationMinMS", 200);
 user_pref("mousewheel.acceleration.start", 0); //-1
 user_pref("mousewheel.default.delta_multiplier", 175);
 // Default Mouse click on URL bar's behavior
-user_pref("browser.urlbar.clickSelectsAll", true);
+// user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 //user_pref("layout.word_select.stop_at_punctuation", true);
 // Disable smooth scrolling
