@@ -36,13 +36,13 @@
 * [Differences between `privacy.trackingprotection.enabled` and `privacy.resistFingerprinting`?](#differences-between-privacytrackingprotectionenabled-and-privacyresistfingerprinting)
 * [Can I export a bookmark folder as a .txt file?](#can-i-export-a-bookmark-folder-as-a-txt-file)
 * [How do I enable tracking content?](#how-do-i-enable-tracking-content)
-* [Address bar design update in FF 77](#address-bar-design in ff-77)
+* [Address bar design update in FF 77](#address-bar-design-in-ff-77)
 
 
 ## What is the difference between user.js and prefs.js?
 
-* prefs.js contains all the changes you have made via options or about:config.
-* user.js is used to override preferences in prefs.js, it does so by (over)writing the preference to prefs.js.
+* `prefs.js` contains all the changes you have made via options or `about:config`.
+* `user.js` is used to override preferences in prefs.js, it does so by (over)writing the preference to `prefs.js`.
 
 **What does it mean?**
 
