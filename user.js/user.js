@@ -26,27 +26,13 @@ user_pref("network.trr.enable_when_vpn_detected", true);
 user_pref("network.trr.mode", 3);
 user_pref("security.enterprise_roots.enabled", false);
 
-
 // Media Keys
 user_pref("media.hardwaremediakeys.enabled", true);
 user_pref("dom.media.mediasession.enabled", true);
 
 
-//user_pref("browser.fullscreen.autohide", false); // Replaces: https://addons.mozilla.org/en-US/firefox/addon/youtube-full-windowed/
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
 user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
-// user_pref("accessibility.tabfocus", 1);
-// user_pref("mousebutton.4th.enabled", true);
-// user_pref("mousebutton.5th.enabled", true);
-// user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
-// user_pref("network.http.version", "1.0"); // uncomment, in case of problems!
-// user_pref("network.tcp.sendbuffer", 0);
-// user_pref("print.postscript.enabled", true);
-//user_pref("app.update.channel", "beta");
-//user_pref("dom.w3c_pointer_events.dispatch_by_pointer_messages", false);
-//user_pref("gecko.handlerService.migrated", true);
-//user_pref("media.gmp-manager.url.override", "");
-//user_pref("media.peerconnection.ice.force_interface", "");
 user_pref("image.avif.enabled", true);
 user_pref("layout.css.emulate-moz-box-with-flex", false); // https://bugzilla.mozilla.org/show_bug.cgi?id=1539895
 user_pref("gfx.color_management.enablev4", true);
@@ -54,23 +40,16 @@ user_pref("browser.newtabpage.activity-stream.feeds.sections", false);
 user_pref("widget.wayland-dmabuf-webgl.enabled", true);
 user_pref("widget.wayland-dmabuf-textures.enable", true);
 user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
-//user_pref("browser.urlbar.update1", false);
 user_pref("dom.webgpu.enabled", false);
 user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 user_pref("network.netlink.route.check.IPv6", "");
 user_pref("browser.urlbar.ctrlCanonizesURLs", false);
-//user_pref("browser.urlbar.oneOffSearches", true); //https://bugzilla.mozilla.org/show_bug.cgi?id=1643185
 user_pref("dom.image-lazy-loading.enabled", true);
 user_pref("widget.wayland_vsync.enabled", true);
 user_pref("browser.display.show_focus_rings", true);
 user_pref("widget.disable-native-theme-for-content", true);
-//user_pref("network.protocol-handler.external.moz-extension", false); // removed
-//user_pref("print.printer_list", "");
-//user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
-//user_pref("privacy.resistFingerprinting.letterboxing", false);
-//user_pref("ui.use_standins_for_native_colors", true)
 user_pref("security.pki.crlite_mode", 2);
 user_pref("browser.download.lastDir.savePerSite", false);
 user_pref("apz.frame_delay.enabled", false);
@@ -392,7 +371,6 @@ user_pref("browser.underline_anchors", true);
 user_pref("browser.urlbar.autocomplete.enabled", false);
 user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.autoFill", false);
-//user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.filter.javascript", true);
 user_pref("browser.urlbar.matchBuckets", "suggestion:4,general:5");
@@ -2284,3 +2262,27 @@ user_pref("widget.window-transforms.disabled", false);
 user_pref("xpinstall.signatures.required", false);
 user_pref("zoom.maxPercent", 300);
 user_pref("zoom.minPercent", 50);
+
+// Outdated or problematic
+// user_pref("accessibility.tabfocus", 1);
+// user_pref("mousebutton.4th.enabled", true);
+// user_pref("mousebutton.5th.enabled", true);
+// user_pref("network.http.proxy.version", "1.0"); // uncomment, in case of problems!
+// user_pref("network.http.version", "1.0"); // uncomment, in case of problems!
+// user_pref("network.tcp.sendbuffer", 0);
+// user_pref("print.postscript.enabled", true);
+// user_pref("app.update.channel", "beta");
+// user_pref("dom.w3c_pointer_events.dispatch_by_pointer_messages", false);
+// user_pref("gecko.handlerService.migrated", true);
+// user_pref("media.gmp-manager.url.override", "");
+// user_pref("media.peerconnection.ice.force_interface", "");
+// user_pref("browser.tabs.showAudioPlayingIcon" false);
+//user_pref("browser.fullscreen.autohide", false); // Replaces: https://addons.mozilla.org/en-US/firefox/addon/youtube-full-windowed/
+//user_pref("browser.urlbar.update1", false);
+//user_pref("browser.urlbar.oneOffSearches", true); //https://bugzilla.mozilla.org/show_bug.cgi?id=1643185
+//user_pref("network.protocol-handler.external.moz-extension", false); // removed
+//user_pref("print.printer_list", "");
+//user_pref("privacy.resistFingerprinting.letterboxing.dimensions", "1280x720");
+//user_pref("privacy.resistFingerprinting.letterboxing", false);
+//user_pref("ui.use_standins_for_native_colors", true)
+//user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
