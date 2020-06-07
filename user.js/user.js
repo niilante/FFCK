@@ -392,7 +392,7 @@ user_pref("browser.underline_anchors", true);
 user_pref("browser.urlbar.autocomplete.enabled", false);
 user_pref("browser.urlbar.autoFill.typed", false);
 user_pref("browser.urlbar.autoFill", false);
-user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
+//user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
 user_pref("browser.urlbar.doubleClickSelectsAll", false);
 user_pref("browser.urlbar.filter.javascript", true);
 user_pref("browser.urlbar.matchBuckets", "suggestion:4,general:5");
