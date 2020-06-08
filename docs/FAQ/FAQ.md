@@ -402,4 +402,5 @@ Since 77 possible flags to revert the changed as well as the underlying code got
 * [Megabar – Configuring and Styling the Firefox 75+ Address Bar](https://www.userchrome.org/megabar-styling-firefox-address-bar.html)
 * [Disable the new address bar features in Firefox 77](https://support.mozilla.org/en-US/questions/1289351#answer-1318441)
 * [Step-by-step guide to (sort-of) revert MegaBar in FF 77.0](https://old.reddit.com/r/firefox/comments/gvoaxj/stepbystep_guide_to_sortof_revert_megabar_in_ff/)
+* [Directly downloadable .css tweak to undo it](https://www.userchrome.org/samples/userChrome-ZeroEnlargement.css)
 
