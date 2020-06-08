@@ -193,7 +193,15 @@ When you use G-Sync and WebRender you might get [tearing](https://www.testufo.co
 
 ## Scrolbar Tweak
 [![Tweaked Scrollbar on the left side, default on the right-side](hhttps://preview.redd.it/33h1682lg3351.png?width=743&auto=webp&s=6a539319f7c75d1b5463eb49bfc1a541748c41bb)](https://preview.redd.it/33h1682lg3351.png?width=743&auto=webp&s=6a539319f7c75d1b5463eb49bfc1a541748c41bb)
+
+
 Create a `userContent.css` with the following content:
 ```css
 :root{ scrollbar-face-color: rgb(100,100,100); /* Firefox 63 compatibility / scrollbar-track-color: rgb(33,38,48); / Firefox 63 compatibility */ scrollbar-color: rgb(100,100,100) rgb(28,28,28); scrollbar-width: thin; }
 ```
+
+## Re-enabling MOZ_FORCE_DISABLE_E10S
+Enabling the `MOZ_FORCE_DISABLE_E10S=1 firefox` option doesn't work anymore, see [bugreport](https://bugzilla.mozilla.org/show_bug.cgi?id=1638652), you need to set:
+
+* `browser.tabs.documentchannel.ppdc` false
+
