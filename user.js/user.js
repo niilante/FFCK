@@ -26,6 +26,12 @@ user_pref("network.trr.enable_when_vpn_detected", true);
 user_pref("network.trr.mode", 3);
 user_pref("security.enterprise_roots.enabled", false);
 
+
+// Browser Drop-down suggestions
+user_pref("browser.urlbar.disableExtendForTests", false); // if true it will not work
+user_pref("browser.urlbar.openViewOnFocus", false);
+
+
 // Media Keys
 user_pref("media.hardwaremediakeys.enabled", true);
 user_pref("dom.media.mediasession.enabled", true);
@@ -41,7 +47,6 @@ user_pref("widget.wayland-dmabuf-webgl.enabled", true);
 user_pref("widget.wayland-dmabuf-textures.enable", true);
 user_pref("widget.wayland-dmabuf-vaapi.enabled", true);
 user_pref("dom.webgpu.enabled", false);
-user_pref("browser.urlbar.openViewOnFocus", false);
 user_pref("network.netlink.route.check.IPv4", "");
 user_pref("browser.ctrlTab.recentlyUsedOrder", false);
 user_pref("network.netlink.route.check.IPv6", "");
@@ -385,7 +390,6 @@ user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
 user_pref("browser.urlbar.trimURLs", false);
-user_pref("browser.urlbar.update1", true);
 user_pref("browser.urlbar.usepreloadedtopurls.enabled", false);
 user_pref("browser.visited_color", "#551A8B");
 user_pref("browser.xul.error_pages.expert_bad_cert", true);
