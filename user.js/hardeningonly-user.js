@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 76.0.1
+//      Version 78.0.0
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -453,7 +453,7 @@ user_pref("gfx.webrender.picture-caching", false);
 
 
 // OCSP
-user_pref("security.OCSP.enabled", 1); //set to 0 on DoH
+user_pref("security.OCSP.enabled", 1); //set to 0 on DoH/VPN, NordVPN does not use OCSP, see here: https://www.reddit.com/r/VPN/comments/docm98/two_interesting_nordvpn_hack_details_nobody_talks/
 user_pref("security.OCSP.require", true);
 user_pref("security.ssl.enable_ocsp_must_staple", true);
 user_pref("security.ssl.enable_ocsp_stapling", true);
