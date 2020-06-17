@@ -38,6 +38,7 @@ user_pref("media.hardwaremediakeys.enabled", true);
 user_pref("dom.media.mediasession.enabled", true);
 
 
+// user_pref("dom.security.https_only_mode.upgrade_local", true); //flawed
 user_perf("browser.newtabpage.activity-stream.asrouter.providers.whats-new-panel", "{"id":"whats-new-panel","enabled":false,"type":"remote-settings","bucket":"whats-new-panel","updateCycleInMs":3600000}");
 user_pref("browser.aboutConfig.showWarning", false); //chrome://global/content/config.xul?filter=
 user_pref("image.avif.enabled", true);
@@ -350,7 +351,6 @@ user_pref("browser.tabs.drawInTitlebar", true);
 user_pref("browser.tabs.insertAfterCurrent", true);
 user_pref("browser.tabs.loadBookmarksInBackground", true);
 user_pref("browser.tabs.loadDivertedInBackground", true);
-user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", true);
 user_pref("browser.tabs.remote.autostart", false);
 user_pref("browser.tabs.remote.enforceRemoteTypeRestrictions", false);
 user_pref("browser.tabs.remote.force-paint", true);
@@ -2143,6 +2143,7 @@ user_pref("toolkit.telemetry.unifiedIsOptIn", false);
 user_pref("toolkit.telemetry.updatePing.enabled", false);
 user_pref("toolkit.winRegisterApplicationRestart", false);
 user_pref("toolkit.zoomManager.zoomValues", ".3,.5,.67,.8,.9,1,1.1,1.2,1.33,1.5,1.7,2,2.4,3");
+user_pref("ui.prefersReducedMotion", 0);
 user_pref("ui.caretWidth", 2);
 user_pref("ui.click_hold_context_menus", false);
 user_pref("ui.context_menus.after_mouseup", false);
@@ -2291,3 +2292,4 @@ user_pref("zoom.minPercent", 50);
 //user_pref("privacy.resistFingerprinting.letterboxing", false);
 //user_pref("ui.use_standins_for_native_colors", true)
 //user_pref("browser.urlbar.clickSelectsAll", true); // https://bugzilla.mozilla.org/show_bug.cgi?id=1621570
+//user_pref("browser.tabs.remote.allowLinkedWebInFileUriProcess", true);
