@@ -52,6 +52,7 @@ user_pref("network.trr.skip-AAAA-when-not-supported", true);
 //user_pref("network.trr.uri", "https://cloudflare-dns.com/dns-query");
 user_pref("network.trr.useGET", true);
 user_pref("network.trr.wait-for-portal", false);
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
 
 
 // BigInt
