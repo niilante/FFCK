@@ -25,6 +25,7 @@ user_pref("network.trr.enable_when_proxy_detected", true);
 user_pref("network.trr.enable_when_vpn_detected", true);
 user_pref("network.trr.mode", 3);
 user_pref("security.enterprise_roots.enabled", false);
+user_pref("browser.urlbar.dnsResolveSingleWordsAfterSearch", 0);
 
 
 // Browser Drop-down suggestions
