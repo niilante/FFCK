@@ -139,7 +139,7 @@ New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Mozilla\Firefox" -Name DisableDe
 There are [bunch of websites which testing specific API's](https://github.com/CHEF-KOCH/Online-Privacy-Test-Resource-List), but it’s questionable if you need “several about:config tweaks”. I do believe that critical security things need to be fixed in the Mozilla Browser source code and not via any ‘tweaks’' or configurations. E.g when you never enabled JavaScript in the first place or visit page x, which might abuses privileges or other API's, you might never be affected because certain attacks are based on well-known “internet problems” (JavaScript, fingerprinting etc). Migrating those possible attacks are fine, however inspecting websites via debugger is better. Ask the website owner to “fix” it or mention possible alternatives, most webmasters are still not aware of more private alternatives which they could have been used to “harden” their website.
 
 
-## Which Telemetry is disabled via user.js?
+## What kind of Telemetry is disabled via user.js?
 
 - [x] All Normandy and Shield Studies are disabled!
 - [x] All Health reporting features are turned off!
@@ -258,6 +258,7 @@ That’s a difficult question because every user has other needs, so I’ll only
 * [Temporary Containers](https://addons.mozilla.org/de/firefox/addon/temporary-containers/) ~~[Google Container](https://addons.mozilla.org/en-US/firefox/addon/google-contain-integrations)~~
 * [uBlock Origin](https://addons.mozilla.org/firefox/addon/ublock-origin/)
 * [uMatrix](https://addons.mozilla.org/firefox/addon/umatrix/)
+* [Don't touch my tabs! (rel=noopener)](https://addons.mozilla.org/en-US/firefox/addon/dont-touch-my-tabs/) (_until Firefox 79_)
 * ~~[Decentraleyes](https://addons.mozilla.org/firefox/addon/decentraleyes/)~~ - CDN's locally doesn't make sense as they change over time and also you make a connection to the CDN's anyway. So you only increase your own attack surface by using outdated and possible vulnerable files (they come integrated within the addon/extension).
 * ~~[ETag Stoppa](https://addons.mozilla.org/firefox/addon/etag-stoppa/)~~ ClearURLs integrated the function](https://gitlab.com/KevinRoebert/ClearUrls/-/issues/440)
 * ~~[IDN-Warner](https://addons.mozilla.org/en-US/firefox/addon/idn-warner/)~~
