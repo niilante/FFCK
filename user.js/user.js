@@ -7,7 +7,7 @@
 //      * Backward compatibility is given e.g. SeaMonkey etc. (that's why [some] outdated flags are listed!)
 //      See issue tracker for known issues & discussions!
 //      See: Workarounds.md for known problems & possible workarounds!
-//      Version: 78.0.0
+//      Version: 79.0.0
 
 // Twitch/YouTube buffering workaround
 // Disable IPv6 or usw following:
@@ -1195,9 +1195,10 @@ user_pref("media.autoplay.allow-extension-background-pages", true);
 user_pref("media.autoplay.allow-muted", false);
 user_pref("media.autoplay.blackList-override-default", true);
 user_pref("media.autoplay.block-webaudio", true);
-user_pref("media.autoplay.blocked", 1);
-user_pref("media.autoplay.default", 5);
-user_pref("media.autoplay.enabled.user-gestures-needed", false);
+//user_pref("media.autoplay.blocked", 1);
+//user_pref("media.autoplay.default", 5);
+//user_pref("media.autoplay.enabled.user-gestures-needed", false);
+user_pref("media.autoplay.blocking_policy", 2);
 user_pref("media.av1.enabled", true);
 user_pref("media.av1.use-dav1d", true);
 user_pref("media.benchmark.frames", 300);
