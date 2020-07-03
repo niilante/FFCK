@@ -3,7 +3,7 @@
 //  Hardening-only.js by CHEF-KOCH
 //  ==============================
 //      Newer than user.js, there are differences (on purpose)!
-//      Version 78.0.0
+//      Version 79.0.0
 //      FIXME: DoH, FPI & lang spoofing
 //      Disabling VP9 Codec needs a userscript since FF 70+ to be effective.
 //      https://greasyfork.org/en/scripts/373685-hide-vp9-support-from-youtube
@@ -390,7 +390,6 @@ user_pref("network.websocket.max-connections", 150);
 user_pref("image.mem.surfacecache.min_expiration_ms", 50000);
 //user_pref("dom.IntersectionObserver.enabled", false);
 user_pref("layout.css.always-repaint-on-unvisited", true);
-//user_pref(dom.security.https_only_mode_ever_enabled", false);
 
 
 // Prefetch
