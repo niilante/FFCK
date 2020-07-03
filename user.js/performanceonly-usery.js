@@ -416,6 +416,10 @@ user_pref("toolkit.telemetry.updatePing.enabled", false);
 // Web Notification
 // FIXME:
 
+// HTTPS Performance
+user_pref("dom.security.https_only_mode", true);
+user_pref("dom.security.https_only_mode.upgrade_loca", true);
+
 
 // Reports
 user_pref("extensions.webcompat-reporter.enabled", false);
